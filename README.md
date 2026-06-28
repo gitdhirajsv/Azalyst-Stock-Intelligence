@@ -4,6 +4,8 @@ Azalyst Stock Intelligence is an advanced quantitative research platform designe
 
 The platform operates a fully autonomous paper trading pipeline from discovery to risk-adjusted simulation, delivering actionable macro intelligence via an interactive dashboard.
 
+Live Intelligence Dashboard: [https://gitdhirajsv.github.io/Azalyst-Stock-Intelligence/](https://gitdhirajsv.github.io/Azalyst-Stock-Intelligence/)
+
 ## The Azalyst Edge
 
 - **J Law Methodology Integration**: Operates based on strict J Law rules, detecting Stage 2 trends, VCP breakouts, and M.E.T.A. pullbacks before capital deployment.
@@ -136,3 +138,9 @@ streamlit run app.py
 ## License
 
 MIT
+
+---
+
+Built by [Azalyst](https://github.com/gitdhirajsv/Azalyst-Alpha-Research-Engine) | Azalyst Alpha Quant Research
+
+*"Evidence over claims. Always."*
