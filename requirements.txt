@@ -4,5 +4,4 @@ yfinance
 scipy
 matplotlib
 plotly
-sqlite3
 ta
