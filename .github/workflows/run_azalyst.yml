@@ -6,12 +6,12 @@ on:
       - "paper_trades.db"
       - "status.json"
   schedule:
-    # Market hours: every hour (14:00 to 21:00) UTC Mon-Fri
-    - cron: "0 14-21 * * 1-5"
-    # After hours: every 4 hours UTC Mon-Fri
-    - cron: "0 22,2,6,10 * * 1-5"
-    # Weekends: every 6 hours
-    - cron: "0 0,6,12,18 * * 0,6"
+    # Market hours: every hour at minute 30 (14:30 to 21:30) UTC Mon-Fri
+    - cron: "30 14-21 * * 1-5"
+    # After hours: every 4 hours at minute 30 UTC Mon-Fri
+    - cron: "30 22,2,6,10 * * 1-5"
+    # Weekends: every 6 hours at minute 30
+    - cron: "30 0,6,12,18 * * 0,6"
   workflow_dispatch:
 concurrency:
   group: azalyst-run
