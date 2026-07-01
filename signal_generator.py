@@ -1,3 +1,4 @@
+import pandas as pd
 from pattern_detector import detect_vcp, detect_meta_pullback
 
 def generate_entry_signals(watchlist, stock_data):

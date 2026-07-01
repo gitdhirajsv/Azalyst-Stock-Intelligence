@@ -1,4 +1,5 @@
 import numpy as np
+import pandas as pd
 from config import MIN_PRICE, MIN_AVG_VOLUME, WITHIN_52W_HIGH_PCT
 
 def apply_stage2_screen(stock_data):

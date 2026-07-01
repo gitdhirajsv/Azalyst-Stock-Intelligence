@@ -20,6 +20,13 @@ class RiskManager:
         max_shares = int((self.equity * MAX_POSITION_PCT) / entry_price)
         return min(shares, max_shares)
 
+    def check_entry(self, entry_price, stop_loss_price):
+        """Check if a new entry is allowed and size it based on risk per trade."""
+        shares = self.position_size(entry_price, stop_loss_price)
+        if shares <= 0:
+            return False, 0, "Position size too small or invalid stop"
+        return True, shares, "OK"
+
     def total_risk_ok(self, open_positions, stock_data):
         """Check if total open risk is under max."""
         total_risk = 0

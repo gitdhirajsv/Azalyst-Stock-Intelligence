@@ -19,7 +19,7 @@ def run_pipeline():
     print(f"Loaded {len(tickers)} tickers from universe.")
 
     # Load Data
-    stock_data = load_stock_data(tickers)
+    stock_data, _ = load_stock_data(tickers)
     
     # Market Regime
     benchmark_df = fetch_historical(BENCHMARK_TICKER, "2y")
@@ -79,11 +79,11 @@ def run_pipeline():
             if not positions.empty and ticker in positions['ticker'].values:
                 continue
                 
-            allowed, shares, reason = rm.check_entry(price)
+            allowed, shares, reason = rm.check_entry(price, sig['stop_loss'])
             if allowed:
-                success, msg = execute_trade(ticker, 'BUY', shares, price, reason=sig['pattern'])
+                success, msg = execute_trade(ticker, 'BUY', shares, price, reason=sig['reason'])
                 if success:
-                    print(f"BUY {shares} {ticker} @ {price} ({sig['pattern']})")
+                    print(f"BUY {shares} {ticker} @ {price} ({sig['reason']})")
                     # Update RM equity
                     rm.update_equity(get_cash()) # Approximation
 
