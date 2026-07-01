@@ -1,4 +1,5 @@
 import numpy as np
+import pandas as pd
 
 def detect_bull_regime(benchmark_df):
     """
@@ -44,4 +45,4 @@ def detect_bull_regime(benchmark_df):
     score = true_count / total_known if total_known > 0 else 0.5
 
     is_bull = (true_count >= 3) and (score >= 0.6)
-    return signals, is_bull
+    return {"signals": signals, "is_bull": is_bull}
