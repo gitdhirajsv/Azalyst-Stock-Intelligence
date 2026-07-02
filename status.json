@@ -1,0 +1,87 @@
+{
+  "portfolio_value": 100000.0,
+  "total_deposited": 100000,
+  "cash": 100000.0,
+  "change_raw": 0.0,
+  "change": "+0.00%",
+  "unrealised_str": "+$0.00",
+  "realised_str": "$0.00",
+  "closed_trades": 0,
+  "usd_inr_rate": 1.0,
+  "positions": [],
+  "closed_trades_list": [],
+  "track_record": {
+    "total_trades": 0,
+    "winners": 0,
+    "losers": 0,
+    "win_rate": 0,
+    "avg_win": 0,
+    "avg_loss": 0,
+    "profit_factor": 0,
+    "expectancy": 0,
+    "sharpe_proxy": 0,
+    "best": null,
+    "worst": null
+  },
+  "market_snapshot": [
+    {
+      "label": "SPX",
+      "ticker": "^GSPC",
+      "price": 7483.24,
+      "change_str": "+0.00%",
+      "direction": "up"
+    },
+    {
+      "label": "NDX",
+      "ticker": "^IXIC",
+      "price": 25832.67,
+      "change_str": "-0.80%",
+      "direction": "down"
+    },
+    {
+      "label": "DJI",
+      "ticker": "^DJI",
+      "price": 52900.07,
+      "change_str": "+1.14%",
+      "direction": "up"
+    },
+    {
+      "label": "GOLD",
+      "ticker": "GC=F",
+      "price": 4141.9,
+      "change_str": "+1.81%",
+      "direction": "up"
+    },
+    {
+      "label": "OIL",
+      "ticker": "CL=F",
+      "price": 68.43,
+      "change_str": "-0.22%",
+      "direction": "down"
+    },
+    {
+      "label": "BTC",
+      "ticker": "BTC-USD",
+      "price": 61426.81,
+      "change_str": "+2.37%",
+      "direction": "up"
+    },
+    {
+      "label": "VIX",
+      "ticker": "^VIX",
+      "price": 16.15,
+      "change_str": "-2.65%",
+      "direction": "down"
+    }
+  ],
+  "regime": {
+    "risk_state": "RISK_OFF",
+    "vol_regime": "HIGH_VOL"
+  },
+  "signals": [],
+  "logs": [
+    "2026-07-02 23:36:51 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+  ],
+  "generated_at": "2026-07-02 23:36:51 UTC",
+  "top_signal": null
+}
