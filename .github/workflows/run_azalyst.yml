@@ -37,6 +37,9 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
+      - name: Update Universe
+        continue-on-error: true
+        run: python update_universe.py
       - name: Run Azalyst Stock Engine
         continue-on-error: true
         run: python azalyst.py
@@ -46,7 +49,7 @@ jobs:
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "actions@github.com"
-          git add -f paper_trades.db status.json || true
+          git add -f paper_trades.db status.json global_tickers.csv || true
           git diff --staged --quiet && echo "no state changes" && exit 0 || true
           git commit -m "chore: update portfolio and state [skip ci]"
           for attempt in 1 2 3 4 5; do
