@@ -87,6 +87,11 @@ def run_pipeline():
                     # Update RM equity
                     rm.update_equity(get_cash()) # Approximation
 
+    # Save signals to file for dashboard
+    import json
+    with open("signals.json", "w") as f:
+        json.dump(signals, f, indent=2)
+
     print(f"[{datetime.now().isoformat()}] Pipeline execution complete.")
 
 if __name__ == "__main__":

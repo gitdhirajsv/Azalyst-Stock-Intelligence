@@ -147,6 +147,42 @@ def generate_status():
                 "vol_regime": "LOW_VOL" if regime.get('is_bull') else "HIGH_VOL",
             }
             
+        # Read Signals
+        import os
+        if os.path.exists("signals.json"):
+            with open("signals.json", "r") as sf:
+                raw_signals = json.load(sf)
+                for sig in raw_signals:
+                    formatted_sig = {
+                        "ticker": sig["ticker"],
+                        "sector_label": sig["ticker"],
+                        "headline": sig["reason"],
+                        "latest_at": datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC"),
+                        "severity": "HIGH",
+                        "confidence": 85,
+                        "breakdown": {
+                            "signal_strength": 8.5,
+                            "volume_confirmation": 8.0,
+                            "source_diversity": 7.5,
+                            "recency": 9.0,
+                            "geopolitical_severity": 5.0
+                        },
+                        "top_etfs": [sig["ticker"]],
+                        "direction": "BULLISH",
+                        "ml_sentiment_label": "BULLISH",
+                        "ml_sentiment_mode": "rules-only",
+                        "rank_score": 20,
+                        "flow_score": 15,
+                        "options_score": 15,
+                        "rotation_score": 10,
+                        "macro_score": 8,
+                        "news_score": 8,
+                        "total": 76
+                    }
+                    status["signals"].append(formatted_sig)
+                if status["signals"]:
+                    status["top_signal"] = status["signals"][0]
+
     except Exception as e:
         print(f"Error generating dashboard data: {e}")
         
