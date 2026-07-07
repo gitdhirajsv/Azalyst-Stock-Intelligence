@@ -96,20 +96,24 @@ def run_pipeline():
     # Only buy if in Bull Regime and we have signals
     if is_bull and signals:
         for sig in signals:
-            ticker = sig['ticker']
-            price = sig['price']
-            
-            # Check if we already hold it
-            if not positions.empty and ticker in positions['ticker'].values:
+            try:
+                ticker = sig['ticker']
+                price = sig['price']
+
+                # Check if we already hold it
+                if not positions.empty and ticker in positions['ticker'].values:
+                    continue
+
+                allowed, shares, reason = rm.check_entry(price, sig['stop_loss'])
+                if allowed:
+                    success, msg = execute_trade(ticker, 'BUY', shares, price, reason=sig['reason'])
+                    if success:
+                        print(f"BUY {shares} {ticker} @ {price} ({sig['reason']})")
+                        # Update RM equity
+                        rm.update_equity(get_cash()) # Approximation
+            except Exception as e:
+                print(f"[execute] error on {sig.get('ticker')}: {e}")
                 continue
-                
-            allowed, shares, reason = rm.check_entry(price, sig['stop_loss'])
-            if allowed:
-                success, msg = execute_trade(ticker, 'BUY', shares, price, reason=sig['reason'])
-                if success:
-                    print(f"BUY {shares} {ticker} @ {price} ({sig['reason']})")
-                    # Update RM equity
-                    rm.update_equity(get_cash()) # Approximation
 
     print(f"[{datetime.now().isoformat()}] Pipeline execution complete.")
 

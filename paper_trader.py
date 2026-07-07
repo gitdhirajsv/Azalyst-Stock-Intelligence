@@ -64,46 +64,54 @@ def get_trade_history():
 def execute_trade(ticker, action, shares, price, date=None, reason=""):
     if date is None:
         date = datetime.now().strftime("%Y-%m-%d")
-    conn = sqlite3.connect(DB_PATH)
-    c = conn.cursor()
-    c.execute("INSERT INTO trades (ticker, action, shares, price, date, reason) VALUES (?,?,?,?,?,?)",
-              (ticker, action, shares, price, date, reason))
+    # Do EVERYTHING on a single connection/transaction. The previous version began a
+    # write on this connection and then called get_cash()/update_cash() which opened
+    # their OWN connections, so the second connection could never acquire the write
+    # lock -> "sqlite3.OperationalError: database is locked" on the first BUY.
+    conn = sqlite3.connect(DB_PATH, timeout=30)
+    try:
+        c = conn.cursor()
 
-    # Update cash
-    cash = get_cash()
-    cost = shares * price
-    if action == 'BUY':
-        if cash < cost:
-            conn.close()
-            return False, "Insufficient cash"
-        new_cash = cash - cost
-    elif action == 'SELL':
-        new_cash = cash + cost
-    else:
-        conn.close()
-        return False, "Invalid action"
-    update_cash(new_cash)
-
-    # Update positions
-    if action == 'BUY':
-        c.execute("SELECT shares, avg_price FROM positions WHERE ticker=?", (ticker,))
+        # Read current cash on the SAME connection and validate before writing.
+        c.execute("SELECT cash FROM cash WHERE id=1")
         row = c.fetchone()
-        if row:
-            old_shares, old_avg = row
-            new_shares = old_shares + shares
-            new_avg = (old_avg * old_shares + price * shares) / new_shares
-            c.execute("UPDATE positions SET shares=?, avg_price=? WHERE ticker=?", (new_shares, new_avg, ticker))
+        cash = row[0] if row else 0
+        cost = shares * price
+        if action == 'BUY':
+            if cash < cost:
+                return False, "Insufficient cash"
+            new_cash = cash - cost
+        elif action == 'SELL':
+            new_cash = cash + cost
         else:
-            c.execute("INSERT INTO positions (ticker, shares, avg_price) VALUES (?,?,?)", (ticker, shares, price))
-    elif action == 'SELL':
-        c.execute("SELECT shares FROM positions WHERE ticker=?", (ticker,))
-        row = c.fetchone()
-        if row:
-            remaining = row[0] - shares
-            if remaining <= 0:
-                c.execute("DELETE FROM positions WHERE ticker=?", (ticker,))
+            return False, "Invalid action"
+
+        c.execute("INSERT INTO trades (ticker, action, shares, price, date, reason) VALUES (?,?,?,?,?,?)",
+                  (ticker, action, shares, price, date, reason))
+        c.execute("UPDATE cash SET cash=? WHERE id=1", (new_cash,))
+
+        # Update positions
+        if action == 'BUY':
+            c.execute("SELECT shares, avg_price FROM positions WHERE ticker=?", (ticker,))
+            prow = c.fetchone()
+            if prow:
+                old_shares, old_avg = prow
+                new_shares = old_shares + shares
+                new_avg = (old_avg * old_shares + price * shares) / new_shares
+                c.execute("UPDATE positions SET shares=?, avg_price=? WHERE ticker=?", (new_shares, new_avg, ticker))
             else:
-                c.execute("UPDATE positions SET shares=? WHERE ticker=?", (remaining, ticker))
-    conn.commit()
-    conn.close()
-    return True, "Success"
+                c.execute("INSERT INTO positions (ticker, shares, avg_price) VALUES (?,?,?)", (ticker, shares, price))
+        elif action == 'SELL':
+            c.execute("SELECT shares FROM positions WHERE ticker=?", (ticker,))
+            prow = c.fetchone()
+            if prow:
+                remaining = prow[0] - shares
+                if remaining <= 0:
+                    c.execute("DELETE FROM positions WHERE ticker=?", (ticker,))
+                else:
+                    c.execute("UPDATE positions SET shares=? WHERE ticker=?", (remaining, ticker))
+
+        conn.commit()
+        return True, "Success"
+    finally:
+        conn.close()
