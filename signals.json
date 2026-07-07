@@ -1,0 +1,119 @@
+[
+  {
+    "ticker": "BIIB",
+    "type": "BUY_PULLBACK",
+    "price": 205.6999969482422,
+    "stop_loss": 213.12840118408204,
+    "reason": "Pullback to BOL, META score=2",
+    "source": "JLAW",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW"
+    ],
+    "rs_rating": 69
+  },
+  {
+    "ticker": "EXPD",
+    "type": "BUY_PULLBACK",
+    "price": 165.74000549316406,
+    "stop_loss": 163.07639526367188,
+    "reason": "Pullback to BOL, META score=3",
+    "source": "JLAW",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW"
+    ],
+    "rs_rating": 64
+  },
+  {
+    "ticker": "FHN",
+    "type": "BUY_PULLBACK",
+    "price": 25.760000228881836,
+    "stop_loss": 25.52069948196411,
+    "reason": "Pullback to BOL, META score=2",
+    "source": "JLAW",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW"
+    ],
+    "rs_rating": 51
+  },
+  {
+    "ticker": "GNW",
+    "type": "BUY_PULLBACK",
+    "price": 9.539999961853027,
+    "stop_loss": 9.3992995929718,
+    "reason": "Pullback to BOL, META score=2",
+    "source": "JLAW",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW"
+    ],
+    "rs_rating": 48
+  },
+  {
+    "ticker": "KEY",
+    "type": "BUY_PULLBACK",
+    "price": 23.3700008392334,
+    "stop_loss": 23.008399333953857,
+    "reason": "Pullback to BOL, META score=4",
+    "source": "JLAW",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW"
+    ],
+    "rs_rating": 60
+  },
+  {
+    "ticker": "MRK",
+    "type": "BUY_PULLBACK",
+    "price": 128.86000061035156,
+    "stop_loss": 126.38129348754883,
+    "reason": "Pullback to BOL, META score=2",
+    "source": "JLAW",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW"
+    ],
+    "rs_rating": 72
+  },
+  {
+    "ticker": "RCUS",
+    "type": "BUY_PULLBACK",
+    "price": 30.25,
+    "stop_loss": 30.782950592041015,
+    "reason": "Pullback to BOL, META score=3",
+    "source": "JLAW",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW"
+    ],
+    "rs_rating": 93
+  },
+  {
+    "ticker": "RF",
+    "type": "BUY_PULLBACK",
+    "price": 30.59000015258789,
+    "stop_loss": 30.108800888061523,
+    "reason": "Pullback to BOL, META score=3",
+    "source": "JLAW",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW"
+    ],
+    "rs_rating": 56
+  },
+  {
+    "ticker": "VLY",
+    "type": "BUY_PULLBACK",
+    "price": 14.869999885559082,
+    "stop_loss": 14.278400259017944,
+    "reason": "Pullback to BOL, META score=3",
+    "source": "JLAW",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW"
+    ],
+    "rs_rating": 74
+  }
+]

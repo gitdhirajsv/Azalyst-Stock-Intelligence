@@ -1,0 +1,400 @@
+{
+  "portfolio_value": 100000.0,
+  "total_deposited": 100000,
+  "cash": 7576.56,
+  "change_raw": 0.0,
+  "change": "+0.00%",
+  "unrealised_str": "+$0.00",
+  "realised_str": "$0.00",
+  "closed_trades": 0,
+  "usd_inr_rate": 1.0,
+  "positions": [
+    {
+      "ticker": "BIIB",
+      "sector": "Unclassified",
+      "source": "JLAW",
+      "rs_rating": 69,
+      "pnl_pct": 0.0,
+      "pnl_pct_str": "+0.00%",
+      "pnl": 0.0,
+      "pnl_str": "+$0.00",
+      "market_value": 24889.699630737305
+    },
+    {
+      "ticker": "EXPD",
+      "sector": "Unclassified",
+      "source": "JLAW",
+      "rs_rating": 64,
+      "pnl_pct": 0.0,
+      "pnl_pct_str": "+0.00%",
+      "pnl": 0.0,
+      "pnl_str": "+$0.00",
+      "market_value": 18728.62062072754
+    },
+    {
+      "ticker": "FHN",
+      "sector": "Unclassified",
+      "source": "JLAW",
+      "rs_rating": 51,
+      "pnl_pct": 0.0,
+      "pnl_pct_str": "+0.00%",
+      "pnl": 0.0,
+      "pnl_str": "+$0.00",
+      "market_value": 14090.720125198364
+    },
+    {
+      "ticker": "GNW",
+      "sector": "Unclassified",
+      "source": "JLAW",
+      "rs_rating": 48,
+      "pnl_pct": 0.0,
+      "pnl_pct_str": "+0.00%",
+      "pnl": 0.0,
+      "pnl_str": "+$0.00",
+      "market_value": 10570.319957733154
+    },
+    {
+      "ticker": "KEY",
+      "sector": "Unclassified",
+      "source": "JLAW",
+      "rs_rating": 60,
+      "pnl_pct": 0.0,
+      "pnl_pct_str": "+0.00%",
+      "pnl": 0.0,
+      "pnl_str": "+$0.00",
+      "market_value": 7922.430284500122
+    },
+    {
+      "ticker": "MRK",
+      "sector": "Unclassified",
+      "source": "JLAW",
+      "rs_rating": 72,
+      "pnl_pct": 0.0,
+      "pnl_pct_str": "+0.00%",
+      "pnl": 0.0,
+      "pnl_str": "+$0.00",
+      "market_value": 5927.560028076172
+    },
+    {
+      "ticker": "RCUS",
+      "sector": "Unclassified",
+      "source": "JLAW",
+      "rs_rating": 93,
+      "pnl_pct": 0.0,
+      "pnl_pct_str": "+0.00%",
+      "pnl": 0.0,
+      "pnl_str": "+$0.00",
+      "market_value": 4446.75
+    },
+    {
+      "ticker": "RF",
+      "sector": "Unclassified",
+      "source": "JLAW",
+      "rs_rating": 56,
+      "pnl_pct": 0.0,
+      "pnl_pct_str": "+0.00%",
+      "pnl": 0.0,
+      "pnl_str": "+$0.00",
+      "market_value": 3334.31001663208
+    },
+    {
+      "ticker": "VLY",
+      "sector": "Unclassified",
+      "source": "JLAW",
+      "rs_rating": 74,
+      "pnl_pct": 0.0,
+      "pnl_pct_str": "+0.00%",
+      "pnl": 0.0,
+      "pnl_str": "+$0.00",
+      "market_value": 2513.029980659485
+    }
+  ],
+  "closed_trades_list": [],
+  "track_record": {
+    "total_trades": 0,
+    "winners": 0,
+    "losers": 0,
+    "win_rate": 0,
+    "avg_win": 0,
+    "avg_loss": 0,
+    "profit_factor": 0,
+    "expectancy": 0,
+    "sharpe_proxy": 0,
+    "best": null,
+    "worst": null
+  },
+  "market_snapshot": [
+    {
+      "label": "SPX",
+      "ticker": "^GSPC",
+      "price": 7503.85,
+      "change_str": "-0.45%",
+      "direction": "down"
+    },
+    {
+      "label": "NDX",
+      "ticker": "^IXIC",
+      "price": 25818.69,
+      "change_str": "-1.16%",
+      "direction": "down"
+    },
+    {
+      "label": "DJI",
+      "ticker": "^DJI",
+      "price": 52925.15,
+      "change_str": "-0.25%",
+      "direction": "down"
+    },
+    {
+      "label": "GOLD",
+      "ticker": "GC=F",
+      "price": 4120.9,
+      "change_str": "-0.82%",
+      "direction": "down"
+    },
+    {
+      "label": "OIL",
+      "ticker": "CL=F",
+      "price": 71.99,
+      "change_str": "+5.02%",
+      "direction": "up"
+    },
+    {
+      "label": "VIX",
+      "ticker": "^VIX",
+      "price": 16.11,
+      "change_str": "+3.47%",
+      "direction": "up"
+    }
+  ],
+  "regime": {
+    "risk_state": "RISK_ON",
+    "vol_regime": "LOW_VOL"
+  },
+  "signals": [
+    {
+      "ticker": "BIIB",
+      "sector_label": "BIIB",
+      "headline": "[JLAW] Pullback to BOL, META score=2",
+      "latest_at": "2026-07-07 20:28:39 UTC",
+      "severity": "MEDIUM",
+      "confidence": 82,
+      "source": "JLAW",
+      "sources": [
+        "JLAW"
+      ],
+      "strategy": "J Law (Stage 2 / VCP / META)",
+      "signal_type": "BUY_PULLBACK",
+      "entry": 205.6999969482422,
+      "stop_loss": 213.12840118408204,
+      "target": null,
+      "pivot": null,
+      "rs_rating": 69,
+      "risk_pct": null,
+      "actionable_now": false,
+      "confluence": false
+    },
+    {
+      "ticker": "EXPD",
+      "sector_label": "EXPD",
+      "headline": "[JLAW] Pullback to BOL, META score=3",
+      "latest_at": "2026-07-07 20:28:39 UTC",
+      "severity": "MEDIUM",
+      "confidence": 82,
+      "source": "JLAW",
+      "sources": [
+        "JLAW"
+      ],
+      "strategy": "J Law (Stage 2 / VCP / META)",
+      "signal_type": "BUY_PULLBACK",
+      "entry": 165.74000549316406,
+      "stop_loss": 163.07639526367188,
+      "target": null,
+      "pivot": null,
+      "rs_rating": 64,
+      "risk_pct": null,
+      "actionable_now": false,
+      "confluence": false
+    },
+    {
+      "ticker": "FHN",
+      "sector_label": "FHN",
+      "headline": "[JLAW] Pullback to BOL, META score=2",
+      "latest_at": "2026-07-07 20:28:39 UTC",
+      "severity": "MEDIUM",
+      "confidence": 82,
+      "source": "JLAW",
+      "sources": [
+        "JLAW"
+      ],
+      "strategy": "J Law (Stage 2 / VCP / META)",
+      "signal_type": "BUY_PULLBACK",
+      "entry": 25.760000228881836,
+      "stop_loss": 25.52069948196411,
+      "target": null,
+      "pivot": null,
+      "rs_rating": 51,
+      "risk_pct": null,
+      "actionable_now": false,
+      "confluence": false
+    },
+    {
+      "ticker": "GNW",
+      "sector_label": "GNW",
+      "headline": "[JLAW] Pullback to BOL, META score=2",
+      "latest_at": "2026-07-07 20:28:39 UTC",
+      "severity": "MEDIUM",
+      "confidence": 82,
+      "source": "JLAW",
+      "sources": [
+        "JLAW"
+      ],
+      "strategy": "J Law (Stage 2 / VCP / META)",
+      "signal_type": "BUY_PULLBACK",
+      "entry": 9.539999961853027,
+      "stop_loss": 9.3992995929718,
+      "target": null,
+      "pivot": null,
+      "rs_rating": 48,
+      "risk_pct": null,
+      "actionable_now": false,
+      "confluence": false
+    },
+    {
+      "ticker": "KEY",
+      "sector_label": "KEY",
+      "headline": "[JLAW] Pullback to BOL, META score=4",
+      "latest_at": "2026-07-07 20:28:39 UTC",
+      "severity": "MEDIUM",
+      "confidence": 82,
+      "source": "JLAW",
+      "sources": [
+        "JLAW"
+      ],
+      "strategy": "J Law (Stage 2 / VCP / META)",
+      "signal_type": "BUY_PULLBACK",
+      "entry": 23.3700008392334,
+      "stop_loss": 23.008399333953857,
+      "target": null,
+      "pivot": null,
+      "rs_rating": 60,
+      "risk_pct": null,
+      "actionable_now": false,
+      "confluence": false
+    },
+    {
+      "ticker": "MRK",
+      "sector_label": "MRK",
+      "headline": "[JLAW] Pullback to BOL, META score=2",
+      "latest_at": "2026-07-07 20:28:39 UTC",
+      "severity": "MEDIUM",
+      "confidence": 82,
+      "source": "JLAW",
+      "sources": [
+        "JLAW"
+      ],
+      "strategy": "J Law (Stage 2 / VCP / META)",
+      "signal_type": "BUY_PULLBACK",
+      "entry": 128.86000061035156,
+      "stop_loss": 126.38129348754883,
+      "target": null,
+      "pivot": null,
+      "rs_rating": 72,
+      "risk_pct": null,
+      "actionable_now": false,
+      "confluence": false
+    },
+    {
+      "ticker": "RCUS",
+      "sector_label": "RCUS",
+      "headline": "[JLAW] Pullback to BOL, META score=3",
+      "latest_at": "2026-07-07 20:28:39 UTC",
+      "severity": "MEDIUM",
+      "confidence": 82,
+      "source": "JLAW",
+      "sources": [
+        "JLAW"
+      ],
+      "strategy": "J Law (Stage 2 / VCP / META)",
+      "signal_type": "BUY_PULLBACK",
+      "entry": 30.25,
+      "stop_loss": 30.782950592041015,
+      "target": null,
+      "pivot": null,
+      "rs_rating": 93,
+      "risk_pct": null,
+      "actionable_now": false,
+      "confluence": false
+    },
+    {
+      "ticker": "RF",
+      "sector_label": "RF",
+      "headline": "[JLAW] Pullback to BOL, META score=3",
+      "latest_at": "2026-07-07 20:28:39 UTC",
+      "severity": "MEDIUM",
+      "confidence": 82,
+      "source": "JLAW",
+      "sources": [
+        "JLAW"
+      ],
+      "strategy": "J Law (Stage 2 / VCP / META)",
+      "signal_type": "BUY_PULLBACK",
+      "entry": 30.59000015258789,
+      "stop_loss": 30.108800888061523,
+      "target": null,
+      "pivot": null,
+      "rs_rating": 56,
+      "risk_pct": null,
+      "actionable_now": false,
+      "confluence": false
+    },
+    {
+      "ticker": "VLY",
+      "sector_label": "VLY",
+      "headline": "[JLAW] Pullback to BOL, META score=3",
+      "latest_at": "2026-07-07 20:28:39 UTC",
+      "severity": "MEDIUM",
+      "confidence": 82,
+      "source": "JLAW",
+      "sources": [
+        "JLAW"
+      ],
+      "strategy": "J Law (Stage 2 / VCP / META)",
+      "signal_type": "BUY_PULLBACK",
+      "entry": 14.869999885559082,
+      "stop_loss": 14.278400259017944,
+      "target": null,
+      "pivot": null,
+      "rs_rating": 74,
+      "risk_pct": null,
+      "actionable_now": false,
+      "confluence": false
+    }
+  ],
+  "logs": [
+    "2026-07-07 20:28:38 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+  ],
+  "generated_at": "2026-07-07 20:28:38 UTC",
+  "top_signal": {
+    "ticker": "BIIB",
+    "sector_label": "BIIB",
+    "headline": "[JLAW] Pullback to BOL, META score=2",
+    "latest_at": "2026-07-07 20:28:39 UTC",
+    "severity": "MEDIUM",
+    "confidence": 82,
+    "source": "JLAW",
+    "sources": [
+      "JLAW"
+    ],
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "signal_type": "BUY_PULLBACK",
+    "entry": 205.6999969482422,
+    "stop_loss": 213.12840118408204,
+    "target": null,
+    "pivot": null,
+    "rs_rating": 69,
+    "risk_pct": null,
+    "actionable_now": false,
+    "confluence": false
+  }
+}
