@@ -285,10 +285,10 @@ body{background:#000;font-family:'Courier New',monospace;color:#ff6600;overflow-
     <span class="regime-v" id="r-excess">—</span>
   </div>
   <div class="regime-cell">
-    <span class="regime-k">Active Weights</span>
-    <span class="regime-v" id="r-weights">Rank 25 / Flow 20 / Opt 20 / Rot 15 / Macro 10 / News 10</span>
+    <span class="regime-k">Screen</span>
+    <span class="regime-v" id="r-weights">Stage 2 · RS ≥ 89 · &gt; $12 · within 15% of 52w high · rev &gt; 5%</span>
   </div>
-  <span class="regime-tag" id="r-inception">SINCE 2026-05-08</span>
+  <span class="regime-tag" id="r-inception">SINCE 2026-07-08</span>
 </div>
 
 <!-- ════════ PAGE: MKTD ════════ -->
@@ -738,11 +738,8 @@ function renderRegime() {
   document.getElementById('r-vix').textContent = vix + ' (' + vixp + ')';
   document.getElementById('r-spy200').textContent = above200;
   document.getElementById('r-excess').textContent = ex;
-  if (r.weight_matrix) {
-    const w = r.weight_matrix;
-    document.getElementById('r-weights').textContent =
-      `Rank ${w.rank} / Flow ${w.flow} / Opt ${w.options} / Rot ${w.rotation} / Macro ${w.macro} / News ${w.news}`;
-  }
+  // (Removed ETF-scanner "weight matrix" overwrite; #r-weights now shows the
+  //  static J Law/Minervini screen criteria.)
 }
 
 function renderFactorBreakdown() {
