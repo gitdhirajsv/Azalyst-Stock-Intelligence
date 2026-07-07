@@ -350,9 +350,9 @@ body{background:#000;font-family:'Courier New',monospace;color:#ff6600;overflow-
       <div id="fxBody"></div>
     </div>
 
-    <!-- Panel 4: Signal Confidence -->
+    <!-- Panel 4: Active buy signals (J Law + Minervini, with fundamentals) -->
     <div class="panel">
-      <div class="panel-header">SIGNAL ENGINE — CONFIDENCE MAP <span class="cmd">Threshold: <span id="threshold">60</span>/100</span></div>
+      <div class="panel-header">J LAW + MINERVINI — ACTIVE BUY SIGNALS <span class="cmd">RS ≥ <span id="threshold">89</span> · rev &gt; 5%</span></div>
       <div id="signalBody"></div>
     </div>
 
@@ -368,6 +368,7 @@ body{background:#000;font-family:'Courier New',monospace;color:#ff6600;overflow-
           Risk: <span id="fb-risk" style="color:#ffaa00;font-weight:700">—</span> &nbsp;
           RS Rating: <span id="fb-rs" style="color:#ffaa00;font-weight:700">—</span>/99
         </div>
+        <div style="margin-top:3px">Fundamentals: <span id="fb-fund" style="color:#888">—</span></div>
       </div>
     </div>
 
@@ -603,6 +604,20 @@ function sourceBadge(source) {
   return `<span class="badge badge-jlaw">J LAW</span>`;
 }
 
+// Revenue-growth tag (fundamentals layer): green >5% YoY, yellow positive, red negative,
+// grey when revenue could not be verified. ▲acc / ▼dec = annual sales acceleration flag.
+function fundamentalsTag(s) {
+  if (!s || !s.fundamentals_verified || s.rev_growth_yoy == null) {
+    return `<span style="color:#666">rev n/a</span>`;
+  }
+  const g = s.rev_growth_yoy * 100;
+  const col = g > 5 ? '#00ff41' : (g > 0 ? '#ffcc00' : '#ff4444');
+  const accel = s.sales_accelerating === true ? ' ▲acc'
+              : (s.sales_accelerating === false ? ' ▼dec' : '');
+  return `<span style="color:${col}">rev ${g >= 0 ? '+' : ''}${g.toFixed(1)}%</span>`
+       + `<span style="color:#888;font-size:8px">${accel}</span>`;
+}
+
 function regimePill(regime) {
   const mapping = { NORMAL: 'pill pill-normal', ELEVATED: 'pill pill-elevated', HIGH: 'pill pill-high', EXTREME: 'pill pill-extreme', Unknown: 'pill pill-unknown' };
   return `<span class="${mapping[regime] || 'pill pill-unknown'}">${regime || 'Unknown'}</span>`;
@@ -740,6 +755,7 @@ function renderFactorBreakdown() {
   document.getElementById('fb-target').textContent = (top && top.target) ? fmt.usd(top.target) : '—';
   document.getElementById('fb-risk').textContent = (top && top.risk_pct) ? top.risk_pct + '%' : '—';
   document.getElementById('fb-rs').textContent = (top && top.rs_rating != null) ? top.rs_rating : '—';
+  document.getElementById('fb-fund').innerHTML = top ? fundamentalsTag(top) : '—';
 }
 
 function renderMktdPage() {
@@ -818,18 +834,23 @@ function renderMktdPage() {
   if (vixMs) fxHtml += makeRow('VIX', vixMs.price.toFixed(2), vixMs.change_pct, 'CBOE');
   document.getElementById('fxBody').innerHTML = fxHtml;
 
-  // Signals
-  const sigs = DATA.confidence || [];
-  document.getElementById('threshold').textContent = DATA.confidence_threshold || 62;
-  document.getElementById('signalBody').innerHTML = sigs.slice(0,10).map(s => {
-    const cls = s.score>=80?'up':s.score>=62?'neu':'dn';
-    const w = Math.min(s.score, 100);
-    return `<div class="srow">
-      <span class="sname">${(s.symbol||'').substring(0,22)}</span>
-      <div class="sbar-wrap"><div class="sbar ${cls}" style="width:${w}%"></div></div>
-      <span class="spct ${cls}">${s.score.toFixed(0)}/100</span>
-    </div>`;
-  }).join('');
+  // Active buy signals — real J Law + Minervini output with fundamentals.
+  const sigs = DATA.signals || [];
+  if (sigs.length === 0) {
+    document.getElementById('signalBody').innerHTML = '<div style="color:#555;font-size:9px;padding:6px 0">No active buy signals (nothing passing Stage 2 + RS + fundamentals right now).</div>';
+  } else {
+    document.getElementById('signalBody').innerHTML = sigs.map(s => {
+      const rs = (s.rs_rating == null) ? '—' : s.rs_rating;
+      const rsCls = s.rs_rating>=89?'up':s.rs_rating>=80?'neu':'dn';
+      return `<div class="srow" style="align-items:center">
+        <span class="sname" style="min-width:52px">${s.ticker}</span>
+        <span style="min-width:64px">${sourceBadge(s.source)}</span>
+        <span style="min-width:70px;font-size:9px;color:#888">Entry ${fmt.usd(s.entry)}</span>
+        <span style="min-width:70px;font-size:9px">${fundamentalsTag(s)}</span>
+        <span class="spct ${rsCls}" style="min-width:40px;text-align:right">RS ${rs}</span>
+      </div>`;
+    }).join('');
+  }
 
   // News
   const allNews = [];
@@ -1053,7 +1074,7 @@ function renderPortPage() {
       <div class="opp-etfs">
         <span class="opp-etf-label">Entry:</span> ${fmt.usd(sig.entry)} &nbsp; <span class="opp-etf-label">Stop:</span> ${fmt.usd(sig.stop_loss)}<br>
         <span class="opp-etf-label">Target:</span> ${sig.target ? fmt.usd(sig.target) : '—'} &nbsp; <span class="opp-etf-label">Risk:</span> ${sig.risk_pct ? sig.risk_pct+'%' : '—'}<br>
-        <span class="opp-etf-label">RS Rating:</span> ${rsStr}
+        <span class="opp-etf-label">RS Rating:</span> ${rsStr} &nbsp; ${fundamentalsTag(sig)}
       </div>
     </div>`;
   }).join('');
@@ -1105,6 +1126,7 @@ function renderNewsPage() {
         <span style="color:#444">RISK%: <span style="color:#aaa">${sig.risk_pct ? sig.risk_pct+'%' : '—'}</span></span>
         <span style="color:#444">RS: <span style="color:#aaa">${rsStr}</span></span>
       </div>
+      <div style="margin-top:3px;font-size:8px">Fundamentals: ${fundamentalsTag(sig)} <span style="color:#333">${sig.fundamentals_detail||''}</span></div>
     </div>`;
   }).join('');
 }

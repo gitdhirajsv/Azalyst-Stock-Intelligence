@@ -192,6 +192,13 @@ def generate_status():
                         "risk_pct": sig.get("risk_pct"),
                         "actionable_now": sig.get("actionable_now", False),
                         "confluence": is_conf,
+                        # Fundamentals (revenue, not profit) -- see fundamentals.py.
+                        "rev_growth_yoy": sig.get("rev_growth_yoy"),
+                        "annual_rev_growth": sig.get("annual_rev_growth"),
+                        "sales_accelerating": sig.get("sales_accelerating"),
+                        "fundamentals_verified": sig.get("fundamentals_verified"),
+                        "fundamentals_ok": sig.get("fundamentals_ok"),
+                        "fundamentals_detail": sig.get("fundamentals_detail", ""),
                     }
                     status["signals"].append(formatted_sig)
                 if status["signals"]:

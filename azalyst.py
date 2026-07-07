@@ -8,6 +8,7 @@ from market_regime import detect_bull_regime
 from stock_screener import apply_stage2_screen
 from signal_generator import generate_entry_signals
 from minervini import compute_rs_ratings
+from fundamentals import apply_fundamental_filter
 from risk_manager import RiskManager
 from paper_trader import init_db, get_cash, get_positions, execute_trade
 
@@ -37,12 +38,18 @@ def run_pipeline():
     is_bull = regime.get('is_bull', False)
     print(f"Market Regime: {'BULL' if is_bull else 'BEAR'}")
     
-    # Screener
+    # Relative-strength ratings across the whole universe (needed by BOTH paths).
+    rs_ratings = compute_rs_ratings(stock_data)
+
+    # Screener (J Law Stage-2 structure).
     stage2_passed = apply_stage2_screen(stock_data)
     print(f"Tickers passing Stage 2: {len(stage2_passed)}")
-    
-    # Relative-strength ratings across the whole universe (for the Minervini path).
-    rs_ratings = compute_rs_ratings(stock_data)
+
+    # Enforce the RS Rating gate on the J Law watchlist too (Minervini's watershed
+    # is 89). The Minervini path already gates on RS inside its Trend Template.
+    before_rs = len(stage2_passed)
+    stage2_passed = [t for t in stage2_passed if rs_ratings.get(t, 0) >= RS_RATING_MIN]
+    print(f"After RS Rating >= {RS_RATING_MIN} gate: {len(stage2_passed)} (was {before_rs})")
 
     # Dual-strategy signals: J Law (Stage-2 watchlist) + Minervini (full universe,
     # own Trend-Template selection, fires only at a valid VCP pivot buy price).
@@ -56,6 +63,12 @@ def run_pipeline():
     n_conf = sum(1 for s in signals if s.get('confluence'))
     print(f"Entry Signals Generated: {len(signals)} "
           f"(J Law: {n_jlaw}, Minervini: {n_mrv}, confluence: {n_conf})")
+
+    # Fundamental layer (revenue, not profit): last-quarter YoY revenue growth > 5%
+    # and accelerating. Applied only to the small actionable signal list (cheap), and
+    # dropping only stocks that fail on VERIFIED data -- unverifiable ones are flagged,
+    # not silently hidden.
+    signals = apply_fundamental_filter(signals, require_when_unverified=REQUIRE_VERIFIED_FUNDAMENTALS)
 
     # Persist signals immediately so the dashboard reflects them even if the
     # execution step below raises.

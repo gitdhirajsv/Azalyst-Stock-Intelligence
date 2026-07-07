@@ -15,11 +15,12 @@ import numpy as np
 import pandas as pd
 
 from pattern_detector import detect_vcp
+from config import RS_RATING_MIN, MIN_PRICE
 
 # ---- Trend Template thresholds (Minervini, "Trade Like a Stock Market Wizard") ----
 PCT_ABOVE_52W_LOW = 0.30       # price must be >= 30% above its 52-week low (book value)
-WITHIN_52W_HIGH = 0.25         # price must be within 25% of its 52-week high
-RS_RATING_MIN = 70             # RS Rating >= 70 (Minervini prefers 80-90+)
+WITHIN_52W_HIGH = 0.15         # price within 15% of 52w high (personalized standard; was 25%)
+# RS_RATING_MIN now comes from config (89 == Minervini's watershed line).
 MA200_UPTREND_LOOKBACK = 21    # 200-day MA must be rising over ~1 month (21 trading days)
 MIN_BARS = 252                 # need a full year of data for 52w range + RS
 
@@ -131,6 +132,11 @@ def minervini_signal(ticker, df, rs_rating=None):
     pivot = vcp.get('pivot', 0.0)
     close = vcp.get('close', 0.0)
     if pivot <= 0 or close <= 0:
+        return None
+
+    # Gate: minimum price (Minervini avoids low-priced stocks). J Law path enforces
+    # this via the Stage-2 screen; the Minervini path applies it here directly.
+    if close < MIN_PRICE:
         return None
 
     # Gate: fresh pivot breakout THIS bar (close above pivot on expanding volume).
