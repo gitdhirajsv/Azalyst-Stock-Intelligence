@@ -3,7 +3,7 @@ from datetime import datetime
 from config import *
 from universe import get_universe
 from data_loader import load_stock_data
-from utils import fetch_historical, compute_moving_averages, compute_volume_ma
+from utils import fetch_historical, compute_moving_averages, compute_volume_ma, fetch_sector
 from market_regime import detect_bull_regime
 from stock_screener import apply_stage2_screen
 from signal_generator import generate_entry_signals
@@ -106,7 +106,12 @@ def run_pipeline():
 
                 allowed, shares, reason = rm.check_entry(price, sig['stop_loss'])
                 if allowed:
-                    success, msg = execute_trade(ticker, 'BUY', shares, price, reason=sig['reason'])
+                    source_label = sig.get('source') or '+'.join(sig.get('sources', ['JLAW']))
+                    sector = fetch_sector(ticker)
+                    success, msg = execute_trade(
+                        ticker, 'BUY', shares, price, reason=sig['reason'],
+                        source=source_label, sector=sector, rs_rating=sig.get('rs_rating'),
+                    )
                     if success:
                         print(f"BUY {shares} {ticker} @ {price} ({sig['reason']})")
                         # Update RM equity

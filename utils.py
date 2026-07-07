@@ -12,6 +12,22 @@ def fetch_historical(ticker, period="2y"):
         df.columns = [col[0] for col in df.columns]
     return df
 
+def fetch_sector(ticker):
+    """
+    Best-effort sector/industry lookup for a single ticker (yfinance .info).
+    Only meant to be called for the handful of tickers being bought this run,
+    not the whole universe — .info is a slow, per-ticker network call.
+    """
+    try:
+        info = yf.Ticker(ticker).info
+        sector = info.get('sector')
+        industry = info.get('industry')
+        if sector and industry:
+            return f"{sector} / {industry}"
+        return sector or industry or "Unclassified"
+    except Exception:
+        return "Unclassified"
+
 def compute_moving_averages(df, periods=[10,20,50,150,200]):
     for p in periods:
         df[f'MA_{p}'] = df['Close'].rolling(p).mean()

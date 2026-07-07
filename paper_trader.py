@@ -31,6 +31,14 @@ def init_db():
     c.execute("SELECT COUNT(*) FROM cash")
     if c.fetchone()[0] == 0:
         c.execute("INSERT INTO cash (id, cash) VALUES (1, 100000)")  # $100k paper trading
+
+    # Migration: positions predates source/sector/rs_rating tracking. Add the columns
+    # if missing so existing DBs (now that they actually persist) don't need a wipe.
+    existing_cols = {row[1] for row in c.execute("PRAGMA table_info(positions)").fetchall()}
+    for col, coltype in (("source", "TEXT"), ("sector", "TEXT"), ("rs_rating", "INTEGER")):
+        if col not in existing_cols:
+            c.execute(f"ALTER TABLE positions ADD COLUMN {col} {coltype}")
+
     conn.commit()
     conn.close()
 
@@ -61,7 +69,7 @@ def get_trade_history():
     conn.close()
     return df
 
-def execute_trade(ticker, action, shares, price, date=None, reason=""):
+def execute_trade(ticker, action, shares, price, date=None, reason="", source=None, sector=None, rs_rating=None):
     if date is None:
         date = datetime.now().strftime("%Y-%m-%d")
     # Do EVERYTHING on a single connection/transaction. The previous version began a
@@ -98,9 +106,14 @@ def execute_trade(ticker, action, shares, price, date=None, reason=""):
                 old_shares, old_avg = prow
                 new_shares = old_shares + shares
                 new_avg = (old_avg * old_shares + price * shares) / new_shares
+                # Adding to an existing position: keep the original entry's source/sector/
+                # rs_rating (it's still the same holding), just update size/cost basis.
                 c.execute("UPDATE positions SET shares=?, avg_price=? WHERE ticker=?", (new_shares, new_avg, ticker))
             else:
-                c.execute("INSERT INTO positions (ticker, shares, avg_price) VALUES (?,?,?)", (ticker, shares, price))
+                c.execute(
+                    "INSERT INTO positions (ticker, shares, avg_price, source, sector, rs_rating) VALUES (?,?,?,?,?,?)",
+                    (ticker, shares, price, source, sector, rs_rating),
+                )
         elif action == 'SELL':
             c.execute("SELECT shares FROM positions WHERE ticker=?", (ticker,))
             prow = c.fetchone()

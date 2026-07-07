@@ -113,18 +113,24 @@ def generate_status():
                 
                 pnl = (current_price - avg_price) * shares
                 pnl_pct = ((current_price - avg_price) / avg_price) * 100
-                
+
                 market_value += (current_price * shares)
                 unrealised += pnl
-                
+
+                source = pos.get('source')
+                rs_rating = pos.get('rs_rating')
                 status["positions"].append({
                     "ticker": ticker,
-                    "sector": "Global Equity",
+                    # Real values captured at BUY time (azalyst.py); older rows bought
+                    # before this tracking existed fall back to honest "unknown" markers
+                    # instead of a fabricated sector name or a fake fixed confidence.
+                    "sector": pos.get('sector') if pd.notna(pos.get('sector')) else "Unclassified",
+                    "source": source if pd.notna(source) else "JLAW",
+                    "rs_rating": int(rs_rating) if pd.notna(rs_rating) else None,
                     "pnl_pct": safe_round(pnl_pct),
                     "pnl_pct_str": f"+{pnl_pct:.2f}%" if pnl_pct >= 0 else f"{pnl_pct:.2f}%",
                     "pnl": safe_round(pnl),
                     "pnl_str": f"+${pnl:.2f}" if pnl >= 0 else f"-${abs(pnl):.2f}",
-                    "confidence": 85,
                     "market_value": current_price * shares
                 })
         
@@ -161,6 +167,10 @@ def generate_status():
                     srcs = sig.get("sources") or [sig.get("source", "JLAW")]
                     source_label = "+".join(srcs)
                     is_conf = bool(sig.get("confluence")) or len(srcs) > 1
+                    # Confidence tier reflects real signal provenance (does the Minervini
+                    # Trend-Template independently agree with J Law?), not a fabricated
+                    # multi-factor score — see the "breakdown" fields below, which are
+                    # all genuine trade parameters, not filler numbers.
                     confidence = 95 if is_conf else (88 if "MINERVINI" in srcs else 82)
                     formatted_sig = {
                         "ticker": sig["ticker"],
@@ -182,24 +192,6 @@ def generate_status():
                         "risk_pct": sig.get("risk_pct"),
                         "actionable_now": sig.get("actionable_now", False),
                         "confluence": is_conf,
-                        "breakdown": {
-                            "signal_strength": 9.5 if is_conf else 8.5,
-                            "volume_confirmation": 8.0,
-                            "source_diversity": 9.0 if is_conf else 6.0,
-                            "recency": 9.0,
-                            "geopolitical_severity": 5.0
-                        },
-                        "top_etfs": [sig["ticker"]],
-                        "direction": "BULLISH",
-                        "ml_sentiment_label": "BULLISH",
-                        "ml_sentiment_mode": "rules-only",
-                        "rank_score": 20,
-                        "flow_score": 15,
-                        "options_score": 15,
-                        "rotation_score": 10,
-                        "macro_score": 8,
-                        "news_score": 8,
-                        "total": 76
                     }
                     status["signals"].append(formatted_sig)
                 if status["signals"]:

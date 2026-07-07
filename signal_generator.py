@@ -84,6 +84,7 @@ def generate_entry_signals(watchlist, stock_data, minervini_universe=None, rs_ra
             # buy-point risk levels (stop below the base capped at 8%; measured 3R target).
             existing = by_ticker[ticker]
             existing['sources'] = sorted(set(existing['sources']) | {'MINERVINI'})
+            existing['source'] = '+'.join(existing['sources'])
             existing['confluence'] = True
             existing['rs_rating'] = sig.get('rs_rating')
             existing['price'] = sig['price']
@@ -103,7 +104,16 @@ def generate_entry_signals(watchlist, stock_data, minervini_universe=None, rs_ra
             by_ticker[ticker] = sig
             order.append(ticker)
 
-    return [by_ticker[t] for t in order]
+    # RS Rating is a real, universe-wide computed metric (minervini.compute_rs_ratings),
+    # but only the Minervini path attaches it today. Backfill it onto every signal —
+    # including JLAW-only ones — so the dashboard can show a real momentum rating
+    # instead of a fake confidence number for every pick, not just Minervini's.
+    signals = [by_ticker[t] for t in order]
+    for sig in signals:
+        if sig.get('rs_rating') is None:
+            sig['rs_rating'] = rs_ratings.get(sig['ticker'])
+
+    return signals
 
 
 def generate_exit_signals(positions, stock_data):
