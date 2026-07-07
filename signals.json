@@ -4,7 +4,7 @@
     "type": "BUY_PULLBACK",
     "price": 30.25,
     "stop_loss": 30.782950592041015,
-    "reason": "Pullback to BOL, META score=3",
+    "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
     "sources": [
