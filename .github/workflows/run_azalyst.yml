@@ -5,6 +5,7 @@ on:
     paths-ignore:
       - "paper_trades.db"
       - "status.json"
+      - "signals.json"
   schedule:
     # Market hours: every hour at minute 30 (14:30 to 21:30) UTC Mon-Fri
     - cron: "30 14-21 * * 1-5"
@@ -49,7 +50,7 @@ jobs:
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "actions@github.com"
-          git add -f paper_trades.db status.json global_tickers.csv || true
+          git add -f paper_trades.db status.json signals.json global_tickers.csv || true
           git diff --staged --quiet && echo "no state changes" && exit 0 || true
           git commit -m "chore: update portfolio and state [skip ci]"
           for attempt in 1 2 3 4 5; do

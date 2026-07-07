@@ -39,10 +39,27 @@ def detect_bull_regime(benchmark_df):
     # 5. Broad participation proxy: we'll skip (requires internals data)
     signals['broad_participation'] = None
 
-    # Count true signals (ignore None)
-    true_count = sum(v for v in signals.values() if v is True)
-    total_known = sum(v is not None for v in signals.values())
+    # Confirmed uptrend (standard "risk-on" for a trend-following stock system):
+    # benchmark above its 200MA, golden cross in effect, and the 200MA rising.
+    price = last.get('Close')
+    if pd.notna(ma50) and pd.notna(ma200) and pd.notna(price):
+        signals['uptrend'] = bool(
+            (price > ma200) and (ma50 > ma200) and bool(signals['ma200_up'])
+        )
+    else:
+        signals['uptrend'] = False
+
+    # Normalize to native Python bools. pandas/numpy comparisons return numpy.bool_,
+    # and `np.True_ is True` is False, so an identity-based count silently reads 0
+    # and the regime is stuck BEAR forever. bool() also keeps the dict JSON-safe.
+    signals = {k: (None if v is None else bool(v)) for k, v in signals.items()}
+
+    # Count known signals (ignore None / unknown internals).
+    true_count = sum(1 for v in signals.values() if v is True)
+    total_known = sum(1 for v in signals.values() if v is not None)
     score = true_count / total_known if total_known > 0 else 0.5
 
-    is_bull = (true_count >= 3) and (score >= 0.6)
+    # Bull if the benchmark is in a confirmed uptrend, OR the broader J Law
+    # bottom-signal cluster fires (early turn off a washout low).
+    is_bull = bool(signals['uptrend']) or ((true_count >= 3) and (score >= 0.6))
     return {"signals": signals, "is_bull": is_bull}

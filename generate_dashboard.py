@@ -3,7 +3,7 @@ import sqlite3
 import pandas as pd
 from datetime import datetime
 from config import DB_PATH, BENCHMARK_TICKER
-from utils import fetch_historical
+from utils import fetch_historical, compute_moving_averages, compute_volume_ma
 from market_regime import detect_bull_regime
 import yfinance as yf
 
@@ -103,10 +103,13 @@ def generate_status():
                 current_price = avg_price
                 if not data.empty:
                     if len(tickers) == 1:
-                        if not data.empty:
-                            current_price = data.iloc[-1]
+                        series = data.dropna()
+                        if not series.empty:
+                            current_price = series.iloc[-1]
                     elif ticker in data:
-                        current_price = data[ticker].dropna().iloc[-1]
+                        series = data[ticker].dropna()
+                        if not series.empty:      # all-NaN price -> keep avg_price, don't crash
+                            current_price = series.iloc[-1]
                 
                 pnl = (current_price - avg_price) * shares
                 pnl_pct = ((current_price - avg_price) / avg_price) * 100
@@ -141,6 +144,8 @@ def generate_status():
         # Regime
         benchmark_df = fetch_historical(BENCHMARK_TICKER, "2y")
         if benchmark_df is not None and not benchmark_df.empty:
+            benchmark_df = compute_moving_averages(benchmark_df)
+            benchmark_df = compute_volume_ma(benchmark_df)
             regime = detect_bull_regime(benchmark_df)
             status["regime"] = {
                 "risk_state": "RISK_ON" if regime.get('is_bull') else "RISK_OFF",
@@ -153,17 +158,34 @@ def generate_status():
             with open("signals.json", "r") as sf:
                 raw_signals = json.load(sf)
                 for sig in raw_signals:
+                    srcs = sig.get("sources") or [sig.get("source", "JLAW")]
+                    source_label = "+".join(srcs)
+                    is_conf = bool(sig.get("confluence")) or len(srcs) > 1
+                    confidence = 95 if is_conf else (88 if "MINERVINI" in srcs else 82)
                     formatted_sig = {
                         "ticker": sig["ticker"],
                         "sector_label": sig["ticker"],
-                        "headline": sig["reason"],
+                        "headline": f"[{source_label}] {sig['reason']}",
                         "latest_at": datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC"),
-                        "severity": "HIGH",
-                        "confidence": 85,
+                        "severity": "HIGH" if is_conf else "MEDIUM",
+                        "confidence": confidence,
+                        # Dual-strategy detail (for real-time buying / auditability).
+                        "source": source_label,
+                        "sources": srcs,
+                        "strategy": sig.get("strategy", ""),
+                        "signal_type": sig.get("type", ""),
+                        "entry": sig.get("price"),
+                        "stop_loss": sig.get("stop_loss"),
+                        "target": sig.get("target"),
+                        "pivot": sig.get("pivot"),
+                        "rs_rating": sig.get("rs_rating"),
+                        "risk_pct": sig.get("risk_pct"),
+                        "actionable_now": sig.get("actionable_now", False),
+                        "confluence": is_conf,
                         "breakdown": {
-                            "signal_strength": 8.5,
+                            "signal_strength": 9.5 if is_conf else 8.5,
                             "volume_confirmation": 8.0,
-                            "source_diversity": 7.5,
+                            "source_diversity": 9.0 if is_conf else 6.0,
                             "recency": 9.0,
                             "geopolitical_severity": 5.0
                         },

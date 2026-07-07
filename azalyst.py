@@ -3,10 +3,11 @@ from datetime import datetime
 from config import *
 from universe import get_universe
 from data_loader import load_stock_data
-from utils import fetch_historical
+from utils import fetch_historical, compute_moving_averages, compute_volume_ma
 from market_regime import detect_bull_regime
 from stock_screener import apply_stage2_screen
 from signal_generator import generate_entry_signals
+from minervini import compute_rs_ratings
 from risk_manager import RiskManager
 from paper_trader import init_db, get_cash, get_positions, execute_trade
 
@@ -26,7 +27,12 @@ def run_pipeline():
     if benchmark_df is None or benchmark_df.empty:
         print("Failed to fetch benchmark data.")
         return
-        
+
+    # Regime detection needs the moving averages on the benchmark (golden cross,
+    # 200MA slope). Without this the MAs are missing and the regime is stuck BEAR.
+    benchmark_df = compute_moving_averages(benchmark_df)
+    benchmark_df = compute_volume_ma(benchmark_df)
+
     regime = detect_bull_regime(benchmark_df)
     is_bull = regime.get('is_bull', False)
     print(f"Market Regime: {'BULL' if is_bull else 'BEAR'}")
@@ -35,9 +41,27 @@ def run_pipeline():
     stage2_passed = apply_stage2_screen(stock_data)
     print(f"Tickers passing Stage 2: {len(stage2_passed)}")
     
-    # Signals
-    signals = generate_entry_signals(stage2_passed, stock_data)
-    print(f"Entry Signals Generated: {len(signals)}")
+    # Relative-strength ratings across the whole universe (for the Minervini path).
+    rs_ratings = compute_rs_ratings(stock_data)
+
+    # Dual-strategy signals: J Law (Stage-2 watchlist) + Minervini (full universe,
+    # own Trend-Template selection, fires only at a valid VCP pivot buy price).
+    signals = generate_entry_signals(
+        stage2_passed, stock_data,
+        minervini_universe=list(stock_data.keys()),
+        rs_ratings=rs_ratings,
+    )
+    n_jlaw = sum(1 for s in signals if 'JLAW' in s.get('sources', []))
+    n_mrv = sum(1 for s in signals if 'MINERVINI' in s.get('sources', []))
+    n_conf = sum(1 for s in signals if s.get('confluence'))
+    print(f"Entry Signals Generated: {len(signals)} "
+          f"(J Law: {n_jlaw}, Minervini: {n_mrv}, confluence: {n_conf})")
+
+    # Persist signals immediately so the dashboard reflects them even if the
+    # execution step below raises.
+    import json
+    with open("signals.json", "w") as f:
+        json.dump(signals, f, indent=2, default=str)
     
     # Trading Logic
     cash = get_cash()
@@ -86,11 +110,6 @@ def run_pipeline():
                     print(f"BUY {shares} {ticker} @ {price} ({sig['reason']})")
                     # Update RM equity
                     rm.update_equity(get_cash()) # Approximation
-
-    # Save signals to file for dashboard
-    import json
-    with open("signals.json", "w") as f:
-        json.dump(signals, f, indent=2)
 
     print(f"[{datetime.now().isoformat()}] Pipeline execution complete.")
 

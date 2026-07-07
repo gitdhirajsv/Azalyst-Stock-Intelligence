@@ -9,10 +9,18 @@ def get_universe():
     if os.path.exists(GLOBAL_TICKER_CSV):
         df = pd.read_csv(GLOBAL_TICKER_CSV)
         # Expect column named 'ticker'
-        if 'ticker' in df.columns:
-            return df['ticker'].tolist()
-        else:
-            return df.iloc[:,0].tolist()  # first column
+        col = df['ticker'] if 'ticker' in df.columns else df.iloc[:, 0]
+        # Sanitize: drop NaN/blank rows and coerce to clean strings. A stray NaN
+        # (float) reaches yfinance as a non-string and kills a whole 500-ticker
+        # download chunk ("expected string or bytes-like object, got 'float'").
+        tickers = (
+            col.dropna()
+               .astype(str)
+               .str.strip()
+        )
+        tickers = tickers[(tickers != "") & (tickers.str.lower() != "nan")]
+        # De-duplicate while preserving order.
+        return list(dict.fromkeys(tickers.tolist()))
     else:
         # Fallback default global list
         return [

@@ -16,8 +16,14 @@ def load_stock_data(tickers):
     """
     print(f"Loading benchmark {BENCHMARK_TICKER}...")
     benchmark_df = fetch_historical(BENCHMARK_TICKER)
-    benchmark_df = compute_moving_averages(benchmark_df)
-    benchmark_df = compute_volume_ma(benchmark_df)
+    # A transient empty/failed yfinance response would make compute_moving_averages raise
+    # KeyError('Close') and abort the whole scan. Degrade gracefully: skip the RS line.
+    if benchmark_df is None or benchmark_df.empty or 'Close' not in benchmark_df.columns:
+        print(f"Warning: benchmark {BENCHMARK_TICKER} unavailable — RS line will be skipped this run.")
+        benchmark_df = None
+    else:
+        benchmark_df = compute_moving_averages(benchmark_df)
+        benchmark_df = compute_volume_ma(benchmark_df)
 
     stock_data = {}
     chunk_size = 500
@@ -60,7 +66,8 @@ def load_stock_data(tickers):
                     
                 df = compute_moving_averages(df, MA_PERIODS)
                 df = compute_volume_ma(df)
-                df['RS'] = compute_rs_line(df, benchmark_df)
+                if benchmark_df is not None:
+                    df['RS'] = compute_rs_line(df, benchmark_df)
                 stock_data[t] = df
             except Exception as e:
                 pass

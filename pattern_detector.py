@@ -1,4 +1,5 @@
 import numpy as np
+import pandas as pd
 from utils import find_swing_highs_lows, draw_trendline
 from scipy.signal import argrelextrema
 
@@ -27,14 +28,23 @@ def detect_vcp(df, lookback=180):
         return None
 
     recent_highs = highs[recent_highs_idx]
-    recent_lows = lows[recent_lows_idx]
 
-    # Contractions: last amplitude should be <10%
-    last_amp = (recent_highs[-1] - recent_lows[-1]) / recent_highs[-1]
-    if last_amp > 0.10:
+    # Pivot = high of the final (most recent) contraction — the "line of least resistance".
+    pivot_idx = recent_highs_idx[-1]
+    pivot = float(recent_highs[-1])
+
+    # Final-contraction low = the lowest low AFTER the pivot swing high (the pullback that
+    # precedes the breakout). Pairing the pivot high with an independently-filtered last
+    # swing low has no ordering guarantee: the last swing low can predate the pivot high,
+    # yielding a negative amplitude (which slips past a `> 0.10` filter) and a stop above
+    # the pivot. Deriving the low from the post-pivot window keeps base_low < pivot.
+    base_low = float(np.min(lows[pivot_idx:]))
+    last_amp = (pivot - base_low) / pivot
+    # Require a genuine tight contraction: 0 < amplitude <= 10%.
+    if not (0 < last_amp <= 0.10):
         return None
 
-    # Volume: second half < first half
+    # Volume: second half < first half (dry-up across the base)
     half = len(volumes)//2
     if half < 10:
         return None
@@ -43,16 +53,17 @@ def detect_vcp(df, lookback=180):
     if vol2 > vol1 * 0.8:
         return None
 
-    pivot = recent_highs[-1]
-    # Breakout condition: close > pivot and volume > 50MA volume?
-    # We'll let signal generator decide, but here we just return the pivot info.
+    # Breakout volume basis: current bar vs the prior 50-day average (excluding the
+    # current bar), consistent with the Minervini 1.4x-avg confirmation.
+    vol_ref = np.mean(volumes[-51:-1]) if len(volumes) > 51 else np.mean(volumes[:-1])
     return {
         'pivot': pivot,
+        'base_low': base_low,   # low of the final contraction (stop reference), < pivot
         'contraction_pct': last_amp * 100,
-        'vol_contracting': vol2 < vol1 * 0.8,
-        'breakout_now': closes[-1] > pivot and volumes[-1] > np.mean(volumes[-20:]) * 1.5,
-        'close': closes[-1],
-        'volume': volumes[-1]
+        'vol_contracting': bool(vol2 < vol1 * 0.8),
+        'breakout_now': bool(closes[-1] > pivot and vol_ref > 0 and volumes[-1] > vol_ref * 1.4),
+        'close': float(closes[-1]),
+        'volume': float(volumes[-1])
     }
 
 def detect_meta_pullback(df, pivot, lookback=30):
