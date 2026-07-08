@@ -2,15 +2,15 @@
   {
     "ticker": "RCUS",
     "type": "BUY_PULLBACK",
-    "price": 29.889999389648438,
+    "price": 30.309999465942383,
     "stop_loss": 30.782950592041015,
-    "reason": "Pullback to BOL, META score=3",
+    "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
     "sources": [
       "JLAW"
     ],
-    "rs_rating": 92,
+    "rs_rating": 93,
     "rev_growth_yoy": null,
     "annual_rev_growth": null,
     "sales_accelerating": null,
