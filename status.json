@@ -1,10 +1,10 @@
 {
-  "portfolio_value": 99486.09,
+  "portfolio_value": 99256.58,
   "total_deposited": 100000,
   "cash": 50169.08,
-  "change_raw": -0.51,
-  "change": "-0.51%",
-  "unrealised_str": "-$513.91",
+  "change_raw": -0.74,
+  "change": "-0.74%",
+  "unrealised_str": "-$743.42",
   "realised_str": "$0.00",
   "closed_trades": 0,
   "usd_inr_rate": 1.0,
@@ -14,22 +14,22 @@
       "sector": "Unclassified",
       "source": "JLAW",
       "rs_rating": 93,
-      "pnl_pct": -1.82,
-      "pnl_pct_str": "-1.82%",
-      "pnl": -454.3,
-      "pnl_str": "-$454.30",
-      "market_value": 24532.20063018799
+      "pnl_pct": -1.12,
+      "pnl_pct_str": "-1.12%",
+      "pnl": -280.84,
+      "pnl_str": "-$280.84",
+      "market_value": 24705.659873962402
     },
     {
       "ticker": "PACS",
       "sector": "Unclassified",
       "source": "JLAW",
       "rs_rating": 94,
-      "pnl_pct": -0.24,
-      "pnl_pct_str": "-0.24%",
-      "pnl": -59.61,
-      "pnl_str": "-$59.61",
-      "market_value": 24784.800842285156
+      "pnl_pct": -1.86,
+      "pnl_pct_str": "-1.86%",
+      "pnl": -462.58,
+      "pnl_str": "-$462.58",
+      "market_value": 24381.838989257812
     }
   ],
   "closed_trades_list": [],
@@ -50,43 +50,43 @@
     {
       "label": "SPX",
       "ticker": "^GSPC",
-      "price": 7457.48,
-      "change_str": "-0.62%",
-      "direction": "down"
-    },
-    {
-      "label": "NDX",
-      "ticker": "^IXIC",
-      "price": 25706.92,
-      "change_str": "-0.43%",
+      "price": 7478.97,
+      "change_str": "-0.33%",
       "direction": "down"
     },
     {
       "label": "DJI",
       "ticker": "^DJI",
-      "price": 52220.35,
-      "change_str": "-1.33%",
+      "price": 52342.64,
+      "change_str": "-1.10%",
       "direction": "down"
     },
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4050.7,
-      "change_str": "-2.28%",
+      "price": 4079.4,
+      "change_str": "-1.59%",
       "direction": "down"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 75.06,
-      "change_str": "+6.56%",
+      "price": 73.64,
+      "change_str": "+4.54%",
       "direction": "up"
+    },
+    {
+      "label": "BTC",
+      "ticker": "BTC-USD",
+      "price": 62136.69,
+      "change_str": "-1.83%",
+      "direction": "down"
     },
     {
       "label": "VIX",
       "ticker": "^VIX",
-      "price": 18.03,
-      "change_str": "+11.78%",
+      "price": 16.93,
+      "change_str": "+4.96%",
       "direction": "up"
     }
   ],
@@ -96,38 +96,10 @@
   },
   "signals": [
     {
-      "ticker": "PACS",
-      "sector_label": "PACS",
-      "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-07-08 16:22:36 UTC",
-      "severity": "MEDIUM",
-      "confidence": 82,
-      "source": "JLAW",
-      "sources": [
-        "JLAW"
-      ],
-      "strategy": "J Law (Stage 2 / VCP / META)",
-      "signal_type": "BUY_PULLBACK",
-      "entry": 45.007999420166016,
-      "stop_loss": 44.51329940795898,
-      "target": null,
-      "pivot": null,
-      "rs_rating": 94,
-      "risk_pct": null,
-      "actionable_now": false,
-      "confluence": false,
-      "rev_growth_yoy": null,
-      "annual_rev_growth": null,
-      "sales_accelerating": null,
-      "fundamentals_verified": false,
-      "fundamentals_ok": null,
-      "fundamentals_detail": "revenue data unavailable"
-    },
-    {
       "ticker": "RCUS",
       "sector_label": "RCUS",
-      "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-07-08 16:22:36 UTC",
+      "headline": "[JLAW] Pullback to BOL, META score=3",
+      "latest_at": "2026-07-08 18:03:33 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -136,7 +108,7 @@
       ],
       "strategy": "J Law (Stage 2 / VCP / META)",
       "signal_type": "BUY_PULLBACK",
-      "entry": 29.579999923706055,
+      "entry": 29.889999389648438,
       "stop_loss": 30.782950592041015,
       "target": null,
       "pivot": null,
@@ -153,14 +125,14 @@
     }
   ],
   "logs": [
-    "2026-07-08 16:22:35 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-07-08 18:03:33 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-07-08 16:22:35 UTC",
+  "generated_at": "2026-07-08 18:03:33 UTC",
   "top_signal": {
-    "ticker": "PACS",
-    "sector_label": "PACS",
-    "headline": "[JLAW] Pullback to BOL, META score=2",
-    "latest_at": "2026-07-08 16:22:36 UTC",
+    "ticker": "RCUS",
+    "sector_label": "RCUS",
+    "headline": "[JLAW] Pullback to BOL, META score=3",
+    "latest_at": "2026-07-08 18:03:33 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
@@ -169,11 +141,11 @@
     ],
     "strategy": "J Law (Stage 2 / VCP / META)",
     "signal_type": "BUY_PULLBACK",
-    "entry": 45.007999420166016,
-    "stop_loss": 44.51329940795898,
+    "entry": 29.889999389648438,
+    "stop_loss": 30.782950592041015,
     "target": null,
     "pivot": null,
-    "rs_rating": 94,
+    "rs_rating": 92,
     "risk_pct": null,
     "actionable_now": false,
     "confluence": false,
