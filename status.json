@@ -77,13 +77,6 @@
       "direction": "up"
     },
     {
-      "label": "NDX",
-      "ticker": "^IXIC",
-      "price": 26206.89,
-      "change_str": "+1.30%",
-      "direction": "up"
-    },
-    {
       "label": "DJI",
       "ticker": "^DJI",
       "price": 52487.41,
@@ -93,22 +86,22 @@
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4133.1,
-      "change_str": "+1.53%",
+      "price": 4132.2,
+      "change_str": "+1.51%",
       "direction": "up"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 71.8,
-      "change_str": "-2.34%",
+      "price": 71.85,
+      "change_str": "-2.27%",
       "direction": "down"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 63322.5,
-      "change_str": "+1.71%",
+      "price": 63203.3,
+      "change_str": "+1.52%",
       "direction": "up"
     },
     {
@@ -128,7 +121,7 @@
       "ticker": "PACS",
       "sector_label": "PACS",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-07-09 21:06:50 UTC",
+      "latest_at": "2026-07-09 22:54:21 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -156,7 +149,7 @@
       "ticker": "RCUS",
       "sector_label": "RCUS",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-07-09 21:06:50 UTC",
+      "latest_at": "2026-07-09 22:54:21 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -182,14 +175,14 @@
     }
   ],
   "logs": [
-    "2026-07-09 21:06:49 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-07-09 22:54:21 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-07-09 21:06:49 UTC",
+  "generated_at": "2026-07-09 22:54:21 UTC",
   "top_signal": {
     "ticker": "PACS",
     "sector_label": "PACS",
     "headline": "[JLAW] Pullback to BOL, META score=2",
-    "latest_at": "2026-07-09 21:06:50 UTC",
+    "latest_at": "2026-07-09 22:54:21 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
