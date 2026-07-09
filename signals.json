@@ -1,8 +1,27 @@
 [
   {
+    "ticker": "PACS",
+    "type": "BUY_PULLBACK",
+    "price": 43.81999969482422,
+    "stop_loss": 44.51329940795898,
+    "reason": "Pullback to BOL, META score=2",
+    "source": "JLAW",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW"
+    ],
+    "rs_rating": 93,
+    "rev_growth_yoy": null,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_detail": "revenue data unavailable",
+    "fundamentals_verified": false,
+    "fundamentals_ok": null
+  },
+  {
     "ticker": "RCUS",
     "type": "BUY_PULLBACK",
-    "price": 30.059999465942383,
+    "price": 29.959999084472656,
     "stop_loss": 30.782950592041015,
     "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
