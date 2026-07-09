@@ -1,16 +1,54 @@
 [
   {
-    "ticker": "RCUS",
+    "ticker": "CNC",
     "type": "BUY_PULLBACK",
-    "price": 30.260000228881836,
-    "stop_loss": 30.782950592041015,
+    "price": 66.54000091552734,
+    "stop_loss": 67.21130088806152,
     "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
     "sources": [
       "JLAW"
     ],
-    "rs_rating": 93,
+    "rs_rating": 90,
+    "rev_growth_yoy": null,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_detail": "revenue data unavailable",
+    "fundamentals_verified": false,
+    "fundamentals_ok": null
+  },
+  {
+    "ticker": "PACS",
+    "type": "BUY_PULLBACK",
+    "price": 45.099998474121094,
+    "stop_loss": 44.51329940795898,
+    "reason": "Pullback to BOL, META score=2",
+    "source": "JLAW",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW"
+    ],
+    "rs_rating": 94,
+    "rev_growth_yoy": null,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_detail": "revenue data unavailable",
+    "fundamentals_verified": false,
+    "fundamentals_ok": null
+  },
+  {
+    "ticker": "RCUS",
+    "type": "BUY_PULLBACK",
+    "price": 30.360000610351562,
+    "stop_loss": 30.782950592041015,
+    "reason": "Pullback to BOL, META score=3",
+    "source": "JLAW",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW"
+    ],
+    "rs_rating": 92,
     "rev_growth_yoy": null,
     "annual_rev_growth": null,
     "sales_accelerating": null,
