@@ -1,10 +1,10 @@
 {
-  "portfolio_value": 99824.72,
+  "portfolio_value": 97190.13,
   "total_deposited": 100000,
   "cash": 293.48,
-  "change_raw": -0.18,
-  "change": "-0.18%",
-  "unrealised_str": "-$175.28",
+  "change_raw": -2.81,
+  "change": "-2.81%",
+  "unrealised_str": "-$2809.87",
   "realised_str": "$0.00",
   "closed_trades": 0,
   "usd_inr_rate": 1.0,
@@ -14,44 +14,44 @@
       "sector": "Unclassified",
       "source": "JLAW",
       "rs_rating": 93,
-      "pnl_pct": -0.96,
-      "pnl_pct_str": "-0.96%",
-      "pnl": -239.54,
-      "pnl_str": "-$239.54",
-      "market_value": 24746.959243774414
+      "pnl_pct": -5.17,
+      "pnl_pct_str": "-5.17%",
+      "pnl": -1292.69,
+      "pnl_str": "-$1292.69",
+      "market_value": 23693.80955886841
     },
     {
       "ticker": "PACS",
       "sector": "Unclassified",
       "source": "JLAW",
       "rs_rating": 94,
-      "pnl_pct": -2.64,
-      "pnl_pct_str": "-2.64%",
-      "pnl": -655.78,
-      "pnl_str": "-$655.78",
-      "market_value": 24188.63983154297
+      "pnl_pct": -5.53,
+      "pnl_pct_str": "-5.53%",
+      "pnl": -1373.38,
+      "pnl_str": "-$1373.38",
+      "market_value": 23471.040252685547
     },
     {
       "ticker": "CNC",
       "sector": "Healthcare / Healthcare Plans",
       "source": "JLAW",
       "rs_rating": 90,
-      "pnl_pct": 1.59,
-      "pnl_pct_str": "+1.59%",
-      "pnl": 398.56,
-      "pnl_str": "+$398.56",
-      "market_value": 25417.59942626953
+      "pnl_pct": 1.2,
+      "pnl_pct_str": "+1.20%",
+      "pnl": 300.8,
+      "pnl_str": "+$300.80",
+      "market_value": 25319.838623046875
     },
     {
       "ticker": "ROIV",
       "sector": "Healthcare / Biotechnology",
       "source": "JLAW",
       "rs_rating": 92,
-      "pnl_pct": 1.29,
-      "pnl_pct_str": "+1.29%",
-      "pnl": 321.48,
-      "pnl_str": "+$321.48",
-      "market_value": 25178.040939331055
+      "pnl_pct": -1.79,
+      "pnl_pct_str": "-1.79%",
+      "pnl": -444.6,
+      "pnl_str": "-$444.60",
+      "market_value": 24411.959060668945
     }
   ],
   "closed_trades_list": [],
@@ -73,10 +73,66 @@
     "risk_state": "RISK_ON",
     "vol_regime": "LOW_VOL"
   },
-  "signals": [],
-  "logs": [
-    "2026-07-10 12:47:21 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+  "signals": [
+    {
+      "ticker": "OSCR",
+      "sector_label": "OSCR",
+      "headline": "[JLAW] Pullback to BOL, META score=3",
+      "latest_at": "2026-07-10 16:44:20 UTC",
+      "severity": "MEDIUM",
+      "confidence": 82,
+      "source": "JLAW",
+      "sources": [
+        "JLAW"
+      ],
+      "strategy": "J Law (Stage 2 / VCP / META)",
+      "signal_type": "BUY_PULLBACK",
+      "entry": 30.729999542236328,
+      "stop_loss": 32.10699851989746,
+      "target": null,
+      "pivot": null,
+      "rs_rating": 91,
+      "risk_pct": null,
+      "actionable_now": false,
+      "confluence": false,
+      "rev_growth_yoy": null,
+      "annual_rev_growth": null,
+      "sales_accelerating": null,
+      "fundamentals_verified": false,
+      "fundamentals_ok": null,
+      "fundamentals_detail": "revenue data unavailable"
+    }
   ],
-  "generated_at": "2026-07-10 12:47:21 UTC",
-  "top_signal": null
+  "logs": [
+    "2026-07-10 16:44:20 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+  ],
+  "generated_at": "2026-07-10 16:44:20 UTC",
+  "top_signal": {
+    "ticker": "OSCR",
+    "sector_label": "OSCR",
+    "headline": "[JLAW] Pullback to BOL, META score=3",
+    "latest_at": "2026-07-10 16:44:20 UTC",
+    "severity": "MEDIUM",
+    "confidence": 82,
+    "source": "JLAW",
+    "sources": [
+      "JLAW"
+    ],
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "signal_type": "BUY_PULLBACK",
+    "entry": 30.729999542236328,
+    "stop_loss": 32.10699851989746,
+    "target": null,
+    "pivot": null,
+    "rs_rating": 91,
+    "risk_pct": null,
+    "actionable_now": false,
+    "confluence": false,
+    "rev_growth_yoy": null,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_verified": false,
+    "fundamentals_ok": null,
+    "fundamentals_detail": "revenue data unavailable"
+  }
 }
