@@ -107,8 +107,8 @@
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 64085.0,
-      "change_str": "+1.41%",
+      "price": 64162.27,
+      "change_str": "+1.53%",
       "direction": "up"
     },
     {
@@ -128,7 +128,7 @@
       "ticker": "OSCR",
       "sector_label": "OSCR",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-07-10 22:39:43 UTC",
+      "latest_at": "2026-07-10 23:35:26 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -154,14 +154,14 @@
     }
   ],
   "logs": [
-    "2026-07-10 22:39:43 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-07-10 23:35:26 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-07-10 22:39:43 UTC",
+  "generated_at": "2026-07-10 23:35:26 UTC",
   "top_signal": {
     "ticker": "OSCR",
     "sector_label": "OSCR",
     "headline": "[JLAW] Pullback to BOL, META score=2",
-    "latest_at": "2026-07-10 22:39:43 UTC",
+    "latest_at": "2026-07-10 23:35:26 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
