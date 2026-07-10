@@ -77,6 +77,13 @@
       "direction": "up"
     },
     {
+      "label": "NDX",
+      "ticker": "^IXIC",
+      "price": 26281.61,
+      "change_str": "+0.29%",
+      "direction": "up"
+    },
+    {
       "label": "DJI",
       "ticker": "^DJI",
       "price": 52637.01,
@@ -86,22 +93,22 @@
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4121.3,
-      "change_str": "-0.23%",
+      "price": 4128.9,
+      "change_str": "-0.04%",
       "direction": "down"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 71.52,
-      "change_str": "-0.78%",
+      "price": 71.51,
+      "change_str": "-0.79%",
       "direction": "down"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 63692.96,
-      "change_str": "+0.79%",
+      "price": 64085.0,
+      "change_str": "+1.41%",
       "direction": "up"
     },
     {
@@ -121,7 +128,7 @@
       "ticker": "OSCR",
       "sector_label": "OSCR",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-07-10 20:58:40 UTC",
+      "latest_at": "2026-07-10 22:39:43 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -147,14 +154,14 @@
     }
   ],
   "logs": [
-    "2026-07-10 20:58:39 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-07-10 22:39:43 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-07-10 20:58:39 UTC",
+  "generated_at": "2026-07-10 22:39:43 UTC",
   "top_signal": {
     "ticker": "OSCR",
     "sector_label": "OSCR",
     "headline": "[JLAW] Pullback to BOL, META score=2",
-    "latest_at": "2026-07-10 20:58:40 UTC",
+    "latest_at": "2026-07-10 22:39:43 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
