@@ -98,18 +98,18 @@
       "direction": "down"
     },
     {
-      "label": "OIL",
-      "ticker": "CL=F",
-      "price": 71.41,
-      "change_str": "-0.93%",
-      "direction": "down"
-    },
-    {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 63965.71,
-      "change_str": "+0.26%",
+      "price": 63945.23,
+      "change_str": "+0.22%",
       "direction": "up"
+    },
+    {
+      "label": "VIX",
+      "ticker": "^VIX",
+      "price": 15.03,
+      "change_str": "-5.11%",
+      "direction": "down"
     }
   ],
   "regime": {
@@ -121,7 +121,7 @@
       "ticker": "OSCR",
       "sector_label": "OSCR",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-07-12 08:45:12 UTC",
+      "latest_at": "2026-07-12 14:10:20 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -147,14 +147,14 @@
     }
   ],
   "logs": [
-    "2026-07-12 08:45:12 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-07-12 14:10:20 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-07-12 08:45:12 UTC",
+  "generated_at": "2026-07-12 14:10:20 UTC",
   "top_signal": {
     "ticker": "OSCR",
     "sector_label": "OSCR",
     "headline": "[JLAW] Pullback to BOL, META score=2",
-    "latest_at": "2026-07-12 08:45:12 UTC",
+    "latest_at": "2026-07-12 14:10:20 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
