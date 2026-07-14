@@ -1,10 +1,10 @@
 {
-  "portfolio_value": 97713.55,
+  "portfolio_value": 98211.56,
   "total_deposited": 100000,
   "cash": 293.48,
-  "change_raw": -2.29,
-  "change": "-2.29%",
-  "unrealised_str": "-$2286.45",
+  "change_raw": -1.79,
+  "change": "-1.79%",
+  "unrealised_str": "-$1788.44",
   "realised_str": "$0.00",
   "closed_trades": 0,
   "usd_inr_rate": 1.0,
@@ -14,44 +14,44 @@
       "sector": "Unclassified",
       "source": "JLAW",
       "rs_rating": 93,
-      "pnl_pct": -6.43,
-      "pnl_pct_str": "-6.43%",
-      "pnl": -1606.57,
-      "pnl_str": "-$1606.57",
-      "market_value": 23379.930252075195
+      "pnl_pct": -6.31,
+      "pnl_pct_str": "-6.31%",
+      "pnl": -1577.66,
+      "pnl_str": "-$1577.66",
+      "market_value": 23408.840126037598
     },
     {
       "ticker": "PACS",
       "sector": "Unclassified",
       "source": "JLAW",
       "rs_rating": 94,
-      "pnl_pct": -1.44,
-      "pnl_pct_str": "-1.44%",
-      "pnl": -357.7,
-      "pnl_str": "-$357.70",
-      "market_value": 24486.720336914062
+      "pnl_pct": -0.2,
+      "pnl_pct_str": "-0.20%",
+      "pnl": -48.58,
+      "pnl_str": "-$48.58",
+      "market_value": 24795.838989257812
     },
     {
       "ticker": "CNC",
       "sector": "Healthcare / Healthcare Plans",
       "source": "JLAW",
       "rs_rating": 90,
-      "pnl_pct": 2.69,
-      "pnl_pct_str": "+2.69%",
-      "pnl": 673.04,
-      "pnl_str": "+$673.04",
-      "market_value": 25692.080688476562
+      "pnl_pct": 3.26,
+      "pnl_pct_str": "+3.26%",
+      "pnl": 815.92,
+      "pnl_str": "+$815.92",
+      "market_value": 25834.95965576172
     },
     {
       "ticker": "ROIV",
       "sector": "Healthcare / Biotechnology",
       "source": "JLAW",
       "rs_rating": 92,
-      "pnl_pct": -4.0,
-      "pnl_pct_str": "-4.00%",
-      "pnl": -995.22,
-      "pnl_str": "-$995.22",
-      "market_value": 23861.33885192871
+      "pnl_pct": -3.94,
+      "pnl_pct_str": "-3.94%",
+      "pnl": -978.12,
+      "pnl_str": "-$978.12",
+      "market_value": 23878.439895629883
     }
   ],
   "closed_trades_list": [],
@@ -72,43 +72,50 @@
     {
       "label": "SPX",
       "ticker": "^GSPC",
-      "price": 7545.04,
-      "change_str": "+0.40%",
+      "price": 7543.6,
+      "change_str": "+0.38%",
       "direction": "up"
     },
     {
       "label": "NDX",
       "ticker": "^IXIC",
-      "price": 26130.81,
-      "change_str": "+1.00%",
+      "price": 26107.01,
+      "change_str": "+0.90%",
       "direction": "up"
     },
     {
       "label": "DJI",
       "ticker": "^DJI",
-      "price": 52428.24,
-      "change_str": "-0.13%",
-      "direction": "down"
+      "price": 52508.27,
+      "change_str": "+0.02%",
+      "direction": "up"
     },
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4068.5,
-      "change_str": "+1.79%",
+      "price": 4062.4,
+      "change_str": "+1.64%",
       "direction": "up"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 78.97,
-      "change_str": "+1.06%",
+      "price": 79.69,
+      "change_str": "+1.98%",
+      "direction": "up"
+    },
+    {
+      "label": "BTC",
+      "ticker": "BTC-USD",
+      "price": 64461.98,
+      "change_str": "+3.57%",
       "direction": "up"
     },
     {
       "label": "VIX",
       "ticker": "^VIX",
-      "price": 16.41,
-      "change_str": "-4.37%",
+      "price": 16.39,
+      "change_str": "-4.49%",
       "direction": "down"
     }
   ],
@@ -120,8 +127,8 @@
     {
       "ticker": "OSCR",
       "sector_label": "OSCR",
-      "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-07-14 17:47:35 UTC",
+      "headline": "[JLAW] Pullback to BOL, META score=3",
+      "latest_at": "2026-07-14 20:05:17 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -130,39 +137,11 @@
       ],
       "strategy": "J Law (Stage 2 / VCP / META)",
       "signal_type": "BUY_PULLBACK",
-      "entry": 30.155000686645508,
+      "entry": 31.07900047302246,
       "stop_loss": 32.10699851989746,
       "target": null,
       "pivot": null,
-      "rs_rating": 92,
-      "risk_pct": null,
-      "actionable_now": false,
-      "confluence": false,
-      "rev_growth_yoy": null,
-      "annual_rev_growth": null,
-      "sales_accelerating": null,
-      "fundamentals_verified": false,
-      "fundamentals_ok": null,
-      "fundamentals_detail": "revenue data unavailable"
-    },
-    {
-      "ticker": "ROIV",
-      "sector_label": "ROIV",
-      "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-07-14 17:47:35 UTC",
-      "severity": "MEDIUM",
-      "confidence": 82,
-      "source": "JLAW",
-      "sources": [
-        "JLAW"
-      ],
-      "strategy": "J Law (Stage 2 / VCP / META)",
-      "signal_type": "BUY_PULLBACK",
-      "entry": 34.88999938964844,
-      "stop_loss": 35.89,
-      "target": null,
-      "pivot": null,
-      "rs_rating": 92,
+      "rs_rating": 93,
       "risk_pct": null,
       "actionable_now": false,
       "confluence": false,
@@ -175,14 +154,14 @@
     }
   ],
   "logs": [
-    "2026-07-14 17:47:34 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-07-14 20:05:16 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-07-14 17:47:34 UTC",
+  "generated_at": "2026-07-14 20:05:16 UTC",
   "top_signal": {
     "ticker": "OSCR",
     "sector_label": "OSCR",
-    "headline": "[JLAW] Pullback to BOL, META score=2",
-    "latest_at": "2026-07-14 17:47:35 UTC",
+    "headline": "[JLAW] Pullback to BOL, META score=3",
+    "latest_at": "2026-07-14 20:05:17 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
@@ -191,11 +170,11 @@
     ],
     "strategy": "J Law (Stage 2 / VCP / META)",
     "signal_type": "BUY_PULLBACK",
-    "entry": 30.155000686645508,
+    "entry": 31.07900047302246,
     "stop_loss": 32.10699851989746,
     "target": null,
     "pivot": null,
-    "rs_rating": 92,
+    "rs_rating": 93,
     "risk_pct": null,
     "actionable_now": false,
     "confluence": false,
