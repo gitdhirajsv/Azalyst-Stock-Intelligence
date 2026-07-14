@@ -1,10 +1,10 @@
 {
-  "portfolio_value": 96646.22,
+  "portfolio_value": 97603.65,
   "total_deposited": 100000,
   "cash": 293.48,
-  "change_raw": -3.35,
-  "change": "-3.35%",
-  "unrealised_str": "-$3353.78",
+  "change_raw": -2.4,
+  "change": "-2.40%",
+  "unrealised_str": "-$2396.35",
   "realised_str": "$0.00",
   "closed_trades": 0,
   "usd_inr_rate": 1.0,
@@ -14,44 +14,44 @@
       "sector": "Unclassified",
       "source": "JLAW",
       "rs_rating": 93,
-      "pnl_pct": -7.21,
-      "pnl_pct_str": "-7.21%",
-      "pnl": -1800.68,
-      "pnl_str": "-$1800.68",
-      "market_value": 23185.819747924805
+      "pnl_pct": -6.21,
+      "pnl_pct_str": "-6.21%",
+      "pnl": -1552.88,
+      "pnl_str": "-$1552.88",
+      "market_value": 23433.620693206787
     },
     {
       "ticker": "PACS",
       "sector": "Unclassified",
       "source": "JLAW",
       "rs_rating": 94,
-      "pnl_pct": -3.86,
-      "pnl_pct_str": "-3.86%",
-      "pnl": -959.38,
-      "pnl_str": "-$959.38",
-      "market_value": 23885.040252685547
+      "pnl_pct": -3.19,
+      "pnl_pct_str": "-3.19%",
+      "pnl": -793.78,
+      "pnl_str": "-$793.78",
+      "market_value": 24050.63983154297
     },
     {
       "ticker": "CNC",
       "sector": "Healthcare / Healthcare Plans",
       "source": "JLAW",
       "rs_rating": 90,
-      "pnl_pct": 2.63,
-      "pnl_pct_str": "+2.63%",
-      "pnl": 658.0,
-      "pnl_str": "+$658.00",
-      "market_value": 25677.04034423828
+      "pnl_pct": 3.4,
+      "pnl_pct_str": "+3.40%",
+      "pnl": 849.76,
+      "pnl_str": "+$849.76",
+      "market_value": 25868.801147460938
     },
     {
       "ticker": "ROIV",
       "sector": "Healthcare / Biotechnology",
       "source": "JLAW",
       "rs_rating": 92,
-      "pnl_pct": -5.04,
-      "pnl_pct_str": "-5.04%",
-      "pnl": -1251.72,
-      "pnl_str": "-$1251.72",
-      "market_value": 23604.83885192871
+      "pnl_pct": -3.62,
+      "pnl_pct_str": "-3.62%",
+      "pnl": -899.46,
+      "pnl_str": "-$899.46",
+      "market_value": 23957.101043701172
     }
   ],
   "closed_trades_list": [],
@@ -72,51 +72,51 @@
     {
       "label": "SPX",
       "ticker": "^GSPC",
-      "price": 7515.34,
-      "change_str": "-0.79%",
-      "direction": "down"
+      "price": 7529.17,
+      "change_str": "+0.18%",
+      "direction": "up"
     },
     {
       "label": "NDX",
       "ticker": "^IXIC",
-      "price": 25873.18,
-      "change_str": "-1.55%",
-      "direction": "down"
+      "price": 26050.21,
+      "change_str": "+0.68%",
+      "direction": "up"
     },
     {
       "label": "DJI",
       "ticker": "^DJI",
-      "price": 52498.64,
-      "change_str": "-0.26%",
+      "price": 52421.08,
+      "change_str": "-0.15%",
       "direction": "down"
     },
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4038.4,
-      "change_str": "+1.04%",
+      "price": 4070.8,
+      "change_str": "+1.85%",
       "direction": "up"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 79.67,
-      "change_str": "+1.96%",
+      "price": 79.46,
+      "change_str": "+1.69%",
       "direction": "up"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 62722.46,
-      "change_str": "+0.78%",
+      "price": 64830.78,
+      "change_str": "+4.16%",
       "direction": "up"
     },
     {
       "label": "VIX",
       "ticker": "^VIX",
-      "price": 17.31,
-      "change_str": "+0.87%",
-      "direction": "up"
+      "price": 16.62,
+      "change_str": "-3.15%",
+      "direction": "down"
     }
   ],
   "regime": {
@@ -127,8 +127,8 @@
     {
       "ticker": "OSCR",
       "sector_label": "OSCR",
-      "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-07-14 12:08:14 UTC",
+      "headline": "[JLAW] Pullback to BOL, META score=3",
+      "latest_at": "2026-07-14 16:13:00 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -137,11 +137,11 @@
       ],
       "strategy": "J Law (Stage 2 / VCP / META)",
       "signal_type": "BUY_PULLBACK",
-      "entry": 31.600000381469727,
+      "entry": 30.579999923706055,
       "stop_loss": 32.10699851989746,
       "target": null,
       "pivot": null,
-      "rs_rating": 94,
+      "rs_rating": 93,
       "risk_pct": null,
       "actionable_now": false,
       "confluence": false,
@@ -155,8 +155,8 @@
     {
       "ticker": "PACS",
       "sector_label": "PACS",
-      "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-07-14 12:08:14 UTC",
+      "headline": "[JLAW] Pullback to BOL, META score=3",
+      "latest_at": "2026-07-14 16:13:00 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -165,11 +165,11 @@
       ],
       "strategy": "J Law (Stage 2 / VCP / META)",
       "signal_type": "BUY_PULLBACK",
-      "entry": 43.27000045776367,
+      "entry": 43.54999923706055,
       "stop_loss": 44.51329940795898,
       "target": null,
       "pivot": null,
-      "rs_rating": 95,
+      "rs_rating": 94,
       "risk_pct": null,
       "actionable_now": false,
       "confluence": false,
@@ -182,14 +182,14 @@
     }
   ],
   "logs": [
-    "2026-07-14 12:08:13 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-07-14 16:13:00 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-07-14 12:08:13 UTC",
+  "generated_at": "2026-07-14 16:13:00 UTC",
   "top_signal": {
     "ticker": "OSCR",
     "sector_label": "OSCR",
-    "headline": "[JLAW] Pullback to BOL, META score=2",
-    "latest_at": "2026-07-14 12:08:14 UTC",
+    "headline": "[JLAW] Pullback to BOL, META score=3",
+    "latest_at": "2026-07-14 16:13:00 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
@@ -198,11 +198,11 @@
     ],
     "strategy": "J Law (Stage 2 / VCP / META)",
     "signal_type": "BUY_PULLBACK",
-    "entry": 31.600000381469727,
+    "entry": 30.579999923706055,
     "stop_loss": 32.10699851989746,
     "target": null,
     "pivot": null,
-    "rs_rating": 94,
+    "rs_rating": 93,
     "risk_pct": null,
     "actionable_now": false,
     "confluence": false,
