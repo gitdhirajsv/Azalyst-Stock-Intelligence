@@ -70,6 +70,13 @@
   },
   "market_snapshot": [
     {
+      "label": "SPX",
+      "ticker": "^GSPC",
+      "price": 7515.34,
+      "change_str": "-0.79%",
+      "direction": "down"
+    },
+    {
       "label": "NDX",
       "ticker": "^IXIC",
       "price": 25873.18,
@@ -86,29 +93,29 @@
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4029.2,
-      "change_str": "+0.81%",
+      "price": 4038.4,
+      "change_str": "+1.04%",
       "direction": "up"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 80.36,
-      "change_str": "+2.84%",
+      "price": 79.67,
+      "change_str": "+1.96%",
       "direction": "up"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 62685.1,
-      "change_str": "+0.72%",
+      "price": 62722.46,
+      "change_str": "+0.78%",
       "direction": "up"
     },
     {
       "label": "VIX",
       "ticker": "^VIX",
-      "price": 17.24,
-      "change_str": "+0.47%",
+      "price": 17.31,
+      "change_str": "+0.87%",
       "direction": "up"
     }
   ],
@@ -121,7 +128,7 @@
       "ticker": "OSCR",
       "sector_label": "OSCR",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-07-14 08:41:28 UTC",
+      "latest_at": "2026-07-14 12:08:14 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -149,7 +156,7 @@
       "ticker": "PACS",
       "sector_label": "PACS",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-07-14 08:41:28 UTC",
+      "latest_at": "2026-07-14 12:08:14 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -175,14 +182,14 @@
     }
   ],
   "logs": [
-    "2026-07-14 08:41:28 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-07-14 12:08:13 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-07-14 08:41:28 UTC",
+  "generated_at": "2026-07-14 12:08:13 UTC",
   "top_signal": {
     "ticker": "OSCR",
     "sector_label": "OSCR",
     "headline": "[JLAW] Pullback to BOL, META score=2",
-    "latest_at": "2026-07-14 08:41:28 UTC",
+    "latest_at": "2026-07-14 12:08:14 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
