@@ -68,121 +68,15 @@
     "best": null,
     "worst": null
   },
-  "market_snapshot": [
-    {
-      "label": "SPX",
-      "ticker": "^GSPC",
-      "price": 7515.34,
-      "change_str": "-0.79%",
-      "direction": "down"
-    },
-    {
-      "label": "NDX",
-      "ticker": "^IXIC",
-      "price": 25873.18,
-      "change_str": "-1.55%",
-      "direction": "down"
-    },
-    {
-      "label": "DJI",
-      "ticker": "^DJI",
-      "price": 52498.64,
-      "change_str": "-0.26%",
-      "direction": "down"
-    },
-    {
-      "label": "GOLD",
-      "ticker": "GC=F",
-      "price": 4032.9,
-      "change_str": "-0.69%",
-      "direction": "down"
-    },
-    {
-      "label": "OIL",
-      "ticker": "CL=F",
-      "price": 79.84,
-      "change_str": "+0.63%",
-      "direction": "up"
-    },
-    {
-      "label": "BTC",
-      "ticker": "BTC-USD",
-      "price": 64690.76,
-      "change_str": "-0.41%",
-      "direction": "down"
-    },
-    {
-      "label": "VIX",
-      "ticker": "^VIX",
-      "price": 16.29,
-      "change_str": "-5.07%",
-      "direction": "down"
-    }
-  ],
+  "market_snapshot": [],
   "regime": {
     "risk_state": "RISK_OFF",
     "vol_regime": "HIGH_VOL"
   },
-  "signals": [
-    {
-      "ticker": "OSCR",
-      "sector_label": "OSCR",
-      "headline": "[JLAW] Pullback to BOL, META score=3",
-      "latest_at": "2026-07-15 08:49:41 UTC",
-      "severity": "MEDIUM",
-      "confidence": 82,
-      "source": "JLAW",
-      "sources": [
-        "JLAW"
-      ],
-      "strategy": "J Law (Stage 2 / VCP / META)",
-      "signal_type": "BUY_PULLBACK",
-      "entry": 31.06999969482422,
-      "stop_loss": 32.10699851989746,
-      "target": null,
-      "pivot": null,
-      "rs_rating": 93,
-      "risk_pct": null,
-      "actionable_now": false,
-      "confluence": false,
-      "rev_growth_yoy": null,
-      "annual_rev_growth": null,
-      "sales_accelerating": null,
-      "fundamentals_verified": false,
-      "fundamentals_ok": null,
-      "fundamentals_detail": "revenue data unavailable"
-    }
-  ],
+  "signals": [],
   "logs": [
-    "2026-07-15 08:49:41 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-07-15 12:00:54 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-07-15 08:49:41 UTC",
-  "top_signal": {
-    "ticker": "OSCR",
-    "sector_label": "OSCR",
-    "headline": "[JLAW] Pullback to BOL, META score=3",
-    "latest_at": "2026-07-15 08:49:41 UTC",
-    "severity": "MEDIUM",
-    "confidence": 82,
-    "source": "JLAW",
-    "sources": [
-      "JLAW"
-    ],
-    "strategy": "J Law (Stage 2 / VCP / META)",
-    "signal_type": "BUY_PULLBACK",
-    "entry": 31.06999969482422,
-    "stop_loss": 32.10699851989746,
-    "target": null,
-    "pivot": null,
-    "rs_rating": 93,
-    "risk_pct": null,
-    "actionable_now": false,
-    "confluence": false,
-    "rev_growth_yoy": null,
-    "annual_rev_growth": null,
-    "sales_accelerating": null,
-    "fundamentals_verified": false,
-    "fundamentals_ok": null,
-    "fundamentals_detail": "revenue data unavailable"
-  }
+  "generated_at": "2026-07-15 12:00:54 UTC",
+  "top_signal": null
 }
