@@ -68,7 +68,57 @@
     "best": null,
     "worst": null
   },
-  "market_snapshot": [],
+  "market_snapshot": [
+    {
+      "label": "SPX",
+      "ticker": "^GSPC",
+      "price": 7572.4,
+      "change_str": "+0.38%",
+      "direction": "up"
+    },
+    {
+      "label": "NDX",
+      "ticker": "^IXIC",
+      "price": 26269.23,
+      "change_str": "+0.62%",
+      "direction": "up"
+    },
+    {
+      "label": "DJI",
+      "ticker": "^DJI",
+      "price": 52658.64,
+      "change_str": "+0.29%",
+      "direction": "up"
+    },
+    {
+      "label": "GOLD",
+      "ticker": "GC=F",
+      "price": 4067.0,
+      "change_str": "+0.15%",
+      "direction": "up"
+    },
+    {
+      "label": "OIL",
+      "ticker": "CL=F",
+      "price": 80.43,
+      "change_str": "+1.37%",
+      "direction": "up"
+    },
+    {
+      "label": "BTC",
+      "ticker": "BTC-USD",
+      "price": 64847.62,
+      "change_str": "-0.17%",
+      "direction": "down"
+    },
+    {
+      "label": "VIX",
+      "ticker": "^VIX",
+      "price": 15.67,
+      "change_str": "-5.03%",
+      "direction": "down"
+    }
+  ],
   "regime": {
     "risk_state": "RISK_ON",
     "vol_regime": "LOW_VOL"
@@ -78,7 +128,7 @@
       "ticker": "KYMR",
       "sector_label": "KYMR",
       "headline": "[JLAW] Pullback to BOL, META score=3",
-      "latest_at": "2026-07-15 21:40:19 UTC",
+      "latest_at": "2026-07-15 22:41:19 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -106,7 +156,7 @@
       "ticker": "OSCR",
       "sector_label": "OSCR",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-07-15 21:40:19 UTC",
+      "latest_at": "2026-07-15 22:41:19 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -134,7 +184,7 @@
       "ticker": "PACS",
       "sector_label": "PACS",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-07-15 21:40:19 UTC",
+      "latest_at": "2026-07-15 22:41:19 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -160,14 +210,14 @@
     }
   ],
   "logs": [
-    "2026-07-15 21:40:18 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-07-15 22:41:18 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-07-15 21:40:18 UTC",
+  "generated_at": "2026-07-15 22:41:18 UTC",
   "top_signal": {
     "ticker": "KYMR",
     "sector_label": "KYMR",
     "headline": "[JLAW] Pullback to BOL, META score=3",
-    "latest_at": "2026-07-15 21:40:19 UTC",
+    "latest_at": "2026-07-15 22:41:19 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
