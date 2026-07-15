@@ -1,10 +1,10 @@
 {
-  "portfolio_value": 98223.62,
+  "portfolio_value": 97145.32,
   "total_deposited": 100000,
   "cash": 293.48,
-  "change_raw": -1.78,
-  "change": "-1.78%",
-  "unrealised_str": "-$1776.38",
+  "change_raw": -2.85,
+  "change": "-2.85%",
+  "unrealised_str": "-$2854.68",
   "realised_str": "$0.00",
   "closed_trades": 0,
   "usd_inr_rate": 1.0,
@@ -14,44 +14,44 @@
       "sector": "Unclassified",
       "source": "JLAW",
       "rs_rating": 93,
-      "pnl_pct": -6.35,
-      "pnl_pct_str": "-6.35%",
-      "pnl": -1585.92,
-      "pnl_str": "-$1585.92",
-      "market_value": 23400.5799369812
+      "pnl_pct": -7.77,
+      "pnl_pct_str": "-7.77%",
+      "pnl": -1941.1,
+      "pnl_str": "-$1941.10",
+      "market_value": 23045.399684906006
     },
     {
       "ticker": "PACS",
       "sector": "Unclassified",
       "source": "JLAW",
       "rs_rating": 94,
-      "pnl_pct": -0.13,
-      "pnl_pct_str": "-0.13%",
-      "pnl": -32.02,
-      "pnl_str": "-$32.02",
-      "market_value": 24812.400421142578
+      "pnl_pct": -0.04,
+      "pnl_pct_str": "-0.04%",
+      "pnl": -9.93,
+      "pnl_str": "-$9.93",
+      "market_value": 24834.480926513672
     },
     {
       "ticker": "CNC",
       "sector": "Healthcare / Healthcare Plans",
       "source": "JLAW",
       "rs_rating": 90,
-      "pnl_pct": 3.28,
-      "pnl_pct_str": "+3.28%",
-      "pnl": 819.68,
-      "pnl_str": "+$819.68",
-      "market_value": 25838.720458984375
+      "pnl_pct": 0.57,
+      "pnl_pct_str": "+0.57%",
+      "pnl": 142.88,
+      "pnl_str": "+$142.88",
+      "market_value": 25161.919311523438
     },
     {
       "ticker": "ROIV",
       "sector": "Healthcare / Biotechnology",
       "source": "JLAW",
       "rs_rating": 92,
-      "pnl_pct": -3.94,
-      "pnl_pct_str": "-3.94%",
-      "pnl": -978.12,
-      "pnl_str": "-$978.12",
-      "market_value": 23878.439895629883
+      "pnl_pct": -4.21,
+      "pnl_pct_str": "-4.21%",
+      "pnl": -1046.52,
+      "pnl_str": "-$1046.52",
+      "market_value": 23810.040939331055
     }
   ],
   "closed_trades_list": [],
@@ -70,13 +70,69 @@
   },
   "market_snapshot": [],
   "regime": {
-    "risk_state": "RISK_OFF",
-    "vol_regime": "HIGH_VOL"
+    "risk_state": "RISK_ON",
+    "vol_regime": "LOW_VOL"
   },
-  "signals": [],
-  "logs": [
-    "2026-07-15 12:00:54 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+  "signals": [
+    {
+      "ticker": "KYMR",
+      "sector_label": "KYMR",
+      "headline": "[JLAW] Pullback to BOL, META score=3",
+      "latest_at": "2026-07-15 16:09:33 UTC",
+      "severity": "MEDIUM",
+      "confidence": 82,
+      "source": "JLAW",
+      "sources": [
+        "JLAW"
+      ],
+      "strategy": "J Law (Stage 2 / VCP / META)",
+      "signal_type": "BUY_PULLBACK",
+      "entry": 113.13500213623047,
+      "stop_loss": 117.27300148010254,
+      "target": null,
+      "pivot": null,
+      "rs_rating": 91,
+      "risk_pct": null,
+      "actionable_now": false,
+      "confluence": false,
+      "rev_growth_yoy": 0.5549773755656109,
+      "annual_rev_growth": null,
+      "sales_accelerating": null,
+      "fundamentals_verified": true,
+      "fundamentals_ok": true,
+      "fundamentals_detail": "last-Q rev +55.5% YoY, accel=n/a"
+    }
   ],
-  "generated_at": "2026-07-15 12:00:54 UTC",
-  "top_signal": null
+  "logs": [
+    "2026-07-15 16:09:32 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+  ],
+  "generated_at": "2026-07-15 16:09:32 UTC",
+  "top_signal": {
+    "ticker": "KYMR",
+    "sector_label": "KYMR",
+    "headline": "[JLAW] Pullback to BOL, META score=3",
+    "latest_at": "2026-07-15 16:09:33 UTC",
+    "severity": "MEDIUM",
+    "confidence": 82,
+    "source": "JLAW",
+    "sources": [
+      "JLAW"
+    ],
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "signal_type": "BUY_PULLBACK",
+    "entry": 113.13500213623047,
+    "stop_loss": 117.27300148010254,
+    "target": null,
+    "pivot": null,
+    "rs_rating": 91,
+    "risk_pct": null,
+    "actionable_now": false,
+    "confluence": false,
+    "rev_growth_yoy": 0.5549773755656109,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_verified": true,
+    "fundamentals_ok": true,
+    "fundamentals_detail": "last-Q rev +55.5% YoY, accel=n/a"
+  }
 }
