@@ -70,10 +70,10 @@
   },
   "market_snapshot": [
     {
-      "label": "SPX",
-      "ticker": "^GSPC",
-      "price": 7572.4,
-      "change_str": "+0.38%",
+      "label": "NDX",
+      "ticker": "^IXIC",
+      "price": 26269.23,
+      "change_str": "+0.62%",
       "direction": "up"
     },
     {
@@ -86,29 +86,29 @@
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4038.3,
-      "change_str": "-0.14%",
-      "direction": "down"
+      "price": 4045.8,
+      "change_str": "+0.04%",
+      "direction": "up"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 79.47,
-      "change_str": "-0.16%",
-      "direction": "down"
+      "price": 79.92,
+      "change_str": "+0.40%",
+      "direction": "up"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 64086.43,
-      "change_str": "-0.97%",
+      "price": 64102.67,
+      "change_str": "-0.94%",
       "direction": "down"
     },
     {
       "label": "VIX",
       "ticker": "^VIX",
-      "price": 15.97,
-      "change_str": "+1.91%",
+      "price": 16.26,
+      "change_str": "+3.77%",
       "direction": "up"
     }
   ],
@@ -121,7 +121,7 @@
       "ticker": "KYMR",
       "sector_label": "KYMR",
       "headline": "[JLAW] Pullback to BOL, META score=3",
-      "latest_at": "2026-07-16 08:46:30 UTC",
+      "latest_at": "2026-07-16 12:06:39 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -138,18 +138,18 @@
       "risk_pct": null,
       "actionable_now": false,
       "confluence": false,
-      "rev_growth_yoy": null,
+      "rev_growth_yoy": 0.5549773755656109,
       "annual_rev_growth": null,
       "sales_accelerating": null,
-      "fundamentals_verified": false,
-      "fundamentals_ok": null,
-      "fundamentals_detail": "revenue data unavailable"
+      "fundamentals_verified": true,
+      "fundamentals_ok": true,
+      "fundamentals_detail": "last-Q rev +55.5% YoY, accel=n/a"
     },
     {
       "ticker": "PACS",
       "sector_label": "PACS",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-07-16 08:46:30 UTC",
+      "latest_at": "2026-07-16 12:06:39 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -177,7 +177,7 @@
       "ticker": "ROIV",
       "sector_label": "ROIV",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-07-16 08:46:30 UTC",
+      "latest_at": "2026-07-16 12:06:39 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -203,14 +203,14 @@
     }
   ],
   "logs": [
-    "2026-07-16 08:46:30 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-07-16 12:06:39 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-07-16 08:46:30 UTC",
+  "generated_at": "2026-07-16 12:06:39 UTC",
   "top_signal": {
     "ticker": "KYMR",
     "sector_label": "KYMR",
     "headline": "[JLAW] Pullback to BOL, META score=3",
-    "latest_at": "2026-07-16 08:46:30 UTC",
+    "latest_at": "2026-07-16 12:06:39 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
@@ -227,11 +227,11 @@
     "risk_pct": null,
     "actionable_now": false,
     "confluence": false,
-    "rev_growth_yoy": null,
+    "rev_growth_yoy": 0.5549773755656109,
     "annual_rev_growth": null,
     "sales_accelerating": null,
-    "fundamentals_verified": false,
-    "fundamentals_ok": null,
-    "fundamentals_detail": "revenue data unavailable"
+    "fundamentals_verified": true,
+    "fundamentals_ok": true,
+    "fundamentals_detail": "last-Q rev +55.5% YoY, accel=n/a"
   }
 }

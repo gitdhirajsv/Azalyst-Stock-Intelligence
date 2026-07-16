@@ -11,12 +11,12 @@
       "JLAW"
     ],
     "rs_rating": 91,
-    "rev_growth_yoy": null,
+    "rev_growth_yoy": 0.5549773755656109,
     "annual_rev_growth": null,
     "sales_accelerating": null,
-    "fundamentals_detail": "revenue data unavailable",
-    "fundamentals_verified": false,
-    "fundamentals_ok": null
+    "fundamentals_detail": "last-Q rev +55.5% YoY, accel=n/a",
+    "fundamentals_verified": true,
+    "fundamentals_ok": true
   },
   {
     "ticker": "PACS",
