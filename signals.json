@@ -2,15 +2,15 @@
   {
     "ticker": "KYMR",
     "type": "BUY_PULLBACK",
-    "price": 114.12000274658203,
+    "price": 114.94000244140625,
     "stop_loss": 117.27300148010254,
-    "reason": "Pullback to BOL, META score=3",
+    "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
     "sources": [
       "JLAW"
     ],
-    "rs_rating": 91,
+    "rs_rating": 92,
     "rev_growth_yoy": 0.5549773755656109,
     "annual_rev_growth": null,
     "sales_accelerating": null,
@@ -21,7 +21,7 @@
   {
     "ticker": "PACS",
     "type": "BUY_PULLBACK",
-    "price": 45.0,
+    "price": 45.744598388671875,
     "stop_loss": 44.51329940795898,
     "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
@@ -29,26 +29,7 @@
     "sources": [
       "JLAW"
     ],
-    "rs_rating": 95,
-    "rev_growth_yoy": null,
-    "annual_rev_growth": null,
-    "sales_accelerating": null,
-    "fundamentals_detail": "revenue data unavailable",
-    "fundamentals_verified": false,
-    "fundamentals_ok": null
-  },
-  {
-    "ticker": "ROIV",
-    "type": "BUY_PULLBACK",
-    "price": 34.88999938964844,
-    "stop_loss": 35.89,
-    "reason": "Pullback to BOL, META score=2",
-    "source": "JLAW",
-    "strategy": "J Law (Stage 2 / VCP / META)",
-    "sources": [
-      "JLAW"
-    ],
-    "rs_rating": 92,
+    "rs_rating": 96,
     "rev_growth_yoy": null,
     "annual_rev_growth": null,
     "sales_accelerating": null,
