@@ -91,24 +91,24 @@
       "direction": "up"
     },
     {
+      "label": "GOLD",
+      "ticker": "GC=F",
+      "price": 4032.7,
+      "change_str": "-0.28%",
+      "direction": "down"
+    },
+    {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 80.14,
-      "change_str": "+1.01%",
-      "direction": "up"
+      "price": 79.37,
+      "change_str": "-0.29%",
+      "direction": "down"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 64684.92,
-      "change_str": "-0.42%",
-      "direction": "down"
-    },
-    {
-      "label": "VIX",
-      "ticker": "^VIX",
-      "price": 15.67,
-      "change_str": "-5.03%",
+      "price": 64875.36,
+      "change_str": "-0.12%",
       "direction": "down"
     }
   ],
@@ -121,7 +121,7 @@
       "ticker": "KYMR",
       "sector_label": "KYMR",
       "headline": "[JLAW] Pullback to BOL, META score=3",
-      "latest_at": "2026-07-15 23:43:26 UTC",
+      "latest_at": "2026-07-16 05:34:45 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -138,34 +138,6 @@
       "risk_pct": null,
       "actionable_now": false,
       "confluence": false,
-      "rev_growth_yoy": 0.5549773755656109,
-      "annual_rev_growth": null,
-      "sales_accelerating": null,
-      "fundamentals_verified": true,
-      "fundamentals_ok": true,
-      "fundamentals_detail": "last-Q rev +55.5% YoY, accel=n/a"
-    },
-    {
-      "ticker": "OSCR",
-      "sector_label": "OSCR",
-      "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-07-15 23:43:26 UTC",
-      "severity": "MEDIUM",
-      "confidence": 82,
-      "source": "JLAW",
-      "sources": [
-        "JLAW"
-      ],
-      "strategy": "J Law (Stage 2 / VCP / META)",
-      "signal_type": "BUY_PULLBACK",
-      "entry": 30.610000610351562,
-      "stop_loss": 31.349430236816406,
-      "target": null,
-      "pivot": null,
-      "rs_rating": 93,
-      "risk_pct": null,
-      "actionable_now": false,
-      "confluence": false,
       "rev_growth_yoy": null,
       "annual_rev_growth": null,
       "sales_accelerating": null,
@@ -177,7 +149,7 @@
       "ticker": "PACS",
       "sector_label": "PACS",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-07-15 23:43:26 UTC",
+      "latest_at": "2026-07-16 05:34:45 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -200,17 +172,45 @@
       "fundamentals_verified": false,
       "fundamentals_ok": null,
       "fundamentals_detail": "revenue data unavailable"
+    },
+    {
+      "ticker": "ROIV",
+      "sector_label": "ROIV",
+      "headline": "[JLAW] Pullback to BOL, META score=2",
+      "latest_at": "2026-07-16 05:34:45 UTC",
+      "severity": "MEDIUM",
+      "confidence": 82,
+      "source": "JLAW",
+      "sources": [
+        "JLAW"
+      ],
+      "strategy": "J Law (Stage 2 / VCP / META)",
+      "signal_type": "BUY_PULLBACK",
+      "entry": 34.88999938964844,
+      "stop_loss": 35.89,
+      "target": null,
+      "pivot": null,
+      "rs_rating": 92,
+      "risk_pct": null,
+      "actionable_now": false,
+      "confluence": false,
+      "rev_growth_yoy": null,
+      "annual_rev_growth": null,
+      "sales_accelerating": null,
+      "fundamentals_verified": false,
+      "fundamentals_ok": null,
+      "fundamentals_detail": "revenue data unavailable"
     }
   ],
   "logs": [
-    "2026-07-15 23:43:26 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-07-16 05:34:45 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-07-15 23:43:26 UTC",
+  "generated_at": "2026-07-16 05:34:45 UTC",
   "top_signal": {
     "ticker": "KYMR",
     "sector_label": "KYMR",
     "headline": "[JLAW] Pullback to BOL, META score=3",
-    "latest_at": "2026-07-15 23:43:26 UTC",
+    "latest_at": "2026-07-16 05:34:45 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
@@ -227,11 +227,11 @@
     "risk_pct": null,
     "actionable_now": false,
     "confluence": false,
-    "rev_growth_yoy": 0.5549773755656109,
+    "rev_growth_yoy": null,
     "annual_rev_growth": null,
     "sales_accelerating": null,
-    "fundamentals_verified": true,
-    "fundamentals_ok": true,
-    "fundamentals_detail": "last-Q rev +55.5% YoY, accel=n/a"
+    "fundamentals_verified": false,
+    "fundamentals_ok": null,
+    "fundamentals_detail": "revenue data unavailable"
   }
 }
