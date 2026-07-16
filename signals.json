@@ -2,7 +2,7 @@
   {
     "ticker": "KYMR",
     "type": "BUY_PULLBACK",
-    "price": 114.94000244140625,
+    "price": 113.9749984741211,
     "stop_loss": 117.27300148010254,
     "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
@@ -11,17 +11,17 @@
       "JLAW"
     ],
     "rs_rating": 92,
-    "rev_growth_yoy": 0.5549773755656109,
+    "rev_growth_yoy": null,
     "annual_rev_growth": null,
     "sales_accelerating": null,
-    "fundamentals_detail": "last-Q rev +55.5% YoY, accel=n/a",
-    "fundamentals_verified": true,
-    "fundamentals_ok": true
+    "fundamentals_detail": "revenue data unavailable",
+    "fundamentals_verified": false,
+    "fundamentals_ok": null
   },
   {
     "ticker": "PACS",
     "type": "BUY_PULLBACK",
-    "price": 45.744598388671875,
+    "price": 45.3849983215332,
     "stop_loss": 44.51329940795898,
     "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
