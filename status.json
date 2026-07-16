@@ -1,10 +1,10 @@
 {
-  "portfolio_value": 95104.68,
+  "portfolio_value": 95179.21,
   "total_deposited": 100000,
   "cash": 22760.68,
-  "change_raw": -4.9,
-  "change": "-4.90%",
-  "unrealised_str": "-$2376.02",
+  "change_raw": -4.82,
+  "change": "-4.82%",
+  "unrealised_str": "-$2301.50",
   "realised_str": "$0.00",
   "closed_trades": 1,
   "usd_inr_rate": 1.0,
@@ -14,33 +14,33 @@
       "sector": "Unclassified",
       "source": "JLAW",
       "rs_rating": 94,
-      "pnl_pct": 1.12,
-      "pnl_pct_str": "+1.12%",
-      "pnl": 277.1,
-      "pnl_str": "+$277.10",
-      "market_value": 25121.519073486328
+      "pnl_pct": 1.38,
+      "pnl_pct_str": "+1.38%",
+      "pnl": 343.34,
+      "pnl_str": "+$343.34",
+      "market_value": 25187.76058959961
     },
     {
       "ticker": "CNC",
       "sector": "Healthcare / Healthcare Plans",
       "source": "JLAW",
       "rs_rating": 90,
-      "pnl_pct": -3.44,
-      "pnl_pct_str": "-3.44%",
-      "pnl": -861.04,
-      "pnl_str": "-$861.04",
-      "market_value": 24158.0
+      "pnl_pct": -3.98,
+      "pnl_pct_str": "-3.98%",
+      "pnl": -996.4,
+      "pnl_str": "-$996.40",
+      "market_value": 24022.639770507812
     },
     {
       "ticker": "ROIV",
       "sector": "Healthcare / Biotechnology",
       "source": "JLAW",
       "rs_rating": 92,
-      "pnl_pct": -7.21,
-      "pnl_pct_str": "-7.21%",
-      "pnl": -1792.08,
-      "pnl_str": "-$1792.08",
-      "market_value": 23064.480834960938
+      "pnl_pct": -6.63,
+      "pnl_pct_str": "-6.63%",
+      "pnl": -1648.44,
+      "pnl_str": "-$1648.44",
+      "market_value": 23208.120208740234
     }
   ],
   "closed_trades_list": [],
@@ -59,46 +59,46 @@
   },
   "market_snapshot": [
     {
+      "label": "SPX",
+      "ticker": "^GSPC",
+      "price": 7533.77,
+      "change_str": "-0.51%",
+      "direction": "down"
+    },
+    {
       "label": "NDX",
       "ticker": "^IXIC",
-      "price": 25777.21,
-      "change_str": "-1.87%",
+      "price": 25881.95,
+      "change_str": "-1.47%",
       "direction": "down"
     },
     {
       "label": "DJI",
       "ticker": "^DJI",
-      "price": 52384.8,
-      "change_str": "-0.52%",
+      "price": 52552.97,
+      "change_str": "-0.20%",
       "direction": "down"
     },
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 3976.4,
-      "change_str": "-1.67%",
+      "price": 3979.9,
+      "change_str": "-1.59%",
       "direction": "down"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 78.41,
-      "change_str": "-1.49%",
+      "price": 78.89,
+      "change_str": "-0.89%",
       "direction": "down"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 64119.93,
-      "change_str": "-0.92%",
+      "price": 64131.77,
+      "change_str": "-0.90%",
       "direction": "down"
-    },
-    {
-      "label": "VIX",
-      "ticker": "^VIX",
-      "price": 17.06,
-      "change_str": "+8.87%",
-      "direction": "up"
     }
   ],
   "regime": {
@@ -107,8 +107,8 @@
   },
   "signals": [],
   "logs": [
-    "2026-07-16 19:48:41 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-07-16 21:44:37 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-07-16 19:48:41 UTC",
+  "generated_at": "2026-07-16 21:44:37 UTC",
   "top_signal": null
 }
