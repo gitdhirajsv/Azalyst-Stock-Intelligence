@@ -2,9 +2,9 @@
   {
     "ticker": "JAZZ",
     "type": "BUY_PULLBACK",
-    "price": 248.03500366210938,
+    "price": 247.52999877929688,
     "stop_loss": 242.97530532836913,
-    "reason": "Pullback to BOL, META score=3",
+    "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
     "sources": [

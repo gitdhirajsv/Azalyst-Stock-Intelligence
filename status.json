@@ -1,10 +1,10 @@
 {
-  "portfolio_value": 96962.71,
+  "portfolio_value": 96810.72,
   "total_deposited": 100000,
   "cash": 22760.68,
-  "change_raw": -3.04,
-  "change": "-3.04%",
-  "unrealised_str": "-$517.99",
+  "change_raw": -3.19,
+  "change": "-3.19%",
+  "unrealised_str": "-$669.98",
   "realised_str": "$0.00",
   "closed_trades": 1,
   "usd_inr_rate": 1.0,
@@ -14,33 +14,33 @@
       "sector": "Unclassified",
       "source": "JLAW",
       "rs_rating": 94,
-      "pnl_pct": 3.31,
-      "pnl_pct_str": "+3.31%",
-      "pnl": 823.58,
-      "pnl_str": "+$823.58",
-      "market_value": 25668.0
+      "pnl_pct": 2.49,
+      "pnl_pct_str": "+2.49%",
+      "pnl": 619.34,
+      "pnl_str": "+$619.34",
+      "market_value": 25463.76058959961
     },
     {
       "ticker": "CNC",
       "sector": "Healthcare / Healthcare Plans",
       "source": "JLAW",
       "rs_rating": 90,
-      "pnl_pct": -0.65,
-      "pnl_pct_str": "-0.65%",
-      "pnl": -161.68,
-      "pnl_str": "-$161.68",
-      "market_value": 24857.360229492188
+      "pnl_pct": -0.15,
+      "pnl_pct_str": "-0.15%",
+      "pnl": -37.6,
+      "pnl_str": "-$37.60",
+      "market_value": 24981.44091796875
     },
     {
       "ticker": "ROIV",
       "sector": "Healthcare / Biotechnology",
       "source": "JLAW",
       "rs_rating": 92,
-      "pnl_pct": -4.75,
-      "pnl_pct_str": "-4.75%",
-      "pnl": -1179.9,
-      "pnl_str": "-$1179.90",
-      "market_value": 23676.66114807129
+      "pnl_pct": -5.04,
+      "pnl_pct_str": "-5.04%",
+      "pnl": -1251.72,
+      "pnl_str": "-$1251.72",
+      "market_value": 23604.83885192871
     }
   ],
   "closed_trades_list": [],
@@ -61,36 +61,36 @@
     {
       "label": "NDX",
       "ticker": "^IXIC",
-      "price": 25562.84,
-      "change_str": "-1.23%",
+      "price": 25520.24,
+      "change_str": "-1.40%",
       "direction": "down"
     },
     {
       "label": "DJI",
       "ticker": "^DJI",
-      "price": 52190.71,
-      "change_str": "-0.69%",
+      "price": 52146.42,
+      "change_str": "-0.77%",
       "direction": "down"
     },
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4014.8,
-      "change_str": "+0.73%",
+      "price": 4023.0,
+      "change_str": "+0.94%",
       "direction": "up"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 81.12,
-      "change_str": "+2.75%",
+      "price": 81.77,
+      "change_str": "+3.57%",
       "direction": "up"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 64140.97,
-      "change_str": "+0.55%",
+      "price": 64100.04,
+      "change_str": "+0.49%",
       "direction": "up"
     },
     {
@@ -109,8 +109,8 @@
     {
       "ticker": "JAZZ",
       "sector_label": "JAZZ",
-      "headline": "[JLAW] Pullback to BOL, META score=3",
-      "latest_at": "2026-07-17 19:55:01 UTC",
+      "headline": "[JLAW] Pullback to BOL, META score=2",
+      "latest_at": "2026-07-17 21:22:40 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -119,7 +119,7 @@
       ],
       "strategy": "J Law (Stage 2 / VCP / META)",
       "signal_type": "BUY_PULLBACK",
-      "entry": 248.03500366210938,
+      "entry": 247.52999877929688,
       "stop_loss": 242.97530532836913,
       "target": null,
       "pivot": null,
@@ -136,14 +136,14 @@
     }
   ],
   "logs": [
-    "2026-07-17 19:55:00 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-07-17 21:22:40 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-07-17 19:55:00 UTC",
+  "generated_at": "2026-07-17 21:22:40 UTC",
   "top_signal": {
     "ticker": "JAZZ",
     "sector_label": "JAZZ",
-    "headline": "[JLAW] Pullback to BOL, META score=3",
-    "latest_at": "2026-07-17 19:55:01 UTC",
+    "headline": "[JLAW] Pullback to BOL, META score=2",
+    "latest_at": "2026-07-17 21:22:40 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
@@ -152,7 +152,7 @@
     ],
     "strategy": "J Law (Stage 2 / VCP / META)",
     "signal_type": "BUY_PULLBACK",
-    "entry": 248.03500366210938,
+    "entry": 247.52999877929688,
     "stop_loss": 242.97530532836913,
     "target": null,
     "pivot": null,
