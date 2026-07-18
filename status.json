@@ -87,17 +87,17 @@
       "direction": "up"
     },
     {
-      "label": "BTC",
-      "ticker": "BTC-USD",
-      "price": 63913.97,
-      "change_str": "+0.20%",
+      "label": "OIL",
+      "ticker": "CL=F",
+      "price": 81.77,
+      "change_str": "+3.57%",
       "direction": "up"
     },
     {
-      "label": "VIX",
-      "ticker": "^VIX",
-      "price": 18.77,
-      "change_str": "+12.19%",
+      "label": "BTC",
+      "ticker": "BTC-USD",
+      "price": 63909.3,
+      "change_str": "+0.19%",
       "direction": "up"
     }
   ],
@@ -110,7 +110,7 @@
       "ticker": "JAZZ",
       "sector_label": "JAZZ",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-07-17 23:28:41 UTC",
+      "latest_at": "2026-07-18 03:49:43 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -136,14 +136,14 @@
     }
   ],
   "logs": [
-    "2026-07-17 23:28:41 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-07-18 03:49:43 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-07-17 23:28:41 UTC",
+  "generated_at": "2026-07-18 03:49:43 UTC",
   "top_signal": {
     "ticker": "JAZZ",
     "sector_label": "JAZZ",
     "headline": "[JLAW] Pullback to BOL, META score=2",
-    "latest_at": "2026-07-17 23:28:41 UTC",
+    "latest_at": "2026-07-18 03:49:43 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
