@@ -89,8 +89,8 @@
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 64485.6,
-      "change_str": "-0.48%",
+      "price": 64369.1,
+      "change_str": "-0.66%",
       "direction": "down"
     },
     {
@@ -110,7 +110,7 @@
       "ticker": "JAZZ",
       "sector_label": "JAZZ",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-07-19 14:13:45 UTC",
+      "latest_at": "2026-07-19 19:49:11 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -136,14 +136,14 @@
     }
   ],
   "logs": [
-    "2026-07-19 14:13:44 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-07-19 19:49:11 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-07-19 14:13:44 UTC",
+  "generated_at": "2026-07-19 19:49:11 UTC",
   "top_signal": {
     "ticker": "JAZZ",
     "sector_label": "JAZZ",
     "headline": "[JLAW] Pullback to BOL, META score=2",
-    "latest_at": "2026-07-19 14:13:45 UTC",
+    "latest_at": "2026-07-19 19:49:11 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
