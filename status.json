@@ -59,6 +59,13 @@
   },
   "market_snapshot": [
     {
+      "label": "SPX",
+      "ticker": "^GSPC",
+      "price": 7457.69,
+      "change_str": "-1.01%",
+      "direction": "down"
+    },
+    {
       "label": "NDX",
       "ticker": "^IXIC",
       "price": 25520.24,
@@ -75,23 +82,16 @@
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4018.8,
-      "change_str": "+0.83%",
+      "price": 4013.4,
+      "change_str": "+0.02%",
       "direction": "up"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 81.78,
-      "change_str": "+3.58%",
+      "price": 83.73,
+      "change_str": "+1.50%",
       "direction": "up"
-    },
-    {
-      "label": "BTC",
-      "ticker": "BTC-USD",
-      "price": 64369.1,
-      "change_str": "-0.66%",
-      "direction": "down"
     },
     {
       "label": "VIX",
@@ -110,7 +110,7 @@
       "ticker": "JAZZ",
       "sector_label": "JAZZ",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-07-19 19:49:11 UTC",
+      "latest_at": "2026-07-20 05:57:45 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -136,14 +136,14 @@
     }
   ],
   "logs": [
-    "2026-07-19 19:49:11 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-07-20 05:57:45 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-07-19 19:49:11 UTC",
+  "generated_at": "2026-07-20 05:57:45 UTC",
   "top_signal": {
     "ticker": "JAZZ",
     "sector_label": "JAZZ",
     "headline": "[JLAW] Pullback to BOL, META score=2",
-    "latest_at": "2026-07-19 19:49:11 UTC",
+    "latest_at": "2026-07-20 05:57:45 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
