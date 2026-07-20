@@ -1,28 +1,9 @@
 [
   {
-    "ticker": "DVA",
+    "ticker": "AMN",
     "type": "BUY_PULLBACK",
-    "price": 236.47500610351562,
-    "stop_loss": 232.45079940795898,
-    "reason": "Pullback to BOL, META score=3",
-    "source": "JLAW",
-    "strategy": "J Law (Stage 2 / VCP / META)",
-    "sources": [
-      "JLAW"
-    ],
-    "rs_rating": 93,
-    "rev_growth_yoy": 0.05956794556524847,
-    "annual_rev_growth": null,
-    "sales_accelerating": null,
-    "fundamentals_detail": "last-Q rev +6.0% YoY, accel=n/a",
-    "fundamentals_verified": true,
-    "fundamentals_ok": true
-  },
-  {
-    "ticker": "KYMR",
-    "type": "BUY_PULLBACK",
-    "price": 113.2699966430664,
-    "stop_loss": 117.27300148010254,
+    "price": 33.75,
+    "stop_loss": 34.65809955596924,
     "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
@@ -40,9 +21,9 @@
   {
     "ticker": "PACS",
     "type": "BUY_PULLBACK",
-    "price": 45.310001373291016,
+    "price": 44.720001220703125,
     "stop_loss": 45.75974925994873,
-    "reason": "Pullback to BOL, META score=3",
+    "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
     "sources": [
