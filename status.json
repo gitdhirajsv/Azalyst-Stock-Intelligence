@@ -59,6 +59,13 @@
   },
   "market_snapshot": [
     {
+      "label": "SPX",
+      "ticker": "^GSPC",
+      "price": 7457.69,
+      "change_str": "-1.01%",
+      "direction": "down"
+    },
+    {
       "label": "NDX",
       "ticker": "^IXIC",
       "price": 25520.24,
@@ -66,38 +73,31 @@
       "direction": "down"
     },
     {
-      "label": "DJI",
-      "ticker": "^DJI",
-      "price": 52146.42,
-      "change_str": "-0.77%",
-      "direction": "down"
-    },
-    {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4023.0,
-      "change_str": "+0.26%",
+      "price": 4017.5,
+      "change_str": "+0.12%",
       "direction": "up"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 81.1,
-      "change_str": "-1.69%",
+      "price": 81.79,
+      "change_str": "-0.85%",
       "direction": "down"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 64186.56,
-      "change_str": "-0.78%",
+      "price": 64667.86,
+      "change_str": "-0.04%",
       "direction": "down"
     },
     {
       "label": "VIX",
       "ticker": "^VIX",
-      "price": 18.43,
-      "change_str": "-1.81%",
+      "price": 18.21,
+      "change_str": "-2.98%",
       "direction": "down"
     }
   ],
@@ -110,7 +110,7 @@
       "ticker": "JAZZ",
       "sector_label": "JAZZ",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-07-20 09:47:03 UTC",
+      "latest_at": "2026-07-20 12:37:42 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -136,14 +136,14 @@
     }
   ],
   "logs": [
-    "2026-07-20 09:47:03 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-07-20 12:37:42 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-07-20 09:47:03 UTC",
+  "generated_at": "2026-07-20 12:37:42 UTC",
   "top_signal": {
     "ticker": "JAZZ",
     "sector_label": "JAZZ",
     "headline": "[JLAW] Pullback to BOL, META score=2",
-    "latest_at": "2026-07-20 09:47:03 UTC",
+    "latest_at": "2026-07-20 12:37:42 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
