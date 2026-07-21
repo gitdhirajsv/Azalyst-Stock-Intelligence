@@ -2,7 +2,7 @@
   {
     "ticker": "DVA",
     "type": "BUY_PULLBACK",
-    "price": 237.07000732421875,
+    "price": 237.27999877929688,
     "stop_loss": 232.45079940795898,
     "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",

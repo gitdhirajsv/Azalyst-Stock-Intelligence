@@ -1,10 +1,10 @@
 {
-  "portfolio_value": 97238.28,
+  "portfolio_value": 97236.28,
   "total_deposited": 100000,
   "cash": 22760.68,
   "change_raw": -2.76,
   "change": "-2.76%",
-  "unrealised_str": "-$242.42",
+  "unrealised_str": "-$244.42",
   "realised_str": "$0.00",
   "closed_trades": 1,
   "usd_inr_rate": 1.0,
@@ -14,22 +14,22 @@
       "sector": "Unclassified",
       "source": "JLAW",
       "rs_rating": 94,
-      "pnl_pct": 1.2,
-      "pnl_pct_str": "+1.20%",
-      "pnl": 299.18,
-      "pnl_str": "+$299.18",
-      "market_value": 25143.599578857422
+      "pnl_pct": 1.23,
+      "pnl_pct_str": "+1.23%",
+      "pnl": 304.71,
+      "pnl_str": "+$304.71",
+      "market_value": 25149.12075805664
     },
     {
       "ticker": "CNC",
       "sector": "Healthcare / Healthcare Plans",
       "source": "JLAW",
       "rs_rating": 90,
-      "pnl_pct": 1.61,
-      "pnl_pct_str": "+1.61%",
-      "pnl": 402.32,
-      "pnl_str": "+$402.32",
-      "market_value": 25421.360229492188
+      "pnl_pct": 1.58,
+      "pnl_pct_str": "+1.58%",
+      "pnl": 394.8,
+      "pnl_str": "+$394.80",
+      "market_value": 25413.838623046875
     },
     {
       "ticker": "ROIV",
@@ -82,29 +82,29 @@
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4087.8,
-      "change_str": "+1.93%",
+      "price": 4082.2,
+      "change_str": "+1.79%",
       "direction": "up"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 84.7,
-      "change_str": "+1.77%",
+      "price": 84.54,
+      "change_str": "+1.57%",
       "direction": "up"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 66402.83,
-      "change_str": "+1.80%",
+      "price": 66302.21,
+      "change_str": "+1.64%",
       "direction": "up"
     },
     {
       "label": "VIX",
       "ticker": "^VIX",
-      "price": 16.93,
-      "change_str": "-9.22%",
+      "price": 17.05,
+      "change_str": "-8.58%",
       "direction": "down"
     }
   ],
@@ -117,7 +117,7 @@
       "ticker": "DVA",
       "sector_label": "DVA",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-07-21 20:10:42 UTC",
+      "latest_at": "2026-07-21 21:44:04 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -126,7 +126,7 @@
       ],
       "strategy": "J Law (Stage 2 / VCP / META)",
       "signal_type": "BUY_PULLBACK",
-      "entry": 237.07000732421875,
+      "entry": 237.27999877929688,
       "stop_loss": 232.45079940795898,
       "target": null,
       "pivot": null,
@@ -143,14 +143,14 @@
     }
   ],
   "logs": [
-    "2026-07-21 20:10:41 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-07-21 21:44:04 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-07-21 20:10:41 UTC",
+  "generated_at": "2026-07-21 21:44:04 UTC",
   "top_signal": {
     "ticker": "DVA",
     "sector_label": "DVA",
     "headline": "[JLAW] Pullback to BOL, META score=2",
-    "latest_at": "2026-07-21 20:10:42 UTC",
+    "latest_at": "2026-07-21 21:44:04 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
@@ -159,7 +159,7 @@
     ],
     "strategy": "J Law (Stage 2 / VCP / META)",
     "signal_type": "BUY_PULLBACK",
-    "entry": 237.07000732421875,
+    "entry": 237.27999877929688,
     "stop_loss": 232.45079940795898,
     "target": null,
     "pivot": null,
