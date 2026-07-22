@@ -73,24 +73,31 @@
       "direction": "up"
     },
     {
+      "label": "DJI",
+      "ticker": "^DJI",
+      "price": 52224.64,
+      "change_str": "+0.74%",
+      "direction": "up"
+    },
+    {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4085.9,
-      "change_str": "+1.89%",
+      "price": 4132.5,
+      "change_str": "+1.51%",
       "direction": "up"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 84.66,
-      "change_str": "+1.72%",
+      "price": 85.42,
+      "change_str": "+0.60%",
       "direction": "up"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 66407.0,
-      "change_str": "+1.80%",
+      "price": 65940.12,
+      "change_str": "+1.09%",
       "direction": "up"
     },
     {
@@ -110,7 +117,7 @@
       "ticker": "DVA",
       "sector_label": "DVA",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-07-21 23:34:17 UTC",
+      "latest_at": "2026-07-22 05:43:32 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -136,14 +143,14 @@
     }
   ],
   "logs": [
-    "2026-07-21 23:34:17 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-07-22 05:43:32 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-07-21 23:34:17 UTC",
+  "generated_at": "2026-07-22 05:43:32 UTC",
   "top_signal": {
     "ticker": "DVA",
     "sector_label": "DVA",
     "headline": "[JLAW] Pullback to BOL, META score=2",
-    "latest_at": "2026-07-21 23:34:17 UTC",
+    "latest_at": "2026-07-22 05:43:32 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
