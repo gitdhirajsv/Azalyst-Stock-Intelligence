@@ -73,38 +73,31 @@
       "direction": "up"
     },
     {
-      "label": "DJI",
-      "ticker": "^DJI",
-      "price": 52224.64,
-      "change_str": "+0.74%",
-      "direction": "up"
-    },
-    {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4123.8,
-      "change_str": "+1.29%",
+      "price": 4129.9,
+      "change_str": "+1.44%",
       "direction": "up"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 87.53,
-      "change_str": "+3.09%",
+      "price": 87.09,
+      "change_str": "+2.57%",
       "direction": "up"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 65942.5,
-      "change_str": "-0.85%",
+      "price": 65836.8,
+      "change_str": "-1.00%",
       "direction": "down"
     },
     {
       "label": "VIX",
       "ticker": "^VIX",
-      "price": 17.43,
-      "change_str": "+2.23%",
+      "price": 17.63,
+      "change_str": "+3.40%",
       "direction": "up"
     }
   ],
@@ -117,7 +110,7 @@
       "ticker": "DVA",
       "sector_label": "DVA",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-07-22 09:15:59 UTC",
+      "latest_at": "2026-07-22 12:27:33 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -143,14 +136,14 @@
     }
   ],
   "logs": [
-    "2026-07-22 09:15:59 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-07-22 12:27:33 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-07-22 09:15:59 UTC",
+  "generated_at": "2026-07-22 12:27:33 UTC",
   "top_signal": {
     "ticker": "DVA",
     "sector_label": "DVA",
     "headline": "[JLAW] Pullback to BOL, META score=2",
-    "latest_at": "2026-07-22 09:15:59 UTC",
+    "latest_at": "2026-07-22 12:27:33 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
