@@ -93,29 +93,29 @@
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4096.5,
-      "change_str": "-1.22%",
+      "price": 4086.7,
+      "change_str": "-1.45%",
       "direction": "down"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 89.59,
-      "change_str": "+3.18%",
+      "price": 90.65,
+      "change_str": "+4.40%",
       "direction": "up"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 65670.33,
-      "change_str": "-0.65%",
+      "price": 65467.46,
+      "change_str": "-0.96%",
       "direction": "down"
     },
     {
       "label": "VIX",
       "ticker": "^VIX",
-      "price": 17.54,
-      "change_str": "+5.41%",
+      "price": 18.17,
+      "change_str": "+9.19%",
       "direction": "up"
     }
   ],
@@ -128,7 +128,7 @@
       "ticker": "PACS",
       "sector_label": "PACS",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-07-23 09:11:16 UTC",
+      "latest_at": "2026-07-23 12:16:07 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -151,17 +151,45 @@
       "fundamentals_verified": false,
       "fundamentals_ok": null,
       "fundamentals_detail": "revenue data unavailable"
+    },
+    {
+      "ticker": "ROIV",
+      "sector_label": "ROIV",
+      "headline": "[JLAW] Pullback to BOL, META score=2",
+      "latest_at": "2026-07-23 12:16:07 UTC",
+      "severity": "MEDIUM",
+      "confidence": 82,
+      "source": "JLAW",
+      "sources": [
+        "JLAW"
+      ],
+      "strategy": "J Law (Stage 2 / VCP / META)",
+      "signal_type": "BUY_PULLBACK",
+      "entry": 34.90999984741211,
+      "stop_loss": 34.18280162811279,
+      "target": null,
+      "pivot": null,
+      "rs_rating": 93,
+      "risk_pct": null,
+      "actionable_now": false,
+      "confluence": false,
+      "rev_growth_yoy": null,
+      "annual_rev_growth": null,
+      "sales_accelerating": null,
+      "fundamentals_verified": false,
+      "fundamentals_ok": null,
+      "fundamentals_detail": "revenue data unavailable"
     }
   ],
   "logs": [
-    "2026-07-23 09:11:16 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-07-23 12:16:07 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-07-23 09:11:16 UTC",
+  "generated_at": "2026-07-23 12:16:07 UTC",
   "top_signal": {
     "ticker": "PACS",
     "sector_label": "PACS",
     "headline": "[JLAW] Pullback to BOL, META score=2",
-    "latest_at": "2026-07-23 09:11:16 UTC",
+    "latest_at": "2026-07-23 12:16:07 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
