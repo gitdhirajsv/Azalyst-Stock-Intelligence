@@ -93,22 +93,22 @@
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4123.4,
-      "change_str": "+1.28%",
-      "direction": "up"
+      "price": 4130.1,
+      "change_str": "-0.41%",
+      "direction": "down"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 87.85,
-      "change_str": "+3.46%",
+      "price": 87.96,
+      "change_str": "+1.30%",
       "direction": "up"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 65949.99,
-      "change_str": "-0.83%",
+      "price": 65697.07,
+      "change_str": "-1.22%",
       "direction": "down"
     },
     {
@@ -128,7 +128,7 @@
       "ticker": "PACS",
       "sector_label": "PACS",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-07-22 23:44:30 UTC",
+      "latest_at": "2026-07-23 05:48:32 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -154,14 +154,14 @@
     }
   ],
   "logs": [
-    "2026-07-22 23:44:29 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-07-23 05:48:31 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-07-22 23:44:29 UTC",
+  "generated_at": "2026-07-23 05:48:31 UTC",
   "top_signal": {
     "ticker": "PACS",
     "sector_label": "PACS",
     "headline": "[JLAW] Pullback to BOL, META score=2",
-    "latest_at": "2026-07-22 23:44:30 UTC",
+    "latest_at": "2026-07-23 05:48:32 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
