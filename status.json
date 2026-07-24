@@ -1,0 +1,216 @@
+{
+  "portfolio_value": 96301.26,
+  "total_deposited": 100000,
+  "cash": 1753.33,
+  "change_raw": -3.7,
+  "change": "-3.70%",
+  "unrealised_str": "-$1179.44",
+  "realised_str": "$0.00",
+  "closed_trades": 1,
+  "usd_inr_rate": 1.0,
+  "positions": [
+    {
+      "ticker": "PACS",
+      "sector": "Unclassified",
+      "source": "JLAW",
+      "rs_rating": 94,
+      "pnl_pct": 4.09,
+      "pnl_pct_str": "+4.09%",
+      "pnl": 1016.78,
+      "pnl_str": "+$1016.78",
+      "market_value": 25861.199157714844
+    },
+    {
+      "ticker": "CNC",
+      "sector": "Healthcare / Healthcare Plans",
+      "source": "JLAW",
+      "rs_rating": 90,
+      "pnl_pct": -4.7,
+      "pnl_pct_str": "-4.70%",
+      "pnl": -1176.88,
+      "pnl_str": "-$1176.88",
+      "market_value": 23842.159942626953
+    },
+    {
+      "ticker": "ROIV",
+      "sector": "Healthcare / Biotechnology",
+      "source": "JLAW",
+      "rs_rating": 92,
+      "pnl_pct": -3.66,
+      "pnl_pct_str": "-3.66%",
+      "pnl": -909.72,
+      "pnl_str": "-$909.72",
+      "market_value": 23946.83885192871
+    },
+    {
+      "ticker": "KYMR",
+      "sector": "Healthcare / Biotechnology",
+      "source": "JLAW",
+      "rs_rating": 91,
+      "pnl_pct": -0.52,
+      "pnl_pct_str": "-0.52%",
+      "pnl": -109.62,
+      "pnl_str": "-$109.62",
+      "market_value": 20897.729942321777
+    }
+  ],
+  "closed_trades_list": [],
+  "track_record": {
+    "total_trades": 0,
+    "winners": 0,
+    "losers": 0,
+    "win_rate": 0,
+    "avg_win": 0,
+    "avg_loss": 0,
+    "profit_factor": 0,
+    "expectancy": 0,
+    "sharpe_proxy": 0,
+    "best": null,
+    "worst": null
+  },
+  "market_snapshot": [
+    {
+      "label": "SPX",
+      "ticker": "^GSPC",
+      "price": 7411.98,
+      "change_str": "+0.05%",
+      "direction": "up"
+    },
+    {
+      "label": "NDX",
+      "ticker": "^IXIC",
+      "price": 24975.82,
+      "change_str": "-0.64%",
+      "direction": "down"
+    },
+    {
+      "label": "DJI",
+      "ticker": "^DJI",
+      "price": 51947.25,
+      "change_str": "+0.46%",
+      "direction": "up"
+    },
+    {
+      "label": "GOLD",
+      "ticker": "GC=F",
+      "price": 4055.7,
+      "change_str": "+0.22%",
+      "direction": "up"
+    },
+    {
+      "label": "OIL",
+      "ticker": "CL=F",
+      "price": 90.47,
+      "change_str": "-1.87%",
+      "direction": "down"
+    },
+    {
+      "label": "BTC",
+      "ticker": "BTC-USD",
+      "price": 64083.33,
+      "change_str": "-1.48%",
+      "direction": "down"
+    },
+    {
+      "label": "VIX",
+      "ticker": "^VIX",
+      "price": 18.58,
+      "change_str": "-0.64%",
+      "direction": "down"
+    }
+  ],
+  "regime": {
+    "risk_state": "RISK_ON",
+    "vol_regime": "LOW_VOL"
+  },
+  "signals": [
+    {
+      "ticker": "AMN",
+      "sector_label": "AMN",
+      "headline": "[JLAW] Pullback to BOL, META score=2",
+      "latest_at": "2026-07-24 23:37:32 UTC",
+      "severity": "MEDIUM",
+      "confidence": 82,
+      "source": "JLAW",
+      "sources": [
+        "JLAW"
+      ],
+      "strategy": "J Law (Stage 2 / VCP / META)",
+      "signal_type": "BUY_PULLBACK",
+      "entry": 32.88999938964844,
+      "stop_loss": 34.65809955596924,
+      "target": null,
+      "pivot": null,
+      "rs_rating": 91,
+      "risk_pct": null,
+      "actionable_now": false,
+      "confluence": false,
+      "rev_growth_yoy": null,
+      "annual_rev_growth": null,
+      "sales_accelerating": null,
+      "fundamentals_verified": false,
+      "fundamentals_ok": null,
+      "fundamentals_detail": "revenue data unavailable"
+    },
+    {
+      "ticker": "DVA",
+      "sector_label": "DVA",
+      "headline": "[JLAW] Pullback to BOL, META score=3",
+      "latest_at": "2026-07-24 23:37:32 UTC",
+      "severity": "MEDIUM",
+      "confidence": 82,
+      "source": "JLAW",
+      "sources": [
+        "JLAW"
+      ],
+      "strategy": "J Law (Stage 2 / VCP / META)",
+      "signal_type": "BUY_PULLBACK",
+      "entry": 235.44000244140625,
+      "stop_loss": 232.45079940795898,
+      "target": null,
+      "pivot": null,
+      "rs_rating": 93,
+      "risk_pct": null,
+      "actionable_now": false,
+      "confluence": false,
+      "rev_growth_yoy": 0.05956794556524847,
+      "annual_rev_growth": null,
+      "sales_accelerating": null,
+      "fundamentals_verified": true,
+      "fundamentals_ok": true,
+      "fundamentals_detail": "last-Q rev +6.0% YoY, accel=n/a"
+    }
+  ],
+  "logs": [
+    "2026-07-24 23:37:32 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+  ],
+  "generated_at": "2026-07-24 23:37:32 UTC",
+  "top_signal": {
+    "ticker": "AMN",
+    "sector_label": "AMN",
+    "headline": "[JLAW] Pullback to BOL, META score=2",
+    "latest_at": "2026-07-24 23:37:32 UTC",
+    "severity": "MEDIUM",
+    "confidence": 82,
+    "source": "JLAW",
+    "sources": [
+      "JLAW"
+    ],
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "signal_type": "BUY_PULLBACK",
+    "entry": 32.88999938964844,
+    "stop_loss": 34.65809955596924,
+    "target": null,
+    "pivot": null,
+    "rs_rating": 91,
+    "risk_pct": null,
+    "actionable_now": false,
+    "confluence": false,
+    "rev_growth_yoy": null,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_verified": false,
+    "fundamentals_ok": null,
+    "fundamentals_detail": "revenue data unavailable"
+  }
+}
