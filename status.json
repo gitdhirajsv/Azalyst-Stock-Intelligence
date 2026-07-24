@@ -93,29 +93,29 @@
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4059.5,
-      "change_str": "+0.32%",
+      "price": 4059.1,
+      "change_str": "+0.31%",
       "direction": "up"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 89.71,
-      "change_str": "-2.69%",
+      "price": 89.3,
+      "change_str": "-3.13%",
       "direction": "down"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 65111.29,
-      "change_str": "+0.10%",
-      "direction": "up"
+      "price": 65016.0,
+      "change_str": "-0.04%",
+      "direction": "down"
     },
     {
       "label": "VIX",
       "ticker": "^VIX",
-      "price": 18.82,
-      "change_str": "+0.64%",
+      "price": 18.87,
+      "change_str": "+0.91%",
       "direction": "up"
     }
   ],
@@ -128,7 +128,7 @@
       "ticker": "PACS",
       "sector_label": "PACS",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-07-24 09:07:56 UTC",
+      "latest_at": "2026-07-24 12:10:39 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -154,14 +154,14 @@
     }
   ],
   "logs": [
-    "2026-07-24 09:07:56 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-07-24 12:10:39 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-07-24 09:07:56 UTC",
+  "generated_at": "2026-07-24 12:10:39 UTC",
   "top_signal": {
     "ticker": "PACS",
     "sector_label": "PACS",
     "headline": "[JLAW] Pullback to BOL, META score=2",
-    "latest_at": "2026-07-24 09:07:56 UTC",
+    "latest_at": "2026-07-24 12:10:39 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
