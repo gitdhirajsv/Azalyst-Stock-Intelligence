@@ -107,8 +107,8 @@
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 64095.01,
-      "change_str": "-1.46%",
+      "price": 64083.33,
+      "change_str": "-1.48%",
       "direction": "down"
     },
     {
@@ -128,7 +128,7 @@
       "ticker": "AMN",
       "sector_label": "AMN",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-07-24 21:41:23 UTC",
+      "latest_at": "2026-07-24 23:37:32 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -156,7 +156,7 @@
       "ticker": "DVA",
       "sector_label": "DVA",
       "headline": "[JLAW] Pullback to BOL, META score=3",
-      "latest_at": "2026-07-24 21:41:23 UTC",
+      "latest_at": "2026-07-24 23:37:32 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -179,45 +179,17 @@
       "fundamentals_verified": true,
       "fundamentals_ok": true,
       "fundamentals_detail": "last-Q rev +6.0% YoY, accel=n/a"
-    },
-    {
-      "ticker": "ROIV",
-      "sector_label": "ROIV",
-      "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-07-24 21:41:23 UTC",
-      "severity": "MEDIUM",
-      "confidence": 82,
-      "source": "JLAW",
-      "sources": [
-        "JLAW"
-      ],
-      "strategy": "J Law (Stage 2 / VCP / META)",
-      "signal_type": "BUY_PULLBACK",
-      "entry": 35.0099983215332,
-      "stop_loss": 34.62414970397949,
-      "target": null,
-      "pivot": null,
-      "rs_rating": 94,
-      "risk_pct": null,
-      "actionable_now": false,
-      "confluence": false,
-      "rev_growth_yoy": null,
-      "annual_rev_growth": null,
-      "sales_accelerating": null,
-      "fundamentals_verified": false,
-      "fundamentals_ok": null,
-      "fundamentals_detail": "revenue data unavailable"
     }
   ],
   "logs": [
-    "2026-07-24 21:41:23 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-07-24 23:37:32 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-07-24 21:41:23 UTC",
+  "generated_at": "2026-07-24 23:37:32 UTC",
   "top_signal": {
     "ticker": "AMN",
     "sector_label": "AMN",
     "headline": "[JLAW] Pullback to BOL, META score=2",
-    "latest_at": "2026-07-24 21:41:23 UTC",
+    "latest_at": "2026-07-24 23:37:32 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
