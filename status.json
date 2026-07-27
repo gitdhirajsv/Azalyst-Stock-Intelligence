@@ -72,61 +72,110 @@
     {
       "label": "SPX",
       "ticker": "^GSPC",
-      "price": 7408.3,
-      "change_str": "-1.21%",
-      "direction": "down"
+      "price": 7411.98,
+      "change_str": "+0.05%",
+      "direction": "up"
     },
     {
       "label": "NDX",
       "ticker": "^IXIC",
-      "price": 25137.69,
-      "change_str": "-2.15%",
+      "price": 24975.82,
+      "change_str": "-0.64%",
       "direction": "down"
     },
     {
       "label": "DJI",
       "ticker": "^DJI",
-      "price": 51711.65,
-      "change_str": "-0.97%",
-      "direction": "down"
+      "price": 51947.25,
+      "change_str": "+0.46%",
+      "direction": "up"
     },
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4070.8,
-      "change_str": "+0.60%",
+      "price": 4095.0,
+      "change_str": "+0.67%",
       "direction": "up"
-    },
-    {
-      "label": "OIL",
-      "ticker": "CL=F",
-      "price": 89.31,
-      "change_str": "-3.12%",
-      "direction": "down"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 64639.0,
-      "change_str": "+0.51%",
+      "price": 65479.41,
+      "change_str": "+1.82%",
       "direction": "up"
     },
     {
       "label": "VIX",
       "ticker": "^VIX",
-      "price": 18.7,
-      "change_str": "+12.38%",
-      "direction": "up"
+      "price": 18.58,
+      "change_str": "-0.64%",
+      "direction": "down"
     }
   ],
   "regime": {
-    "risk_state": "RISK_OFF",
-    "vol_regime": "HIGH_VOL"
+    "risk_state": "RISK_ON",
+    "vol_regime": "LOW_VOL"
   },
-  "signals": [],
-  "logs": [
-    "2026-07-26 19:51:56 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+  "signals": [
+    {
+      "ticker": "DVA",
+      "sector_label": "DVA",
+      "headline": "[JLAW] Pullback to BOL, META score=3",
+      "latest_at": "2026-07-27 06:09:32 UTC",
+      "severity": "MEDIUM",
+      "confidence": 82,
+      "source": "JLAW",
+      "sources": [
+        "JLAW"
+      ],
+      "strategy": "J Law (Stage 2 / VCP / META)",
+      "signal_type": "BUY_PULLBACK",
+      "entry": 235.44000244140625,
+      "stop_loss": 232.45079940795898,
+      "target": null,
+      "pivot": null,
+      "rs_rating": 93,
+      "risk_pct": null,
+      "actionable_now": false,
+      "confluence": false,
+      "rev_growth_yoy": 0.05956794556524847,
+      "annual_rev_growth": null,
+      "sales_accelerating": null,
+      "fundamentals_verified": true,
+      "fundamentals_ok": true,
+      "fundamentals_detail": "last-Q rev +6.0% YoY, accel=n/a"
+    }
   ],
-  "generated_at": "2026-07-26 19:51:56 UTC",
-  "top_signal": null
+  "logs": [
+    "2026-07-27 06:09:32 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+  ],
+  "generated_at": "2026-07-27 06:09:32 UTC",
+  "top_signal": {
+    "ticker": "DVA",
+    "sector_label": "DVA",
+    "headline": "[JLAW] Pullback to BOL, META score=3",
+    "latest_at": "2026-07-27 06:09:32 UTC",
+    "severity": "MEDIUM",
+    "confidence": 82,
+    "source": "JLAW",
+    "sources": [
+      "JLAW"
+    ],
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "signal_type": "BUY_PULLBACK",
+    "entry": 235.44000244140625,
+    "stop_loss": 232.45079940795898,
+    "target": null,
+    "pivot": null,
+    "rs_rating": 93,
+    "risk_pct": null,
+    "actionable_now": false,
+    "confluence": false,
+    "rev_growth_yoy": 0.05956794556524847,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_verified": true,
+    "fundamentals_ok": true,
+    "fundamentals_detail": "last-Q rev +6.0% YoY, accel=n/a"
+  }
 }
