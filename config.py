@@ -8,6 +8,14 @@ RISK_PER_TRADE_PCT = 0.01       # 1% of equity per trade
 MAX_PORTFOLIO_RISK_PCT = 0.06   # 6% total open risk
 MAX_POSITION_PCT = 0.25         # max 25% in one stock
 
+# STK-04 (forensic audit 2026-07-28): no diversification control of any kind
+# existed -- sector is fetched only after entry is already approved, purely
+# as dashboard metadata. 3 of 4 live positions ended up in healthcare/biotech
+# by accident. These are checked against the CURRENT book plus any buys
+# already executed earlier in the same scan.
+MAX_OPEN_POSITIONS = 8
+MAX_POSITIONS_PER_SECTOR = 2
+
 # Stage 2 screening thresholds
 MIN_PRICE = 12.0                # Minervini min price $12 (O'Neil standard is $20). Was 5.0.
 MIN_AVG_VOLUME = 250000         # shares/day

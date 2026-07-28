@@ -9,7 +9,7 @@ from stock_screener import apply_stage2_screen
 from signal_generator import generate_entry_signals
 from minervini import compute_rs_ratings
 from fundamentals import apply_fundamental_filter
-from risk_manager import RiskManager, evaluate_stop_loss_exits
+from risk_manager import RiskManager, evaluate_stop_loss_exits, check_diversification
 from paper_trader import init_db, get_cash, get_positions, execute_trade
 
 def run_pipeline():
@@ -101,29 +101,63 @@ def run_pipeline():
     
     # Execute Entries
     # Only buy if in Bull Regime and we have signals
+    #
+    # STK-04 remediation (forensic audit 2026-07-28): sector used to be
+    # fetched (fetch_sector) only AFTER rm.check_entry already approved the
+    # trade -- pure dashboard metadata, never an input to any decision. And
+    # total_risk_ok existed but was never called from here at all. Combined
+    # with 25%-notional sizing (see STK-03), the live book ended up with 3
+    # of 4 positions in healthcare/biotech by accident, with no aggregate
+    # risk check of any kind. `existing_positions` is the DB snapshot at
+    # scan start; `positions_this_cycle` tracks buys already executed
+    # earlier in THIS scan (positions/get_positions() is not re-queried
+    # mid-loop), so the position-count/sector/total-risk gates below see the
+    # book as it actually stands after each buy, not a stale start-of-cycle
+    # snapshot.
+    existing_positions = positions.to_dict('records') if not positions.empty else []
+    positions_this_cycle = []
+
     if is_bull and signals:
         for sig in signals:
             try:
                 ticker = sig['ticker']
                 price = sig['price']
 
-                # Check if we already hold it
-                if not positions.empty and ticker in positions['ticker'].values:
+                combined = existing_positions + positions_this_cycle
+                held_tickers = {p['ticker'] for p in combined}
+                if ticker in held_tickers:
                     continue
 
                 allowed, shares, reason = rm.check_entry(price, sig['stop_loss'])
-                if allowed:
-                    source_label = sig.get('source') or '+'.join(sig.get('sources', ['JLAW']))
-                    sector = fetch_sector(ticker)
-                    success, msg = execute_trade(
-                        ticker, 'BUY', shares, price, reason=sig['reason'],
-                        source=source_label, sector=sector, rs_rating=sig.get('rs_rating'),
-                        stop_loss=sig['stop_loss'],
-                    )
-                    if success:
-                        print(f"BUY {shares} {ticker} @ {price} ({sig['reason']})")
-                        # Update RM equity
-                        rm.update_equity(get_cash()) # Approximation
+                if not allowed:
+                    continue
+
+                sector = fetch_sector(ticker)
+                div_ok, div_reason = check_diversification(combined, sector)
+                if not div_ok:
+                    print(f"[risk] {ticker} skipped - {div_reason}")
+                    continue
+
+                projected_position = {
+                    'ticker': ticker, 'shares': shares, 'avg_price': price,
+                    'stop_loss': sig['stop_loss'], 'sector': sector,
+                }
+                if not rm.total_risk_ok(combined + [projected_position], stock_data):
+                    print(f"[risk] {ticker} skipped - total open risk would exceed "
+                          f"{MAX_PORTFOLIO_RISK_PCT:.0%} of equity")
+                    continue
+
+                source_label = sig.get('source') or '+'.join(sig.get('sources', ['JLAW']))
+                success, msg = execute_trade(
+                    ticker, 'BUY', shares, price, reason=sig['reason'],
+                    source=source_label, sector=sector, rs_rating=sig.get('rs_rating'),
+                    stop_loss=sig['stop_loss'],
+                )
+                if success:
+                    print(f"BUY {shares} {ticker} @ {price} ({sig['reason']})")
+                    positions_this_cycle.append(projected_position)
+                    # Update RM equity
+                    rm.update_equity(get_cash()) # Approximation
             except Exception as e:
                 print(f"[execute] error on {sig.get('ticker')}: {e}")
                 continue

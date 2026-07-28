@@ -1,5 +1,8 @@
 import pandas as pd
-from config import RISK_PER_TRADE_PCT, MAX_POSITION_PCT, MAX_PORTFOLIO_RISK_PCT
+from config import (
+    RISK_PER_TRADE_PCT, MAX_POSITION_PCT, MAX_PORTFOLIO_RISK_PCT,
+    MAX_OPEN_POSITIONS, MAX_POSITIONS_PER_SECTOR,
+)
 
 # STK-03 remediation (forensic audit 2026-07-28): the tight structural stops
 # this strategy actually uses (J Law pullback stops are pivot*0.97, often
@@ -58,18 +61,73 @@ class RiskManager:
         return True, shares, "OK"
 
     def total_risk_ok(self, open_positions, stock_data):
-        """Check if total open risk is under max."""
-        total_risk = 0
+        """True if total open risk (sum of per-position dollar risk to stop)
+        is under MAX_PORTFOLIO_RISK_PCT of equity.
+
+        STK-04 remediation (forensic audit 2026-07-28): this had zero call
+        sites in the live pipeline -- nothing ever checked aggregate
+        portfolio risk, so nothing prevented stacking many maximally-sized
+        positions. `open_positions` is an iterable of dict-likes (e.g.
+        paper_trader.get_positions().to_dict('records'), plus any positions
+        opened earlier in the same scan that aren't in the DB yet -- see
+        azalyst.py's entry loop). Also fixed: `pos.get('stop_loss', ...)`
+        only applies its default when the KEY is missing, not when the
+        value is None -- since STK-01 the column always exists (value None
+        for legacy/unset rows), so the old default silently never fired;
+        this now checks `is None` explicitly. A stop that's missing or
+        invalid (>= current price, the STK-05 inverted-stop bug class)
+        falls back to a 5%-of-price placeholder, same as the original
+        intent.
+        """
+        total_risk = 0.0
         for pos in open_positions:
             ticker = pos['ticker']
             df = stock_data.get(ticker)
             if df is None:
                 continue
             current_price = df.iloc[-1]['Close']
-            stop = pos.get('stop_loss', current_price * 0.95)
-            risk_per_share = abs(current_price - stop)
+            stop = pos.get('stop_loss')
+            if stop is None or pd.isna(stop) or stop <= 0 or stop >= current_price:
+                stop = current_price * 0.95
+            risk_per_share = current_price - stop
             total_risk += risk_per_share * pos['shares']
-        return total_risk < (self.equity * MAX_PORTFOLIO_RISK_PCT)
+        return bool(total_risk < (self.equity * MAX_PORTFOLIO_RISK_PCT))
+
+
+def _top_level_sector(sector):
+    """utils.fetch_sector returns "{GICS sector} / {industry}" (e.g.
+    "Healthcare / Biotechnology") -- the fine industry differs company to
+    company even within the same broad sector, so an exact-string match on
+    the combined value would almost never catch real concentration (the
+    live book's CNC was "Healthcare / Healthcare Plans" while ROIV/KYMR
+    were "Healthcare / Biotechnology" -- three different industries, one
+    sector). The diversification cap groups by the GICS sector only."""
+    if not sector:
+        return "Unclassified"
+    return sector.split(" / ")[0].strip()
+
+
+def check_diversification(combined_positions, sector):
+    """True if adding one more position in `sector` stays within
+    MAX_OPEN_POSITIONS and MAX_POSITIONS_PER_SECTOR. Returns (ok, reason).
+
+    STK-04 remediation (forensic audit 2026-07-28): no position-count or
+    sector-concentration limit of any kind existed -- sector was fetched
+    only after entry was already approved, purely as dashboard metadata.
+    The live book ended up with 3 of 4 positions in healthcare/biotech by
+    accident. `combined_positions` is the existing DB book plus any
+    positions already opened earlier in the same scan (see azalyst.py's
+    entry loop -- positions is not re-queried mid-loop).
+    """
+    if len(combined_positions) >= MAX_OPEN_POSITIONS:
+        return False, f"max open positions ({MAX_OPEN_POSITIONS}) reached"
+    target = _top_level_sector(sector)
+    sector_count = sum(
+        1 for p in combined_positions if _top_level_sector(p.get('sector')) == target
+    )
+    if sector_count >= MAX_POSITIONS_PER_SECTOR:
+        return False, f"sector '{target}' already at cap ({MAX_POSITIONS_PER_SECTOR})"
+    return True, "OK"
 
 
 # ETF-style STK-02 remediation note (forensic audit 2026-07-28): the only
