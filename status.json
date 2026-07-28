@@ -93,22 +93,22 @@
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4073.8,
-      "change_str": "+0.15%",
-      "direction": "up"
+      "price": 4042.1,
+      "change_str": "-0.80%",
+      "direction": "down"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 82.1,
-      "change_str": "-8.07%",
+      "price": 81.63,
+      "change_str": "-1.19%",
       "direction": "down"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 63576.02,
-      "change_str": "-2.70%",
+      "price": 63401.58,
+      "change_str": "-2.97%",
       "direction": "down"
     },
     {
@@ -127,8 +127,8 @@
     {
       "ticker": "AMN",
       "sector_label": "AMN",
-      "headline": "[JLAW] Pullback to BOL, META score=3",
-      "latest_at": "2026-07-27 23:42:51 UTC",
+      "headline": "[JLAW] Pullback to BOL, META score=2",
+      "latest_at": "2026-07-28 05:37:35 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -156,7 +156,7 @@
       "ticker": "DVA",
       "sector_label": "DVA",
       "headline": "[JLAW] Pullback to BOL, META score=3",
-      "latest_at": "2026-07-27 23:42:51 UTC",
+      "latest_at": "2026-07-28 05:37:35 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -182,14 +182,14 @@
     }
   ],
   "logs": [
-    "2026-07-27 23:42:50 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-07-28 05:37:35 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-07-27 23:42:50 UTC",
+  "generated_at": "2026-07-28 05:37:35 UTC",
   "top_signal": {
     "ticker": "AMN",
     "sector_label": "AMN",
-    "headline": "[JLAW] Pullback to BOL, META score=3",
-    "latest_at": "2026-07-27 23:42:51 UTC",
+    "headline": "[JLAW] Pullback to BOL, META score=2",
+    "latest_at": "2026-07-28 05:37:35 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
