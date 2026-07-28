@@ -73,42 +73,49 @@
       "label": "SPX",
       "ticker": "^GSPC",
       "price": 7413.18,
-      "change_str": "+0.07%",
+      "change_str": "+0.02%",
       "direction": "up"
     },
     {
       "label": "NDX",
       "ticker": "^IXIC",
       "price": 24932.08,
-      "change_str": "-0.82%",
+      "change_str": "-0.18%",
       "direction": "down"
     },
     {
       "label": "DJI",
       "ticker": "^DJI",
       "price": 52210.08,
-      "change_str": "+0.96%",
+      "change_str": "+0.51%",
       "direction": "up"
+    },
+    {
+      "label": "GOLD",
+      "ticker": "GC=F",
+      "price": 4027.3,
+      "change_str": "-1.16%",
+      "direction": "down"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 80.96,
-      "change_str": "-2.00%",
+      "price": 81.63,
+      "change_str": "-1.19%",
       "direction": "down"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 63397.27,
-      "change_str": "-0.51%",
+      "price": 63429.78,
+      "change_str": "-0.46%",
       "direction": "down"
     },
     {
       "label": "VIX",
       "ticker": "^VIX",
-      "price": 18.85,
-      "change_str": "+0.96%",
+      "price": 18.81,
+      "change_str": "+0.75%",
       "direction": "up"
     }
   ],
@@ -121,7 +128,7 @@
       "ticker": "AMN",
       "sector_label": "AMN",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-07-28 09:23:21 UTC",
+      "latest_at": "2026-07-28 12:28:11 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -149,7 +156,7 @@
       "ticker": "DVA",
       "sector_label": "DVA",
       "headline": "[JLAW] Pullback to BOL, META score=3",
-      "latest_at": "2026-07-28 09:23:21 UTC",
+      "latest_at": "2026-07-28 12:28:11 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -175,14 +182,14 @@
     }
   ],
   "logs": [
-    "2026-07-28 09:23:21 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-07-28 12:28:11 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-07-28 09:23:21 UTC",
+  "generated_at": "2026-07-28 12:28:11 UTC",
   "top_signal": {
     "ticker": "AMN",
     "sector_label": "AMN",
     "headline": "[JLAW] Pullback to BOL, META score=2",
-    "latest_at": "2026-07-28 09:23:21 UTC",
+    "latest_at": "2026-07-28 12:28:11 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
