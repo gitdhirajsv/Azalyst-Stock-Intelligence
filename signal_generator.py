@@ -3,29 +3,60 @@ from pattern_detector import detect_vcp, detect_meta_pullback
 from minervini import minervini_signal
 
 
+def _jlaw_stop(pivot, entry):
+    """Stop for a J Law entry: 3% below the pivot, but never above (or too
+    close to) the actual entry price.
+
+    STK-05 remediation (forensic audit 2026-07-28): the pullback branch
+    used a fixed `pivot * 0.97` regardless of how far the M.E.T.A. pullback
+    price had actually moved from the pivot. detect_meta_pullback only
+    requires 2 of 4 "edges" (BOL-zone proximity is just one of them), so a
+    pullback can qualify via MA support + volume contraction alone while
+    sitting well below the pivot -- detect_vcp allows contractions up to
+    10% below pivot. When that happens, pivot*0.97 (3% below pivot) sits
+    ABOVE the entry price: a long position sized off a stop that's already
+    been breached before the trade is even opened. This was live: a signal
+    for AMN priced entry at 33.45 with stop_loss 34.66 (pivot*0.97, 3.6%
+    ABOVE entry). Taking the tighter-normally / safer-when-degenerate of
+    "3% below pivot" and "2% below actual entry" fixes both cases: when
+    entry is near the pivot (the intended case), pivot*0.97 is naturally
+    the lower (and wins); when entry has drifted well below the pivot, the
+    2%-below-entry level is the lower one and wins, keeping the stop
+    correctly beneath the price actually being paid.
+    """
+    return min(pivot * 0.97, entry * 0.98)
+
+
 def _jlaw_signal(ticker, df):
     """
     J Law entry: VCP breakout, else pullback to the M.E.T.A. / breakout level.
-    Returns a signal dict or None. (Original J Law logic, unchanged.)
+    Returns a signal dict or None. (Original J Law logic, unchanged except
+    for the stop-loss computation -- see _jlaw_stop.)
     """
     vcp = detect_vcp(df)
     if vcp is None:
         return None
     if vcp['breakout_now']:
+        stop = _jlaw_stop(vcp['pivot'], vcp['close'])
+        if stop >= vcp['close']:
+            return None  # defensive: never emit an inverted/non-positive-risk stop
         return {
             'ticker': ticker,
             'type': 'BUY_BREAKOUT',
             'price': vcp['close'],
-            'stop_loss': vcp['pivot'] * 0.97,
+            'stop_loss': stop,
             'reason': f"VCP breakout, pivot={vcp['pivot']:.2f}",
         }
     meta = detect_meta_pullback(df, vcp['pivot'])
     if meta['is_meta']:
+        stop = _jlaw_stop(vcp['pivot'], vcp['close'])
+        if stop >= vcp['close']:
+            return None  # defensive: never emit an inverted/non-positive-risk stop
         return {
             'ticker': ticker,
             'type': 'BUY_PULLBACK',
             'price': vcp['close'],
-            'stop_loss': vcp['pivot'] * 0.97,
+            'stop_loss': stop,
             'reason': f"Pullback to BOL, META score={meta['meta_score']}",
         }
     return None
@@ -113,7 +144,26 @@ def generate_entry_signals(watchlist, stock_data, minervini_universe=None, rs_ra
         if sig.get('rs_rating') is None:
             sig['rs_rating'] = rs_ratings.get(sig['ticker'])
 
-    return signals
+    # STK-05 remediation (forensic audit 2026-07-28): blanket validation
+    # layer, independent of and in addition to the per-path fixes above
+    # (_jlaw_stop, minervini_signal's own `if stop >= entry: return None`).
+    # No long signal may ever reach the risk manager / paper trader with a
+    # stop at or above its entry price -- reject and log instead of letting
+    # a bad stop (from either strategy, or from the confluence merge that
+    # can overwrite one path's stop with the other's) size a position via
+    # RiskManager.position_size's abs(entry - stop) (see STK-03, which
+    # also independently rejects this at sizing time -- this is
+    # defense-in-depth at the source).
+    validated = []
+    for sig in signals:
+        stop = sig.get('stop_loss')
+        price = sig.get('price')
+        if stop is not None and price is not None and stop >= price:
+            print(f"[signal] rejected {sig.get('ticker')}: stop_loss {stop} >= price {price}")
+            continue
+        validated.append(sig)
+
+    return validated
 
 
 def generate_exit_signals(positions, stock_data):
