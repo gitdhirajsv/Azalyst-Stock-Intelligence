@@ -1,5 +1,5 @@
 import os
-from datetime import datetime
+from datetime import datetime, timezone
 from config import *
 from universe import get_universe
 from data_loader import load_stock_data
@@ -11,6 +11,28 @@ from minervini import compute_rs_ratings
 from fundamentals import apply_fundamental_filter
 from risk_manager import RiskManager, evaluate_stop_loss_exits, check_diversification
 from paper_trader import init_db, get_cash, get_positions, execute_trade
+
+# STK-07 remediation (forensic audit 2026-07-28): the cron ran this pipeline
+# hourly during market hours (14:30-21:30 UTC) using yfinance's 1d-interval
+# bars. Mid-session, "the last bar" is today's still-forming candle -- a
+# breakout "confirmed" at 10:30am ET can fail by the close, and the
+# >=1.4x-average-volume gate is measured against a partial day's volume, not
+# the full session. Entries (new positions) are now evaluated only outside
+# this window, i.e. against a completed daily bar; stop-loss monitoring
+# (evaluate_stop_loss_exits) still runs every cycle regardless -- an open
+# risk should be checked as often as possible, only NEW risk needs a
+# finished bar. 13-20 UTC is a deliberately conservative superset of the
+# actual ~13:30-21:00 UTC session (both EDT and EST close times), so the
+# gate errs toward skipping a borderline hour rather than trading on a
+# partial one.
+US_MARKET_ACTIVE_UTC_HOURS = range(13, 21)
+
+
+def _entries_allowed(now=None):
+    """True only when it's safe to treat the latest daily bar as complete."""
+    now = now or datetime.now(timezone.utc)
+    return now.hour not in US_MARKET_ACTIVE_UTC_HOURS
+
 
 def run_pipeline():
     print(f"[{datetime.now().isoformat()}] Starting Azalyst Stock Intelligence Pipeline...")
@@ -117,7 +139,12 @@ def run_pipeline():
     existing_positions = positions.to_dict('records') if not positions.empty else []
     positions_this_cycle = []
 
-    if is_bull and signals:
+    entries_allowed = _entries_allowed()
+    if not entries_allowed:
+        print("[entries] skipped this cycle - within market hours, "
+              "today's daily bar is not yet complete (STK-07)")
+
+    if entries_allowed and is_bull and signals:
         for sig in signals:
             try:
                 ticker = sig['ticker']
