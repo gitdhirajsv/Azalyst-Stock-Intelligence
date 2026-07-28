@@ -2,9 +2,9 @@
   {
     "ticker": "AMN",
     "type": "BUY_PULLBACK",
-    "price": 33.45000076293945,
-    "stop_loss": 32.781000747680665,
-    "reason": "Pullback to BOL, META score=2",
+    "price": 33.599998474121094,
+    "stop_loss": 32.92799850463867,
+    "reason": "Pullback to BOL, META score=3",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
     "sources": [
@@ -19,17 +19,36 @@
     "fundamentals_ok": null
   },
   {
-    "ticker": "DVA",
+    "ticker": "AMRX",
     "type": "BUY_PULLBACK",
-    "price": 236.30999755859375,
-    "stop_loss": 231.58379760742187,
-    "reason": "Pullback to BOL, META score=3",
+    "price": 18.349899291992188,
+    "stop_loss": 17.838299407958985,
+    "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
     "sources": [
       "JLAW"
     ],
-    "rs_rating": 93,
+    "rs_rating": 92,
+    "rev_growth_yoy": null,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_detail": "revenue data unavailable",
+    "fundamentals_verified": false,
+    "fundamentals_ok": null
+  },
+  {
+    "ticker": "DVA",
+    "type": "BUY_PULLBACK",
+    "price": 237.75999450683594,
+    "stop_loss": 231.92700592041015,
+    "reason": "Pullback to BOL, META score=4",
+    "source": "JLAW",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW"
+    ],
+    "rs_rating": 94,
     "rev_growth_yoy": 0.05956794556524847,
     "annual_rev_growth": null,
     "sales_accelerating": null,
