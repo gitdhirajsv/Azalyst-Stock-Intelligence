@@ -9,7 +9,7 @@ from stock_screener import apply_stage2_screen
 from signal_generator import generate_entry_signals
 from minervini import compute_rs_ratings
 from fundamentals import apply_fundamental_filter
-from risk_manager import RiskManager
+from risk_manager import RiskManager, evaluate_stop_loss_exits
 from paper_trader import init_db, get_cash, get_positions, execute_trade
 
 def run_pipeline():
@@ -92,18 +92,12 @@ def run_pipeline():
     
     rm = RiskManager(current_equity)
     
-    # Evaluate Exits (Stop Loss)
-    if not positions.empty:
-        for idx, pos in positions.iterrows():
-            ticker = pos['ticker']
-            shares = pos['shares']
-            avg_price = pos['avg_price']
-            if ticker in stock_data:
-                current_price = stock_data[ticker]['Close'].iloc[-1]
-                # Dummy exit rule: Exit if price drops 8% below avg_price
-                if current_price < avg_price * 0.92:
-                    execute_trade(ticker, 'SELL', shares, current_price, reason="Stop Loss")
-                    print(f"SELL (Stop Loss) {shares} {ticker} @ {current_price}")
+    # Evaluate Exits (Stop Loss) -- see risk_manager.evaluate_stop_loss_exits
+    # (STK-02 remediation, forensic audit 2026-07-28) for why this replaced
+    # the old hardcoded "Dummy exit rule" checked against Close only.
+    for ticker, shares, fill_price, reason in evaluate_stop_loss_exits(positions, stock_data):
+        execute_trade(ticker, 'SELL', shares, fill_price, reason=reason)
+        print(f"SELL ({reason}) {shares} {ticker} @ {fill_price}")
     
     # Execute Entries
     # Only buy if in Bull Regime and we have signals
