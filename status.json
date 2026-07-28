@@ -5,7 +5,8 @@
   "change_raw": -3.62,
   "change": "-3.62%",
   "unrealised_str": "-$1097.19",
-  "realised_str": "$0.00",
+  "realised_pnl": -2519.3,
+  "realised_str": "-$2519.30",
   "closed_trades": 1,
   "usd_inr_rate": 1.0,
   "positions": [
@@ -54,69 +55,86 @@
       "market_value": 20799.450576782227
     }
   ],
-  "closed_trades_list": [],
+  "closed_trades_list": [
+    {
+      "ticker": "RCUS",
+      "entry": 30.25,
+      "exit": 27.2,
+      "shares": 826,
+      "pnl": -2519.3,
+      "pnl_str": "-$2519.30",
+      "pnl_pct": -10.08,
+      "pnl_pct_str": "-10.08%",
+      "exit_date": "2026-07-16",
+      "exit_reason": "Stop Loss",
+      "winner": false
+    }
+  ],
   "track_record": {
-    "total_trades": 0,
+    "total_trades": 1,
     "winners": 0,
-    "losers": 0,
-    "win_rate": 0,
-    "avg_win": 0,
-    "avg_loss": 0,
-    "profit_factor": 0,
-    "expectancy": 0,
-    "sharpe_proxy": 0,
-    "best": null,
-    "worst": null
+    "losers": 1,
+    "win_rate": 0.0,
+    "avg_win": 0.0,
+    "avg_loss": -10.08,
+    "profit_factor": 0.0,
+    "expectancy": -10.08,
+    "sharpe_proxy": 0.0,
+    "best": {
+      "ticker": "RCUS",
+      "pnl_pct": -10.08,
+      "pnl_pct_str": "-10.08%",
+      "exit_reason": "Stop Loss"
+    },
+    "worst": {
+      "ticker": "RCUS",
+      "pnl_pct": -10.08,
+      "pnl_pct_str": "-10.08%",
+      "exit_reason": "Stop Loss"
+    }
   },
   "market_snapshot": [
-    {
-      "label": "SPX",
-      "ticker": "^GSPC",
-      "price": 7413.18,
-      "change_str": "+0.02%",
-      "direction": "up"
-    },
     {
       "label": "NDX",
       "ticker": "^IXIC",
       "price": 24932.08,
-      "change_str": "-0.18%",
+      "change_str": "-0.82%",
       "direction": "down"
     },
     {
       "label": "DJI",
       "ticker": "^DJI",
       "price": 52210.08,
-      "change_str": "+0.51%",
+      "change_str": "+0.96%",
       "direction": "up"
     },
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4027.3,
-      "change_str": "-1.16%",
+      "price": 4032.6,
+      "change_str": "-1.03%",
       "direction": "down"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 81.63,
-      "change_str": "-1.19%",
+      "price": 81.32,
+      "change_str": "-1.56%",
       "direction": "down"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 63429.78,
-      "change_str": "-0.46%",
+      "price": 63364.98,
+      "change_str": "-0.56%",
       "direction": "down"
     },
     {
       "label": "VIX",
       "ticker": "^VIX",
-      "price": 18.81,
-      "change_str": "+0.75%",
-      "direction": "up"
+      "price": 18.63,
+      "change_str": "-0.21%",
+      "direction": "down"
     }
   ],
   "regime": {
@@ -128,7 +146,7 @@
       "ticker": "AMN",
       "sector_label": "AMN",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-07-28 12:28:11 UTC",
+      "latest_at": "2026-07-28 13:23:00 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -138,7 +156,7 @@
       "strategy": "J Law (Stage 2 / VCP / META)",
       "signal_type": "BUY_PULLBACK",
       "entry": 33.45000076293945,
-      "stop_loss": 34.65809955596924,
+      "stop_loss": 32.781000747680665,
       "target": null,
       "pivot": null,
       "rs_rating": 91,
@@ -156,7 +174,7 @@
       "ticker": "DVA",
       "sector_label": "DVA",
       "headline": "[JLAW] Pullback to BOL, META score=3",
-      "latest_at": "2026-07-28 12:28:11 UTC",
+      "latest_at": "2026-07-28 13:23:00 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -166,7 +184,7 @@
       "strategy": "J Law (Stage 2 / VCP / META)",
       "signal_type": "BUY_PULLBACK",
       "entry": 236.30999755859375,
-      "stop_loss": 232.45079940795898,
+      "stop_loss": 231.58379760742187,
       "target": null,
       "pivot": null,
       "rs_rating": 93,
@@ -182,14 +200,14 @@
     }
   ],
   "logs": [
-    "2026-07-28 12:28:11 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-07-28 13:23:00 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-07-28 12:28:11 UTC",
+  "generated_at": "2026-07-28 13:23:00 UTC",
   "top_signal": {
     "ticker": "AMN",
     "sector_label": "AMN",
     "headline": "[JLAW] Pullback to BOL, META score=2",
-    "latest_at": "2026-07-28 12:28:11 UTC",
+    "latest_at": "2026-07-28 13:23:00 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
@@ -199,7 +217,7 @@
     "strategy": "J Law (Stage 2 / VCP / META)",
     "signal_type": "BUY_PULLBACK",
     "entry": 33.45000076293945,
-    "stop_loss": 34.65809955596924,
+    "stop_loss": 32.781000747680665,
     "target": null,
     "pivot": null,
     "rs_rating": 91,
