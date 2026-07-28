@@ -1,6 +1,22 @@
 import pandas as pd
 from config import RISK_PER_TRADE_PCT, MAX_POSITION_PCT, MAX_PORTFOLIO_RISK_PCT
 
+# STK-03 remediation (forensic audit 2026-07-28): the tight structural stops
+# this strategy actually uses (J Law pullback stops are pivot*0.97, often
+# 2-4% from entry) meant risk_amount / risk_per_share ballooned toward
+# MAX_POSITION_PCT on every trade -- any stop tighter than
+# RISK_PER_TRADE_PCT / MAX_POSITION_PCT (4%, at the defaults) hits the 25%
+# cap. Sizing was nominally "1% risk" but every real trade was actually a
+# 25%-of-equity bet, because the stop that sizes the trade is not
+# necessarily the stop it exits at -- a gap can jump straight past it.
+# GAP_RISK_PCT is an assumed worst-case single-session adverse gap (matches
+# the Minervini Trend-Template's own 8%-max-structural-risk rule); no
+# position may be sized so large that an 8% gap costs more than
+# GAP_RISK_BUDGET_PCT of equity, regardless of how tight the nominal stop is.
+GAP_RISK_PCT = 0.08
+GAP_RISK_BUDGET_PCT = 0.015
+
+
 class RiskManager:
     def __init__(self, equity):
         self.equity = equity
@@ -9,17 +25,30 @@ class RiskManager:
         self.equity = new_equity
 
     def position_size(self, entry_price, stop_loss_price, risk_pct=None):
-        """Calculate number of shares based on risk per trade."""
+        """Calculate number of shares based on risk per trade, bounded by
+        worst-case gap risk and the max-position cap -- whichever of the
+        three is tightest wins.
+
+        Returns 0 if stop_loss_price is missing or at/above entry_price: a
+        stop at or above cost is nonsensical for a long (the STK-05
+        inverted-stop bug class) and must never be sized off, not silently
+        masked by taking abs() of the distance.
+        """
         if risk_pct is None:
             risk_pct = RISK_PER_TRADE_PCT
-        risk_amount = self.equity * risk_pct
-        risk_per_share = abs(entry_price - stop_loss_price)
-        if risk_per_share == 0:
+        if stop_loss_price is None or stop_loss_price <= 0 or stop_loss_price >= entry_price:
             return 0
-        shares = int(risk_amount / risk_per_share)
-        # Cap by max position size
-        max_shares = int((self.equity * MAX_POSITION_PCT) / entry_price)
-        return min(shares, max_shares)
+
+        risk_amount = self.equity * risk_pct
+        risk_per_share = entry_price - stop_loss_price
+        shares_by_risk = int(risk_amount / risk_per_share)
+
+        max_shares_by_position_cap = int((self.equity * MAX_POSITION_PCT) / entry_price)
+        max_shares_by_gap_risk = int(
+            (self.equity * GAP_RISK_BUDGET_PCT) / (entry_price * GAP_RISK_PCT)
+        )
+
+        return max(0, min(shares_by_risk, max_shares_by_position_cap, max_shares_by_gap_risk))
 
     def check_entry(self, entry_price, stop_loss_price):
         """Check if a new entry is allowed and size it based on risk per trade."""
