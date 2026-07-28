@@ -13,6 +13,7 @@ list, best/worst.
 
 from __future__ import annotations
 
+import os
 import sqlite3
 
 import pandas as pd
@@ -123,12 +124,24 @@ def test_track_record_empty_when_no_closed_trades():
     assert track["worst"] is None
 
 
-# ── golden-file test against the actual live database ──────────────────────
+# ── golden-file test against the archived pre-reset database ───────────────
+#
+# Points at the immutable archive (archive/v1_paper_track_record_2026-07-28/),
+# not config.DB_PATH: the live database is reset periodically (see README's
+# "Remediation Pass" / "Paper Trading" sections) and no longer contains this
+# history -- a golden-file test must pin to a snapshot that won't change out
+# from under it, not to live, mutable state.
 
-def test_live_database_rcus_loss_is_correctly_surfaced():
-    """Reproduces the exact live bug report: reads database/paper_trades.db
-    directly and confirms the RCUS loss is no longer invisible."""
-    conn = sqlite3.connect(config.DB_PATH)
+_ARCHIVED_DB = os.path.join(
+    os.path.dirname(__file__), "..", "archive",
+    "v1_paper_track_record_2026-07-28", "paper_trades.db",
+)
+
+
+def test_archived_database_rcus_loss_is_correctly_surfaced():
+    """Reproduces the exact live bug report as it stood before the
+    2026-07-28 reset: confirms the RCUS loss is no longer invisible."""
+    conn = sqlite3.connect(_ARCHIVED_DB)
     trades = pd.read_sql("SELECT * FROM trades", conn)
     conn.close()
 

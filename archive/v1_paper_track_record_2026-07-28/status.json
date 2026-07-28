@@ -1,15 +1,59 @@
 {
-  "portfolio_value": 100000.0,
+  "portfolio_value": 96383.51,
   "total_deposited": 100000,
-  "cash": 100000.0,
-  "change_raw": 0.0,
-  "change": "+0.00%",
-  "unrealised_str": "+$0.00",
-  "realised_pnl": 0.0,
-  "realised_str": "+$0.00",
-  "closed_trades": 0,
+  "cash": 1753.33,
+  "change_raw": -3.62,
+  "change": "-3.62%",
+  "unrealised_str": "-$1097.19",
+  "realised_str": "$0.00",
+  "closed_trades": 1,
   "usd_inr_rate": 1.0,
-  "positions": [],
+  "positions": [
+    {
+      "ticker": "PACS",
+      "sector": "Unclassified",
+      "source": "JLAW",
+      "rs_rating": 94,
+      "pnl_pct": 4.6,
+      "pnl_pct_str": "+4.60%",
+      "pnl": 1143.75,
+      "pnl_str": "+$1143.75",
+      "market_value": 25988.161010742188
+    },
+    {
+      "ticker": "CNC",
+      "sector": "Healthcare / Healthcare Plans",
+      "source": "JLAW",
+      "rs_rating": 90,
+      "pnl_pct": -3.7,
+      "pnl_pct_str": "-3.70%",
+      "pnl": -924.96,
+      "pnl_str": "-$924.96",
+      "market_value": 24094.080688476562
+    },
+    {
+      "ticker": "ROIV",
+      "sector": "Healthcare / Biotechnology",
+      "source": "JLAW",
+      "rs_rating": 92,
+      "pnl_pct": -4.46,
+      "pnl_pct_str": "-4.46%",
+      "pnl": -1108.08,
+      "pnl_str": "-$1108.08",
+      "market_value": 23748.480834960938
+    },
+    {
+      "ticker": "KYMR",
+      "sector": "Healthcare / Biotechnology",
+      "source": "JLAW",
+      "rs_rating": 91,
+      "pnl_pct": -0.99,
+      "pnl_pct_str": "-0.99%",
+      "pnl": -207.9,
+      "pnl_str": "-$207.90",
+      "market_value": 20799.450576782227
+    }
+  ],
   "closed_trades_list": [],
   "track_record": {
     "total_trades": 0,
@@ -49,29 +93,29 @@
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4030.7,
-      "change_str": "-1.07%",
+      "price": 4027.3,
+      "change_str": "-1.16%",
       "direction": "down"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 81.27,
-      "change_str": "-1.62%",
+      "price": 81.63,
+      "change_str": "-1.19%",
       "direction": "down"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 63247.03,
-      "change_str": "-0.75%",
+      "price": 63429.78,
+      "change_str": "-0.46%",
       "direction": "down"
     },
     {
       "label": "VIX",
       "ticker": "^VIX",
-      "price": 18.67,
-      "change_str": "+0.00%",
+      "price": 18.81,
+      "change_str": "+0.75%",
       "direction": "up"
     }
   ],
@@ -84,7 +128,7 @@
       "ticker": "AMN",
       "sector_label": "AMN",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-07-28 13:27:43 UTC",
+      "latest_at": "2026-07-28 12:28:11 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -112,7 +156,7 @@
       "ticker": "DVA",
       "sector_label": "DVA",
       "headline": "[JLAW] Pullback to BOL, META score=3",
-      "latest_at": "2026-07-28 13:27:43 UTC",
+      "latest_at": "2026-07-28 12:28:11 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -138,14 +182,14 @@
     }
   ],
   "logs": [
-    "2026-07-28 13:27:43 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-07-28 12:28:11 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-07-28 13:27:43 UTC",
+  "generated_at": "2026-07-28 12:28:11 UTC",
   "top_signal": {
     "ticker": "AMN",
     "sector_label": "AMN",
     "headline": "[JLAW] Pullback to BOL, META score=2",
-    "latest_at": "2026-07-28 13:27:43 UTC",
+    "latest_at": "2026-07-28 12:28:11 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
