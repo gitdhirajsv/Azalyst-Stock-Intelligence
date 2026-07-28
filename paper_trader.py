@@ -69,7 +69,7 @@ def get_trade_history():
     conn.close()
     return df
 
-def execute_trade(ticker, action, shares, price, date=None, reason="", source=None, sector=None, rs_rating=None):
+def execute_trade(ticker, action, shares, price, date=None, reason="", source=None, sector=None, rs_rating=None, stop_loss=None):
     if date is None:
         date = datetime.now().strftime("%Y-%m-%d")
     # Do EVERYTHING on a single connection/transaction. The previous version began a
@@ -100,19 +100,27 @@ def execute_trade(ticker, action, shares, price, date=None, reason="", source=No
 
         # Update positions
         if action == 'BUY':
-            c.execute("SELECT shares, avg_price FROM positions WHERE ticker=?", (ticker,))
+            c.execute("SELECT shares, avg_price, stop_loss FROM positions WHERE ticker=?", (ticker,))
             prow = c.fetchone()
             if prow:
-                old_shares, old_avg = prow
+                old_shares, old_avg, old_stop = prow
                 new_shares = old_shares + shares
                 new_avg = (old_avg * old_shares + price * shares) / new_shares
                 # Adding to an existing position: keep the original entry's source/sector/
                 # rs_rating (it's still the same holding), just update size/cost basis.
-                c.execute("UPDATE positions SET shares=?, avg_price=? WHERE ticker=?", (new_shares, new_avg, ticker))
+                # STK-01: keep the ORIGINAL stop too -- only fill it in if the existing
+                # position somehow has none (e.g. a pre-migration row), never overwrite
+                # a real stop with the top-up signal's own stop.
+                new_stop = old_stop if old_stop is not None else stop_loss
+                c.execute(
+                    "UPDATE positions SET shares=?, avg_price=?, stop_loss=? WHERE ticker=?",
+                    (new_shares, new_avg, new_stop, ticker),
+                )
             else:
                 c.execute(
-                    "INSERT INTO positions (ticker, shares, avg_price, source, sector, rs_rating) VALUES (?,?,?,?,?,?)",
-                    (ticker, shares, price, source, sector, rs_rating),
+                    "INSERT INTO positions (ticker, shares, avg_price, source, sector, rs_rating, stop_loss) "
+                    "VALUES (?,?,?,?,?,?,?)",
+                    (ticker, shares, price, source, sector, rs_rating, stop_loss),
                 )
         elif action == 'SELL':
             c.execute("SELECT shares FROM positions WHERE ticker=?", (ticker,))

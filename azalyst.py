@@ -124,6 +124,7 @@ def run_pipeline():
                     success, msg = execute_trade(
                         ticker, 'BUY', shares, price, reason=sig['reason'],
                         source=source_label, sector=sector, rs_rating=sig.get('rs_rating'),
+                        stop_loss=sig['stop_loss'],
                     )
                     if success:
                         print(f"BUY {shares} {ticker} @ {price} ({sig['reason']})")

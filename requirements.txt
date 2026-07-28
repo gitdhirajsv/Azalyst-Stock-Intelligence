@@ -6,3 +6,6 @@ matplotlib
 plotly
 ta
 requests
+
+# Test gate (STK-14: repo previously had no tests directory or CI test step)
+pytest>=7.0
