@@ -28,51 +28,51 @@
     {
       "label": "SPX",
       "ticker": "^GSPC",
-      "price": 7413.18,
-      "change_str": "+0.02%",
-      "direction": "up"
+      "price": 7404.33,
+      "change_str": "-0.12%",
+      "direction": "down"
     },
     {
       "label": "NDX",
       "ticker": "^IXIC",
-      "price": 24932.08,
-      "change_str": "-0.18%",
+      "price": 24796.7,
+      "change_str": "-0.54%",
       "direction": "down"
     },
     {
       "label": "DJI",
       "ticker": "^DJI",
-      "price": 52210.08,
-      "change_str": "+0.51%",
+      "price": 52502.06,
+      "change_str": "+0.56%",
       "direction": "up"
     },
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4030.7,
-      "change_str": "-1.07%",
+      "price": 4033.1,
+      "change_str": "-1.02%",
       "direction": "down"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 81.27,
-      "change_str": "-1.62%",
+      "price": 81.1,
+      "change_str": "-1.83%",
       "direction": "down"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 63247.03,
-      "change_str": "-0.75%",
+      "price": 63262.99,
+      "change_str": "-0.72%",
       "direction": "down"
     },
     {
       "label": "VIX",
       "ticker": "^VIX",
-      "price": 18.67,
-      "change_str": "+0.00%",
-      "direction": "up"
+      "price": 18.66,
+      "change_str": "-0.05%",
+      "direction": "down"
     }
   ],
   "regime": {
@@ -84,7 +84,7 @@
       "ticker": "AMN",
       "sector_label": "AMN",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-07-28 13:27:43 UTC",
+      "latest_at": "2026-07-28 13:31:12 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -94,7 +94,7 @@
       "strategy": "J Law (Stage 2 / VCP / META)",
       "signal_type": "BUY_PULLBACK",
       "entry": 33.45000076293945,
-      "stop_loss": 34.65809955596924,
+      "stop_loss": 32.781000747680665,
       "target": null,
       "pivot": null,
       "rs_rating": 91,
@@ -112,7 +112,7 @@
       "ticker": "DVA",
       "sector_label": "DVA",
       "headline": "[JLAW] Pullback to BOL, META score=3",
-      "latest_at": "2026-07-28 13:27:43 UTC",
+      "latest_at": "2026-07-28 13:31:12 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -122,7 +122,7 @@
       "strategy": "J Law (Stage 2 / VCP / META)",
       "signal_type": "BUY_PULLBACK",
       "entry": 236.30999755859375,
-      "stop_loss": 232.45079940795898,
+      "stop_loss": 231.58379760742187,
       "target": null,
       "pivot": null,
       "rs_rating": 93,
@@ -138,14 +138,14 @@
     }
   ],
   "logs": [
-    "2026-07-28 13:27:43 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-07-28 13:31:11 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-07-28 13:27:43 UTC",
+  "generated_at": "2026-07-28 13:31:11 UTC",
   "top_signal": {
     "ticker": "AMN",
     "sector_label": "AMN",
     "headline": "[JLAW] Pullback to BOL, META score=2",
-    "latest_at": "2026-07-28 13:27:43 UTC",
+    "latest_at": "2026-07-28 13:31:12 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
@@ -155,7 +155,7 @@
     "strategy": "J Law (Stage 2 / VCP / META)",
     "signal_type": "BUY_PULLBACK",
     "entry": 33.45000076293945,
-    "stop_loss": 34.65809955596924,
+    "stop_loss": 32.781000747680665,
     "target": null,
     "pivot": null,
     "rs_rating": 91,
