@@ -47,24 +47,17 @@
       "direction": "down"
     },
     {
-      "label": "GOLD",
-      "ticker": "GC=F",
-      "price": 4126.0,
-      "change_str": "+2.22%",
-      "direction": "up"
-    },
-    {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 84.6,
-      "change_str": "+6.74%",
+      "price": 84.39,
+      "change_str": "+6.47%",
       "direction": "up"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 63488.19,
-      "change_str": "-0.60%",
+      "price": 63867.94,
+      "change_str": "-0.01%",
       "direction": "down"
     },
     {
@@ -78,8 +71,8 @@
   "regime": {},
   "signals": [],
   "logs": [
-    "2026-07-29 21:31:29 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-07-29 22:35:00 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-07-29 21:31:29 UTC",
+  "generated_at": "2026-07-29 22:35:00 UTC",
   "top_signal": null
 }
