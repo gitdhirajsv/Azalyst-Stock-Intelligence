@@ -26,13 +26,6 @@
   },
   "market_snapshot": [
     {
-      "label": "SPX",
-      "ticker": "^GSPC",
-      "price": 7316.15,
-      "change_str": "-1.52%",
-      "direction": "down"
-    },
-    {
       "label": "NDX",
       "ticker": "^IXIC",
       "price": 24442.94,
@@ -49,37 +42,37 @@
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4099.0,
-      "change_str": "+1.59%",
+      "price": 4125.9,
+      "change_str": "+2.26%",
       "direction": "up"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 84.74,
-      "change_str": "+0.33%",
-      "direction": "up"
+      "price": 84.43,
+      "change_str": "-0.04%",
+      "direction": "down"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 64057.2,
-      "change_str": "+0.29%",
+      "price": 64331.29,
+      "change_str": "+0.66%",
       "direction": "up"
     },
     {
       "label": "VIX",
       "ticker": "^VIX",
-      "price": 20.66,
-      "change_str": "+13.45%",
-      "direction": "up"
+      "price": 19.74,
+      "change_str": "-4.45%",
+      "direction": "down"
     }
   ],
   "regime": {},
   "signals": [],
   "logs": [
-    "2026-07-30 05:33:27 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-07-30 09:19:24 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-07-30 05:33:27 UTC",
+  "generated_at": "2026-07-30 09:19:24 UTC",
   "top_signal": null
 }
