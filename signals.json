@@ -21,8 +21,8 @@
   {
     "ticker": "CALY",
     "type": "BUY_PULLBACK",
-    "price": 18.46500015258789,
-    "stop_loss": 18.095700149536132,
+    "price": 18.459999084472656,
+    "stop_loss": 18.0907991027832,
     "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
@@ -40,8 +40,8 @@
   {
     "ticker": "DVA",
     "type": "BUY_PULLBACK",
-    "price": 240.10499572753906,
-    "stop_loss": 235.30289581298828,
+    "price": 240.08999633789062,
+    "stop_loss": 235.28819641113282,
     "reason": "Pullback to BOL, META score=4",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
@@ -59,8 +59,8 @@
   {
     "ticker": "PACS",
     "type": "BUY_PULLBACK",
-    "price": 46.040000915527344,
-    "stop_loss": 45.11920089721679,
+    "price": 46.0099983215332,
+    "stop_loss": 45.08979835510254,
     "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",

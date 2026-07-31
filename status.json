@@ -1,15 +1,38 @@
 {
-  "portfolio_value": 0,
+  "portfolio_value": 100049.14,
   "total_deposited": 100000,
-  "cash": 81322.12,
-  "change_raw": 0,
-  "change": "0.00%",
-  "unrealised_str": "$0.00",
-  "realised_pnl": 0,
-  "realised_str": "$0.00",
+  "cash": 62590.21,
+  "change_raw": 0.05,
+  "change": "+0.05%",
+  "unrealised_str": "+$49.14",
+  "realised_pnl": 0.0,
+  "realised_str": "+$0.00",
   "closed_trades": 0,
   "usd_inr_rate": 1.0,
-  "positions": [],
+  "positions": [
+    {
+      "ticker": "DVA",
+      "sector": "Unclassified",
+      "source": "JLAW",
+      "rs_rating": 94,
+      "pnl_pct": 0.26,
+      "pnl_pct_str": "+0.26%",
+      "pnl": 49.14,
+      "pnl_str": "+$49.14",
+      "market_value": 18727.01971435547
+    },
+    {
+      "ticker": "AMN",
+      "sector": "Unclassified",
+      "source": "JLAW",
+      "rs_rating": 91,
+      "pnl_pct": 0.0,
+      "pnl_pct_str": "+0.00%",
+      "pnl": 0.0,
+      "pnl_str": "+$0.00",
+      "market_value": 18731.910594940186
+    }
+  ],
   "closed_trades_list": [],
   "track_record": {
     "total_trades": 0,
@@ -49,30 +72,173 @@
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 84.79,
-      "change_str": "+1.44%",
+      "price": 86.8,
+      "change_str": "+3.84%",
       "direction": "up"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 62924.1,
-      "change_str": "-2.78%",
+      "price": 62947.64,
+      "change_str": "-2.75%",
       "direction": "down"
     },
     {
       "label": "VIX",
       "ticker": "^VIX",
-      "price": 15.84,
-      "change_str": "-7.31%",
+      "price": 15.99,
+      "change_str": "-6.44%",
       "direction": "down"
     }
   ],
-  "regime": {},
-  "signals": [],
-  "logs": [
-    "2026-07-31 20:09:15 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+  "regime": {
+    "risk_state": "RISK_ON",
+    "vol_regime": "LOW_VOL"
+  },
+  "signals": [
+    {
+      "ticker": "AMN",
+      "sector_label": "AMN",
+      "headline": "[JLAW] Pullback to BOL, META score=2",
+      "latest_at": "2026-07-31 21:41:04 UTC",
+      "severity": "MEDIUM",
+      "confidence": 82,
+      "source": "JLAW",
+      "sources": [
+        "JLAW"
+      ],
+      "strategy": "J Law (Stage 2 / VCP / META)",
+      "signal_type": "BUY_PULLBACK",
+      "entry": 33.630001068115234,
+      "stop_loss": 32.95740104675293,
+      "target": null,
+      "pivot": null,
+      "rs_rating": 91,
+      "risk_pct": null,
+      "actionable_now": false,
+      "confluence": false,
+      "rev_growth_yoy": null,
+      "annual_rev_growth": null,
+      "sales_accelerating": null,
+      "fundamentals_verified": false,
+      "fundamentals_ok": null,
+      "fundamentals_detail": "revenue data unavailable"
+    },
+    {
+      "ticker": "CALY",
+      "sector_label": "CALY",
+      "headline": "[JLAW] Pullback to BOL, META score=2",
+      "latest_at": "2026-07-31 21:41:04 UTC",
+      "severity": "MEDIUM",
+      "confidence": 82,
+      "source": "JLAW",
+      "sources": [
+        "JLAW"
+      ],
+      "strategy": "J Law (Stage 2 / VCP / META)",
+      "signal_type": "BUY_PULLBACK",
+      "entry": 18.459999084472656,
+      "stop_loss": 18.0907991027832,
+      "target": null,
+      "pivot": null,
+      "rs_rating": 89,
+      "risk_pct": null,
+      "actionable_now": false,
+      "confluence": false,
+      "rev_growth_yoy": null,
+      "annual_rev_growth": null,
+      "sales_accelerating": null,
+      "fundamentals_verified": false,
+      "fundamentals_ok": null,
+      "fundamentals_detail": "revenue data unavailable"
+    },
+    {
+      "ticker": "DVA",
+      "sector_label": "DVA",
+      "headline": "[JLAW] Pullback to BOL, META score=4",
+      "latest_at": "2026-07-31 21:41:04 UTC",
+      "severity": "MEDIUM",
+      "confidence": 82,
+      "source": "JLAW",
+      "sources": [
+        "JLAW"
+      ],
+      "strategy": "J Law (Stage 2 / VCP / META)",
+      "signal_type": "BUY_PULLBACK",
+      "entry": 240.08999633789062,
+      "stop_loss": 235.28819641113282,
+      "target": null,
+      "pivot": null,
+      "rs_rating": 94,
+      "risk_pct": null,
+      "actionable_now": false,
+      "confluence": false,
+      "rev_growth_yoy": 0.05956794556524847,
+      "annual_rev_growth": null,
+      "sales_accelerating": null,
+      "fundamentals_verified": true,
+      "fundamentals_ok": true,
+      "fundamentals_detail": "last-Q rev +6.0% YoY, accel=n/a"
+    },
+    {
+      "ticker": "PACS",
+      "sector_label": "PACS",
+      "headline": "[JLAW] Pullback to BOL, META score=2",
+      "latest_at": "2026-07-31 21:41:04 UTC",
+      "severity": "MEDIUM",
+      "confidence": 82,
+      "source": "JLAW",
+      "sources": [
+        "JLAW"
+      ],
+      "strategy": "J Law (Stage 2 / VCP / META)",
+      "signal_type": "BUY_PULLBACK",
+      "entry": 46.0099983215332,
+      "stop_loss": 45.08979835510254,
+      "target": null,
+      "pivot": null,
+      "rs_rating": 97,
+      "risk_pct": null,
+      "actionable_now": false,
+      "confluence": false,
+      "rev_growth_yoy": null,
+      "annual_rev_growth": null,
+      "sales_accelerating": null,
+      "fundamentals_verified": false,
+      "fundamentals_ok": null,
+      "fundamentals_detail": "revenue data unavailable"
+    }
   ],
-  "generated_at": "2026-07-31 20:09:15 UTC",
-  "top_signal": null
+  "logs": [
+    "2026-07-31 21:41:04 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+  ],
+  "generated_at": "2026-07-31 21:41:04 UTC",
+  "top_signal": {
+    "ticker": "AMN",
+    "sector_label": "AMN",
+    "headline": "[JLAW] Pullback to BOL, META score=2",
+    "latest_at": "2026-07-31 21:41:04 UTC",
+    "severity": "MEDIUM",
+    "confidence": 82,
+    "source": "JLAW",
+    "sources": [
+      "JLAW"
+    ],
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "signal_type": "BUY_PULLBACK",
+    "entry": 33.630001068115234,
+    "stop_loss": 32.95740104675293,
+    "target": null,
+    "pivot": null,
+    "rs_rating": 91,
+    "risk_pct": null,
+    "actionable_now": false,
+    "confluence": false,
+    "rev_growth_yoy": null,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_verified": false,
+    "fundamentals_ok": null,
+    "fundamentals_detail": "revenue data unavailable"
+  }
 }
