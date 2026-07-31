@@ -79,8 +79,8 @@
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 62947.64,
-      "change_str": "-2.75%",
+      "price": 62922.94,
+      "change_str": "-2.78%",
       "direction": "down"
     },
     {
@@ -100,7 +100,7 @@
       "ticker": "AMN",
       "sector_label": "AMN",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-07-31 21:41:04 UTC",
+      "latest_at": "2026-07-31 23:38:47 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -128,7 +128,7 @@
       "ticker": "CALY",
       "sector_label": "CALY",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-07-31 21:41:04 UTC",
+      "latest_at": "2026-07-31 23:38:47 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -145,18 +145,18 @@
       "risk_pct": null,
       "actionable_now": false,
       "confluence": false,
-      "rev_growth_yoy": null,
+      "rev_growth_yoy": 0.09196315120711573,
       "annual_rev_growth": null,
       "sales_accelerating": null,
-      "fundamentals_verified": false,
-      "fundamentals_ok": null,
-      "fundamentals_detail": "revenue data unavailable"
+      "fundamentals_verified": true,
+      "fundamentals_ok": true,
+      "fundamentals_detail": "last-Q rev +9.2% YoY, accel=n/a"
     },
     {
       "ticker": "DVA",
       "sector_label": "DVA",
       "headline": "[JLAW] Pullback to BOL, META score=4",
-      "latest_at": "2026-07-31 21:41:04 UTC",
+      "latest_at": "2026-07-31 23:38:47 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -184,7 +184,7 @@
       "ticker": "PACS",
       "sector_label": "PACS",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-07-31 21:41:04 UTC",
+      "latest_at": "2026-07-31 23:38:47 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -210,14 +210,14 @@
     }
   ],
   "logs": [
-    "2026-07-31 21:41:04 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-07-31 23:38:47 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-07-31 21:41:04 UTC",
+  "generated_at": "2026-07-31 23:38:47 UTC",
   "top_signal": {
     "ticker": "AMN",
     "sector_label": "AMN",
     "headline": "[JLAW] Pullback to BOL, META score=2",
-    "latest_at": "2026-07-31 21:41:04 UTC",
+    "latest_at": "2026-07-31 23:38:47 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
