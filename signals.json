@@ -30,12 +30,12 @@
       "JLAW"
     ],
     "rs_rating": 89,
-    "rev_growth_yoy": 0.09196315120711573,
+    "rev_growth_yoy": null,
     "annual_rev_growth": null,
     "sales_accelerating": null,
-    "fundamentals_detail": "last-Q rev +9.2% YoY, accel=n/a",
-    "fundamentals_verified": true,
-    "fundamentals_ok": true
+    "fundamentals_detail": "revenue data unavailable",
+    "fundamentals_verified": false,
+    "fundamentals_ok": null
   },
   {
     "ticker": "DVA",
