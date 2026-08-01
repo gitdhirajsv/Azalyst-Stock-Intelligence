@@ -49,6 +49,13 @@
   },
   "market_snapshot": [
     {
+      "label": "SPX",
+      "ticker": "^GSPC",
+      "price": 7489.72,
+      "change_str": "+0.70%",
+      "direction": "up"
+    },
+    {
       "label": "NDX",
       "ticker": "^IXIC",
       "price": 25373.85,
@@ -77,13 +84,6 @@
       "direction": "up"
     },
     {
-      "label": "BTC",
-      "ticker": "BTC-USD",
-      "price": 62947.19,
-      "change_str": "-2.75%",
-      "direction": "down"
-    },
-    {
       "label": "VIX",
       "ticker": "^VIX",
       "price": 15.99,
@@ -100,7 +100,7 @@
       "ticker": "AMN",
       "sector_label": "AMN",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-08-01 04:12:36 UTC",
+      "latest_at": "2026-08-01 08:45:33 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -128,7 +128,7 @@
       "ticker": "CALY",
       "sector_label": "CALY",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-08-01 04:12:36 UTC",
+      "latest_at": "2026-08-01 08:45:33 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -145,18 +145,18 @@
       "risk_pct": null,
       "actionable_now": false,
       "confluence": false,
-      "rev_growth_yoy": null,
+      "rev_growth_yoy": 0.09196315120711573,
       "annual_rev_growth": null,
       "sales_accelerating": null,
-      "fundamentals_verified": false,
-      "fundamentals_ok": null,
-      "fundamentals_detail": "revenue data unavailable"
+      "fundamentals_verified": true,
+      "fundamentals_ok": true,
+      "fundamentals_detail": "last-Q rev +9.2% YoY, accel=n/a"
     },
     {
       "ticker": "DVA",
       "sector_label": "DVA",
       "headline": "[JLAW] Pullback to BOL, META score=3",
-      "latest_at": "2026-08-01 04:12:36 UTC",
+      "latest_at": "2026-08-01 08:45:33 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -184,7 +184,7 @@
       "ticker": "PACS",
       "sector_label": "PACS",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-08-01 04:12:36 UTC",
+      "latest_at": "2026-08-01 08:45:33 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -210,14 +210,14 @@
     }
   ],
   "logs": [
-    "2026-08-01 04:12:36 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-08-01 08:45:33 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-08-01 04:12:36 UTC",
+  "generated_at": "2026-08-01 08:45:33 UTC",
   "top_signal": {
     "ticker": "AMN",
     "sector_label": "AMN",
     "headline": "[JLAW] Pullback to BOL, META score=2",
-    "latest_at": "2026-08-01 04:12:36 UTC",
+    "latest_at": "2026-08-01 08:45:33 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
