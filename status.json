@@ -1,288 +1,85 @@
 {
-  "portfolio_value": 99720.23,
+  "portfolio_value": 0,
   "total_deposited": 100000,
-  "cash": 61802.22,
-  "change_raw": -0.28,
-  "change": "-0.28%",
-  "unrealised_str": "+$430.75",
-  "realised_pnl": -710.52,
-  "realised_str": "-$710.52",
-  "closed_trades": 2,
+  "cash": 80159.49,
+  "change_raw": 0,
+  "change": "0.00%",
+  "unrealised_str": "$0.00",
+  "realised_pnl": 0,
+  "realised_str": "$0.00",
+  "closed_trades": 0,
   "usd_inr_rate": 1.0,
-  "positions": [
-    {
-      "ticker": "AMN",
-      "sector": "Unclassified",
-      "source": "JLAW",
-      "rs_rating": 91,
-      "pnl_pct": -0.52,
-      "pnl_pct_str": "-0.52%",
-      "pnl": -97.47,
-      "pnl_str": "-$97.47",
-      "market_value": 18634.43601989746
-    },
-    {
-      "ticker": "CALY",
-      "sector": "Consumer Cyclical / Leisure",
-      "source": "JLAW",
-      "rs_rating": 89,
-      "pnl_pct": 2.82,
-      "pnl_pct_str": "+2.82%",
-      "pnl": 528.22,
-      "pnl_str": "+$528.22",
-      "market_value": 19283.57876586914
-    }
-  ],
-  "closed_trades_list": [
-    {
-      "ticker": "DVA",
-      "entry": 239.46,
-      "exit": 232.4508,
-      "shares": 78,
-      "pnl": -546.72,
-      "pnl_str": "-$546.72",
-      "pnl_pct": -2.93,
-      "pnl_pct_str": "-2.93%",
-      "exit_date": "2026-08-03",
-      "exit_reason": "Stop Loss",
-      "winner": false
-    },
-    {
-      "ticker": "PACS",
-      "entry": 46.01,
-      "exit": 45.0898,
-      "shares": 178,
-      "pnl": -163.8,
-      "pnl_str": "-$163.80",
-      "pnl_pct": -2.0,
-      "pnl_pct_str": "-2.00%",
-      "exit_date": "2026-08-03",
-      "exit_reason": "Stop Loss",
-      "winner": false
-    }
-  ],
+  "positions": [],
+  "closed_trades_list": [],
   "track_record": {
-    "total_trades": 2,
+    "total_trades": 0,
     "winners": 0,
-    "losers": 2,
-    "win_rate": 0.0,
-    "avg_win": 0.0,
-    "avg_loss": -2.46,
-    "profit_factor": 0.0,
-    "expectancy": -2.46,
-    "sharpe_proxy": -5.3,
-    "best": {
-      "ticker": "PACS",
-      "pnl_pct": -2.0,
-      "pnl_pct_str": "-2.00%",
-      "exit_reason": "Stop Loss"
-    },
-    "worst": {
-      "ticker": "DVA",
-      "pnl_pct": -2.93,
-      "pnl_pct_str": "-2.93%",
-      "exit_reason": "Stop Loss"
-    }
+    "losers": 0,
+    "win_rate": 0,
+    "avg_win": 0,
+    "avg_loss": 0,
+    "profit_factor": 0,
+    "expectancy": 0,
+    "sharpe_proxy": 0,
+    "best": null,
+    "worst": null
   },
   "market_snapshot": [
     {
       "label": "SPX",
       "ticker": "^GSPC",
-      "price": 7607.9,
-      "change_str": "+1.58%",
+      "price": 7600.5,
+      "change_str": "+1.48%",
       "direction": "up"
     },
     {
       "label": "NDX",
       "ticker": "^IXIC",
-      "price": 25943.14,
-      "change_str": "+2.24%",
+      "price": 25913.9,
+      "change_str": "+2.13%",
       "direction": "up"
     },
     {
       "label": "DJI",
       "ticker": "^DJI",
-      "price": 53159.09,
-      "change_str": "+1.28%",
+      "price": 53178.41,
+      "change_str": "+1.32%",
       "direction": "up"
     },
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4102.3,
-      "change_str": "+1.31%",
+      "price": 4113.1,
+      "change_str": "+1.58%",
       "direction": "up"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 80.33,
-      "change_str": "-5.13%",
+      "price": 80.01,
+      "change_str": "-5.50%",
       "direction": "down"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 63874.61,
-      "change_str": "+0.62%",
+      "price": 63730.62,
+      "change_str": "+0.39%",
       "direction": "up"
     },
     {
       "label": "VIX",
       "ticker": "^VIX",
-      "price": 15.79,
-      "change_str": "-1.25%",
+      "price": 15.86,
+      "change_str": "-0.81%",
       "direction": "down"
     }
   ],
-  "regime": {
-    "risk_state": "RISK_ON",
-    "vol_regime": "LOW_VOL"
-  },
-  "signals": [
-    {
-      "ticker": "AMN",
-      "sector_label": "AMN",
-      "headline": "[JLAW] Pullback to BOL, META score=3",
-      "latest_at": "2026-08-03 19:12:07 UTC",
-      "severity": "MEDIUM",
-      "confidence": 82,
-      "source": "JLAW",
-      "sources": [
-        "JLAW"
-      ],
-      "strategy": "J Law (Stage 2 / VCP / META)",
-      "signal_type": "BUY_PULLBACK",
-      "entry": 33.41999816894531,
-      "stop_loss": 32.7515982055664,
-      "target": null,
-      "pivot": null,
-      "rs_rating": 91,
-      "risk_pct": null,
-      "actionable_now": false,
-      "confluence": false,
-      "rev_growth_yoy": null,
-      "annual_rev_growth": null,
-      "sales_accelerating": null,
-      "fundamentals_verified": false,
-      "fundamentals_ok": null,
-      "fundamentals_detail": "revenue data unavailable"
-    },
-    {
-      "ticker": "DVA",
-      "sector_label": "DVA",
-      "headline": "[JLAW] Pullback to BOL, META score=3",
-      "latest_at": "2026-08-03 19:12:07 UTC",
-      "severity": "MEDIUM",
-      "confidence": 82,
-      "source": "JLAW",
-      "sources": [
-        "JLAW"
-      ],
-      "strategy": "J Law (Stage 2 / VCP / META)",
-      "signal_type": "BUY_PULLBACK",
-      "entry": 236.61500549316406,
-      "stop_loss": 231.8827053833008,
-      "target": null,
-      "pivot": null,
-      "rs_rating": 93,
-      "risk_pct": null,
-      "actionable_now": false,
-      "confluence": false,
-      "rev_growth_yoy": 0.05956794556524847,
-      "annual_rev_growth": null,
-      "sales_accelerating": null,
-      "fundamentals_verified": true,
-      "fundamentals_ok": true,
-      "fundamentals_detail": "last-Q rev +6.0% YoY, accel=n/a"
-    },
-    {
-      "ticker": "OSCR",
-      "sector_label": "OSCR",
-      "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-08-03 19:12:07 UTC",
-      "severity": "MEDIUM",
-      "confidence": 82,
-      "source": "JLAW",
-      "sources": [
-        "JLAW"
-      ],
-      "strategy": "J Law (Stage 2 / VCP / META)",
-      "signal_type": "BUY_PULLBACK",
-      "entry": 30.649999618530273,
-      "stop_loss": 30.036999626159666,
-      "target": null,
-      "pivot": null,
-      "rs_rating": 94,
-      "risk_pct": null,
-      "actionable_now": false,
-      "confluence": false,
-      "rev_growth_yoy": null,
-      "annual_rev_growth": null,
-      "sales_accelerating": null,
-      "fundamentals_verified": false,
-      "fundamentals_ok": null,
-      "fundamentals_detail": "revenue data unavailable"
-    },
-    {
-      "ticker": "PACS",
-      "sector_label": "PACS",
-      "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-08-03 19:12:07 UTC",
-      "severity": "MEDIUM",
-      "confidence": 82,
-      "source": "JLAW",
-      "sources": [
-        "JLAW"
-      ],
-      "strategy": "J Law (Stage 2 / VCP / META)",
-      "signal_type": "BUY_PULLBACK",
-      "entry": 44.910099029541016,
-      "stop_loss": 44.011897048950196,
-      "target": null,
-      "pivot": null,
-      "rs_rating": 97,
-      "risk_pct": null,
-      "actionable_now": false,
-      "confluence": false,
-      "rev_growth_yoy": null,
-      "annual_rev_growth": null,
-      "sales_accelerating": null,
-      "fundamentals_verified": false,
-      "fundamentals_ok": null,
-      "fundamentals_detail": "revenue data unavailable"
-    }
-  ],
+  "regime": {},
+  "signals": [],
   "logs": [
-    "2026-08-03 19:12:06 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-08-03 20:51:24 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-08-03 19:12:06 UTC",
-  "top_signal": {
-    "ticker": "AMN",
-    "sector_label": "AMN",
-    "headline": "[JLAW] Pullback to BOL, META score=3",
-    "latest_at": "2026-08-03 19:12:07 UTC",
-    "severity": "MEDIUM",
-    "confidence": 82,
-    "source": "JLAW",
-    "sources": [
-      "JLAW"
-    ],
-    "strategy": "J Law (Stage 2 / VCP / META)",
-    "signal_type": "BUY_PULLBACK",
-    "entry": 33.41999816894531,
-    "stop_loss": 32.7515982055664,
-    "target": null,
-    "pivot": null,
-    "rs_rating": 91,
-    "risk_pct": null,
-    "actionable_now": false,
-    "confluence": false,
-    "rev_growth_yoy": null,
-    "annual_rev_growth": null,
-    "sales_accelerating": null,
-    "fundamentals_verified": false,
-    "fundamentals_ok": null,
-    "fundamentals_detail": "revenue data unavailable"
-  }
+  "generated_at": "2026-08-03 20:51:24 UTC",
+  "top_signal": null
 }
