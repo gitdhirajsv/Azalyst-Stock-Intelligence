@@ -2,15 +2,15 @@
   {
     "ticker": "AMN",
     "type": "BUY_PULLBACK",
-    "price": 34.189998626708984,
-    "stop_loss": 33.5061986541748,
+    "price": 33.41999816894531,
+    "stop_loss": 32.7515982055664,
     "reason": "Pullback to BOL, META score=3",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
     "sources": [
       "JLAW"
     ],
-    "rs_rating": 92,
+    "rs_rating": 91,
     "rev_growth_yoy": null,
     "annual_rev_growth": null,
     "sales_accelerating": null,
@@ -21,8 +21,8 @@
   {
     "ticker": "DVA",
     "type": "BUY_PULLBACK",
-    "price": 239.3000030517578,
-    "stop_loss": 232.45079940795898,
+    "price": 236.61500549316406,
+    "stop_loss": 231.8827053833008,
     "reason": "Pullback to BOL, META score=3",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
@@ -38,36 +38,17 @@
     "fundamentals_ok": true
   },
   {
-    "ticker": "JAZZ",
-    "type": "BUY_PULLBACK",
-    "price": 250.42999267578125,
-    "stop_loss": 245.42139282226563,
-    "reason": "Pullback to BOL, META score=2",
-    "source": "JLAW",
-    "strategy": "J Law (Stage 2 / VCP / META)",
-    "sources": [
-      "JLAW"
-    ],
-    "rs_rating": 89,
-    "rev_growth_yoy": 0.19057696591668516,
-    "annual_rev_growth": null,
-    "sales_accelerating": null,
-    "fundamentals_detail": "last-Q rev +19.1% YoY, accel=n/a",
-    "fundamentals_verified": true,
-    "fundamentals_ok": true
-  },
-  {
     "ticker": "OSCR",
     "type": "BUY_PULLBACK",
-    "price": 30.790000915527344,
-    "stop_loss": 30.174200897216796,
+    "price": 30.649999618530273,
+    "stop_loss": 30.036999626159666,
     "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
     "sources": [
       "JLAW"
     ],
-    "rs_rating": 95,
+    "rs_rating": 94,
     "rev_growth_yoy": null,
     "annual_rev_growth": null,
     "sales_accelerating": null,
@@ -78,8 +59,8 @@
   {
     "ticker": "PACS",
     "type": "BUY_PULLBACK",
-    "price": 44.92509841918945,
-    "stop_loss": 44.02659645080566,
+    "price": 44.910099029541016,
+    "stop_loss": 44.011897048950196,
     "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
