@@ -1,10 +1,10 @@
 {
-  "portfolio_value": 100049.14,
+  "portfolio_value": 101206.97,
   "total_deposited": 100000,
   "cash": 35645.07,
-  "change_raw": 0.05,
-  "change": "+0.05%",
-  "unrealised_str": "+$49.14",
+  "change_raw": 1.21,
+  "change": "+1.21%",
+  "unrealised_str": "+$1206.97",
   "realised_pnl": 0.0,
   "realised_str": "+$0.00",
   "closed_trades": 0,
@@ -15,44 +15,44 @@
       "sector": "Unclassified",
       "source": "JLAW",
       "rs_rating": 94,
-      "pnl_pct": 0.26,
-      "pnl_pct_str": "+0.26%",
-      "pnl": 49.14,
-      "pnl_str": "+$49.14",
-      "market_value": 18727.01971435547
+      "pnl_pct": 2.06,
+      "pnl_pct_str": "+2.06%",
+      "pnl": 385.32,
+      "pnl_str": "+$385.32",
+      "market_value": 19063.19952392578
     },
     {
       "ticker": "AMN",
       "sector": "Unclassified",
       "source": "JLAW",
       "rs_rating": 91,
-      "pnl_pct": 0.0,
-      "pnl_pct_str": "+0.00%",
-      "pnl": 0.0,
-      "pnl_str": "+$0.00",
-      "market_value": 18731.910594940186
+      "pnl_pct": 2.32,
+      "pnl_pct_str": "+2.32%",
+      "pnl": 434.46,
+      "pnl_str": "+$434.46",
+      "market_value": 19166.369915008545
     },
     {
       "ticker": "CALY",
       "sector": "Consumer Cyclical / Leisure",
       "source": "JLAW",
       "rs_rating": 89,
-      "pnl_pct": 0.0,
-      "pnl_pct_str": "+0.00%",
-      "pnl": 0.0,
-      "pnl_str": "+$0.00",
-      "market_value": 18755.35906982422
+      "pnl_pct": 2.22,
+      "pnl_pct_str": "+2.22%",
+      "pnl": 416.56,
+      "pnl_str": "+$416.56",
+      "market_value": 19171.920852661133
     },
     {
       "ticker": "PACS",
       "sector": "Healthcare / Medical Care Facilities",
       "source": "JLAW",
       "rs_rating": 97,
-      "pnl_pct": 0.0,
-      "pnl_pct_str": "+0.00%",
-      "pnl": 0.0,
-      "pnl_str": "+$0.00",
-      "market_value": 8189.77970123291
+      "pnl_pct": -0.36,
+      "pnl_pct_str": "-0.36%",
+      "pnl": -29.37,
+      "pnl_str": "-$29.37",
+      "market_value": 8160.410217285156
     }
   ],
   "closed_trades_list": [],
@@ -73,50 +73,43 @@
     {
       "label": "SPX",
       "ticker": "^GSPC",
-      "price": 7489.72,
-      "change_str": "+0.70%",
+      "price": 7524.19,
+      "change_str": "+0.46%",
       "direction": "up"
     },
     {
       "label": "NDX",
       "ticker": "^IXIC",
-      "price": 25373.85,
-      "change_str": "+1.00%",
-      "direction": "up"
-    },
-    {
-      "label": "DJI",
-      "ticker": "^DJI",
-      "price": 52485.03,
-      "change_str": "+0.53%",
+      "price": 25443.6,
+      "change_str": "+0.27%",
       "direction": "up"
     },
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4111.7,
-      "change_str": "+1.55%",
+      "price": 4089.6,
+      "change_str": "+1.00%",
       "direction": "up"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 79.67,
-      "change_str": "-5.91%",
+      "price": 79.26,
+      "change_str": "-6.39%",
       "direction": "down"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 62704.01,
-      "change_str": "-1.23%",
+      "price": 62521.6,
+      "change_str": "-1.51%",
       "direction": "down"
     },
     {
       "label": "VIX",
       "ticker": "^VIX",
-      "price": 16.03,
-      "change_str": "+0.25%",
+      "price": 16.0,
+      "change_str": "+0.06%",
       "direction": "up"
     }
   ],
@@ -129,7 +122,7 @@
       "ticker": "AMN",
       "sector_label": "AMN",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-08-03 10:21:58 UTC",
+      "latest_at": "2026-08-03 13:33:17 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -154,38 +147,10 @@
       "fundamentals_detail": "revenue data unavailable"
     },
     {
-      "ticker": "CALY",
-      "sector_label": "CALY",
-      "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-08-03 10:21:58 UTC",
-      "severity": "MEDIUM",
-      "confidence": 82,
-      "source": "JLAW",
-      "sources": [
-        "JLAW"
-      ],
-      "strategy": "J Law (Stage 2 / VCP / META)",
-      "signal_type": "BUY_PULLBACK",
-      "entry": 18.459999084472656,
-      "stop_loss": 18.0907991027832,
-      "target": null,
-      "pivot": null,
-      "rs_rating": 89,
-      "risk_pct": null,
-      "actionable_now": false,
-      "confluence": false,
-      "rev_growth_yoy": 0.09196315120711573,
-      "annual_rev_growth": null,
-      "sales_accelerating": null,
-      "fundamentals_verified": true,
-      "fundamentals_ok": true,
-      "fundamentals_detail": "last-Q rev +9.2% YoY, accel=n/a"
-    },
-    {
       "ticker": "DVA",
       "sector_label": "DVA",
       "headline": "[JLAW] Pullback to BOL, META score=3",
-      "latest_at": "2026-08-03 10:21:58 UTC",
+      "latest_at": "2026-08-03 13:33:17 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -210,10 +175,10 @@
       "fundamentals_detail": "last-Q rev +6.0% YoY, accel=n/a"
     },
     {
-      "ticker": "PACS",
-      "sector_label": "PACS",
+      "ticker": "OSCR",
+      "sector_label": "OSCR",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-08-03 10:21:58 UTC",
+      "latest_at": "2026-08-03 13:33:17 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -222,8 +187,36 @@
       ],
       "strategy": "J Law (Stage 2 / VCP / META)",
       "signal_type": "BUY_PULLBACK",
-      "entry": 46.0099983215332,
-      "stop_loss": 45.08979835510254,
+      "entry": 30.500999450683594,
+      "stop_loss": 29.89097946166992,
+      "target": null,
+      "pivot": null,
+      "rs_rating": 95,
+      "risk_pct": null,
+      "actionable_now": false,
+      "confluence": false,
+      "rev_growth_yoy": null,
+      "annual_rev_growth": null,
+      "sales_accelerating": null,
+      "fundamentals_verified": false,
+      "fundamentals_ok": null,
+      "fundamentals_detail": "revenue data unavailable"
+    },
+    {
+      "ticker": "PACS",
+      "sector_label": "PACS",
+      "headline": "[JLAW] Pullback to BOL, META score=3",
+      "latest_at": "2026-08-03 13:33:17 UTC",
+      "severity": "MEDIUM",
+      "confidence": 82,
+      "source": "JLAW",
+      "sources": [
+        "JLAW"
+      ],
+      "strategy": "J Law (Stage 2 / VCP / META)",
+      "signal_type": "BUY_PULLBACK",
+      "entry": 45.416500091552734,
+      "stop_loss": 44.50817008972168,
       "target": null,
       "pivot": null,
       "rs_rating": 97,
@@ -236,17 +229,45 @@
       "fundamentals_verified": false,
       "fundamentals_ok": null,
       "fundamentals_detail": "revenue data unavailable"
+    },
+    {
+      "ticker": "ROIV",
+      "sector_label": "ROIV",
+      "headline": "[JLAW] Pullback to BOL, META score=2",
+      "latest_at": "2026-08-03 13:33:17 UTC",
+      "severity": "MEDIUM",
+      "confidence": 82,
+      "source": "JLAW",
+      "sources": [
+        "JLAW"
+      ],
+      "strategy": "J Law (Stage 2 / VCP / META)",
+      "signal_type": "BUY_PULLBACK",
+      "entry": 32.79999923706055,
+      "stop_loss": 32.14399925231933,
+      "target": null,
+      "pivot": null,
+      "rs_rating": 92,
+      "risk_pct": null,
+      "actionable_now": false,
+      "confluence": false,
+      "rev_growth_yoy": null,
+      "annual_rev_growth": null,
+      "sales_accelerating": null,
+      "fundamentals_verified": false,
+      "fundamentals_ok": null,
+      "fundamentals_detail": "revenue data unavailable"
     }
   ],
   "logs": [
-    "2026-08-03 10:21:57 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-08-03 13:33:16 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-08-03 10:21:57 UTC",
+  "generated_at": "2026-08-03 13:33:16 UTC",
   "top_signal": {
     "ticker": "AMN",
     "sector_label": "AMN",
     "headline": "[JLAW] Pullback to BOL, META score=2",
-    "latest_at": "2026-08-03 10:21:58 UTC",
+    "latest_at": "2026-08-03 13:33:17 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",

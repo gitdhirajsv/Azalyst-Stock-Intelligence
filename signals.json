@@ -19,25 +19,6 @@
     "fundamentals_ok": null
   },
   {
-    "ticker": "CALY",
-    "type": "BUY_PULLBACK",
-    "price": 18.459999084472656,
-    "stop_loss": 18.0907991027832,
-    "reason": "Pullback to BOL, META score=2",
-    "source": "JLAW",
-    "strategy": "J Law (Stage 2 / VCP / META)",
-    "sources": [
-      "JLAW"
-    ],
-    "rs_rating": 89,
-    "rev_growth_yoy": 0.09196315120711573,
-    "annual_rev_growth": null,
-    "sales_accelerating": null,
-    "fundamentals_detail": "last-Q rev +9.2% YoY, accel=n/a",
-    "fundamentals_verified": true,
-    "fundamentals_ok": true
-  },
-  {
     "ticker": "DVA",
     "type": "BUY_PULLBACK",
     "price": 240.08999633789062,
@@ -57,17 +38,55 @@
     "fundamentals_ok": true
   },
   {
-    "ticker": "PACS",
+    "ticker": "OSCR",
     "type": "BUY_PULLBACK",
-    "price": 46.0099983215332,
-    "stop_loss": 45.08979835510254,
+    "price": 30.500999450683594,
+    "stop_loss": 29.89097946166992,
     "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
     "sources": [
       "JLAW"
     ],
+    "rs_rating": 95,
+    "rev_growth_yoy": null,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_detail": "revenue data unavailable",
+    "fundamentals_verified": false,
+    "fundamentals_ok": null
+  },
+  {
+    "ticker": "PACS",
+    "type": "BUY_PULLBACK",
+    "price": 45.416500091552734,
+    "stop_loss": 44.50817008972168,
+    "reason": "Pullback to BOL, META score=3",
+    "source": "JLAW",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW"
+    ],
     "rs_rating": 97,
+    "rev_growth_yoy": null,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_detail": "revenue data unavailable",
+    "fundamentals_verified": false,
+    "fundamentals_ok": null
+  },
+  {
+    "ticker": "ROIV",
+    "type": "BUY_PULLBACK",
+    "price": 32.79999923706055,
+    "stop_loss": 32.14399925231933,
+    "reason": "Pullback to BOL, META score=2",
+    "source": "JLAW",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW"
+    ],
+    "rs_rating": 92,
     "rev_growth_yoy": null,
     "annual_rev_growth": null,
     "sales_accelerating": null,
