@@ -1,1 +1,59 @@
-[]
+[
+  {
+    "ticker": "AMN",
+    "type": "BUY_PULLBACK",
+    "price": 33.0,
+    "stop_loss": 32.339999999999996,
+    "reason": "Pullback to BOL, META score=2",
+    "source": "JLAW",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW"
+    ],
+    "rs_rating": 91,
+    "rev_growth_yoy": null,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_detail": "revenue data unavailable",
+    "fundamentals_verified": false,
+    "fundamentals_ok": null
+  },
+  {
+    "ticker": "DVA",
+    "type": "BUY_PULLBACK",
+    "price": 233.67999267578125,
+    "stop_loss": 229.0063928222656,
+    "reason": "Pullback to BOL, META score=2",
+    "source": "JLAW",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW"
+    ],
+    "rs_rating": 93,
+    "rev_growth_yoy": 0.05956794556524847,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_detail": "last-Q rev +6.0% YoY, accel=n/a",
+    "fundamentals_verified": true,
+    "fundamentals_ok": true
+  },
+  {
+    "ticker": "PACS",
+    "type": "BUY_PULLBACK",
+    "price": 44.5,
+    "stop_loss": 43.61,
+    "reason": "Pullback to BOL, META score=2",
+    "source": "JLAW",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW"
+    ],
+    "rs_rating": 97,
+    "rev_growth_yoy": null,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_detail": "revenue data unavailable",
+    "fundamentals_verified": false,
+    "fundamentals_ok": null
+  }
+]
