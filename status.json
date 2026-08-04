@@ -1,7 +1,7 @@
 {
   "portfolio_value": 99018.48,
   "total_deposited": 100000,
-  "cash": 53056.74,
+  "cash": 34505.4,
   "change_raw": -0.98,
   "change": "-0.98%",
   "unrealised_str": "+$1127.76",
@@ -42,6 +42,17 @@
       "pnl": 0.0,
       "pnl_str": "+$0.00",
       "market_value": 12212.759662628174
+    },
+    {
+      "ticker": "PACS",
+      "sector": "Unclassified",
+      "source": "JLAW",
+      "rs_rating": 97,
+      "pnl_pct": 0.0,
+      "pnl_pct_str": "+0.00%",
+      "pnl": 0.0,
+      "pnl_str": "+$0.00",
+      "market_value": 18551.34056854248
     }
   ],
   "closed_trades_list": [
@@ -172,22 +183,15 @@
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4134.2,
-      "change_str": "+2.49%",
+      "price": 4123.0,
+      "change_str": "+2.21%",
       "direction": "up"
-    },
-    {
-      "label": "OIL",
-      "ticker": "CL=F",
-      "price": 75.14,
-      "change_str": "-6.47%",
-      "direction": "down"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 64164.9,
-      "change_str": "+1.11%",
+      "price": 64137.6,
+      "change_str": "+1.07%",
       "direction": "up"
     },
     {
@@ -207,7 +211,7 @@
       "ticker": "JAZZ",
       "sector_label": "JAZZ",
       "headline": "[JLAW] VCP breakout, pivot=250.49",
-      "latest_at": "2026-08-04 21:52:22 UTC",
+      "latest_at": "2026-08-04 23:37:22 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -235,7 +239,7 @@
       "ticker": "OSCR",
       "sector_label": "OSCR",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-08-04 21:52:22 UTC",
+      "latest_at": "2026-08-04 23:37:22 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -263,7 +267,7 @@
       "ticker": "PACS",
       "sector_label": "PACS",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-08-04 21:52:22 UTC",
+      "latest_at": "2026-08-04 23:37:22 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -289,14 +293,14 @@
     }
   ],
   "logs": [
-    "2026-08-04 21:52:22 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-08-04 23:37:22 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-08-04 21:52:22 UTC",
+  "generated_at": "2026-08-04 23:37:22 UTC",
   "top_signal": {
     "ticker": "JAZZ",
     "sector_label": "JAZZ",
     "headline": "[JLAW] VCP breakout, pivot=250.49",
-    "latest_at": "2026-08-04 21:52:22 UTC",
+    "latest_at": "2026-08-04 23:37:22 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
