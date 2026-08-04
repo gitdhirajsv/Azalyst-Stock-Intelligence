@@ -1,16 +1,16 @@
 [
   {
-    "ticker": "AMN",
+    "ticker": "AMRX",
     "type": "BUY_PULLBACK",
-    "price": 33.0,
-    "stop_loss": 32.339999999999996,
-    "reason": "Pullback to BOL, META score=2",
+    "price": 18.360000610351562,
+    "stop_loss": 17.99280059814453,
+    "reason": "Pullback to BOL, META score=3",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
     "sources": [
       "JLAW"
     ],
-    "rs_rating": 91,
+    "rs_rating": 89,
     "rev_growth_yoy": null,
     "annual_rev_growth": null,
     "sales_accelerating": null,
@@ -21,15 +21,15 @@
   {
     "ticker": "DVA",
     "type": "BUY_PULLBACK",
-    "price": 233.67999267578125,
-    "stop_loss": 229.0063928222656,
+    "price": 231.0399932861328,
+    "stop_loss": 226.41919342041015,
     "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
     "sources": [
       "JLAW"
     ],
-    "rs_rating": 93,
+    "rs_rating": 90,
     "rev_growth_yoy": 0.05956794556524847,
     "annual_rev_growth": null,
     "sales_accelerating": null,
@@ -38,11 +38,30 @@
     "fundamentals_ok": true
   },
   {
+    "ticker": "OSCR",
+    "type": "BUY_PULLBACK",
+    "price": 30.439899444580078,
+    "stop_loss": 29.831101455688476,
+    "reason": "Pullback to BOL, META score=2",
+    "source": "JLAW",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW"
+    ],
+    "rs_rating": 94,
+    "rev_growth_yoy": null,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_detail": "revenue data unavailable",
+    "fundamentals_verified": false,
+    "fundamentals_ok": null
+  },
+  {
     "ticker": "PACS",
     "type": "BUY_PULLBACK",
-    "price": 44.5,
-    "stop_loss": 43.61,
-    "reason": "Pullback to BOL, META score=2",
+    "price": 45.33000183105469,
+    "stop_loss": 44.423401794433595,
+    "reason": "Pullback to BOL, META score=3",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
     "sources": [
