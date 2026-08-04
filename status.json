@@ -1,28 +1,151 @@
 {
-  "portfolio_value": 0,
+  "portfolio_value": 99018.48,
   "total_deposited": 100000,
-  "cash": 79135.36,
-  "change_raw": 0,
-  "change": "0.00%",
-  "unrealised_str": "$0.00",
-  "realised_pnl": 0,
-  "realised_str": "$0.00",
-  "closed_trades": 0,
+  "cash": 53056.74,
+  "change_raw": -0.98,
+  "change": "-0.98%",
+  "unrealised_str": "+$1127.76",
+  "realised_pnl": -2109.29,
+  "realised_str": "-$2109.29",
+  "closed_trades": 6,
   "usd_inr_rate": 1.0,
-  "positions": [],
-  "closed_trades_list": [],
+  "positions": [
+    {
+      "ticker": "CALY",
+      "sector": "Consumer Cyclical / Leisure",
+      "source": "JLAW",
+      "rs_rating": 89,
+      "pnl_pct": 6.01,
+      "pnl_pct_str": "+6.01%",
+      "pnl": 1127.76,
+      "pnl_str": "+$1127.76",
+      "market_value": 19883.119689941406
+    },
+    {
+      "ticker": "JAZZ",
+      "sector": "Healthcare / Biotechnology",
+      "source": "JLAW",
+      "rs_rating": 90,
+      "pnl_pct": 0.0,
+      "pnl_pct_str": "+0.00%",
+      "pnl": 0.0,
+      "pnl_str": "+$0.00",
+      "market_value": 13865.859741210938
+    },
+    {
+      "ticker": "OSCR",
+      "sector": "Healthcare / Healthcare Plans",
+      "source": "JLAW",
+      "rs_rating": 94,
+      "pnl_pct": 0.0,
+      "pnl_pct_str": "+0.00%",
+      "pnl": 0.0,
+      "pnl_str": "+$0.00",
+      "market_value": 12212.759662628174
+    }
+  ],
+  "closed_trades_list": [
+    {
+      "ticker": "AMN",
+      "entry": 33.63,
+      "exit": 32.9574,
+      "shares": 557,
+      "pnl": -374.64,
+      "pnl_str": "-$374.64",
+      "pnl_pct": -2.0,
+      "pnl_pct_str": "-2.00%",
+      "exit_date": "2026-08-03",
+      "exit_reason": "Stop Loss",
+      "winner": false
+    },
+    {
+      "ticker": "AMN",
+      "entry": 33.0,
+      "exit": 32.34,
+      "shares": 565,
+      "pnl": -372.9,
+      "pnl_str": "-$372.90",
+      "pnl_pct": -2.0,
+      "pnl_pct_str": "-2.00%",
+      "exit_date": "2026-08-04",
+      "exit_reason": "Stop Loss",
+      "winner": false
+    },
+    {
+      "ticker": "DVA",
+      "entry": 239.46,
+      "exit": 232.4508,
+      "shares": 78,
+      "pnl": -546.72,
+      "pnl_str": "-$546.72",
+      "pnl_pct": -2.93,
+      "pnl_pct_str": "-2.93%",
+      "exit_date": "2026-08-03",
+      "exit_reason": "Stop Loss",
+      "winner": false
+    },
+    {
+      "ticker": "DVA",
+      "entry": 233.68,
+      "exit": 228.0,
+      "shares": 49,
+      "pnl": -278.32,
+      "pnl_str": "-$278.32",
+      "pnl_pct": -2.43,
+      "pnl_pct_str": "-2.43%",
+      "exit_date": "2026-08-04",
+      "exit_reason": "Stop Loss",
+      "winner": false
+    },
+    {
+      "ticker": "PACS",
+      "entry": 46.01,
+      "exit": 45.0898,
+      "shares": 178,
+      "pnl": -163.8,
+      "pnl_str": "-$163.80",
+      "pnl_pct": -2.0,
+      "pnl_pct_str": "-2.00%",
+      "exit_date": "2026-08-03",
+      "exit_reason": "Stop Loss",
+      "winner": false
+    },
+    {
+      "ticker": "PACS",
+      "entry": 44.5,
+      "exit": 43.61,
+      "shares": 419,
+      "pnl": -372.91,
+      "pnl_str": "-$372.91",
+      "pnl_pct": -2.0,
+      "pnl_pct_str": "-2.00%",
+      "exit_date": "2026-08-04",
+      "exit_reason": "Stop Loss",
+      "winner": false
+    }
+  ],
   "track_record": {
-    "total_trades": 0,
+    "total_trades": 6,
     "winners": 0,
-    "losers": 0,
-    "win_rate": 0,
-    "avg_win": 0,
-    "avg_loss": 0,
-    "profit_factor": 0,
-    "expectancy": 0,
-    "sharpe_proxy": 0,
-    "best": null,
-    "worst": null
+    "losers": 6,
+    "win_rate": 0.0,
+    "avg_win": 0.0,
+    "avg_loss": -2.23,
+    "profit_factor": 0.0,
+    "expectancy": -2.23,
+    "sharpe_proxy": -6.33,
+    "best": {
+      "ticker": "AMN",
+      "pnl_pct": -2.0,
+      "pnl_pct_str": "-2.00%",
+      "exit_reason": "Stop Loss"
+    },
+    "worst": {
+      "ticker": "DVA",
+      "pnl_pct": -2.93,
+      "pnl_pct_str": "-2.93%",
+      "exit_reason": "Stop Loss"
+    }
   },
   "market_snapshot": [
     {
@@ -49,37 +172,152 @@
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4136.2,
-      "change_str": "+2.54%",
+      "price": 4134.2,
+      "change_str": "+2.49%",
       "direction": "up"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 75.66,
-      "change_str": "-5.83%",
+      "price": 75.14,
+      "change_str": "-6.47%",
       "direction": "down"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 64133.99,
-      "change_str": "+1.06%",
+      "price": 64164.9,
+      "change_str": "+1.11%",
       "direction": "up"
     },
     {
       "label": "VIX",
       "ticker": "^VIX",
-      "price": 16.42,
-      "change_str": "+3.53%",
+      "price": 16.5,
+      "change_str": "+4.04%",
       "direction": "up"
     }
   ],
-  "regime": {},
-  "signals": [],
-  "logs": [
-    "2026-08-04 20:12:52 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+  "regime": {
+    "risk_state": "RISK_ON",
+    "vol_regime": "LOW_VOL"
+  },
+  "signals": [
+    {
+      "ticker": "JAZZ",
+      "sector_label": "JAZZ",
+      "headline": "[JLAW] VCP breakout, pivot=250.49",
+      "latest_at": "2026-08-04 21:52:22 UTC",
+      "severity": "MEDIUM",
+      "confidence": 82,
+      "source": "JLAW",
+      "sources": [
+        "JLAW"
+      ],
+      "strategy": "J Law (Stage 2 / VCP / META)",
+      "signal_type": "BUY_BREAKOUT",
+      "entry": 261.6199951171875,
+      "stop_loss": 242.97530532836913,
+      "target": null,
+      "pivot": null,
+      "rs_rating": 90,
+      "risk_pct": null,
+      "actionable_now": false,
+      "confluence": false,
+      "rev_growth_yoy": 0.19057696591668516,
+      "annual_rev_growth": null,
+      "sales_accelerating": null,
+      "fundamentals_verified": true,
+      "fundamentals_ok": true,
+      "fundamentals_detail": "last-Q rev +19.1% YoY, accel=n/a"
+    },
+    {
+      "ticker": "OSCR",
+      "sector_label": "OSCR",
+      "headline": "[JLAW] Pullback to BOL, META score=2",
+      "latest_at": "2026-08-04 21:52:22 UTC",
+      "severity": "MEDIUM",
+      "confidence": 82,
+      "source": "JLAW",
+      "sources": [
+        "JLAW"
+      ],
+      "strategy": "J Law (Stage 2 / VCP / META)",
+      "signal_type": "BUY_PULLBACK",
+      "entry": 30.3799991607666,
+      "stop_loss": 29.772399177551268,
+      "target": null,
+      "pivot": null,
+      "rs_rating": 94,
+      "risk_pct": null,
+      "actionable_now": false,
+      "confluence": false,
+      "rev_growth_yoy": null,
+      "annual_rev_growth": null,
+      "sales_accelerating": null,
+      "fundamentals_verified": false,
+      "fundamentals_ok": null,
+      "fundamentals_detail": "revenue data unavailable"
+    },
+    {
+      "ticker": "PACS",
+      "sector_label": "PACS",
+      "headline": "[JLAW] Pullback to BOL, META score=2",
+      "latest_at": "2026-08-04 21:52:22 UTC",
+      "severity": "MEDIUM",
+      "confidence": 82,
+      "source": "JLAW",
+      "sources": [
+        "JLAW"
+      ],
+      "strategy": "J Law (Stage 2 / VCP / META)",
+      "signal_type": "BUY_PULLBACK",
+      "entry": 44.810001373291016,
+      "stop_loss": 43.91380134582519,
+      "target": null,
+      "pivot": null,
+      "rs_rating": 97,
+      "risk_pct": null,
+      "actionable_now": false,
+      "confluence": false,
+      "rev_growth_yoy": null,
+      "annual_rev_growth": null,
+      "sales_accelerating": null,
+      "fundamentals_verified": false,
+      "fundamentals_ok": null,
+      "fundamentals_detail": "revenue data unavailable"
+    }
   ],
-  "generated_at": "2026-08-04 20:12:52 UTC",
-  "top_signal": null
+  "logs": [
+    "2026-08-04 21:52:22 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+  ],
+  "generated_at": "2026-08-04 21:52:22 UTC",
+  "top_signal": {
+    "ticker": "JAZZ",
+    "sector_label": "JAZZ",
+    "headline": "[JLAW] VCP breakout, pivot=250.49",
+    "latest_at": "2026-08-04 21:52:22 UTC",
+    "severity": "MEDIUM",
+    "confidence": 82,
+    "source": "JLAW",
+    "sources": [
+      "JLAW"
+    ],
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "signal_type": "BUY_BREAKOUT",
+    "entry": 261.6199951171875,
+    "stop_loss": 242.97530532836913,
+    "target": null,
+    "pivot": null,
+    "rs_rating": 90,
+    "risk_pct": null,
+    "actionable_now": false,
+    "confluence": false,
+    "rev_growth_yoy": 0.19057696591668516,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_verified": true,
+    "fundamentals_ok": true,
+    "fundamentals_detail": "last-Q rev +19.1% YoY, accel=n/a"
+  }
 }

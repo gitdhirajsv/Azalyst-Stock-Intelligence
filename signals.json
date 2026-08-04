@@ -21,8 +21,8 @@
   {
     "ticker": "OSCR",
     "type": "BUY_PULLBACK",
-    "price": 30.389999389648438,
-    "stop_loss": 29.78219940185547,
+    "price": 30.3799991607666,
+    "stop_loss": 29.772399177551268,
     "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
@@ -40,8 +40,8 @@
   {
     "ticker": "PACS",
     "type": "BUY_PULLBACK",
-    "price": 44.79999923706055,
-    "stop_loss": 43.90399925231934,
+    "price": 44.810001373291016,
+    "stop_loss": 43.91380134582519,
     "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
