@@ -1,13 +1,13 @@
 {
-  "portfolio_value": 99018.48,
+  "portfolio_value": 98647.45,
   "total_deposited": 100000,
-  "cash": 34505.4,
-  "change_raw": -0.98,
-  "change": "-0.98%",
+  "cash": 52685.71,
+  "change_raw": -1.35,
+  "change": "-1.35%",
   "unrealised_str": "+$1127.76",
-  "realised_pnl": -2109.29,
-  "realised_str": "-$2109.29",
-  "closed_trades": 6,
+  "realised_pnl": -2480.32,
+  "realised_str": "-$2480.32",
+  "closed_trades": 7,
   "usd_inr_rate": 1.0,
   "positions": [
     {
@@ -42,17 +42,6 @@
       "pnl": 0.0,
       "pnl_str": "+$0.00",
       "market_value": 12212.759662628174
-    },
-    {
-      "ticker": "PACS",
-      "sector": "Unclassified",
-      "source": "JLAW",
-      "rs_rating": 97,
-      "pnl_pct": 0.0,
-      "pnl_pct_str": "+0.00%",
-      "pnl": 0.0,
-      "pnl_str": "+$0.00",
-      "market_value": 18551.34056854248
     }
   ],
   "closed_trades_list": [
@@ -133,18 +122,31 @@
       "exit_date": "2026-08-04",
       "exit_reason": "Stop Loss",
       "winner": false
+    },
+    {
+      "ticker": "PACS",
+      "entry": 44.81,
+      "exit": 43.9138,
+      "shares": 414,
+      "pnl": -371.03,
+      "pnl_str": "-$371.03",
+      "pnl_pct": -2.0,
+      "pnl_pct_str": "-2.00%",
+      "exit_date": "2026-08-05",
+      "exit_reason": "Stop Loss",
+      "winner": false
     }
   ],
   "track_record": {
-    "total_trades": 6,
+    "total_trades": 7,
     "winners": 0,
-    "losers": 6,
+    "losers": 7,
     "win_rate": 0.0,
     "avg_win": 0.0,
-    "avg_loss": -2.23,
+    "avg_loss": -2.19,
     "profit_factor": 0.0,
-    "expectancy": -2.23,
-    "sharpe_proxy": -6.33,
+    "expectancy": -2.19,
+    "sharpe_proxy": -6.55,
     "best": {
       "ticker": "AMN",
       "pnl_pct": -2.0,
@@ -183,15 +185,22 @@
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4123.0,
-      "change_str": "+2.21%",
+      "price": 4198.2,
+      "change_str": "+4.08%",
       "direction": "up"
+    },
+    {
+      "label": "OIL",
+      "ticker": "CL=F",
+      "price": 75.21,
+      "change_str": "-6.39%",
+      "direction": "down"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 64137.6,
-      "change_str": "+1.07%",
+      "price": 64313.6,
+      "change_str": "+1.34%",
       "direction": "up"
     },
     {
@@ -211,7 +220,7 @@
       "ticker": "JAZZ",
       "sector_label": "JAZZ",
       "headline": "[JLAW] VCP breakout, pivot=250.49",
-      "latest_at": "2026-08-04 23:37:22 UTC",
+      "latest_at": "2026-08-05 05:34:05 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -236,38 +245,10 @@
       "fundamentals_detail": "last-Q rev +19.1% YoY, accel=n/a"
     },
     {
-      "ticker": "OSCR",
-      "sector_label": "OSCR",
-      "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-08-04 23:37:22 UTC",
-      "severity": "MEDIUM",
-      "confidence": 82,
-      "source": "JLAW",
-      "sources": [
-        "JLAW"
-      ],
-      "strategy": "J Law (Stage 2 / VCP / META)",
-      "signal_type": "BUY_PULLBACK",
-      "entry": 30.3799991607666,
-      "stop_loss": 29.772399177551268,
-      "target": null,
-      "pivot": null,
-      "rs_rating": 94,
-      "risk_pct": null,
-      "actionable_now": false,
-      "confluence": false,
-      "rev_growth_yoy": null,
-      "annual_rev_growth": null,
-      "sales_accelerating": null,
-      "fundamentals_verified": false,
-      "fundamentals_ok": null,
-      "fundamentals_detail": "revenue data unavailable"
-    },
-    {
       "ticker": "PACS",
       "sector_label": "PACS",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-08-04 23:37:22 UTC",
+      "latest_at": "2026-08-05 05:34:05 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -293,14 +274,14 @@
     }
   ],
   "logs": [
-    "2026-08-04 23:37:22 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-08-05 05:34:04 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-08-04 23:37:22 UTC",
+  "generated_at": "2026-08-05 05:34:04 UTC",
   "top_signal": {
     "ticker": "JAZZ",
     "sector_label": "JAZZ",
     "headline": "[JLAW] VCP breakout, pivot=250.49",
-    "latest_at": "2026-08-04 23:37:22 UTC",
+    "latest_at": "2026-08-05 05:34:05 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
