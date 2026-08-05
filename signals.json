@@ -2,8 +2,8 @@
   {
     "ticker": "AMRX",
     "type": "BUY_PULLBACK",
-    "price": 18.719999313354492,
-    "stop_loss": 18.345599327087402,
+    "price": 18.68000030517578,
+    "stop_loss": 18.306400299072266,
     "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
@@ -21,7 +21,7 @@
   {
     "ticker": "JAZZ",
     "type": "BUY_PULLBACK",
-    "price": 260.260009765625,
+    "price": 259.2699890136719,
     "stop_loss": 242.97530532836913,
     "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
@@ -40,8 +40,8 @@
   {
     "ticker": "OSCR",
     "type": "BUY_PULLBACK",
-    "price": 30.6200008392334,
-    "stop_loss": 30.00760082244873,
+    "price": 30.604999542236328,
+    "stop_loss": 29.992899551391602,
     "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
