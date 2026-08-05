@@ -185,21 +185,21 @@
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4308.0,
-      "change_str": "+5.19%",
+      "price": 4320.3,
+      "change_str": "+5.49%",
       "direction": "up"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 75.08,
-      "change_str": "-0.91%",
+      "price": 75.03,
+      "change_str": "-0.98%",
       "direction": "down"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 64630.39,
+      "price": 64632.09,
       "change_str": "+0.90%",
       "direction": "up"
     },
@@ -220,7 +220,7 @@
       "ticker": "AMRX",
       "sector_label": "AMRX",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-08-05 21:48:30 UTC",
+      "latest_at": "2026-08-05 23:35:19 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -246,14 +246,14 @@
     }
   ],
   "logs": [
-    "2026-08-05 21:48:30 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-08-05 23:35:19 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-08-05 21:48:30 UTC",
+  "generated_at": "2026-08-05 23:35:19 UTC",
   "top_signal": {
     "ticker": "AMRX",
     "sector_label": "AMRX",
     "headline": "[JLAW] Pullback to BOL, META score=2",
-    "latest_at": "2026-08-05 21:48:30 UTC",
+    "latest_at": "2026-08-05 23:35:19 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
