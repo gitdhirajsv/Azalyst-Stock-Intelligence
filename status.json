@@ -1,7 +1,7 @@
 {
   "portfolio_value": 97933.19,
   "total_deposited": 100000,
-  "cash": 64654.22,
+  "cash": 46304.98,
   "change_raw": -2.07,
   "change": "-2.07%",
   "unrealised_str": "+$657.75",
@@ -31,6 +31,17 @@
       "pnl": -2.65,
       "pnl_str": "-$2.65",
       "market_value": 13863.210388183594
+    },
+    {
+      "ticker": "AMRX",
+      "sector": "Healthcare / Drug Manufacturers - Specialty & Generic",
+      "source": "JLAW",
+      "rs_rating": 89,
+      "pnl_pct": 0.0,
+      "pnl_pct_str": "+0.00%",
+      "pnl": 0.0,
+      "pnl_str": "+$0.00",
+      "market_value": 18349.23908996582
     }
   ],
   "closed_trades_list": [
@@ -178,31 +189,38 @@
       "direction": "down"
     },
     {
+      "label": "DJI",
+      "ticker": "^DJI",
+      "price": 54349.12,
+      "change_str": "+0.49%",
+      "direction": "up"
+    },
+    {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4341.9,
-      "change_str": "+2.26%",
+      "price": 4320.5,
+      "change_str": "+1.76%",
       "direction": "up"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 75.39,
-      "change_str": "+0.23%",
-      "direction": "up"
+      "price": 75.2,
+      "change_str": "-0.03%",
+      "direction": "down"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 64732.95,
-      "change_str": "+0.21%",
-      "direction": "up"
+      "price": 64444.21,
+      "change_str": "-0.24%",
+      "direction": "down"
     },
     {
       "label": "VIX",
       "ticker": "^VIX",
-      "price": 15.93,
-      "change_str": "+0.76%",
+      "price": 16.02,
+      "change_str": "+1.33%",
       "direction": "up"
     }
   ],
@@ -215,7 +233,7 @@
       "ticker": "AMRX",
       "sector_label": "AMRX",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-08-06 09:26:36 UTC",
+      "latest_at": "2026-08-06 12:34:01 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -241,14 +259,14 @@
     }
   ],
   "logs": [
-    "2026-08-06 09:26:36 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-08-06 12:34:00 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-08-06 09:26:36 UTC",
+  "generated_at": "2026-08-06 12:34:00 UTC",
   "top_signal": {
     "ticker": "AMRX",
     "sector_label": "AMRX",
     "headline": "[JLAW] Pullback to BOL, META score=2",
-    "latest_at": "2026-08-06 09:26:36 UTC",
+    "latest_at": "2026-08-06 12:34:01 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
