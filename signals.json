@@ -1,9 +1,9 @@
 [
   {
-    "ticker": "AMRX",
+    "ticker": "JAZZ",
     "type": "BUY_PULLBACK",
-    "price": 18.459999084472656,
-    "stop_loss": 18.0907991027832,
+    "price": 256.6499938964844,
+    "stop_loss": 251.51699401855467,
     "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
@@ -11,11 +11,11 @@
       "JLAW"
     ],
     "rs_rating": 89,
-    "rev_growth_yoy": null,
+    "rev_growth_yoy": 0.155493927512671,
     "annual_rev_growth": null,
     "sales_accelerating": null,
-    "fundamentals_detail": "revenue data unavailable",
-    "fundamentals_verified": false,
-    "fundamentals_ok": null
+    "fundamentals_detail": "last-Q rev +15.5% YoY, accel=n/a",
+    "fundamentals_verified": true,
+    "fundamentals_ok": true
   }
 ]
