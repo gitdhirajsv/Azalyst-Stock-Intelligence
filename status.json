@@ -26,13 +26,6 @@
   },
   "market_snapshot": [
     {
-      "label": "SPX",
-      "ticker": "^GSPC",
-      "price": 7757.64,
-      "change_str": "+0.62%",
-      "direction": "up"
-    },
-    {
       "label": "NDX",
       "ticker": "^IXIC",
       "price": 26690.62,
@@ -61,6 +54,13 @@
       "direction": "down"
     },
     {
+      "label": "BTC",
+      "ticker": "BTC-USD",
+      "price": 64881.27,
+      "change_str": "+0.96%",
+      "direction": "up"
+    },
+    {
       "label": "VIX",
       "ticker": "^VIX",
       "price": 14.9,
@@ -71,8 +71,8 @@
   "regime": {},
   "signals": [],
   "logs": [
-    "2026-08-07 23:11:29 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-08-08 02:35:20 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-08-07 23:11:29 UTC",
+  "generated_at": "2026-08-08 02:35:20 UTC",
   "top_signal": null
 }
