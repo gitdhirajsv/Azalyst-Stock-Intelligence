@@ -227,16 +227,9 @@
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 64960.63,
-      "change_str": "+0.12%",
+      "price": 64977.16,
+      "change_str": "+0.15%",
       "direction": "up"
-    },
-    {
-      "label": "VIX",
-      "ticker": "^VIX",
-      "price": 14.9,
-      "change_str": "-1.65%",
-      "direction": "down"
     }
   ],
   "regime": {
@@ -248,7 +241,7 @@
       "ticker": "VAC",
       "sector_label": "VAC",
       "headline": "[JLAW] VCP breakout, pivot=105.40",
-      "latest_at": "2026-08-08 13:34:49 UTC",
+      "latest_at": "2026-08-08 19:18:23 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -274,14 +267,14 @@
     }
   ],
   "logs": [
-    "2026-08-08 13:34:49 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-08-08 19:18:22 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-08-08 13:34:49 UTC",
+  "generated_at": "2026-08-08 19:18:22 UTC",
   "top_signal": {
     "ticker": "VAC",
     "sector_label": "VAC",
     "headline": "[JLAW] VCP breakout, pivot=105.40",
-    "latest_at": "2026-08-08 13:34:49 UTC",
+    "latest_at": "2026-08-08 19:18:23 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
