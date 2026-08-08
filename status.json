@@ -1,30 +1,201 @@
 {
-  "portfolio_value": 0,
+  "portfolio_value": 96265.16,
   "total_deposited": 100000,
-  "cash": 82667.48,
-  "change_raw": 0,
-  "change": "0.00%",
-  "unrealised_str": "$0.00",
-  "realised_pnl": 0,
-  "realised_str": "$0.00",
-  "closed_trades": 0,
+  "cash": 77111.33,
+  "change_raw": -3.73,
+  "change": "-3.73%",
+  "unrealised_str": "-$268.18",
+  "realised_pnl": -3466.67,
+  "realised_str": "-$3466.67",
+  "closed_trades": 10,
   "usd_inr_rate": 1.0,
-  "positions": [],
-  "closed_trades_list": [],
+  "positions": [
+    {
+      "ticker": "JAZZ",
+      "sector": "Healthcare / Biotechnology",
+      "source": "JLAW",
+      "rs_rating": 90,
+      "pnl_pct": -1.93,
+      "pnl_pct_str": "-1.93%",
+      "pnl": -268.18,
+      "pnl_str": "-$268.18",
+      "market_value": 13597.679870605469
+    },
+    {
+      "ticker": "VAC",
+      "sector": "Consumer Cyclical / Resorts & Casinos",
+      "source": "JLAW",
+      "rs_rating": 93,
+      "pnl_pct": 0.0,
+      "pnl_pct_str": "+0.00%",
+      "pnl": 0.0,
+      "pnl_str": "+$0.00",
+      "market_value": 5556.150054931641
+    }
+  ],
+  "closed_trades_list": [
+    {
+      "ticker": "AMN",
+      "entry": 33.63,
+      "exit": 32.9574,
+      "shares": 557,
+      "pnl": -374.64,
+      "pnl_str": "-$374.64",
+      "pnl_pct": -2.0,
+      "pnl_pct_str": "-2.00%",
+      "exit_date": "2026-08-03",
+      "exit_reason": "Stop Loss",
+      "winner": false
+    },
+    {
+      "ticker": "AMN",
+      "entry": 33.0,
+      "exit": 32.34,
+      "shares": 565,
+      "pnl": -372.9,
+      "pnl_str": "-$372.90",
+      "pnl_pct": -2.0,
+      "pnl_pct_str": "-2.00%",
+      "exit_date": "2026-08-04",
+      "exit_reason": "Stop Loss",
+      "winner": false
+    },
+    {
+      "ticker": "AMRX",
+      "entry": 18.46,
+      "exit": 18.0908,
+      "shares": 994,
+      "pnl": -366.98,
+      "pnl_str": "-$366.98",
+      "pnl_pct": -2.0,
+      "pnl_pct_str": "-2.00%",
+      "exit_date": "2026-08-07",
+      "exit_reason": "Stop Loss",
+      "winner": false
+    },
+    {
+      "ticker": "CALY",
+      "entry": 18.46,
+      "exit": 18.0908,
+      "shares": 1016,
+      "pnl": -375.11,
+      "pnl_str": "-$375.11",
+      "pnl_pct": -2.0,
+      "pnl_pct_str": "-2.00%",
+      "exit_date": "2026-08-07",
+      "exit_reason": "Stop Loss",
+      "winner": false
+    },
+    {
+      "ticker": "DVA",
+      "entry": 239.46,
+      "exit": 232.4508,
+      "shares": 78,
+      "pnl": -546.72,
+      "pnl_str": "-$546.72",
+      "pnl_pct": -2.93,
+      "pnl_pct_str": "-2.93%",
+      "exit_date": "2026-08-03",
+      "exit_reason": "Stop Loss",
+      "winner": false
+    },
+    {
+      "ticker": "DVA",
+      "entry": 233.68,
+      "exit": 228.0,
+      "shares": 49,
+      "pnl": -278.32,
+      "pnl_str": "-$278.32",
+      "pnl_pct": -2.43,
+      "pnl_pct_str": "-2.43%",
+      "exit_date": "2026-08-04",
+      "exit_reason": "Stop Loss",
+      "winner": false
+    },
+    {
+      "ticker": "OSCR",
+      "entry": 30.38,
+      "exit": 29.7724,
+      "shares": 402,
+      "pnl": -244.26,
+      "pnl_str": "-$244.26",
+      "pnl_pct": -2.0,
+      "pnl_pct_str": "-2.00%",
+      "exit_date": "2026-08-06",
+      "exit_reason": "Stop Loss",
+      "winner": false
+    },
+    {
+      "ticker": "PACS",
+      "entry": 46.01,
+      "exit": 45.0898,
+      "shares": 178,
+      "pnl": -163.8,
+      "pnl_str": "-$163.80",
+      "pnl_pct": -2.0,
+      "pnl_pct_str": "-2.00%",
+      "exit_date": "2026-08-03",
+      "exit_reason": "Stop Loss",
+      "winner": false
+    },
+    {
+      "ticker": "PACS",
+      "entry": 44.5,
+      "exit": 43.61,
+      "shares": 419,
+      "pnl": -372.91,
+      "pnl_str": "-$372.91",
+      "pnl_pct": -2.0,
+      "pnl_pct_str": "-2.00%",
+      "exit_date": "2026-08-04",
+      "exit_reason": "Stop Loss",
+      "winner": false
+    },
+    {
+      "ticker": "PACS",
+      "entry": 44.81,
+      "exit": 43.9138,
+      "shares": 414,
+      "pnl": -371.03,
+      "pnl_str": "-$371.03",
+      "pnl_pct": -2.0,
+      "pnl_pct_str": "-2.00%",
+      "exit_date": "2026-08-05",
+      "exit_reason": "Stop Loss",
+      "winner": false
+    }
+  ],
   "track_record": {
-    "total_trades": 0,
+    "total_trades": 10,
     "winners": 0,
-    "losers": 0,
-    "win_rate": 0,
-    "avg_win": 0,
-    "avg_loss": 0,
-    "profit_factor": 0,
-    "expectancy": 0,
-    "sharpe_proxy": 0,
-    "best": null,
-    "worst": null
+    "losers": 10,
+    "win_rate": 0.0,
+    "avg_win": 0.0,
+    "avg_loss": -2.14,
+    "profit_factor": 0.0,
+    "expectancy": -2.14,
+    "sharpe_proxy": -7.26,
+    "best": {
+      "ticker": "AMN",
+      "pnl_pct": -2.0,
+      "pnl_pct_str": "-2.00%",
+      "exit_reason": "Stop Loss"
+    },
+    "worst": {
+      "ticker": "DVA",
+      "pnl_pct": -2.93,
+      "pnl_pct_str": "-2.93%",
+      "exit_reason": "Stop Loss"
+    }
   },
   "market_snapshot": [
+    {
+      "label": "SPX",
+      "ticker": "^GSPC",
+      "price": 7757.64,
+      "change_str": "+0.62%",
+      "direction": "up"
+    },
     {
       "label": "NDX",
       "ticker": "^IXIC",
@@ -42,22 +213,22 @@
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4401.3,
-      "change_str": "+3.76%",
+      "price": 4340.7,
+      "change_str": "+2.33%",
       "direction": "up"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 77.08,
-      "change_str": "-0.27%",
-      "direction": "down"
+      "price": 78.18,
+      "change_str": "+1.15%",
+      "direction": "up"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 64881.27,
-      "change_str": "+0.96%",
+      "price": 64958.12,
+      "change_str": "+0.12%",
       "direction": "up"
     },
     {
@@ -68,11 +239,70 @@
       "direction": "down"
     }
   ],
-  "regime": {},
-  "signals": [],
-  "logs": [
-    "2026-08-08 02:35:20 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+  "regime": {
+    "risk_state": "RISK_ON",
+    "vol_regime": "LOW_VOL"
+  },
+  "signals": [
+    {
+      "ticker": "VAC",
+      "sector_label": "VAC",
+      "headline": "[JLAW] VCP breakout, pivot=105.40",
+      "latest_at": "2026-08-08 07:34:40 UTC",
+      "severity": "MEDIUM",
+      "confidence": 82,
+      "source": "JLAW",
+      "sources": [
+        "JLAW"
+      ],
+      "strategy": "J Law (Stage 2 / VCP / META)",
+      "signal_type": "BUY_BREAKOUT",
+      "entry": 123.47000122070312,
+      "stop_loss": 102.23800148010254,
+      "target": null,
+      "pivot": null,
+      "rs_rating": 93,
+      "risk_pct": null,
+      "actionable_now": false,
+      "confluence": false,
+      "rev_growth_yoy": 0.05939004815409299,
+      "annual_rev_growth": null,
+      "sales_accelerating": null,
+      "fundamentals_verified": true,
+      "fundamentals_ok": true,
+      "fundamentals_detail": "last-Q rev +5.9% YoY, accel=n/a"
+    }
   ],
-  "generated_at": "2026-08-08 02:35:20 UTC",
-  "top_signal": null
+  "logs": [
+    "2026-08-08 07:34:40 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+  ],
+  "generated_at": "2026-08-08 07:34:40 UTC",
+  "top_signal": {
+    "ticker": "VAC",
+    "sector_label": "VAC",
+    "headline": "[JLAW] VCP breakout, pivot=105.40",
+    "latest_at": "2026-08-08 07:34:40 UTC",
+    "severity": "MEDIUM",
+    "confidence": 82,
+    "source": "JLAW",
+    "sources": [
+      "JLAW"
+    ],
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "signal_type": "BUY_BREAKOUT",
+    "entry": 123.47000122070312,
+    "stop_loss": 102.23800148010254,
+    "target": null,
+    "pivot": null,
+    "rs_rating": 93,
+    "risk_pct": null,
+    "actionable_now": false,
+    "confluence": false,
+    "rev_growth_yoy": 0.05939004815409299,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_verified": true,
+    "fundamentals_ok": true,
+    "fundamentals_detail": "last-Q rev +5.9% YoY, accel=n/a"
+  }
 }
