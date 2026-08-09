@@ -208,13 +208,6 @@
       "direction": "up"
     },
     {
-      "label": "NDX",
-      "ticker": "^IXIC",
-      "price": 26690.62,
-      "change_str": "+1.30%",
-      "direction": "up"
-    },
-    {
       "label": "DJI",
       "ticker": "^DJI",
       "price": 54036.93,
@@ -236,6 +229,13 @@
       "direction": "up"
     },
     {
+      "label": "BTC",
+      "ticker": "BTC-USD",
+      "price": 65156.37,
+      "change_str": "+0.39%",
+      "direction": "up"
+    },
+    {
       "label": "VIX",
       "ticker": "^VIX",
       "price": 14.9,
@@ -252,7 +252,7 @@
       "ticker": "ARWR",
       "sector_label": "ARWR",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-08-09 13:40:15 UTC",
+      "latest_at": "2026-08-09 19:17:45 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -280,7 +280,7 @@
       "ticker": "VAC",
       "sector_label": "VAC",
       "headline": "[JLAW] VCP breakout, pivot=105.40",
-      "latest_at": "2026-08-09 13:40:15 UTC",
+      "latest_at": "2026-08-09 19:17:45 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -306,14 +306,14 @@
     }
   ],
   "logs": [
-    "2026-08-09 13:40:14 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-08-09 19:17:45 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-08-09 13:40:14 UTC",
+  "generated_at": "2026-08-09 19:17:45 UTC",
   "top_signal": {
     "ticker": "ARWR",
     "sector_label": "ARWR",
     "headline": "[JLAW] Pullback to BOL, META score=2",
-    "latest_at": "2026-08-09 13:40:15 UTC",
+    "latest_at": "2026-08-09 19:17:45 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
