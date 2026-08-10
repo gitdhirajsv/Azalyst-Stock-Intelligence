@@ -1,10 +1,10 @@
 {
-  "portfolio_value": 95938.94,
+  "portfolio_value": 95942.09,
   "total_deposited": 100000,
   "cash": 59143.08,
   "change_raw": -4.06,
   "change": "-4.06%",
-  "unrealised_str": "-$594.40",
+  "unrealised_str": "-$591.25",
   "realised_pnl": -3466.67,
   "realised_str": "-$3466.67",
   "closed_trades": 10,
@@ -26,11 +26,11 @@
       "sector": "Consumer Cyclical / Resorts & Casinos",
       "source": "JLAW",
       "rs_rating": 93,
-      "pnl_pct": -8.34,
-      "pnl_pct_str": "-8.34%",
-      "pnl": -463.5,
-      "pnl_str": "-$463.50",
-      "market_value": 5092.649917602539
+      "pnl_pct": -8.29,
+      "pnl_pct_str": "-8.29%",
+      "pnl": -460.35,
+      "pnl_str": "-$460.35",
+      "market_value": 5095.799903869629
     },
     {
       "ticker": "ARWR",
@@ -215,38 +215,31 @@
       "direction": "down"
     },
     {
-      "label": "DJI",
-      "ticker": "^DJI",
-      "price": 53975.98,
-      "change_str": "-0.11%",
-      "direction": "down"
-    },
-    {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4447.0,
-      "change_str": "+2.45%",
+      "price": 4448.6,
+      "change_str": "+2.49%",
       "direction": "up"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 82.16,
-      "change_str": "+5.09%",
+      "price": 82.3,
+      "change_str": "+5.27%",
       "direction": "up"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 64020.89,
-      "change_str": "-1.27%",
+      "price": 64048.7,
+      "change_str": "-1.23%",
       "direction": "down"
     },
     {
       "label": "VIX",
       "ticker": "^VIX",
-      "price": 15.44,
-      "change_str": "+3.62%",
+      "price": 15.46,
+      "change_str": "+3.76%",
       "direction": "up"
     }
   ],
@@ -259,7 +252,7 @@
       "ticker": "ARWR",
       "sector_label": "ARWR",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-08-10 20:12:27 UTC",
+      "latest_at": "2026-08-10 21:17:52 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -285,14 +278,14 @@
     }
   ],
   "logs": [
-    "2026-08-10 20:12:26 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-08-10 21:17:52 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-08-10 20:12:26 UTC",
+  "generated_at": "2026-08-10 21:17:52 UTC",
   "top_signal": {
     "ticker": "ARWR",
     "sector_label": "ARWR",
     "headline": "[JLAW] Pullback to BOL, META score=2",
-    "latest_at": "2026-08-10 20:12:27 UTC",
+    "latest_at": "2026-08-10 21:17:52 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
