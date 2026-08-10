@@ -2,8 +2,8 @@
   {
     "ticker": "ARWR",
     "type": "BUY_PULLBACK",
-    "price": 88.1449966430664,
-    "stop_loss": 86.38209671020508,
+    "price": 88.61000061035156,
+    "stop_loss": 86.83780059814453,
     "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
@@ -21,8 +21,8 @@
   {
     "ticker": "PACS",
     "type": "BUY_PULLBACK",
-    "price": 48.849998474121094,
-    "stop_loss": 47.87299850463867,
+    "price": 48.59000015258789,
+    "stop_loss": 47.61820014953613,
     "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
