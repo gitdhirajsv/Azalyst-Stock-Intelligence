@@ -1,9 +1,28 @@
 [
   {
-    "ticker": "ARWR",
+    "ticker": "AMN",
     "type": "BUY_PULLBACK",
-    "price": 88.33000183105469,
-    "stop_loss": 86.56340179443359,
+    "price": 34.41999816894531,
+    "stop_loss": 33.73159820556641,
+    "reason": "Pullback to BOL, META score=2",
+    "source": "JLAW",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW"
+    ],
+    "rs_rating": 89,
+    "rev_growth_yoy": null,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_detail": "revenue data unavailable",
+    "fundamentals_verified": false,
+    "fundamentals_ok": null
+  },
+  {
+    "ticker": "PACS",
+    "type": "BUY_PULLBACK",
+    "price": 46.79499816894531,
+    "stop_loss": 45.859098205566404,
     "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
@@ -11,11 +30,11 @@
       "JLAW"
     ],
     "rs_rating": 96,
-    "rev_growth_yoy": 1.7101595419022582,
+    "rev_growth_yoy": null,
     "annual_rev_growth": null,
     "sales_accelerating": null,
-    "fundamentals_detail": "last-Q rev +171.0% YoY, accel=n/a",
-    "fundamentals_verified": true,
-    "fundamentals_ok": true
+    "fundamentals_detail": "revenue data unavailable",
+    "fundamentals_verified": false,
+    "fundamentals_ok": null
   }
 ]

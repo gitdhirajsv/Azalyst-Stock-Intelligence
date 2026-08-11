@@ -1,10 +1,10 @@
 {
-  "portfolio_value": 95942.09,
+  "portfolio_value": 96017.24,
   "total_deposited": 100000,
   "cash": 59143.08,
-  "change_raw": -4.06,
-  "change": "-4.06%",
-  "unrealised_str": "-$591.25",
+  "change_raw": -3.98,
+  "change": "-3.98%",
+  "unrealised_str": "-$516.11",
   "realised_pnl": -3466.67,
   "realised_str": "-$3466.67",
   "closed_trades": 10,
@@ -15,33 +15,33 @@
       "sector": "Healthcare / Biotechnology",
       "source": "JLAW",
       "rs_rating": 90,
-      "pnl_pct": -1.95,
-      "pnl_pct_str": "-1.95%",
-      "pnl": -270.3,
-      "pnl_str": "-$270.30",
-      "market_value": 13595.55941772461
+      "pnl_pct": -4.63,
+      "pnl_pct_str": "-4.63%",
+      "pnl": -642.36,
+      "pnl_str": "-$642.36",
+      "market_value": 13223.5
     },
     {
       "ticker": "VAC",
       "sector": "Consumer Cyclical / Resorts & Casinos",
       "source": "JLAW",
       "rs_rating": 93,
-      "pnl_pct": -8.29,
-      "pnl_pct_str": "-8.29%",
-      "pnl": -460.35,
-      "pnl_str": "-$460.35",
-      "market_value": 5095.799903869629
+      "pnl_pct": -6.07,
+      "pnl_pct_str": "-6.07%",
+      "pnl": -337.05,
+      "pnl_str": "-$337.05",
+      "market_value": 5219.100151062012
     },
     {
       "ticker": "ARWR",
       "sector": "Unclassified",
       "source": "JLAW",
       "rs_rating": 97,
-      "pnl_pct": 0.78,
-      "pnl_pct_str": "+0.78%",
-      "pnl": 139.4,
-      "pnl_str": "+$139.40",
-      "market_value": 18107.65037536621
+      "pnl_pct": 2.58,
+      "pnl_pct_str": "+2.58%",
+      "pnl": 463.3,
+      "pnl_str": "+$463.30",
+      "market_value": 18431.550750732422
     }
   ],
   "closed_trades_list": [
@@ -203,43 +203,43 @@
     {
       "label": "SPX",
       "ticker": "^GSPC",
-      "price": 7753.11,
-      "change_str": "-0.06%",
+      "price": 7747.18,
+      "change_str": "-0.08%",
       "direction": "down"
     },
     {
       "label": "NDX",
       "ticker": "^IXIC",
-      "price": 26605.36,
-      "change_str": "-0.32%",
+      "price": 26544.22,
+      "change_str": "-0.23%",
+      "direction": "down"
+    },
+    {
+      "label": "DJI",
+      "ticker": "^DJI",
+      "price": 53955.83,
+      "change_str": "-0.04%",
       "direction": "down"
     },
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4449.2,
-      "change_str": "+2.00%",
+      "price": 4446.8,
+      "change_str": "+1.95%",
       "direction": "up"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 81.96,
-      "change_str": "-0.21%",
-      "direction": "down"
-    },
-    {
-      "label": "BTC",
-      "ticker": "BTC-USD",
-      "price": 64278.88,
-      "change_str": "+0.58%",
+      "price": 82.58,
+      "change_str": "+0.55%",
       "direction": "up"
     },
     {
       "label": "VIX",
       "ticker": "^VIX",
-      "price": 15.43,
-      "change_str": "-0.19%",
+      "price": 15.32,
+      "change_str": "-0.91%",
       "direction": "down"
     }
   ],
@@ -249,10 +249,10 @@
   },
   "signals": [
     {
-      "ticker": "ARWR",
-      "sector_label": "ARWR",
+      "ticker": "AMN",
+      "sector_label": "AMN",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-08-11 11:18:45 UTC",
+      "latest_at": "2026-08-11 15:33:59 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -261,31 +261,59 @@
       ],
       "strategy": "J Law (Stage 2 / VCP / META)",
       "signal_type": "BUY_PULLBACK",
-      "entry": 88.33000183105469,
-      "stop_loss": 86.56340179443359,
+      "entry": 34.41999816894531,
+      "stop_loss": 33.73159820556641,
+      "target": null,
+      "pivot": null,
+      "rs_rating": 89,
+      "risk_pct": null,
+      "actionable_now": false,
+      "confluence": false,
+      "rev_growth_yoy": null,
+      "annual_rev_growth": null,
+      "sales_accelerating": null,
+      "fundamentals_verified": false,
+      "fundamentals_ok": null,
+      "fundamentals_detail": "revenue data unavailable"
+    },
+    {
+      "ticker": "PACS",
+      "sector_label": "PACS",
+      "headline": "[JLAW] Pullback to BOL, META score=2",
+      "latest_at": "2026-08-11 15:33:59 UTC",
+      "severity": "MEDIUM",
+      "confidence": 82,
+      "source": "JLAW",
+      "sources": [
+        "JLAW"
+      ],
+      "strategy": "J Law (Stage 2 / VCP / META)",
+      "signal_type": "BUY_PULLBACK",
+      "entry": 46.79499816894531,
+      "stop_loss": 45.859098205566404,
       "target": null,
       "pivot": null,
       "rs_rating": 96,
       "risk_pct": null,
       "actionable_now": false,
       "confluence": false,
-      "rev_growth_yoy": 1.7101595419022582,
+      "rev_growth_yoy": null,
       "annual_rev_growth": null,
       "sales_accelerating": null,
-      "fundamentals_verified": true,
-      "fundamentals_ok": true,
-      "fundamentals_detail": "last-Q rev +171.0% YoY, accel=n/a"
+      "fundamentals_verified": false,
+      "fundamentals_ok": null,
+      "fundamentals_detail": "revenue data unavailable"
     }
   ],
   "logs": [
-    "2026-08-11 11:18:45 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-08-11 15:33:58 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-08-11 11:18:45 UTC",
+  "generated_at": "2026-08-11 15:33:58 UTC",
   "top_signal": {
-    "ticker": "ARWR",
-    "sector_label": "ARWR",
+    "ticker": "AMN",
+    "sector_label": "AMN",
     "headline": "[JLAW] Pullback to BOL, META score=2",
-    "latest_at": "2026-08-11 11:18:45 UTC",
+    "latest_at": "2026-08-11 15:33:59 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
@@ -294,19 +322,19 @@
     ],
     "strategy": "J Law (Stage 2 / VCP / META)",
     "signal_type": "BUY_PULLBACK",
-    "entry": 88.33000183105469,
-    "stop_loss": 86.56340179443359,
+    "entry": 34.41999816894531,
+    "stop_loss": 33.73159820556641,
     "target": null,
     "pivot": null,
-    "rs_rating": 96,
+    "rs_rating": 89,
     "risk_pct": null,
     "actionable_now": false,
     "confluence": false,
-    "rev_growth_yoy": 1.7101595419022582,
+    "rev_growth_yoy": null,
     "annual_rev_growth": null,
     "sales_accelerating": null,
-    "fundamentals_verified": true,
-    "fundamentals_ok": true,
-    "fundamentals_detail": "last-Q rev +171.0% YoY, accel=n/a"
+    "fundamentals_verified": false,
+    "fundamentals_ok": null,
+    "fundamentals_detail": "revenue data unavailable"
   }
 }
