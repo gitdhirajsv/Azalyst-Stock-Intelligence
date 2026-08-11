@@ -2,8 +2,8 @@
   {
     "ticker": "PACS",
     "type": "BUY_PULLBACK",
-    "price": 46.255001068115234,
-    "stop_loss": 45.32990104675293,
+    "price": 45.95000076293945,
+    "stop_loss": 45.031000747680665,
     "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
