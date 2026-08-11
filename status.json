@@ -1,10 +1,10 @@
 {
-  "portfolio_value": 96122.19,
+  "portfolio_value": 95929.53,
   "total_deposited": 100000,
   "cash": 59143.08,
-  "change_raw": -3.88,
-  "change": "-3.88%",
-  "unrealised_str": "-$411.16",
+  "change_raw": -4.07,
+  "change": "-4.07%",
+  "unrealised_str": "-$603.81",
   "realised_pnl": -3466.67,
   "realised_str": "-$3466.67",
   "closed_trades": 10,
@@ -15,33 +15,33 @@
       "sector": "Healthcare / Biotechnology",
       "source": "JLAW",
       "rs_rating": 90,
-      "pnl_pct": -4.74,
-      "pnl_pct_str": "-4.74%",
-      "pnl": -657.73,
-      "pnl_str": "-$657.73",
-      "market_value": 13208.130355834961
+      "pnl_pct": -4.82,
+      "pnl_pct_str": "-4.82%",
+      "pnl": -668.86,
+      "pnl_str": "-$668.86",
+      "market_value": 13197.0
     },
     {
       "ticker": "VAC",
       "sector": "Consumer Cyclical / Resorts & Casinos",
       "source": "JLAW",
       "rs_rating": 93,
-      "pnl_pct": -5.32,
-      "pnl_pct_str": "-5.32%",
-      "pnl": -295.65,
-      "pnl_str": "-$295.65",
-      "market_value": 5260.500068664551
+      "pnl_pct": -5.51,
+      "pnl_pct_str": "-5.51%",
+      "pnl": -306.0,
+      "pnl_str": "-$306.00",
+      "market_value": 5250.149917602539
     },
     {
       "ticker": "ARWR",
       "sector": "Unclassified",
       "source": "JLAW",
       "rs_rating": 97,
-      "pnl_pct": 3.02,
-      "pnl_pct_str": "+3.02%",
-      "pnl": 542.22,
-      "pnl_str": "+$542.22",
-      "market_value": 18510.47462463379
+      "pnl_pct": 2.07,
+      "pnl_pct_str": "+2.07%",
+      "pnl": 371.05,
+      "pnl_str": "+$371.05",
+      "market_value": 18339.299812316895
     }
   ],
   "closed_trades_list": [
@@ -203,43 +203,43 @@
     {
       "label": "SPX",
       "ticker": "^GSPC",
-      "price": 7733.45,
-      "change_str": "-0.25%",
+      "price": 7726.47,
+      "change_str": "-0.34%",
       "direction": "down"
     },
     {
       "label": "DJI",
       "ticker": "^DJI",
-      "price": 53883.65,
-      "change_str": "-0.17%",
+      "price": 53844.63,
+      "change_str": "-0.24%",
       "direction": "down"
     },
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4440.7,
-      "change_str": "+1.81%",
+      "price": 4423.3,
+      "change_str": "+1.41%",
       "direction": "up"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 83.21,
-      "change_str": "+1.31%",
+      "price": 83.09,
+      "change_str": "+1.17%",
       "direction": "up"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 63508.49,
-      "change_str": "-0.63%",
+      "price": 63516.9,
+      "change_str": "-0.62%",
       "direction": "down"
     },
     {
       "label": "VIX",
       "ticker": "^VIX",
-      "price": 15.41,
-      "change_str": "-0.32%",
+      "price": 15.29,
+      "change_str": "-1.10%",
       "direction": "down"
     }
   ],
@@ -252,7 +252,7 @@
       "ticker": "PACS",
       "sector_label": "PACS",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-08-11 17:35:12 UTC",
+      "latest_at": "2026-08-11 18:22:18 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -261,8 +261,8 @@
       ],
       "strategy": "J Law (Stage 2 / VCP / META)",
       "signal_type": "BUY_PULLBACK",
-      "entry": 45.95000076293945,
-      "stop_loss": 45.031000747680665,
+      "entry": 46.2400016784668,
+      "stop_loss": 45.31520164489746,
       "target": null,
       "pivot": null,
       "rs_rating": 96,
@@ -278,14 +278,14 @@
     }
   ],
   "logs": [
-    "2026-08-11 17:35:12 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-08-11 18:22:17 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-08-11 17:35:12 UTC",
+  "generated_at": "2026-08-11 18:22:17 UTC",
   "top_signal": {
     "ticker": "PACS",
     "sector_label": "PACS",
     "headline": "[JLAW] Pullback to BOL, META score=2",
-    "latest_at": "2026-08-11 17:35:12 UTC",
+    "latest_at": "2026-08-11 18:22:18 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
@@ -294,8 +294,8 @@
     ],
     "strategy": "J Law (Stage 2 / VCP / META)",
     "signal_type": "BUY_PULLBACK",
-    "entry": 45.95000076293945,
-    "stop_loss": 45.031000747680665,
+    "entry": 46.2400016784668,
+    "stop_loss": 45.31520164489746,
     "target": null,
     "pivot": null,
     "rs_rating": 96,
