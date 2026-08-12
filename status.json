@@ -1,10 +1,10 @@
 {
-  "portfolio_value": 95734.59,
+  "portfolio_value": 95593.27,
   "total_deposited": 100000,
   "cash": 59143.08,
-  "change_raw": -4.27,
-  "change": "-4.27%",
-  "unrealised_str": "-$798.76",
+  "change_raw": -4.41,
+  "change": "-4.41%",
+  "unrealised_str": "-$940.07",
   "realised_pnl": -3466.67,
   "realised_str": "-$3466.67",
   "closed_trades": 10,
@@ -15,33 +15,33 @@
       "sector": "Healthcare / Biotechnology",
       "source": "JLAW",
       "rs_rating": 90,
-      "pnl_pct": -4.76,
-      "pnl_pct_str": "-4.76%",
-      "pnl": -660.38,
-      "pnl_str": "-$660.38",
-      "market_value": 13205.480194091797
+      "pnl_pct": -4.84,
+      "pnl_pct_str": "-4.84%",
+      "pnl": -671.77,
+      "pnl_str": "-$671.77",
+      "market_value": 13194.085388183594
     },
     {
       "ticker": "VAC",
       "sector": "Consumer Cyclical / Resorts & Casinos",
       "source": "JLAW",
       "rs_rating": 93,
-      "pnl_pct": -4.15,
-      "pnl_pct_str": "-4.15%",
-      "pnl": -230.62,
-      "pnl_str": "-$230.62",
-      "market_value": 5325.525054931641
+      "pnl_pct": -3.35,
+      "pnl_pct_str": "-3.35%",
+      "pnl": -186.3,
+      "pnl_str": "-$186.30",
+      "market_value": 5369.850082397461
     },
     {
       "ticker": "ARWR",
       "sector": "Unclassified",
       "source": "JLAW",
       "rs_rating": 97,
-      "pnl_pct": 0.51,
-      "pnl_pct_str": "+0.51%",
-      "pnl": 92.25,
-      "pnl_str": "+$92.25",
-      "market_value": 18060.499687194824
+      "pnl_pct": -0.46,
+      "pnl_pct_str": "-0.46%",
+      "pnl": -82.0,
+      "pnl_str": "-$82.00",
+      "market_value": 17886.25
     }
   ],
   "closed_trades_list": [
@@ -203,50 +203,43 @@
     {
       "label": "SPX",
       "ticker": "^GSPC",
-      "price": 7750.63,
-      "change_str": "+0.29%",
+      "price": 7748.5,
+      "change_str": "+0.26%",
       "direction": "up"
     },
     {
       "label": "NDX",
       "ticker": "^IXIC",
-      "price": 26586.67,
-      "change_str": "+0.53%",
+      "price": 26588.49,
+      "change_str": "+0.54%",
       "direction": "up"
     },
     {
       "label": "DJI",
       "ticker": "^DJI",
-      "price": 53823.23,
-      "change_str": "+0.06%",
-      "direction": "up"
+      "price": 53770.27,
+      "change_str": "-0.04%",
+      "direction": "down"
     },
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4476.1,
-      "change_str": "+2.12%",
+      "price": 4469.0,
+      "change_str": "+1.96%",
       "direction": "up"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 83.05,
-      "change_str": "-0.18%",
-      "direction": "down"
-    },
-    {
-      "label": "BTC",
-      "ticker": "BTC-USD",
-      "price": 63286.75,
-      "change_str": "-0.42%",
+      "price": 82.58,
+      "change_str": "-0.75%",
       "direction": "down"
     },
     {
       "label": "VIX",
       "ticker": "^VIX",
-      "price": 14.46,
-      "change_str": "-5.37%",
+      "price": 14.55,
+      "change_str": "-4.78%",
       "direction": "down"
     }
   ],
@@ -259,7 +252,7 @@
       "ticker": "ARWR",
       "sector_label": "ARWR",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-08-12 19:40:23 UTC",
+      "latest_at": "2026-08-12 21:17:03 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -268,8 +261,8 @@
       ],
       "strategy": "J Law (Stage 2 / VCP / META)",
       "signal_type": "BUY_PULLBACK",
-      "entry": 87.91999816894531,
-      "stop_loss": 86.1615982055664,
+      "entry": 87.25,
+      "stop_loss": 85.505,
       "target": null,
       "pivot": null,
       "rs_rating": 96,
@@ -285,14 +278,14 @@
     }
   ],
   "logs": [
-    "2026-08-12 19:40:22 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-08-12 21:17:02 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-08-12 19:40:22 UTC",
+  "generated_at": "2026-08-12 21:17:02 UTC",
   "top_signal": {
     "ticker": "ARWR",
     "sector_label": "ARWR",
     "headline": "[JLAW] Pullback to BOL, META score=2",
-    "latest_at": "2026-08-12 19:40:23 UTC",
+    "latest_at": "2026-08-12 21:17:03 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
@@ -301,8 +294,8 @@
     ],
     "strategy": "J Law (Stage 2 / VCP / META)",
     "signal_type": "BUY_PULLBACK",
-    "entry": 87.91999816894531,
-    "stop_loss": 86.1615982055664,
+    "entry": 87.25,
+    "stop_loss": 85.505,
     "target": null,
     "pivot": null,
     "rs_rating": 96,
