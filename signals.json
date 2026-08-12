@@ -2,9 +2,9 @@
   {
     "ticker": "ARWR",
     "type": "BUY_PULLBACK",
-    "price": 89.2699966430664,
-    "stop_loss": 87.48459671020508,
-    "reason": "Pullback to BOL, META score=2",
+    "price": 88.54000091552734,
+    "stop_loss": 86.76920089721679,
+    "reason": "Pullback to BOL, META score=3",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
     "sources": [
