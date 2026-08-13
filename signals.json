@@ -2,38 +2,19 @@
   {
     "ticker": "ARWR",
     "type": "BUY_PULLBACK",
-    "price": 86.33999633789062,
-    "stop_loss": 84.6131964111328,
+    "price": 85.58999633789062,
+    "stop_loss": 83.8781964111328,
     "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
     "sources": [
       "JLAW"
     ],
-    "rs_rating": 96,
+    "rs_rating": 94,
     "rev_growth_yoy": 1.7101595419022582,
     "annual_rev_growth": null,
     "sales_accelerating": null,
     "fundamentals_detail": "last-Q rev +171.0% YoY, accel=n/a",
-    "fundamentals_verified": true,
-    "fundamentals_ok": true
-  },
-  {
-    "ticker": "KYMR",
-    "type": "BUY_PULLBACK",
-    "price": 114.0,
-    "stop_loss": 111.55,
-    "reason": "Pullback to BOL, META score=2",
-    "source": "JLAW",
-    "strategy": "J Law (Stage 2 / VCP / META)",
-    "sources": [
-      "JLAW"
-    ],
-    "rs_rating": 91,
-    "rev_growth_yoy": 4.6639944231439525,
-    "annual_rev_growth": null,
-    "sales_accelerating": null,
-    "fundamentals_detail": "last-Q rev +466.4% YoY, accel=n/a",
     "fundamentals_verified": true,
     "fundamentals_ok": true
   }
