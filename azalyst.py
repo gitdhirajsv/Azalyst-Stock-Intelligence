@@ -10,7 +10,8 @@ from signal_generator import generate_entry_signals
 from minervini import compute_rs_ratings
 from fundamentals import apply_fundamental_filter
 from risk_manager import RiskManager, evaluate_stop_loss_exits, check_diversification
-from paper_trader import init_db, get_cash, get_positions, execute_trade
+from paper_trader import init_db, get_cash, get_positions, execute_trade, record_equity_snapshot
+from performance import generate_performance_report
 
 # STK-07 remediation (forensic audit 2026-07-28): the cron ran this pipeline
 # hourly during market hours (14:30-21:30 UTC) using yfinance's 1d-interval
@@ -188,6 +189,41 @@ def run_pipeline():
             except Exception as e:
                 print(f"[execute] error on {sig.get('ticker')}: {e}")
                 continue
+
+    # Record equity snapshot for performance analytics (equity curve tracking).
+    positions_value = 0.0
+    updated_cash = get_cash()
+    updated_positions = get_positions()
+    if not updated_positions.empty:
+        for idx, pos in updated_positions.iterrows():
+            t = pos['ticker']
+            s = pos['shares']
+            if t in stock_data:
+                positions_value += s * stock_data[t]['Close'].iloc[-1]
+    record_equity_snapshot(updated_cash, positions_value)
+
+    # Performance report
+    try:
+        report = generate_performance_report()
+        if report.get('has_data'):
+            em = report.get('equity_metrics', {})
+            rm_metrics = report.get('risk_metrics', {})
+            tm = report.get('trade_metrics', {})
+            print(f"\n--- Performance Report ---")
+            if em:
+                print(f"  Sharpe: {em.get('sharpe_ratio', 'n/a')}  "
+                      f"Sortino: {em.get('sortino_ratio', 'n/a')}  "
+                      f"Max DD: {em.get('max_drawdown_pct', 'n/a')}%")
+            if rm_metrics:
+                print(f"  VaR(95%): {rm_metrics.get('var_95_daily_pct', 'n/a')}%  "
+                      f"CVaR(95%): {rm_metrics.get('cvar_95_daily_pct', 'n/a')}%")
+            if tm:
+                print(f"  Win Rate: {tm.get('win_rate_pct', 'n/a')}%  "
+                      f"Profit Factor: {tm.get('profit_factor', 'n/a')}  "
+                      f"Avg R: {tm.get('avg_r_multiple', 'n/a')}")
+            print(f"---\n")
+    except Exception as e:
+        print(f"[perf] could not generate performance report: {e}")
 
     print(f"[{datetime.now().isoformat()}] Pipeline execution complete.")
 

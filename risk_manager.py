@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 from config import (
     RISK_PER_TRADE_PCT, MAX_POSITION_PCT, MAX_PORTFOLIO_RISK_PCT,
     MAX_OPEN_POSITIONS, MAX_POSITIONS_PER_SECTOR,
@@ -18,6 +19,46 @@ from config import (
 # GAP_RISK_BUDGET_PCT of equity, regardless of how tight the nominal stop is.
 GAP_RISK_PCT = 0.08
 GAP_RISK_BUDGET_PCT = 0.015
+
+
+# =====================================================================
+#  TRAILING STOP (Minervini: "When to Sell and Nail Down Profits")
+# =====================================================================
+
+def compute_trailing_stop(entry_price, original_stop, current_price):
+    """Minervini-style trailing stop with progressive profit lock-in.
+
+    As the position moves in our favor, the stop is raised:
+      - After 1R profit: raise stop to breakeven (entry price)
+      - After 2R profit: lock in 1R above entry
+      - After 3R profit (target): tight 5% trail from current price
+
+    The returned stop is always the MAXIMUM of the original stop and the
+    trailing level, so it can only ratchet upward, never lower.
+
+    Reference: "Think and Trade Like a Champion", Section 9 — "When to Sell
+    and Nail Down Profits".
+    """
+    if original_stop is None or original_stop <= 0 or original_stop >= entry_price:
+        return original_stop
+    if current_price <= entry_price:
+        return original_stop
+
+    risk = entry_price - original_stop
+    profit = current_price - entry_price
+    r_multiple = profit / risk if risk > 0 else 0
+
+    if r_multiple >= 3.0:
+        trailing = current_price * 0.95  # tight 5% trail at/beyond target
+    elif r_multiple >= 2.0:
+        trailing = entry_price + risk     # lock in 1R profit
+    elif r_multiple >= 1.0:
+        trailing = entry_price            # breakeven stop
+    else:
+        trailing = original_stop
+
+    # Never lower the stop — only ratchet up
+    return max(original_stop, trailing)
 
 
 class RiskManager:
@@ -143,18 +184,18 @@ def evaluate_stop_loss_exits(positions, stock_data):
     """Return [(ticker, shares, fill_price, reason), ...] for positions whose
     stop was touched today.
 
-    Checks the PERSISTED structural stop against the day's Low (a stop can
-    be touched intraday even if Close recovers), with a gap-aware fill: if
-    the session's Open itself gapped below the stop, the stop price was
-    never actually available, so the fill is the Open, not a price nobody
-    could get.
+    Now incorporates trailing stop logic: before checking if the stop was hit,
+    the effective stop is ratcheted upward using compute_trailing_stop() if
+    the position is in profit. This implements Minervini's progressive
+    profit-protection (breakeven at 1R, lock-in at 2R, tight trail at 3R).
+
+    Checks the effective stop against the day's Low (a stop can be touched
+    intraday even if Close recovers), with a gap-aware fill: if the session's
+    Open itself gapped below the stop, the fill is the Open, not a price
+    nobody could get.
 
     avg_price * CATASTROPHE_BACKSTOP_PCT (0.85) is kept only as a backstop:
-    it fires when the persisted stop is missing (a pre-migration or
-    corrupted row) or nonsensical for a long (at/above cost -- the STK-05
-    inverted-stop class of bug), never as the primary exit. Whichever level
-    is tighter (closer to current price) is used, so a valid, tighter
-    structural stop always takes precedence over the wider backstop.
+    it fires when the persisted stop is missing or nonsensical for a long.
     """
     exits = []
     if positions is None or positions.empty:
@@ -172,14 +213,27 @@ def evaluate_stop_loss_exits(positions, stock_data):
         day = stock_data[ticker].iloc[-1]
         day_low = day['Low']
         day_open = day['Open']
+        day_close = day['Close']
 
         catastrophe_level = avg_price * CATASTROPHE_BACKSTOP_PCT
         has_valid_stop = pd.notna(stop_loss) and 0 < stop_loss < avg_price
-        effective_stop = max(stop_loss, catastrophe_level) if has_valid_stop else catastrophe_level
+
+        if has_valid_stop:
+            # Apply trailing stop: ratchet upward based on current price
+            trailed_stop = compute_trailing_stop(avg_price, stop_loss, day_close)
+            effective_stop = max(trailed_stop, catastrophe_level)
+        else:
+            effective_stop = catastrophe_level
 
         if day_low <= effective_stop:
             fill_price = day_open if day_open < effective_stop else effective_stop
-            reason = "Stop Loss" if has_valid_stop and effective_stop == stop_loss else "Catastrophe backstop"
+            if has_valid_stop and effective_stop > stop_loss:
+                reason = "Trailing Stop"
+            elif has_valid_stop:
+                reason = "Stop Loss"
+            else:
+                reason = "Catastrophe backstop"
             exits.append((ticker, shares, fill_price, reason))
 
     return exits
+

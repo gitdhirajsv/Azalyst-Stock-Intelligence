@@ -163,7 +163,29 @@ def generate_entry_signals(watchlist, stock_data, minervini_universe=None, rs_ra
             continue
         validated.append(sig)
 
-    return validated
+    # ---- RSI / MACD confirmation filters (Murphy, Technical Analysis) ----
+    # RSI > 80: overbought — breakout is likely extended, higher reversal risk.
+    # MACD < Signal: momentum is not aligned with the buy, lower probability.
+    confirmed = []
+    for sig in validated:
+        ticker = sig.get('ticker')
+        df = stock_data.get(ticker)
+        if df is not None and len(df) > 0:
+            last = df.iloc[-1]
+            rsi = last.get('RSI')
+            macd = last.get('MACD')
+            macd_signal = last.get('MACD_Signal')
+            if pd.notna(rsi) and rsi > 80:
+                print(f"[signal] filtered {ticker}: RSI={rsi:.1f} > 80 (overbought)")
+                sig['filtered_reason'] = f'RSI overbought ({rsi:.1f})'
+                continue
+            if pd.notna(macd) and pd.notna(macd_signal) and macd < macd_signal:
+                print(f"[signal] filtered {ticker}: MACD below signal (bearish momentum)")
+                sig['filtered_reason'] = 'MACD bearish crossover'
+                continue
+        confirmed.append(sig)
+
+    return confirmed
 
 
 def generate_exit_signals(positions, stock_data):

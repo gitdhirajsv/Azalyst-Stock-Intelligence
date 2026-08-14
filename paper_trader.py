@@ -27,6 +27,13 @@ def init_db():
         id INTEGER PRIMARY KEY,
         cash REAL
     )''')
+    c.execute('''CREATE TABLE IF NOT EXISTS equity_snapshots (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        date TEXT,
+        cash REAL,
+        positions_value REAL,
+        total_equity REAL
+    )''')
     # Insert starting cash if not exists
     c.execute("SELECT COUNT(*) FROM cash")
     if c.fetchone()[0] == 0:
@@ -68,6 +75,37 @@ def get_trade_history():
     df = pd.read_sql("SELECT * FROM trades ORDER BY date DESC", conn)
     conn.close()
     return df
+
+def record_equity_snapshot(cash, positions_value, date=None):
+    """Record a point on the equity curve for performance analytics.
+
+    Called once per pipeline run from azalyst.py after computing total equity.
+    """
+    if date is None:
+        date = datetime.now().strftime("%Y-%m-%d")
+    total_equity = cash + positions_value
+    conn = sqlite3.connect(DB_PATH, timeout=30)
+    try:
+        c = conn.cursor()
+        # Avoid duplicate snapshots for the same date (idempotent reruns)
+        c.execute("DELETE FROM equity_snapshots WHERE date = ?", (date,))
+        c.execute(
+            "INSERT INTO equity_snapshots (date, cash, positions_value, total_equity) "
+            "VALUES (?, ?, ?, ?)",
+            (date, cash, positions_value, total_equity),
+        )
+        conn.commit()
+    finally:
+        conn.close()
+
+
+def get_equity_snapshots():
+    """Return all equity snapshots as a DataFrame, ordered by date."""
+    conn = sqlite3.connect(DB_PATH)
+    df = pd.read_sql("SELECT * FROM equity_snapshots ORDER BY date", conn)
+    conn.close()
+    return df
+
 
 def execute_trade(ticker, action, shares, price, date=None, reason="", source=None, sector=None, rs_rating=None, stop_loss=None):
     if date is None:

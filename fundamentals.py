@@ -37,7 +37,10 @@ def _fetch_timeseries(ticker, years=6):
     now = int(time.time())
     params = {
         "symbol": ticker,
-        "type": "quarterlyTotalRevenue,annualTotalRevenue",
+        "type": "quarterlyTotalRevenue,annualTotalRevenue,"
+               "quarterlyNetIncome,annualNetIncome,"
+               "quarterlyOperatingIncome,annualOperatingIncome,"
+               "quarterlyFreeCashFlow,annualFreeCashFlow",
         "period1": now - years * 365 * 86400,
         "period2": now,
         "merge": "false",
@@ -160,6 +163,63 @@ def get_fundamentals(ticker):
     )
     _CACHE[ticker] = result
     return result
+
+
+def get_quality_metrics(ticker):
+    """Extended fundamental quality metrics per CFA FSA / Minervini criteria.
+
+    Returns dict with:
+      - operating_margin: latest quarter operating income / revenue
+      - fcf_quality: free cash flow / net income (> 1.0 = high quality)
+      - eps_growth_yoy: latest-quarter net income growth YoY (EPS proxy)
+      - debt_to_equity: from yfinance .info (best-effort, may be None)
+      - institutional_pct: from yfinance .info (best-effort, may be None)
+
+    References:
+      - CFA L1V4 FSA: accruals ratio, earnings quality
+      - Graham, Security Analysis: margin of safety, leverage
+      - Minervini: "ROE > 17%, strong institutional sponsorship"
+    """
+    metrics = {
+        'operating_margin': None,
+        'fcf_quality': None,
+        'eps_growth_yoy': None,
+        'debt_to_equity': None,
+        'institutional_pct': None,
+    }
+
+    # Timeseries data (reuse the same endpoint, already fetched if in cache)
+    js = _fetch_timeseries(ticker)
+    if js is not None:
+        q_revenue = _extract(js, 'quarterlyTotalRevenue')
+        q_opincome = _extract(js, 'quarterlyOperatingIncome')
+        q_netincome = _extract(js, 'quarterlyNetIncome')
+        q_fcf = _extract(js, 'quarterlyFreeCashFlow')
+
+        # Operating margin = latest-Q operating income / revenue
+        if q_revenue and q_opincome and q_revenue[-1][1] > 0:
+            metrics['operating_margin'] = round(q_opincome[-1][1] / q_revenue[-1][1], 4)
+
+        # FCF quality = FCF / Net Income (> 1.0 means cash backs earnings)
+        if q_fcf and q_netincome and q_netincome[-1][1] != 0:
+            metrics['fcf_quality'] = round(q_fcf[-1][1] / q_netincome[-1][1], 2)
+
+        # EPS growth proxy: latest-Q net income vs same quarter a year ago
+        if len(q_netincome) >= 5 and q_netincome[-5][1] != 0:
+            metrics['eps_growth_yoy'] = round(
+                q_netincome[-1][1] / abs(q_netincome[-5][1]) - 1.0, 4
+            )
+
+    # yfinance .info for leverage and institutional ownership (slow, per-ticker)
+    try:
+        import yfinance as yf
+        info = yf.Ticker(ticker).info
+        metrics['debt_to_equity'] = info.get('debtToEquity')
+        metrics['institutional_pct'] = info.get('heldPercentInstitutions')
+    except Exception:
+        pass
+
+    return metrics
 
 
 def apply_fundamental_filter(signals, require_when_unverified=False):

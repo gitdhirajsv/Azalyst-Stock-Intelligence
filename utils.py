@@ -37,6 +37,50 @@ def compute_volume_ma(df, period=50):
     df[f'Volume_MA_{period}'] = df['Volume'].rolling(period).mean()
     return df
 
+
+def compute_rsi(df, period=14):
+    """Relative Strength Index (RSI) — per Murphy, Technical Analysis of the
+    Financial Markets. RSI measures the speed and magnitude of directional
+    price movements. Values > 70 indicate overbought, < 30 oversold."""
+    delta = df['Close'].diff()
+    gain = delta.where(delta > 0, 0.0)
+    loss = (-delta).where(delta < 0, 0.0)
+    avg_gain = gain.rolling(window=period, min_periods=period).mean()
+    avg_loss = loss.rolling(window=period, min_periods=period).mean()
+    # Use Wilder's smoothing (EMA) after the initial SMA seed
+    for i in range(period, len(avg_gain)):
+        avg_gain.iloc[i] = (avg_gain.iloc[i - 1] * (period - 1) + gain.iloc[i]) / period
+        avg_loss.iloc[i] = (avg_loss.iloc[i - 1] * (period - 1) + loss.iloc[i]) / period
+    rs = avg_gain / avg_loss
+    df['RSI'] = 100 - (100 / (1 + rs))
+    return df
+
+
+def compute_macd(df, fast=12, slow=26, signal=9):
+    """MACD (Moving Average Convergence Divergence) — per Murphy.
+    MACD line = EMA(fast) - EMA(slow); Signal line = EMA(MACD, signal).
+    Histogram = MACD - Signal. Bullish when MACD > Signal."""
+    ema_fast = df['Close'].ewm(span=fast, adjust=False).mean()
+    ema_slow = df['Close'].ewm(span=slow, adjust=False).mean()
+    df['MACD'] = ema_fast - ema_slow
+    df['MACD_Signal'] = df['MACD'].ewm(span=signal, adjust=False).mean()
+    df['MACD_Hist'] = df['MACD'] - df['MACD_Signal']
+    return df
+
+
+def compute_atr(df, period=14):
+    """Average True Range — used for volatility-normalized stop placement."""
+    high = df['High']
+    low = df['Low']
+    close = df['Close'].shift(1)
+    tr = pd.concat([
+        high - low,
+        (high - close).abs(),
+        (low - close).abs(),
+    ], axis=1).max(axis=1)
+    df['ATR'] = tr.rolling(window=period).mean()
+    return df
+
 def compute_rs_line(stock_df, benchmark_df):
     """Relative strength: (stock price / benchmark price) normalized."""
     # Align dates

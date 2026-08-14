@@ -4,7 +4,10 @@ from utils import (
     fetch_historical,
     compute_moving_averages,
     compute_volume_ma,
-    compute_rs_line
+    compute_rs_line,
+    compute_rsi,
+    compute_macd,
+    compute_atr,
 )
 
 def load_stock_data(tickers):
@@ -66,6 +69,9 @@ def load_stock_data(tickers):
                     
                 df = compute_moving_averages(df, MA_PERIODS)
                 df = compute_volume_ma(df)
+                df = compute_rsi(df)
+                df = compute_macd(df)
+                df = compute_atr(df)
                 if benchmark_df is not None:
                     df['RS'] = compute_rs_line(df, benchmark_df)
                 stock_data[t] = df
