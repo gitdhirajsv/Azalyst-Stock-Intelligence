@@ -28,50 +28,50 @@
     {
       "label": "SPX",
       "ticker": "^GSPC",
-      "price": 7786.5,
-      "change_str": "-0.16%",
+      "price": 7780.61,
+      "change_str": "-0.24%",
       "direction": "down"
     },
     {
       "label": "NDX",
       "ticker": "^IXIC",
-      "price": 26698.78,
-      "change_str": "-0.39%",
+      "price": 26683.72,
+      "change_str": "-0.45%",
       "direction": "down"
     },
     {
       "label": "DJI",
       "ticker": "^DJI",
-      "price": 53725.79,
+      "price": 53727.9,
       "change_str": "-0.21%",
       "direction": "down"
     },
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4446.7,
-      "change_str": "+1.90%",
+      "price": 4439.4,
+      "change_str": "+1.74%",
       "direction": "up"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 81.74,
-      "change_str": "+0.60%",
+      "price": 82.24,
+      "change_str": "+1.22%",
       "direction": "up"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 62990.8,
-      "change_str": "-0.65%",
+      "price": 63157.96,
+      "change_str": "-0.39%",
       "direction": "down"
     },
     {
       "label": "VIX",
       "ticker": "^VIX",
-      "price": 14.52,
-      "change_str": "-0.75%",
+      "price": 14.45,
+      "change_str": "-1.23%",
       "direction": "down"
     }
   ],
@@ -79,10 +79,66 @@
     "risk_state": "RISK_ON",
     "vol_regime": "LOW_VOL"
   },
-  "signals": [],
-  "logs": [
-    "2026-08-14 16:20:33 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+  "signals": [
+    {
+      "ticker": "PTGX",
+      "sector_label": "PTGX",
+      "headline": "[JLAW] Pullback to BOL, META score=2",
+      "latest_at": "2026-08-14 17:32:40 UTC",
+      "severity": "MEDIUM",
+      "confidence": 82,
+      "source": "JLAW",
+      "sources": [
+        "JLAW"
+      ],
+      "strategy": "J Law (Stage 2 / VCP / META)",
+      "signal_type": "BUY_PULLBACK",
+      "entry": 153.58999633789062,
+      "stop_loss": 150.34030532836914,
+      "target": null,
+      "pivot": null,
+      "rs_rating": 93,
+      "risk_pct": null,
+      "actionable_now": false,
+      "confluence": false,
+      "rev_growth_yoy": null,
+      "annual_rev_growth": null,
+      "sales_accelerating": null,
+      "fundamentals_verified": false,
+      "fundamentals_ok": null,
+      "fundamentals_detail": "revenue data unavailable"
+    }
   ],
-  "generated_at": "2026-08-14 16:20:33 UTC",
-  "top_signal": null
+  "logs": [
+    "2026-08-14 17:32:40 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+  ],
+  "generated_at": "2026-08-14 17:32:40 UTC",
+  "top_signal": {
+    "ticker": "PTGX",
+    "sector_label": "PTGX",
+    "headline": "[JLAW] Pullback to BOL, META score=2",
+    "latest_at": "2026-08-14 17:32:40 UTC",
+    "severity": "MEDIUM",
+    "confidence": 82,
+    "source": "JLAW",
+    "sources": [
+      "JLAW"
+    ],
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "signal_type": "BUY_PULLBACK",
+    "entry": 153.58999633789062,
+    "stop_loss": 150.34030532836914,
+    "target": null,
+    "pivot": null,
+    "rs_rating": 93,
+    "risk_pct": null,
+    "actionable_now": false,
+    "confluence": false,
+    "rev_growth_yoy": null,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_verified": false,
+    "fundamentals_ok": null,
+    "fundamentals_detail": "revenue data unavailable"
+  }
 }
