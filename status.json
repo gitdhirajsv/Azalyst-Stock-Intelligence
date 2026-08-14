@@ -237,29 +237,29 @@
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4382.0,
-      "change_str": "+0.42%",
+      "price": 4399.2,
+      "change_str": "+0.82%",
       "direction": "up"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 81.28,
-      "change_str": "+0.04%",
+      "price": 82.84,
+      "change_str": "+1.96%",
       "direction": "up"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 63327.34,
-      "change_str": "-0.12%",
+      "price": 62873.86,
+      "change_str": "-0.83%",
       "direction": "down"
     },
     {
       "label": "VIX",
       "ticker": "^VIX",
-      "price": 14.63,
-      "change_str": "+0.55%",
+      "price": 14.64,
+      "change_str": "+0.07%",
       "direction": "up"
     }
   ],
@@ -272,7 +272,7 @@
       "ticker": "ARWR",
       "sector_label": "ARWR",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-08-14 04:28:39 UTC",
+      "latest_at": "2026-08-14 08:04:12 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -298,14 +298,14 @@
     }
   ],
   "logs": [
-    "2026-08-14 04:28:39 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-08-14 08:04:11 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-08-14 04:28:39 UTC",
+  "generated_at": "2026-08-14 08:04:11 UTC",
   "top_signal": {
     "ticker": "ARWR",
     "sector_label": "ARWR",
     "headline": "[JLAW] Pullback to BOL, META score=2",
-    "latest_at": "2026-08-14 04:28:39 UTC",
+    "latest_at": "2026-08-14 08:04:12 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
