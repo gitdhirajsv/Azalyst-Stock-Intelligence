@@ -160,6 +160,9 @@ body{background:#000;font-family:'Courier New',monospace;color:#ff6600;overflow-
 .badge-jlaw{background:#001a2a;color:#0ea5e9;border:1px solid #003355}
 .badge-minervini{background:#1a0f2a;color:#c084fc;border:1px solid #3a2a55}
 .badge-confluence{background:#1a1000;color:#ffd700;border:1px solid #554400}
+.badge-watch-breakout{background:#2a1a00;color:#ff9900;border:1px solid #553300}
+.badge-watch-wait{background:#0a0a1a;color:#6688cc;border:1px solid #223355}
+.badge-watch-pullback{background:#1a0f00;color:#cc8844;border:1px solid #3a2a10}
 .msg-tag{display:inline-block;font-size:8px;padding:1px 5px;margin-right:5px;font-weight:700}
 .msg-item{padding:3px 0;border-bottom:1px solid #0d0d0d;font-size:10px;line-height:1.4}
 
@@ -354,6 +357,15 @@ body{background:#000;font-family:'Courier New',monospace;color:#ff6600;overflow-
     <div class="panel">
       <div class="panel-header">J LAW + MINERVINI — ACTIVE BUY SIGNALS <span class="cmd">RS ≥ <span id="threshold">89</span> · rev &gt; 5%</span></div>
       <div id="signalBody"></div>
+    </div>
+
+    <!-- Panel: Watchlist — structurally qualified (Trend Template + tight VCP base)
+         but not buyable at today's price. Not an entry signal: no price, no
+         stop_loss, actionable_now is always false. Each row carries the exact
+         numeric price/level to watch for. -->
+    <div class="panel">
+      <div class="panel-header">MINERVINI WATCHLIST <span class="cmd">qualified, not yet buyable</span></div>
+      <div id="watchBody"></div>
     </div>
 
     <!-- Panel: Top Signal Detail (real trade parameters — entry/stop/target/RS — not a
@@ -604,6 +616,17 @@ function sourceBadge(source) {
   return `<span class="badge badge-jlaw">J LAW</span>`;
 }
 
+// Watchlist timing state -- never "BUY NOW" here (that's an entry signal, not
+// a watch row); the three WATCH-tier states, closest-to-tradeable first.
+function timingBadge(timing) {
+  const mapping = {
+    'BUY ON BREAKOUT': 'badge-watch-breakout',
+    'WAIT FOR BREAKOUT': 'badge-watch-wait',
+    'WAIT FOR PULLBACK': 'badge-watch-pullback',
+  };
+  return `<span class="badge ${mapping[timing] || 'badge-low'}">${timing || '-'}</span>`;
+}
+
 // Revenue-growth tag (fundamentals layer): green >5% YoY, yellow positive, red negative,
 // grey when revenue could not be verified. ▲acc / ▼dec = annual sales acceleration flag.
 function fundamentalsTag(s) {
@@ -844,6 +867,24 @@ function renderMktdPage() {
         <span style="min-width:64px">${sourceBadge(s.source)}</span>
         <span style="min-width:70px;font-size:9px;color:#888">Entry ${fmt.usd(s.entry)}</span>
         <span style="min-width:70px;font-size:9px">${fundamentalsTag(s)}</span>
+        <span class="spct ${rsCls}" style="min-width:40px;text-align:right">RS ${rs}</span>
+      </div>`;
+    }).join('');
+  }
+
+  // Watchlist — structurally qualified, not buyable at today's price. Never an
+  // entry: no price/stop_loss key exists on these rows even before render.
+  const watch = DATA.watchlist || [];
+  if (watch.length === 0) {
+    document.getElementById('watchBody').innerHTML = '<div style="color:#555;font-size:9px;padding:6px 0">No watchlist candidates (nothing passing Stage 2 + RS right now).</div>';
+  } else {
+    document.getElementById('watchBody').innerHTML = watch.map(w => {
+      const rs = (w.rs_rating == null) ? '—' : w.rs_rating;
+      const rsCls = w.rs_rating>=89?'up':w.rs_rating>=80?'neu':'dn';
+      return `<div class="srow" style="align-items:center">
+        <span class="sname" style="min-width:52px">${w.ticker}</span>
+        <span style="min-width:110px">${timingBadge(w.timing)}</span>
+        <span style="min-width:80px;font-size:9px;color:#888">Trigger ${fmt.usd(w.trigger_price)}</span>
         <span class="spct ${rsCls}" style="min-width:40px;text-align:right">RS ${rs}</span>
       </div>`;
     }).join('');

@@ -207,6 +207,7 @@ def generate_status():
         "market_snapshot": fetch_market_snapshot(),
         "regime": {},
         "signals": [],
+        "watchlist": [],
         "logs": [f"{datetime.utcnow().strftime('%Y-%m-%d %H:%M:%S UTC')} [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"],
         "generated_at": datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S UTC"),
         "top_signal": None
@@ -353,6 +354,8 @@ def generate_status():
                         "rs_rating": sig.get("rs_rating"),
                         "risk_pct": sig.get("risk_pct"),
                         "actionable_now": sig.get("actionable_now", False),
+                        "timing": sig.get("timing"),
+                        "trigger_price": sig.get("trigger_price"),
                         "confluence": is_conf,
                         # Fundamentals (revenue, not profit) -- see fundamentals.py.
                         "rev_growth_yoy": sig.get("rev_growth_yoy"),
@@ -365,6 +368,27 @@ def generate_status():
                     status["signals"].append(formatted_sig)
                 if status["signals"]:
                     status["top_signal"] = status["signals"][0]
+
+        # WATCH tier (S3): structurally qualified names that are NOT buyable at
+        # today's price, each with the numeric trigger to set an alert at.
+        # Published on its own key -- never merged into status["signals"], which
+        # index.html renders as ACTIVE BUY signals.
+        if os.path.exists("watchlist.json"):
+            with open("watchlist.json", "r") as wf:
+                for w in json.load(wf):
+                    status["watchlist"].append({
+                        "ticker": w.get("ticker"),
+                        "timing": w.get("timing"),
+                        "timing_detail": w.get("timing_detail", ""),
+                        "trigger_price": w.get("trigger_price"),
+                        "last_close": w.get("last_close"),
+                        "pivot": w.get("pivot"),
+                        "buy_zone_high": w.get("buy_zone_high"),
+                        "projected_risk_pct": w.get("projected_risk_pct"),
+                        "rs_rating": w.get("rs_rating"),
+                        "source": w.get("source", "MINERVINI"),
+                        "actionable_now": False,
+                    })
 
     except Exception as e:
         print(f"Error generating dashboard data: {e}")

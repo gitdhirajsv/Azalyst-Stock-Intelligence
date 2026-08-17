@@ -1,6 +1,9 @@
 import pandas as pd
 from pattern_detector import detect_vcp, detect_meta_pullback
-from minervini import minervini_signal
+from minervini import (
+    minervini_signal, minervini_watch, TIMING_BUY_NOW, TIMING_BUY_ON_BREAKOUT,
+)
+from config import MAX_WATCH_ENTRIES
 
 
 def _jlaw_stop(pivot, entry):
@@ -45,6 +48,8 @@ def _jlaw_signal(ticker, df):
             'type': 'BUY_BREAKOUT',
             'price': vcp['close'],
             'stop_loss': stop,
+            'timing': TIMING_BUY_NOW,
+            'trigger_price': round(float(vcp['close']), 4),
             'reason': f"VCP breakout, pivot={vcp['pivot']:.2f}",
         }
     meta = detect_meta_pullback(df, vcp['pivot'])
@@ -57,6 +62,8 @@ def _jlaw_signal(ticker, df):
             'type': 'BUY_PULLBACK',
             'price': vcp['close'],
             'stop_loss': stop,
+            'timing': TIMING_BUY_NOW,
+            'trigger_price': round(float(vcp['close']), 4),
             'reason': f"Pullback to BOL, META score={meta['meta_score']}",
         }
     return None
@@ -119,6 +126,7 @@ def generate_entry_signals(watchlist, stock_data, minervini_universe=None, rs_ra
             existing['confluence'] = True
             existing['rs_rating'] = sig.get('rs_rating')
             existing['price'] = sig['price']
+            existing['trigger_price'] = sig['price']
             existing['stop_loss'] = sig['stop_loss']
             existing['pivot'] = sig.get('pivot')
             existing['target'] = sig.get('target')
@@ -186,6 +194,52 @@ def generate_entry_signals(watchlist, stock_data, minervini_universe=None, rs_ra
         confirmed.append(sig)
 
     return confirmed
+
+
+def generate_watch_signals(universe, stock_data, rs_ratings=None, exclude_tickers=None,
+                           limit=MAX_WATCH_ENTRIES):
+    """WATCH tier: structurally qualified names that are NOT buyable today.
+
+    S3: minervini_signal() drops a name that passes the Trend Template and has a
+    tight VCP base purely because of WHERE PRICE IS -- extended above the buy
+    zone, structural stop too far, or still coiling under the pivot -- and the
+    name then vanished with no record. That left no alert for the buy-zone
+    window the strategy actually trades, and nothing to measure
+    screened-but-not-traded hit rates against.
+
+    The result is a SEPARATE list and is never merged into the entry signals: a
+    watch entry has no 'price' and no 'stop_loss', so it cannot be sized or
+    executed, and it can only become a position by later passing
+    minervini_signal()'s unchanged hard gates.
+
+    `exclude_tickers` is the set of tickers that already produced an entry
+    signal this run -- a name is either actionable or on watch, never both.
+    """
+    rs_ratings = rs_ratings or {}
+    exclude = set(exclude_tickers or ())
+    watch = []
+
+    for ticker in universe:
+        if ticker in exclude:
+            continue
+        df = stock_data.get(ticker)
+        if df is None:
+            continue
+        try:
+            entry = minervini_watch(ticker, df, rs_rating=rs_ratings.get(ticker))
+        except Exception as e:                   # isolate a bad ticker; never abort the scan
+            print(f"[watch] Minervini watch error on {ticker}: {e}")
+            continue
+        if entry:
+            watch.append(entry)
+
+    # Closest-to-tradeable first, then by momentum, so a long tail of WAIT FOR
+    # BREAKOUT names cannot bury the ones sitting right at their pivot.
+    watch.sort(key=lambda w: (w['timing'] != TIMING_BUY_ON_BREAKOUT, -(w.get('rs_rating') or 0)))
+    if limit is not None and len(watch) > limit:
+        print(f"[watch] {len(watch)} watch candidates -> keeping top {limit} by timing/RS")
+        watch = watch[:limit]
+    return watch
 
 
 def generate_exit_signals(positions, stock_data):
