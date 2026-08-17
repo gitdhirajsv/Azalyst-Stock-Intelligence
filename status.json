@@ -54,10 +54,17 @@
       "direction": "up"
     },
     {
+      "label": "OIL",
+      "ticker": "CL=F",
+      "price": 84.91,
+      "change_str": "+3.05%",
+      "direction": "up"
+    },
+    {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 64318.49,
-      "change_str": "+2.39%",
+      "price": 64355.17,
+      "change_str": "+2.45%",
       "direction": "up"
     },
     {
@@ -74,8 +81,8 @@
   },
   "signals": [],
   "logs": [
-    "2026-08-17 20:48:26 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-08-17 21:04:23 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-08-17 20:48:26 UTC",
+  "generated_at": "2026-08-17 21:04:23 UTC",
   "top_signal": null
 }
