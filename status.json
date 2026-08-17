@@ -26,6 +26,13 @@
   },
   "market_snapshot": [
     {
+      "label": "SPX",
+      "ticker": "^GSPC",
+      "price": 7745.06,
+      "change_str": "-0.52%",
+      "direction": "down"
+    },
+    {
       "label": "NDX",
       "ticker": "^IXIC",
       "price": 26644.91,
@@ -33,31 +40,24 @@
       "direction": "down"
     },
     {
-      "label": "DJI",
-      "ticker": "^DJI",
-      "price": 53459.78,
-      "change_str": "-0.51%",
-      "direction": "down"
-    },
-    {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4473.1,
-      "change_str": "+2.12%",
+      "price": 4471.2,
+      "change_str": "+2.07%",
       "direction": "up"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 84.95,
-      "change_str": "+3.09%",
+      "price": 85.04,
+      "change_str": "+3.20%",
       "direction": "up"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 64347.0,
-      "change_str": "+2.43%",
+      "price": 64233.54,
+      "change_str": "+2.25%",
       "direction": "up"
     },
     {
@@ -88,6 +88,19 @@
       "actionable_now": false
     },
     {
+      "ticker": "PTGX",
+      "timing": "WAIT FOR PULLBACK",
+      "timing_detail": "Price 158.62 is 11.7% above the highest price this pivot is still buyable at (141.99) -- chasing here breaks the 5% buy zone (tops at 150.45) and/or the 8% max-risk stop. Alert on a pullback to 141.99.",
+      "trigger_price": 141.9891,
+      "last_close": 158.62,
+      "pivot": 143.29,
+      "buy_zone_high": 150.4545,
+      "projected_risk_pct": 8.0,
+      "rs_rating": 94,
+      "source": "MINERVINI",
+      "actionable_now": false
+    },
+    {
       "ticker": "CBRL",
       "timing": "WAIT FOR BREAKOUT",
       "timing_detail": "A VCP base is formed but price 59.04 is 2.1% below the pivot 60.26. No entry until it clears the pivot.",
@@ -102,8 +115,8 @@
     }
   ],
   "logs": [
-    "2026-08-17 22:01:48 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-08-17 22:59:01 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-08-17 22:01:48 UTC",
+  "generated_at": "2026-08-17 22:59:01 UTC",
   "top_signal": null
 }
