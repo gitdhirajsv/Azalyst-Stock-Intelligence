@@ -170,6 +170,15 @@ A forensic audit of the live engine found seven defects severe enough to invalid
 
 All seven fixes ship with regression tests in `tests/` (this repo had none before) that fail against the pre-fix code and pass against the fix, several verified directly against this repo's own live database.
 
+## Remediation Pass (2026-08-18)
+
+A cross-repo review across all three Azalyst projects found `test_decision_cadence.py`'s three tests failing on `master`, which had gone unnoticed since 2026-08-14.
+
+1. **Equity-snapshot write crashed outside the repo root.** `record_equity_snapshot()` connected to the ledger with a bare `sqlite3.connect(DB_PATH)`, skipping the `os.makedirs()` guard that `init_db()` uses. `DB_PATH` is relative by design (`database/paper_trades.db`), so any invocation from a working directory other than the repo root — including the cadence tests, which `chdir` into a tmp dir so they don't overwrite the real `signals.json` — failed with `sqlite3.OperationalError: unable to open database file`. All 8 connection sites now route through a shared `_connect()` helper that creates the parent directory first.
+2. **Equity-snapshot table implicitly depended on `init_db()` having run.** Fixing #1 surfaced a second, previously-masked failure: the same tests patch `init_db` to a no-op, so even with the directory present the `equity_snapshots` table didn't exist. `record_equity_snapshot()` now creates its own table with `CREATE TABLE IF NOT EXISTS`, matching `init_db`'s schema, so it no longer has a hidden ordering dependency on another function having run first in the same process.
+
+Both fixes ship in the same change; the suite went from 3 failed / 69 passed to 72 passed.
+
 ## License
 
 MIT
