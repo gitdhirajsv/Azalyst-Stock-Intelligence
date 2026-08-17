@@ -31,6 +31,20 @@ FINAL_CONTRACTION_MAX_PCT = 10.0   # final contraction must be tight (<= 10%)
 STOP_MAX_PCT = 0.08            # a valid pivot buy risks <= 8%; looser base -> reject, don't chase
 TARGET_R = 3.0                 # reference profit target = 3R (Minervini sells into strength)
 
+# ---- Timing vocabulary (S3) ----
+# Every call carries an explicit NUMERIC trigger_price: the price at which the
+# name becomes (or becomes again) a valid low-risk entry. BUY NOW is emitted by
+# minervini_signal() itself and means the hard gates pass right now. The other
+# three are WATCH-tier states produced by minervini_watch() for names that pass
+# the structural gates but are not buyable at today's price -- they are NOT
+# entry signals and never reach the risk manager or the paper trader.
+TIMING_BUY_NOW = "BUY NOW"                       # gates pass now -> executable
+TIMING_BUY_ON_BREAKOUT = "BUY ON BREAKOUT"       # at the pivot, breakout unconfirmed
+TIMING_WAIT_FOR_BREAKOUT = "WAIT FOR BREAKOUT"   # base formed, price still under the pivot
+TIMING_WAIT_FOR_PULLBACK = "WAIT FOR PULLBACK"   # extended / stop too far -> not buyable here
+
+AT_PIVOT_TOL = 0.02            # within 2% under the pivot counts as "coiled at" it
+
 
 def compute_rs_ratings(stock_data):
     """
@@ -112,6 +126,27 @@ def passes_trend_template(df, rs_rating=None):
     return passed, checks
 
 
+def max_entry_price(pivot, base_low=None):
+    """Highest price at which a pivot buy still passes BOTH hard entry gates.
+
+    Gate 1 (buy zone):  close <= pivot * (1 + BUY_ZONE_PCT)
+    Gate 2 (max risk):  (close - base_low) / close <= STOP_MAX_PCT
+                        <=>  close <= base_low / (1 - STOP_MAX_PCT)
+                        (only when a real base_low is available; detect_vcp
+                        always supplies one, so the buy-zone-only fallback
+                        below is a defensive default, not a modeled gate)
+
+    Whichever binds first is the number a WAIT FOR PULLBACK alert should fire
+    at: the price an extended name has to come back to before minervini_signal()
+    could fire on it. This is derived from the existing gates, it does not
+    relax them.
+    """
+    ceiling = float(pivot) * (1 + BUY_ZONE_PCT)
+    if base_low is not None and pd.notna(base_low) and base_low > 0:
+        ceiling = min(ceiling, float(base_low) / (1 - STOP_MAX_PCT))
+    return float(ceiling)
+
+
 def minervini_signal(ticker, df, rs_rating=None):
     """
     Return a Minervini BUY signal dict if (and only if) the trend template passes
@@ -187,6 +222,8 @@ def minervini_signal(ticker, df, rs_rating=None):
         'target': round(float(target), 4),
         'risk_pct': round(risk / entry * 100, 2),
         'rs_rating': rs_rating,
+        'timing': TIMING_BUY_NOW,
+        'trigger_price': round(entry, 4),   # buyable at this price, right now
         'actionable_now': True,
         'trend_template': checks,
         'reason': (
@@ -194,4 +231,130 @@ def minervini_signal(ticker, df, rs_rating=None):
             f"(RS {rs_rating if rs_rating is not None else 'n/a'}); "
             f"buy {entry:.2f}, stop {stop:.2f} ({risk / entry * 100:.1f}% risk), target {target:.2f}"
         ),
+    }
+
+
+def minervini_watch(ticker, df, rs_rating=None):
+    """WATCH-tier record for a name that passes the Minervini STRUCTURAL gates
+    (Trend Template + a tight VCP base) but is not buyable at today's price.
+
+    S3: minervini_signal() rejects and then DISCARDS these names -- a breakout
+    extended beyond the buy zone (close > pivot*1.05), a base whose structural
+    stop implies more than STOP_MAX_PCT risk, and a base still coiling under its
+    pivot. All three are TIMING rejections, not quality rejections, and the
+    buy-zone window they describe is exactly the window this strategy trades. A
+    dropped name left no record at all, so there was no alert level to act on
+    and nothing to measure screened-but-not-traded hit rates against.
+
+    A watch entry is deliberately NOT executable: it carries no 'price' and no
+    'stop_loss' key, `actionable_now` is False, and it is returned on a separate
+    list that never reaches the risk manager or paper trader. The only way it
+    becomes a position is by later passing minervini_signal()'s unchanged hard
+    gates on its own.
+
+    Returns a watch dict, or None when the name is not a structural candidate --
+    or when it IS a valid entry right now, which is minervini_signal()'s job.
+    """
+    passed, checks = passes_trend_template(df, rs_rating)
+    if not passed:
+        return None
+
+    vcp = detect_vcp(df)
+    if vcp is None:
+        return None
+
+    pivot = vcp.get('pivot', 0.0)
+    close = vcp.get('close', 0.0)
+    if pivot <= 0 or close <= 0:
+        return None
+
+    # Same non-timing gates the entry path applies: a low-priced stock or a
+    # loose, sloppy base is not a candidate at ANY price, so it is not a watch.
+    if close < MIN_PRICE:
+        return None
+    if vcp.get('contraction_pct', 100.0) > FINAL_CONTRACTION_MAX_PCT:
+        return None
+
+    base_low = vcp.get('base_low')
+    buy_zone_high = pivot * (1 + BUY_ZONE_PCT)
+    max_entry = max_entry_price(pivot, base_low)
+
+    # A confirmed in-zone breakout is an ENTRY, not a watch.
+    #
+    # KNOWN GAP: detect_vcp's `breakout_now` uses a looser volume reference
+    # (mean of the prior 50 bars, EXCLUDING today) than minervini_signal's own
+    # gate (Volume_MA_50, a rolling mean that INCLUDES today), and
+    # minervini_signal separately rejects an inverted/too-wide stop. A name can
+    # therefore satisfy `breakout_now and close <= max_entry` here yet still be
+    # rejected by minervini_signal's stricter checks -- that name is currently
+    # neither an entry nor a watch. Deliberately not closed by delegating to
+    # minervini_signal() here: that call needs df['Volume']/df['Volume_MA_50'],
+    # which would make minervini_watch's cost and failure modes depend on
+    # columns it otherwise never touches (this module's own tests build a
+    # Close-only frame for exactly that reason). Left as a documented gap
+    # rather than a fix that trades a silent drop for a new crash surface.
+    if vcp.get('breakout_now') and close <= max_entry:
+        return None
+
+    if close > max_entry:
+        timing = TIMING_WAIT_FOR_PULLBACK
+        trigger = max_entry
+        detail = (
+            f"Price {close:.2f} is {((close / max_entry) - 1) * 100:.1f}% above the highest "
+            f"price this pivot is still buyable at ({max_entry:.2f}) -- chasing here breaks "
+            f"the {BUY_ZONE_PCT:.0%} buy zone (tops at {buy_zone_high:.2f}) and/or the "
+            f"{STOP_MAX_PCT:.0%} max-risk stop. Alert on a pullback to {max_entry:.2f}."
+        )
+    elif close >= pivot:
+        timing = TIMING_BUY_ON_BREAKOUT
+        trigger = float(pivot)
+        detail = (
+            f"Price {close:.2f} is through the pivot {pivot:.2f} and still inside the buy "
+            f"zone, but the breakout is unconfirmed -- it needs >= {BREAKOUT_VOL_MULT}x the "
+            f"50-day average volume. Buy only on a volume-confirmed close."
+        )
+    elif close >= pivot * (1 - AT_PIVOT_TOL):
+        timing = TIMING_BUY_ON_BREAKOUT
+        trigger = float(pivot)
+        detail = (
+            f"Coiling {((pivot / close) - 1) * 100:.1f}% under the VCP pivot {pivot:.2f}. Buy "
+            f"the move through {pivot:.2f} only if volume expands to "
+            f">= {BREAKOUT_VOL_MULT}x the 50-day average."
+        )
+    else:
+        timing = TIMING_WAIT_FOR_BREAKOUT
+        trigger = float(pivot)
+        detail = (
+            f"A VCP base is formed but price {close:.2f} is "
+            f"{((pivot / close) - 1) * 100:.1f}% below the pivot {pivot:.2f}. No entry until "
+            f"it clears the pivot."
+        )
+
+    # Reference only -- named stop_reference, NOT stop_loss, so nothing downstream
+    # can mistake a watch entry for a sized, stop-protected trade.
+    stop_reference = None
+    if base_low is not None and pd.notna(base_low) and 0 < base_low < trigger:
+        stop_reference = float(base_low)
+    projected_risk_pct = (
+        round((trigger - stop_reference) / trigger * 100, 2) if stop_reference else None
+    )
+
+    return {
+        'ticker': ticker,
+        'kind': 'WATCH',
+        'type': 'WATCH',
+        'source': 'MINERVINI',
+        'strategy': 'Minervini SEPA / VCP',
+        'timing': timing,
+        'timing_detail': detail,
+        'trigger_price': round(float(trigger), 4),
+        'pivot': round(float(pivot), 4),
+        'buy_zone_high': round(float(buy_zone_high), 4),
+        'last_close': round(float(close), 4),
+        'stop_reference': round(stop_reference, 4) if stop_reference else None,
+        'projected_risk_pct': projected_risk_pct,
+        'rs_rating': rs_rating,
+        'actionable_now': False,
+        'trend_template': checks,
+        'reason': f"WATCH ({timing}) trigger {trigger:.2f} -- {detail}",
     }

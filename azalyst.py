@@ -6,12 +6,13 @@ from data_loader import load_stock_data
 from utils import fetch_historical, compute_moving_averages, compute_volume_ma, fetch_sector
 from market_regime import detect_bull_regime
 from stock_screener import apply_stage2_screen
-from signal_generator import generate_entry_signals
+from signal_generator import generate_entry_signals, generate_watch_signals
 from minervini import compute_rs_ratings
 from fundamentals import apply_fundamental_filter
 from risk_manager import RiskManager, evaluate_stop_loss_exits, check_diversification
 from paper_trader import init_db, get_cash, get_positions, execute_trade, record_equity_snapshot
 from performance import generate_performance_report
+from signal_history import HISTORY_PATH, append_observations
 
 # STK-07 remediation (forensic audit 2026-07-28): the cron ran this pipeline
 # hourly during market hours (14:30-21:30 UTC) using yfinance's 1d-interval
@@ -98,7 +99,40 @@ def run_pipeline():
     import json
     with open("signals.json", "w") as f:
         json.dump(signals, f, indent=2, default=str)
-    
+
+    # WATCH tier (S3). minervini_signal() rejects a structurally qualified name
+    # purely on WHERE PRICE IS (extended past pivot*1.05, structural stop > 8%,
+    # or still under the pivot) and the name then vanished with no record --
+    # killing the buy-zone alert window and any hit-rate analysis. These are
+    # kept on a SEPARATE list with an explicit numeric trigger_price. They are
+    # never appended to `signals` and never enter the execution loop below: a
+    # watch name can only be bought by later passing the same unchanged gates.
+    # Wrapped in try/except: this is an observability feature, not part of the
+    # trading path, so a failure here must never abort stop-loss exits or
+    # entries below it.
+    watch = []
+    try:
+        watch = generate_watch_signals(
+            list(stock_data.keys()), stock_data,
+            rs_ratings=rs_ratings,
+            exclude_tickers={s['ticker'] for s in signals},
+        )
+        print(f"Watch entries (not buyable at today's price): {len(watch)}")
+        with open("watchlist.json", "w") as f:
+            json.dump(watch, f, indent=2, default=str)
+    except Exception as e:
+        print(f"[watch] could not generate watch list: {e}")
+
+    # signals.json is rewritten every cycle (mode 'w', above) because the
+    # dashboard consumes it as the CURRENT actionable list. The durable record
+    # lives here instead -- append-only, so an empty scan can no longer erase
+    # what the engine saw yesterday.
+    try:
+        n_recorded = append_observations(signals, watch)
+        print(f"[history] recorded {n_recorded} new observation(s) -> {HISTORY_PATH}")
+    except Exception as e:
+        print(f"[history] could not record signal history: {e}")
+
     # Trading Logic
     cash = get_cash()
     positions = get_positions()

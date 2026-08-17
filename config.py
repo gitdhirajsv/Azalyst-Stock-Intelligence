@@ -33,6 +33,12 @@ REQUIRE_SALES_ACCELERATION = True   # require revenue growth to be accelerating
 # hard-require verified fundamentals before any buy.
 REQUIRE_VERIFIED_FUNDAMENTALS = False
 
+# WATCH tier (S3): structurally qualified names that are NOT buyable at today's
+# price are recorded with an explicit trigger price instead of being discarded.
+# The WAIT FOR BREAKOUT bucket can be long in a broad market, so cap what is
+# published/persisted, ranked by how close the name is to being tradeable.
+MAX_WATCH_ENTRIES = 25
+
 # Moving average periods
 MA_PERIODS = [10, 20, 50, 150, 200]
 

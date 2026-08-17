@@ -7,6 +7,8 @@ on:
       - "database/paper_trades.db"
       - "status.json"
       - "signals.json"
+      - "watchlist.json"
+      - "history/**"
       - "global_tickers.csv"
   pull_request:
     branches: [ master ]
