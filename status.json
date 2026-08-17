@@ -49,22 +49,15 @@
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4471.7,
-      "change_str": "+2.08%",
-      "direction": "up"
-    },
-    {
-      "label": "OIL",
-      "ticker": "CL=F",
-      "price": 84.91,
-      "change_str": "+3.05%",
+      "price": 4473.1,
+      "change_str": "+2.12%",
       "direction": "up"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 64355.17,
-      "change_str": "+2.45%",
+      "price": 64340.37,
+      "change_str": "+2.42%",
       "direction": "up"
     },
     {
@@ -80,9 +73,37 @@
     "vol_regime": "LOW_VOL"
   },
   "signals": [],
-  "logs": [
-    "2026-08-17 21:04:23 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+  "watchlist": [
+    {
+      "ticker": "ARWR",
+      "timing": "WAIT FOR BREAKOUT",
+      "timing_detail": "A VCP base is formed but price 88.70 is 2.6% below the pivot 90.97. No entry until it clears the pivot.",
+      "trigger_price": 90.97,
+      "last_close": 88.7,
+      "pivot": 90.97,
+      "buy_zone_high": 95.5185,
+      "projected_risk_pct": 7.9,
+      "rs_rating": 94,
+      "source": "MINERVINI",
+      "actionable_now": false
+    },
+    {
+      "ticker": "CBRL",
+      "timing": "WAIT FOR BREAKOUT",
+      "timing_detail": "A VCP base is formed but price 59.04 is 2.1% below the pivot 60.26. No entry until it clears the pivot.",
+      "trigger_price": 60.26,
+      "last_close": 59.04,
+      "pivot": 60.26,
+      "buy_zone_high": 63.273,
+      "projected_risk_pct": 6.89,
+      "rs_rating": 91,
+      "source": "MINERVINI",
+      "actionable_now": false
+    }
   ],
-  "generated_at": "2026-08-17 21:04:23 UTC",
+  "logs": [
+    "2026-08-17 21:15:56 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+  ],
+  "generated_at": "2026-08-17 21:15:56 UTC",
   "top_signal": null
 }

@@ -1,0 +1,60 @@
+[
+  {
+    "ticker": "ARWR",
+    "kind": "WATCH",
+    "type": "WATCH",
+    "source": "MINERVINI",
+    "strategy": "Minervini SEPA / VCP",
+    "timing": "WAIT FOR BREAKOUT",
+    "timing_detail": "A VCP base is formed but price 88.70 is 2.6% below the pivot 90.97. No entry until it clears the pivot.",
+    "trigger_price": 90.97,
+    "pivot": 90.97,
+    "buy_zone_high": 95.5185,
+    "last_close": 88.7,
+    "stop_reference": 83.78,
+    "projected_risk_pct": 7.9,
+    "rs_rating": 94,
+    "actionable_now": false,
+    "trend_template": {
+      "c1_price_above_150_200": true,
+      "c2_150_above_200": true,
+      "c3_200_uptrending": true,
+      "c4_50_above_150_200": true,
+      "c5_price_above_50": true,
+      "c6_30pct_above_low": true,
+      "c7_within_25pct_high": true,
+      "c8_rs_rating_ok": true,
+      "rs_rating": 94
+    },
+    "reason": "WATCH (WAIT FOR BREAKOUT) trigger 90.97 -- A VCP base is formed but price 88.70 is 2.6% below the pivot 90.97. No entry until it clears the pivot."
+  },
+  {
+    "ticker": "CBRL",
+    "kind": "WATCH",
+    "type": "WATCH",
+    "source": "MINERVINI",
+    "strategy": "Minervini SEPA / VCP",
+    "timing": "WAIT FOR BREAKOUT",
+    "timing_detail": "A VCP base is formed but price 59.04 is 2.1% below the pivot 60.26. No entry until it clears the pivot.",
+    "trigger_price": 60.26,
+    "pivot": 60.26,
+    "buy_zone_high": 63.273,
+    "last_close": 59.04,
+    "stop_reference": 56.11,
+    "projected_risk_pct": 6.89,
+    "rs_rating": 91,
+    "actionable_now": false,
+    "trend_template": {
+      "c1_price_above_150_200": true,
+      "c2_150_above_200": true,
+      "c3_200_uptrending": true,
+      "c4_50_above_150_200": true,
+      "c5_price_above_50": true,
+      "c6_30pct_above_low": true,
+      "c7_within_25pct_high": true,
+      "c8_rs_rating_ok": true,
+      "rs_rating": 91
+    },
+    "reason": "WATCH (WAIT FOR BREAKOUT) trigger 60.26 -- A VCP base is formed but price 59.04 is 2.1% below the pivot 60.26. No entry until it clears the pivot."
+  }
+]
