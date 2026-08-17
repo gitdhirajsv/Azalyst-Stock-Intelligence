@@ -4,9 +4,20 @@ from config import DB_PATH
 from datetime import datetime
 import os
 
-def init_db():
+def _connect(timeout=None):
+    """Open the ledger, creating its parent directory if needed.
+
+    DB_PATH is relative, so any caller running from a different cwd (tests
+    use monkeypatch.chdir) would otherwise fail with "unable to open
+    database file".
+    """
     os.makedirs(os.path.dirname(DB_PATH), exist_ok=True)
-    conn = sqlite3.connect(DB_PATH)
+    if timeout is None:
+        return sqlite3.connect(DB_PATH)
+    return sqlite3.connect(DB_PATH, timeout=timeout)
+
+def init_db():
+    conn = _connect()
     c = conn.cursor()
     c.execute('''CREATE TABLE IF NOT EXISTS trades (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -50,7 +61,7 @@ def init_db():
     conn.close()
 
 def get_cash():
-    conn = sqlite3.connect(DB_PATH)
+    conn = _connect()
     c = conn.cursor()
     c.execute("SELECT cash FROM cash WHERE id=1")
     cash = c.fetchone()[0]
@@ -58,20 +69,20 @@ def get_cash():
     return cash
 
 def update_cash(new_cash):
-    conn = sqlite3.connect(DB_PATH)
+    conn = _connect()
     c = conn.cursor()
     c.execute("UPDATE cash SET cash=? WHERE id=1", (new_cash,))
     conn.commit()
     conn.close()
 
 def get_positions():
-    conn = sqlite3.connect(DB_PATH)
+    conn = _connect()
     df = pd.read_sql("SELECT * FROM positions", conn)
     conn.close()
     return df
 
 def get_trade_history():
-    conn = sqlite3.connect(DB_PATH)
+    conn = _connect()
     df = pd.read_sql("SELECT * FROM trades ORDER BY date DESC", conn)
     conn.close()
     return df
@@ -84,9 +95,18 @@ def record_equity_snapshot(cash, positions_value, date=None):
     if date is None:
         date = datetime.now().strftime("%Y-%m-%d")
     total_equity = cash + positions_value
-    conn = sqlite3.connect(DB_PATH, timeout=30)
+    conn = _connect(timeout=30)
     try:
         c = conn.cursor()
+        # Guard against callers that skip init_db() (e.g. tests that patch
+        # it out): this table must exist independent of that call.
+        c.execute('''CREATE TABLE IF NOT EXISTS equity_snapshots (
+            id INTEGER PRIMARY KEY AUTOINCREMENT,
+            date TEXT,
+            cash REAL,
+            positions_value REAL,
+            total_equity REAL
+        )''')
         # Avoid duplicate snapshots for the same date (idempotent reruns)
         c.execute("DELETE FROM equity_snapshots WHERE date = ?", (date,))
         c.execute(
@@ -101,7 +121,7 @@ def record_equity_snapshot(cash, positions_value, date=None):
 
 def get_equity_snapshots():
     """Return all equity snapshots as a DataFrame, ordered by date."""
-    conn = sqlite3.connect(DB_PATH)
+    conn = _connect()
     df = pd.read_sql("SELECT * FROM equity_snapshots ORDER BY date", conn)
     conn.close()
     return df
@@ -114,7 +134,7 @@ def execute_trade(ticker, action, shares, price, date=None, reason="", source=No
     # write on this connection and then called get_cash()/update_cash() which opened
     # their OWN connections, so the second connection could never acquire the write
     # lock -> "sqlite3.OperationalError: database is locked" on the first BUY.
-    conn = sqlite3.connect(DB_PATH, timeout=30)
+    conn = _connect(timeout=30)
     try:
         c = conn.cursor()
 
