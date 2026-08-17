@@ -28,43 +28,43 @@
     {
       "label": "SPX",
       "ticker": "^GSPC",
-      "price": 7774.29,
-      "change_str": "-0.15%",
+      "price": 7766.93,
+      "change_str": "-0.24%",
       "direction": "down"
     },
     {
       "label": "NDX",
       "ticker": "^IXIC",
-      "price": 26770.25,
-      "change_str": "+0.15%",
-      "direction": "up"
+      "price": 26701.46,
+      "change_str": "-0.10%",
+      "direction": "down"
     },
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4479.1,
-      "change_str": "+2.25%",
+      "price": 4480.6,
+      "change_str": "+2.29%",
       "direction": "up"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 82.73,
-      "change_str": "+0.40%",
+      "price": 82.85,
+      "change_str": "+0.55%",
       "direction": "up"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 64125.6,
-      "change_str": "+2.08%",
+      "price": 64040.11,
+      "change_str": "+1.94%",
       "direction": "up"
     },
     {
       "label": "VIX",
       "ticker": "^VIX",
-      "price": 15.05,
-      "change_str": "+5.61%",
+      "price": 15.1,
+      "change_str": "+5.96%",
       "direction": "up"
     }
   ],
@@ -74,8 +74,8 @@
   },
   "signals": [],
   "logs": [
-    "2026-08-17 15:58:18 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-08-17 17:04:55 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-08-17 15:58:18 UTC",
+  "generated_at": "2026-08-17 17:04:55 UTC",
   "top_signal": null
 }
