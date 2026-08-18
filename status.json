@@ -28,43 +28,43 @@
     {
       "label": "SPX",
       "ticker": "^GSPC",
-      "price": 7697.14,
-      "change_str": "-0.62%",
+      "price": 7695.74,
+      "change_str": "-0.64%",
       "direction": "down"
     },
     {
       "label": "NDX",
       "ticker": "^IXIC",
-      "price": 26306.53,
-      "change_str": "-1.27%",
+      "price": 26292.32,
+      "change_str": "-1.32%",
       "direction": "down"
     },
     {
       "label": "DJI",
       "ticker": "^DJI",
-      "price": 53351.15,
-      "change_str": "-0.20%",
-      "direction": "down"
-    },
-    {
-      "label": "GOLD",
-      "ticker": "GC=F",
-      "price": 4413.8,
-      "change_str": "-0.09%",
+      "price": 53363.92,
+      "change_str": "-0.18%",
       "direction": "down"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 84.13,
-      "change_str": "-0.44%",
+      "price": 84.08,
+      "change_str": "-0.50%",
       "direction": "down"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 64634.54,
-      "change_str": "+0.20%",
+      "price": 64685.9,
+      "change_str": "+0.28%",
+      "direction": "up"
+    },
+    {
+      "label": "VIX",
+      "ticker": "^VIX",
+      "price": 15.67,
+      "change_str": "+3.16%",
       "direction": "up"
     }
   ],
@@ -72,14 +72,45 @@
     "risk_state": "RISK_ON",
     "vol_regime": "LOW_VOL"
   },
-  "signals": [],
+  "signals": [
+    {
+      "ticker": "KYMR",
+      "sector_label": "KYMR",
+      "headline": "[JLAW] Pullback to BOL, META score=2",
+      "latest_at": "2026-08-18 19:12:56 UTC",
+      "severity": "MEDIUM",
+      "confidence": 82,
+      "source": "JLAW",
+      "sources": [
+        "JLAW"
+      ],
+      "strategy": "J Law (Stage 2 / VCP / META)",
+      "signal_type": "BUY_PULLBACK",
+      "entry": 121.61009979248047,
+      "stop_loss": 118.9122964477539,
+      "target": null,
+      "pivot": null,
+      "rs_rating": 93,
+      "risk_pct": null,
+      "actionable_now": false,
+      "timing": "BUY NOW",
+      "trigger_price": 121.6101,
+      "confluence": false,
+      "rev_growth_yoy": null,
+      "annual_rev_growth": null,
+      "sales_accelerating": null,
+      "fundamentals_verified": false,
+      "fundamentals_ok": null,
+      "fundamentals_detail": "revenue data unavailable"
+    }
+  ],
   "watchlist": [
     {
       "ticker": "ARWR",
       "timing": "WAIT FOR BREAKOUT",
-      "timing_detail": "A VCP base is formed but price 86.68 is 4.9% below the pivot 90.97. No entry until it clears the pivot.",
+      "timing_detail": "A VCP base is formed but price 87.05 is 4.5% below the pivot 90.97. No entry until it clears the pivot.",
       "trigger_price": 90.97,
-      "last_close": 86.685,
+      "last_close": 87.05,
       "pivot": 90.97,
       "buy_zone_high": 95.5185,
       "projected_risk_pct": 7.9,
@@ -88,35 +119,64 @@
       "actionable_now": false
     },
     {
-      "ticker": "KYMR",
+      "ticker": "CBRL",
       "timing": "WAIT FOR BREAKOUT",
-      "timing_detail": "A VCP base is formed but price 119.55 is 2.5% below the pivot 122.59. No entry until it clears the pivot.",
-      "trigger_price": 122.59,
-      "last_close": 119.55,
-      "pivot": 122.59,
-      "buy_zone_high": 128.7195,
-      "projected_risk_pct": 4.53,
+      "timing_detail": "A VCP base is formed but price 58.28 is 3.4% below the pivot 60.26. No entry until it clears the pivot.",
+      "trigger_price": 60.26,
+      "last_close": 58.285,
+      "pivot": 60.26,
+      "buy_zone_high": 63.273,
+      "projected_risk_pct": 6.89,
       "rs_rating": 92,
       "source": "MINERVINI",
       "actionable_now": false
     },
     {
-      "ticker": "CBRL",
-      "timing": "WAIT FOR BREAKOUT",
-      "timing_detail": "A VCP base is formed but price 57.82 is 4.2% below the pivot 60.26. No entry until it clears the pivot.",
-      "trigger_price": 60.26,
-      "last_close": 57.82,
-      "pivot": 60.26,
-      "buy_zone_high": 63.273,
-      "projected_risk_pct": 6.89,
-      "rs_rating": 91,
+      "ticker": "FRO",
+      "timing": "WAIT FOR PULLBACK",
+      "timing_detail": "Price 43.14 is 11.1% above the highest price this pivot is still buyable at (38.82) -- chasing here breaks the 5% buy zone (tops at 41.23) and/or the 8% max-risk stop. Alert on a pullback to 38.82.",
+      "trigger_price": 38.8152,
+      "last_close": 43.14,
+      "pivot": 39.27,
+      "buy_zone_high": 41.2335,
+      "projected_risk_pct": 8.0,
+      "rs_rating": 89,
       "source": "MINERVINI",
       "actionable_now": false
     }
   ],
   "logs": [
-    "2026-08-18 17:59:32 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-08-18 19:12:56 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-08-18 17:59:32 UTC",
-  "top_signal": null
+  "generated_at": "2026-08-18 19:12:56 UTC",
+  "top_signal": {
+    "ticker": "KYMR",
+    "sector_label": "KYMR",
+    "headline": "[JLAW] Pullback to BOL, META score=2",
+    "latest_at": "2026-08-18 19:12:56 UTC",
+    "severity": "MEDIUM",
+    "confidence": 82,
+    "source": "JLAW",
+    "sources": [
+      "JLAW"
+    ],
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "signal_type": "BUY_PULLBACK",
+    "entry": 121.61009979248047,
+    "stop_loss": 118.9122964477539,
+    "target": null,
+    "pivot": null,
+    "rs_rating": 93,
+    "risk_pct": null,
+    "actionable_now": false,
+    "timing": "BUY NOW",
+    "trigger_price": 121.6101,
+    "confluence": false,
+    "rev_growth_yoy": null,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_verified": false,
+    "fundamentals_ok": null,
+    "fundamentals_detail": "revenue data unavailable"
+  }
 }

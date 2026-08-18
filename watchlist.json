@@ -6,11 +6,11 @@
     "source": "MINERVINI",
     "strategy": "Minervini SEPA / VCP",
     "timing": "WAIT FOR BREAKOUT",
-    "timing_detail": "A VCP base is formed but price 86.68 is 4.9% below the pivot 90.97. No entry until it clears the pivot.",
+    "timing_detail": "A VCP base is formed but price 87.05 is 4.5% below the pivot 90.97. No entry until it clears the pivot.",
     "trigger_price": 90.97,
     "pivot": 90.97,
     "buy_zone_high": 95.5185,
-    "last_close": 86.685,
+    "last_close": 87.05,
     "stop_reference": 83.78,
     "projected_risk_pct": 7.9,
     "rs_rating": 95,
@@ -26,22 +26,22 @@
       "c8_rs_rating_ok": true,
       "rs_rating": 95
     },
-    "reason": "WATCH (WAIT FOR BREAKOUT) trigger 90.97 -- A VCP base is formed but price 86.68 is 4.9% below the pivot 90.97. No entry until it clears the pivot."
+    "reason": "WATCH (WAIT FOR BREAKOUT) trigger 90.97 -- A VCP base is formed but price 87.05 is 4.5% below the pivot 90.97. No entry until it clears the pivot."
   },
   {
-    "ticker": "KYMR",
+    "ticker": "CBRL",
     "kind": "WATCH",
     "type": "WATCH",
     "source": "MINERVINI",
     "strategy": "Minervini SEPA / VCP",
     "timing": "WAIT FOR BREAKOUT",
-    "timing_detail": "A VCP base is formed but price 119.55 is 2.5% below the pivot 122.59. No entry until it clears the pivot.",
-    "trigger_price": 122.59,
-    "pivot": 122.59,
-    "buy_zone_high": 128.7195,
-    "last_close": 119.55,
-    "stop_reference": 117.04,
-    "projected_risk_pct": 4.53,
+    "timing_detail": "A VCP base is formed but price 58.28 is 3.4% below the pivot 60.26. No entry until it clears the pivot.",
+    "trigger_price": 60.26,
+    "pivot": 60.26,
+    "buy_zone_high": 63.273,
+    "last_close": 58.285,
+    "stop_reference": 56.11,
+    "projected_risk_pct": 6.89,
     "rs_rating": 92,
     "actionable_now": false,
     "trend_template": {
@@ -55,23 +55,23 @@
       "c8_rs_rating_ok": true,
       "rs_rating": 92
     },
-    "reason": "WATCH (WAIT FOR BREAKOUT) trigger 122.59 -- A VCP base is formed but price 119.55 is 2.5% below the pivot 122.59. No entry until it clears the pivot."
+    "reason": "WATCH (WAIT FOR BREAKOUT) trigger 60.26 -- A VCP base is formed but price 58.28 is 3.4% below the pivot 60.26. No entry until it clears the pivot."
   },
   {
-    "ticker": "CBRL",
+    "ticker": "FRO",
     "kind": "WATCH",
     "type": "WATCH",
     "source": "MINERVINI",
     "strategy": "Minervini SEPA / VCP",
-    "timing": "WAIT FOR BREAKOUT",
-    "timing_detail": "A VCP base is formed but price 57.82 is 4.2% below the pivot 60.26. No entry until it clears the pivot.",
-    "trigger_price": 60.26,
-    "pivot": 60.26,
-    "buy_zone_high": 63.273,
-    "last_close": 57.82,
-    "stop_reference": 56.11,
-    "projected_risk_pct": 6.89,
-    "rs_rating": 91,
+    "timing": "WAIT FOR PULLBACK",
+    "timing_detail": "Price 43.14 is 11.1% above the highest price this pivot is still buyable at (38.82) -- chasing here breaks the 5% buy zone (tops at 41.23) and/or the 8% max-risk stop. Alert on a pullback to 38.82.",
+    "trigger_price": 38.8152,
+    "pivot": 39.27,
+    "buy_zone_high": 41.2335,
+    "last_close": 43.14,
+    "stop_reference": 35.71,
+    "projected_risk_pct": 8.0,
+    "rs_rating": 89,
     "actionable_now": false,
     "trend_template": {
       "c1_price_above_150_200": true,
@@ -82,8 +82,8 @@
       "c6_30pct_above_low": true,
       "c7_within_25pct_high": true,
       "c8_rs_rating_ok": true,
-      "rs_rating": 91
+      "rs_rating": 89
     },
-    "reason": "WATCH (WAIT FOR BREAKOUT) trigger 60.26 -- A VCP base is formed but price 57.82 is 4.2% below the pivot 60.26. No entry until it clears the pivot."
+    "reason": "WATCH (WAIT FOR PULLBACK) trigger 38.82 -- Price 43.14 is 11.1% above the highest price this pivot is still buyable at (38.82) -- chasing here breaks the 5% buy zone (tops at 41.23) and/or the 8% max-risk stop. Alert on a pullback to 38.82."
   }
 ]
