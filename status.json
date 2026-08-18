@@ -28,50 +28,43 @@
     {
       "label": "SPX",
       "ticker": "^GSPC",
-      "price": 7705.29,
-      "change_str": "-0.51%",
-      "direction": "down"
-    },
-    {
-      "label": "NDX",
-      "ticker": "^IXIC",
-      "price": 26361.65,
-      "change_str": "-1.06%",
+      "price": 7706.71,
+      "change_str": "-0.50%",
       "direction": "down"
     },
     {
       "label": "DJI",
       "ticker": "^DJI",
-      "price": 53371.03,
-      "change_str": "-0.17%",
+      "price": 53372.07,
+      "change_str": "-0.16%",
       "direction": "down"
     },
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4419.2,
-      "change_str": "+0.03%",
+      "price": 4422.0,
+      "change_str": "+0.10%",
       "direction": "up"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 84.65,
-      "change_str": "+0.18%",
-      "direction": "up"
+      "price": 84.09,
+      "change_str": "-0.49%",
+      "direction": "down"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 64828.26,
-      "change_str": "+0.50%",
+      "price": 64744.04,
+      "change_str": "+0.37%",
       "direction": "up"
     },
     {
       "label": "VIX",
       "ticker": "^VIX",
-      "price": 15.76,
-      "change_str": "+3.75%",
+      "price": 15.65,
+      "change_str": "+3.03%",
       "direction": "up"
     }
   ],
@@ -84,9 +77,9 @@
     {
       "ticker": "ARWR",
       "timing": "WAIT FOR BREAKOUT",
-      "timing_detail": "A VCP base is formed but price 87.57 is 3.9% below the pivot 90.97. No entry until it clears the pivot.",
+      "timing_detail": "A VCP base is formed but price 87.26 is 4.3% below the pivot 90.97. No entry until it clears the pivot.",
       "trigger_price": 90.97,
-      "last_close": 87.57,
+      "last_close": 87.26,
       "pivot": 90.97,
       "buy_zone_high": 95.5185,
       "projected_risk_pct": 7.9,
@@ -97,20 +90,20 @@
     {
       "ticker": "CBRL",
       "timing": "WAIT FOR BREAKOUT",
-      "timing_detail": "A VCP base is formed but price 58.19 is 3.6% below the pivot 60.26. No entry until it clears the pivot.",
+      "timing_detail": "A VCP base is formed but price 57.39 is 5.0% below the pivot 60.26. No entry until it clears the pivot.",
       "trigger_price": 60.26,
-      "last_close": 58.19,
+      "last_close": 57.39,
       "pivot": 60.26,
       "buy_zone_high": 63.273,
       "projected_risk_pct": 6.89,
-      "rs_rating": 92,
+      "rs_rating": 91,
       "source": "MINERVINI",
       "actionable_now": false
     }
   ],
   "logs": [
-    "2026-08-18 16:06:39 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-08-18 17:03:41 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-08-18 16:06:39 UTC",
+  "generated_at": "2026-08-18 17:03:41 UTC",
   "top_signal": null
 }
