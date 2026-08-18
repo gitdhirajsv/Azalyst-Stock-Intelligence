@@ -40,24 +40,24 @@
       "direction": "down"
     },
     {
-      "label": "GOLD",
-      "ticker": "GC=F",
-      "price": 4471.2,
-      "change_str": "+2.07%",
-      "direction": "up"
+      "label": "DJI",
+      "ticker": "^DJI",
+      "price": 53459.8,
+      "change_str": "-0.51%",
+      "direction": "down"
     },
     {
-      "label": "OIL",
-      "ticker": "CL=F",
-      "price": 85.04,
-      "change_str": "+3.20%",
+      "label": "GOLD",
+      "ticker": "GC=F",
+      "price": 4453.0,
+      "change_str": "+1.66%",
       "direction": "up"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 64233.54,
-      "change_str": "+2.25%",
+      "price": 64031.61,
+      "change_str": "+1.93%",
       "direction": "up"
     },
     {
@@ -88,19 +88,6 @@
       "actionable_now": false
     },
     {
-      "ticker": "PTGX",
-      "timing": "WAIT FOR PULLBACK",
-      "timing_detail": "Price 158.62 is 11.7% above the highest price this pivot is still buyable at (141.99) -- chasing here breaks the 5% buy zone (tops at 150.45) and/or the 8% max-risk stop. Alert on a pullback to 141.99.",
-      "trigger_price": 141.9891,
-      "last_close": 158.62,
-      "pivot": 143.29,
-      "buy_zone_high": 150.4545,
-      "projected_risk_pct": 8.0,
-      "rs_rating": 94,
-      "source": "MINERVINI",
-      "actionable_now": false
-    },
-    {
       "ticker": "CBRL",
       "timing": "WAIT FOR BREAKOUT",
       "timing_detail": "A VCP base is formed but price 59.04 is 2.1% below the pivot 60.26. No entry until it clears the pivot.",
@@ -115,8 +102,8 @@
     }
   ],
   "logs": [
-    "2026-08-17 22:59:01 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-08-18 03:30:45 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-08-17 22:59:01 UTC",
+  "generated_at": "2026-08-18 03:30:45 UTC",
   "top_signal": null
 }
