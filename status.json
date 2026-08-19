@@ -26,46 +26,46 @@
   },
   "market_snapshot": [
     {
+      "label": "SPX",
+      "ticker": "^GSPC",
+      "price": 7715.15,
+      "change_str": "+0.30%",
+      "direction": "up"
+    },
+    {
       "label": "NDX",
       "ticker": "^IXIC",
-      "price": 26339.59,
+      "price": 26340.9,
       "change_str": "+0.19%",
       "direction": "up"
     },
     {
       "label": "DJI",
       "ticker": "^DJI",
-      "price": 53442.61,
-      "change_str": "+0.19%",
+      "price": 53433.03,
+      "change_str": "+0.17%",
       "direction": "up"
     },
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4545.7,
-      "change_str": "+4.12%",
+      "price": 4553.8,
+      "change_str": "+4.30%",
       "direction": "up"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 85.11,
-      "change_str": "+0.20%",
-      "direction": "up"
+      "price": 84.32,
+      "change_str": "-0.73%",
+      "direction": "down"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 68164.19,
-      "change_str": "+5.39%",
+      "price": 68368.5,
+      "change_str": "+5.70%",
       "direction": "up"
-    },
-    {
-      "label": "VIX",
-      "ticker": "^VIX",
-      "price": 15.23,
-      "change_str": "-3.85%",
-      "direction": "down"
     }
   ],
   "regime": {
@@ -76,10 +76,10 @@
   "watchlist": [
     {
       "ticker": "ARWR",
-      "timing": "WAIT FOR BREAKOUT",
-      "timing_detail": "A VCP base is formed but price 88.63 is 2.6% below the pivot 90.97. No entry until it clears the pivot.",
+      "timing": "BUY ON BREAKOUT",
+      "timing_detail": "Coiling 1.9% under the VCP pivot 90.97. Buy the move through 90.97 only if volume expands to >= 1.4x the 50-day average.",
       "trigger_price": 90.97,
-      "last_close": 88.63,
+      "last_close": 89.255,
       "pivot": 90.97,
       "buy_zone_high": 95.5185,
       "projected_risk_pct": 7.9,
@@ -90,22 +90,22 @@
     {
       "ticker": "CBRL",
       "timing": "WAIT FOR BREAKOUT",
-      "timing_detail": "A VCP base is formed but price 57.81 is 4.2% below the pivot 60.26. No entry until it clears the pivot.",
+      "timing_detail": "A VCP base is formed but price 57.12 is 5.5% below the pivot 60.26. No entry until it clears the pivot.",
       "trigger_price": 60.26,
-      "last_close": 57.81,
+      "last_close": 57.12,
       "pivot": 60.26,
       "buy_zone_high": 63.273,
       "projected_risk_pct": 6.89,
-      "rs_rating": 92,
+      "rs_rating": 91,
       "source": "MINERVINI",
       "actionable_now": false
     },
     {
       "ticker": "FRO",
       "timing": "WAIT FOR PULLBACK",
-      "timing_detail": "Price 44.21 is 13.9% above the highest price this pivot is still buyable at (38.82) -- chasing here breaks the 5% buy zone (tops at 41.23) and/or the 8% max-risk stop. Alert on a pullback to 38.82.",
+      "timing_detail": "Price 44.11 is 13.6% above the highest price this pivot is still buyable at (38.82) -- chasing here breaks the 5% buy zone (tops at 41.23) and/or the 8% max-risk stop. Alert on a pullback to 38.82.",
       "trigger_price": 38.8152,
-      "last_close": 44.21,
+      "last_close": 44.11,
       "pivot": 39.27,
       "buy_zone_high": 41.2335,
       "projected_risk_pct": 8.0,
@@ -115,8 +115,8 @@
     }
   ],
   "logs": [
-    "2026-08-19 17:59:17 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-08-19 19:06:24 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-08-19 17:59:17 UTC",
+  "generated_at": "2026-08-19 19:06:24 UTC",
   "top_signal": null
 }
