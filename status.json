@@ -28,43 +28,43 @@
     {
       "label": "SPX",
       "ticker": "^GSPC",
-      "price": 7702.04,
-      "change_str": "+0.13%",
-      "direction": "up"
-    },
-    {
-      "label": "NDX",
-      "ticker": "^IXIC",
-      "price": 26306.89,
-      "change_str": "+0.07%",
+      "price": 7707.98,
+      "change_str": "+0.21%",
       "direction": "up"
     },
     {
       "label": "DJI",
       "ticker": "^DJI",
-      "price": 53423.0,
-      "change_str": "+0.15%",
+      "price": 53463.05,
+      "change_str": "+0.22%",
       "direction": "up"
     },
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4564.0,
-      "change_str": "+4.54%",
+      "price": 4579.6,
+      "change_str": "+4.89%",
       "direction": "up"
+    },
+    {
+      "label": "OIL",
+      "ticker": "CL=F",
+      "price": 84.29,
+      "change_str": "-0.77%",
+      "direction": "down"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 68412.51,
-      "change_str": "+5.77%",
+      "price": 69060.0,
+      "change_str": "+6.77%",
       "direction": "up"
     },
     {
       "label": "VIX",
       "ticker": "^VIX",
-      "price": 15.02,
-      "change_str": "-5.18%",
+      "price": 14.89,
+      "change_str": "-6.00%",
       "direction": "down"
     }
   ],
@@ -77,9 +77,9 @@
     {
       "ticker": "ARWR",
       "timing": "BUY ON BREAKOUT",
-      "timing_detail": "Coiling 1.9% under the VCP pivot 90.97. Buy the move through 90.97 only if volume expands to >= 1.4x the 50-day average.",
+      "timing_detail": "Coiling 1.7% under the VCP pivot 90.97. Buy the move through 90.97 only if volume expands to >= 1.4x the 50-day average.",
       "trigger_price": 90.97,
-      "last_close": 89.28,
+      "last_close": 89.41,
       "pivot": 90.97,
       "buy_zone_high": 95.5185,
       "projected_risk_pct": 7.9,
@@ -88,14 +88,27 @@
       "actionable_now": false
     },
     {
+      "ticker": "PTGX",
+      "timing": "WAIT FOR PULLBACK",
+      "timing_detail": "Price 154.94 is 9.1% above the highest price this pivot is still buyable at (141.99) -- chasing here breaks the 5% buy zone (tops at 150.45) and/or the 8% max-risk stop. Alert on a pullback to 141.99.",
+      "trigger_price": 141.9891,
+      "last_close": 154.94,
+      "pivot": 143.29,
+      "buy_zone_high": 150.4545,
+      "projected_risk_pct": 8.0,
+      "rs_rating": 94,
+      "source": "MINERVINI",
+      "actionable_now": false
+    },
+    {
       "ticker": "CBRL",
       "timing": "WAIT FOR BREAKOUT",
-      "timing_detail": "A VCP base is formed but price 56.35 is 6.9% below the pivot 60.26. No entry until it clears the pivot.",
+      "timing_detail": "A VCP base is formed but price 56.07 is 7.5% below the pivot 60.26. No entry until it clears the pivot.",
       "trigger_price": 60.26,
-      "last_close": 56.35,
+      "last_close": 56.07,
       "pivot": 60.26,
       "buy_zone_high": 63.273,
-      "projected_risk_pct": 6.89,
+      "projected_risk_pct": 7.32,
       "rs_rating": 90,
       "source": "MINERVINI",
       "actionable_now": false
@@ -103,9 +116,9 @@
     {
       "ticker": "CMBT",
       "timing": "WAIT FOR PULLBACK",
-      "timing_detail": "Price 17.88 is 10.9% above the highest price this pivot is still buyable at (16.12) -- chasing here breaks the 5% buy zone (tops at 16.82) and/or the 8% max-risk stop. Alert on a pullback to 16.12.",
+      "timing_detail": "Price 17.86 is 10.8% above the highest price this pivot is still buyable at (16.12) -- chasing here breaks the 5% buy zone (tops at 16.82) and/or the 8% max-risk stop. Alert on a pullback to 16.12.",
       "trigger_price": 16.1196,
-      "last_close": 17.875,
+      "last_close": 17.86,
       "pivot": 16.02,
       "buy_zone_high": 16.821,
       "projected_risk_pct": 8.0,
@@ -116,9 +129,9 @@
     {
       "ticker": "FRO",
       "timing": "WAIT FOR PULLBACK",
-      "timing_detail": "Price 44.46 is 14.5% above the highest price this pivot is still buyable at (38.82) -- chasing here breaks the 5% buy zone (tops at 41.23) and/or the 8% max-risk stop. Alert on a pullback to 38.82.",
+      "timing_detail": "Price 44.45 is 14.5% above the highest price this pivot is still buyable at (38.82) -- chasing here breaks the 5% buy zone (tops at 41.23) and/or the 8% max-risk stop. Alert on a pullback to 38.82.",
       "trigger_price": 38.8152,
-      "last_close": 44.455,
+      "last_close": 44.45,
       "pivot": 39.27,
       "buy_zone_high": 41.2335,
       "projected_risk_pct": 8.0,
@@ -128,8 +141,8 @@
     }
   ],
   "logs": [
-    "2026-08-19 19:55:57 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-08-19 20:59:17 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-08-19 19:55:57 UTC",
+  "generated_at": "2026-08-19 20:59:17 UTC",
   "top_signal": null
 }
