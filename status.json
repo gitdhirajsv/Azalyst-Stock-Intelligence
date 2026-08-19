@@ -26,13 +26,6 @@
   },
   "market_snapshot": [
     {
-      "label": "SPX",
-      "ticker": "^GSPC",
-      "price": 7707.98,
-      "change_str": "+0.21%",
-      "direction": "up"
-    },
-    {
       "label": "NDX",
       "ticker": "^IXIC",
       "price": 26331.09,
@@ -40,24 +33,31 @@
       "direction": "up"
     },
     {
+      "label": "DJI",
+      "ticker": "^DJI",
+      "price": 53463.05,
+      "change_str": "+0.22%",
+      "direction": "up"
+    },
+    {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4580.7,
-      "change_str": "+4.92%",
+      "price": 4576.9,
+      "change_str": "+4.83%",
       "direction": "up"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 84.4,
-      "change_str": "-0.64%",
+      "price": 84.3,
+      "change_str": "-0.75%",
       "direction": "down"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 69806.39,
-      "change_str": "+7.92%",
+      "price": 69232.61,
+      "change_str": "+7.04%",
       "direction": "up"
     },
     {
@@ -88,6 +88,19 @@
       "actionable_now": false
     },
     {
+      "ticker": "PTGX",
+      "timing": "WAIT FOR PULLBACK",
+      "timing_detail": "Price 154.94 is 9.1% above the highest price this pivot is still buyable at (141.99) -- chasing here breaks the 5% buy zone (tops at 150.45) and/or the 8% max-risk stop. Alert on a pullback to 141.99.",
+      "trigger_price": 141.9891,
+      "last_close": 154.94,
+      "pivot": 143.29,
+      "buy_zone_high": 150.4545,
+      "projected_risk_pct": 8.0,
+      "rs_rating": 94,
+      "source": "MINERVINI",
+      "actionable_now": false
+    },
+    {
       "ticker": "CBRL",
       "timing": "WAIT FOR BREAKOUT",
       "timing_detail": "A VCP base is formed but price 56.07 is 7.5% below the pivot 60.26. No entry until it clears the pivot.",
@@ -96,7 +109,20 @@
       "pivot": 60.26,
       "buy_zone_high": 63.273,
       "projected_risk_pct": 7.32,
-      "rs_rating": 90,
+      "rs_rating": 89,
+      "source": "MINERVINI",
+      "actionable_now": false
+    },
+    {
+      "ticker": "CMBT",
+      "timing": "WAIT FOR PULLBACK",
+      "timing_detail": "Price 17.86 is 10.8% above the highest price this pivot is still buyable at (16.12) -- chasing here breaks the 5% buy zone (tops at 16.82) and/or the 8% max-risk stop. Alert on a pullback to 16.12.",
+      "trigger_price": 16.1196,
+      "last_close": 17.86,
+      "pivot": 16.02,
+      "buy_zone_high": 16.821,
+      "projected_risk_pct": 8.0,
+      "rs_rating": 89,
       "source": "MINERVINI",
       "actionable_now": false
     },
@@ -109,14 +135,14 @@
       "pivot": 39.27,
       "buy_zone_high": 41.2335,
       "projected_risk_pct": 8.0,
-      "rs_rating": 90,
+      "rs_rating": 89,
       "source": "MINERVINI",
       "actionable_now": false
     }
   ],
   "logs": [
-    "2026-08-19 21:55:33 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-08-19 22:57:43 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-08-19 21:55:33 UTC",
+  "generated_at": "2026-08-19 22:57:43 UTC",
   "top_signal": null
 }
