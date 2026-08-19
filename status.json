@@ -49,23 +49,23 @@
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4387.3,
-      "change_str": "-0.69%",
+      "price": 4413.2,
+      "change_str": "-0.10%",
       "direction": "down"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 84.44,
-      "change_str": "-0.07%",
-      "direction": "down"
+      "price": 84.66,
+      "change_str": "+0.19%",
+      "direction": "up"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 64607.2,
-      "change_str": "+0.16%",
-      "direction": "up"
+      "price": 64294.23,
+      "change_str": "-0.33%",
+      "direction": "down"
     }
   ],
   "regime": {
@@ -74,19 +74,6 @@
   },
   "signals": [],
   "watchlist": [
-    {
-      "ticker": "KYMR",
-      "timing": "BUY ON BREAKOUT",
-      "timing_detail": "Coiling 1.0% under the VCP pivot 122.59. Buy the move through 122.59 only if volume expands to >= 1.4x the 50-day average.",
-      "trigger_price": 122.59,
-      "last_close": 121.38,
-      "pivot": 122.59,
-      "buy_zone_high": 128.7195,
-      "projected_risk_pct": 4.53,
-      "rs_rating": 93,
-      "source": "MINERVINI",
-      "actionable_now": false
-    },
     {
       "ticker": "ARWR",
       "timing": "WAIT FOR BREAKOUT",
@@ -112,11 +99,24 @@
       "rs_rating": 92,
       "source": "MINERVINI",
       "actionable_now": false
+    },
+    {
+      "ticker": "FRO",
+      "timing": "WAIT FOR PULLBACK",
+      "timing_detail": "Price 43.50 is 12.1% above the highest price this pivot is still buyable at (38.82) -- chasing here breaks the 5% buy zone (tops at 41.23) and/or the 8% max-risk stop. Alert on a pullback to 38.82.",
+      "trigger_price": 38.8152,
+      "last_close": 43.5,
+      "pivot": 39.27,
+      "buy_zone_high": 41.2335,
+      "projected_risk_pct": 8.0,
+      "rs_rating": 89,
+      "source": "MINERVINI",
+      "actionable_now": false
     }
   ],
   "logs": [
-    "2026-08-18 23:01:53 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-08-19 03:48:22 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-08-18 23:01:53 UTC",
+  "generated_at": "2026-08-19 03:48:22 UTC",
   "top_signal": null
 }
