@@ -49,30 +49,30 @@
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4544.1,
-      "change_str": "+1.22%",
+      "price": 4544.5,
+      "change_str": "+1.23%",
       "direction": "up"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 85.41,
-      "change_str": "-0.49%",
-      "direction": "down"
+      "price": 86.73,
+      "change_str": "+1.05%",
+      "direction": "up"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 69663.01,
-      "change_str": "+0.57%",
+      "price": 71965.0,
+      "change_str": "+3.90%",
       "direction": "up"
     },
     {
       "label": "VIX",
       "ticker": "^VIX",
-      "price": 14.89,
-      "change_str": "-6.00%",
-      "direction": "down"
+      "price": 15.11,
+      "change_str": "+1.48%",
+      "direction": "up"
     }
   ],
   "regime": {
@@ -103,7 +103,7 @@
       "pivot": 60.26,
       "buy_zone_high": 63.273,
       "projected_risk_pct": 7.32,
-      "rs_rating": 90,
+      "rs_rating": 89,
       "source": "MINERVINI",
       "actionable_now": false
     },
@@ -116,14 +116,14 @@
       "pivot": 39.27,
       "buy_zone_high": 41.2335,
       "projected_risk_pct": 8.0,
-      "rs_rating": 90,
+      "rs_rating": 89,
       "source": "MINERVINI",
       "actionable_now": false
     }
   ],
   "logs": [
-    "2026-08-20 07:29:31 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-08-20 11:05:56 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-08-20 07:29:31 UTC",
+  "generated_at": "2026-08-20 11:05:56 UTC",
   "top_signal": null
 }
