@@ -26,6 +26,13 @@
   },
   "market_snapshot": [
     {
+      "label": "SPX",
+      "ticker": "^GSPC",
+      "price": 7641.16,
+      "change_str": "-0.87%",
+      "direction": "down"
+    },
+    {
       "label": "NDX",
       "ticker": "^IXIC",
       "price": 26067.17,
@@ -40,24 +47,17 @@
       "direction": "down"
     },
     {
-      "label": "GOLD",
-      "ticker": "GC=F",
-      "price": 4577.0,
-      "change_str": "+1.95%",
-      "direction": "up"
-    },
-    {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 86.37,
-      "change_str": "+0.63%",
+      "price": 86.21,
+      "change_str": "+0.44%",
       "direction": "up"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 72610.2,
-      "change_str": "+4.83%",
+      "price": 72724.69,
+      "change_str": "+4.99%",
       "direction": "up"
     },
     {
@@ -72,8 +72,8 @@
   "signals": [],
   "watchlist": [],
   "logs": [
-    "2026-08-20 21:03:52 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-08-20 21:58:25 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-08-20 21:03:52 UTC",
+  "generated_at": "2026-08-20 21:58:25 UTC",
   "top_signal": null
 }
