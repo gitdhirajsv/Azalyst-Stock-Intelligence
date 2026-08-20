@@ -6,11 +6,11 @@
     "source": "MINERVINI",
     "strategy": "Minervini SEPA / VCP",
     "timing": "WAIT FOR BREAKOUT",
-    "timing_detail": "A VCP base is formed but price 86.61 is 5.0% below the pivot 90.97. No entry until it clears the pivot.",
+    "timing_detail": "A VCP base is formed but price 87.09 is 4.5% below the pivot 90.97. No entry until it clears the pivot.",
     "trigger_price": 90.97,
     "pivot": 90.97,
     "buy_zone_high": 95.5185,
-    "last_close": 86.6101,
+    "last_close": 87.09,
     "stop_reference": 83.78,
     "projected_risk_pct": 7.9,
     "rs_rating": 95,
@@ -26,7 +26,7 @@
       "c8_rs_rating_ok": true,
       "rs_rating": 95
     },
-    "reason": "WATCH (WAIT FOR BREAKOUT) trigger 90.97 -- A VCP base is formed but price 86.61 is 5.0% below the pivot 90.97. No entry until it clears the pivot."
+    "reason": "WATCH (WAIT FOR BREAKOUT) trigger 90.97 -- A VCP base is formed but price 87.09 is 4.5% below the pivot 90.97. No entry until it clears the pivot."
   },
   {
     "ticker": "IMNM",
@@ -35,11 +35,11 @@
     "source": "MINERVINI",
     "strategy": "Minervini SEPA / VCP",
     "timing": "WAIT FOR BREAKOUT",
-    "timing_detail": "A VCP base is formed but price 28.60 is 5.1% below the pivot 30.06. No entry until it clears the pivot.",
+    "timing_detail": "A VCP base is formed but price 28.33 is 6.1% below the pivot 30.06. No entry until it clears the pivot.",
     "trigger_price": 30.06,
     "pivot": 30.06,
     "buy_zone_high": 31.563,
-    "last_close": 28.6,
+    "last_close": 28.33,
     "stop_reference": 27.625,
     "projected_risk_pct": 8.1,
     "rs_rating": 91,
@@ -55,7 +55,7 @@
       "c8_rs_rating_ok": true,
       "rs_rating": 91
     },
-    "reason": "WATCH (WAIT FOR BREAKOUT) trigger 30.06 -- A VCP base is formed but price 28.60 is 5.1% below the pivot 30.06. No entry until it clears the pivot."
+    "reason": "WATCH (WAIT FOR BREAKOUT) trigger 30.06 -- A VCP base is formed but price 28.33 is 6.1% below the pivot 30.06. No entry until it clears the pivot."
   },
   {
     "ticker": "FRO",
@@ -68,7 +68,7 @@
     "trigger_price": 45.17,
     "pivot": 45.17,
     "buy_zone_high": 47.4285,
-    "last_close": 43.85,
+    "last_close": 43.845,
     "stop_reference": 43.45,
     "projected_risk_pct": 3.81,
     "rs_rating": 89,
