@@ -2,10 +2,10 @@
   {
     "ticker": "AMN",
     "type": "BUY_PULLBACK",
-    "price": 34.880001068115234,
-    "stop_loss": 34.18240104675293,
+    "price": 34.81999969482422,
+    "stop_loss": 34.123599700927734,
     "timing": "BUY NOW",
-    "trigger_price": 34.88,
+    "trigger_price": 34.82,
     "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
