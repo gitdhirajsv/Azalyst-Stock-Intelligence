@@ -1,0 +1,79 @@
+{
+  "portfolio_value": 0,
+  "total_deposited": 100000,
+  "cash": 81282.98,
+  "change_raw": 0,
+  "change": "0.00%",
+  "unrealised_str": "$0.00",
+  "realised_pnl": 0,
+  "realised_str": "$0.00",
+  "closed_trades": 0,
+  "usd_inr_rate": 1.0,
+  "positions": [],
+  "closed_trades_list": [],
+  "track_record": {
+    "total_trades": 0,
+    "winners": 0,
+    "losers": 0,
+    "win_rate": 0,
+    "avg_win": 0,
+    "avg_loss": 0,
+    "profit_factor": 0,
+    "expectancy": 0,
+    "sharpe_proxy": 0,
+    "best": null,
+    "worst": null
+  },
+  "market_snapshot": [
+    {
+      "label": "SPX",
+      "ticker": "^GSPC",
+      "price": 7674.37,
+      "change_str": "+0.43%",
+      "direction": "up"
+    },
+    {
+      "label": "DJI",
+      "ticker": "^DJI",
+      "price": 53277.01,
+      "change_str": "+0.98%",
+      "direction": "up"
+    },
+    {
+      "label": "GOLD",
+      "ticker": "GC=F",
+      "price": 4624.1,
+      "change_str": "+2.39%",
+      "direction": "up"
+    },
+    {
+      "label": "OIL",
+      "ticker": "CL=F",
+      "price": 87.06,
+      "change_str": "-0.88%",
+      "direction": "down"
+    },
+    {
+      "label": "BTC",
+      "ticker": "BTC-USD",
+      "price": 77279.04,
+      "change_str": "-1.35%",
+      "direction": "down"
+    },
+    {
+      "label": "VIX",
+      "ticker": "^VIX",
+      "price": 15.13,
+      "change_str": "-5.50%",
+      "direction": "down"
+    }
+  ],
+  "regime": {},
+  "signals": [],
+  "watchlist": [],
+  "logs": [
+    "2026-08-22 19:04:18 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+  ],
+  "generated_at": "2026-08-22 19:04:18 UTC",
+  "top_signal": null
+}
