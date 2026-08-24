@@ -52,43 +52,43 @@
     {
       "label": "SPX",
       "ticker": "^GSPC",
-      "price": 7659.74,
-      "change_str": "-0.19%",
+      "price": 7652.95,
+      "change_str": "-0.28%",
       "direction": "down"
     },
     {
       "label": "NDX",
       "ticker": "^IXIC",
-      "price": 26036.14,
-      "change_str": "-0.55%",
+      "price": 25980.19,
+      "change_str": "-0.76%",
       "direction": "down"
     },
     {
       "label": "DJI",
       "ticker": "^DJI",
-      "price": 53458.86,
-      "change_str": "+0.34%",
+      "price": 53416.99,
+      "change_str": "+0.26%",
       "direction": "up"
     },
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4696.1,
-      "change_str": "+1.56%",
+      "price": 4707.6,
+      "change_str": "+1.81%",
       "direction": "up"
     },
     {
-      "label": "OIL",
-      "ticker": "CL=F",
-      "price": 85.27,
-      "change_str": "-2.06%",
-      "direction": "down"
+      "label": "BTC",
+      "ticker": "BTC-USD",
+      "price": 78569.89,
+      "change_str": "+1.05%",
+      "direction": "up"
     },
     {
       "label": "VIX",
       "ticker": "^VIX",
-      "price": 15.78,
-      "change_str": "+4.30%",
+      "price": 15.87,
+      "change_str": "+4.89%",
       "direction": "up"
     }
   ],
@@ -101,9 +101,9 @@
     {
       "ticker": "ARWR",
       "timing": "WAIT FOR BREAKOUT",
-      "timing_detail": "A VCP base is formed but price 86.43 is 5.3% below the pivot 90.97. No entry until it clears the pivot.",
+      "timing_detail": "A VCP base is formed but price 86.71 is 4.9% below the pivot 90.97. No entry until it clears the pivot.",
       "trigger_price": 90.97,
-      "last_close": 86.43,
+      "last_close": 86.705,
       "pivot": 90.97,
       "buy_zone_high": 95.5185,
       "projected_risk_pct": 7.9,
@@ -112,24 +112,11 @@
       "actionable_now": false
     },
     {
-      "ticker": "IMNM",
-      "timing": "WAIT FOR BREAKOUT",
-      "timing_detail": "A VCP base is formed but price 28.14 is 6.8% below the pivot 30.06. No entry until it clears the pivot.",
-      "trigger_price": 30.06,
-      "last_close": 28.135,
-      "pivot": 30.06,
-      "buy_zone_high": 31.563,
-      "projected_risk_pct": 8.1,
-      "rs_rating": 90,
-      "source": "MINERVINI",
-      "actionable_now": false
-    },
-    {
       "ticker": "FRO",
       "timing": "WAIT FOR BREAKOUT",
-      "timing_detail": "A VCP base is formed but price 43.77 is 3.2% below the pivot 45.17. No entry until it clears the pivot.",
+      "timing_detail": "A VCP base is formed but price 43.91 is 2.9% below the pivot 45.17. No entry until it clears the pivot.",
       "trigger_price": 45.17,
-      "last_close": 43.77,
+      "last_close": 43.91,
       "pivot": 45.17,
       "buy_zone_high": 47.4285,
       "projected_risk_pct": 4.63,
@@ -138,11 +125,24 @@
       "actionable_now": false
     },
     {
+      "ticker": "IMNM",
+      "timing": "WAIT FOR BREAKOUT",
+      "timing_detail": "A VCP base is formed but price 28.08 is 7.1% below the pivot 30.06. No entry until it clears the pivot.",
+      "trigger_price": 30.06,
+      "last_close": 28.08,
+      "pivot": 30.06,
+      "buy_zone_high": 31.563,
+      "projected_risk_pct": 8.1,
+      "rs_rating": 89,
+      "source": "MINERVINI",
+      "actionable_now": false
+    },
+    {
       "ticker": "TGT",
       "timing": "WAIT FOR PULLBACK",
-      "timing_detail": "Price 168.97 is 18.2% above the highest price this pivot is still buyable at (142.98) -- chasing here breaks the 5% buy zone (tops at 150.47) and/or the 8% max-risk stop. Alert on a pullback to 142.98.",
+      "timing_detail": "Price 169.90 is 18.8% above the highest price this pivot is still buyable at (142.98) -- chasing here breaks the 5% buy zone (tops at 150.47) and/or the 8% max-risk stop. Alert on a pullback to 142.98.",
       "trigger_price": 142.9787,
-      "last_close": 168.97,
+      "last_close": 169.9,
       "pivot": 143.3001,
       "buy_zone_high": 150.4651,
       "projected_risk_pct": 8.0,
@@ -152,8 +152,8 @@
     }
   ],
   "logs": [
-    "2026-08-24 19:19:18 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-08-24 20:03:50 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-08-24 19:19:18 UTC",
+  "generated_at": "2026-08-24 20:03:50 UTC",
   "top_signal": null
 }
