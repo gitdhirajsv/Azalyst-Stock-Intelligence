@@ -52,7 +52,7 @@
     {
       "label": "SPX",
       "ticker": "^GSPC",
-      "price": 7652.95,
+      "price": 7652.86,
       "change_str": "-0.28%",
       "direction": "down"
     },
@@ -66,29 +66,36 @@
     {
       "label": "DJI",
       "ticker": "^DJI",
-      "price": 53416.99,
+      "price": 53417.16,
       "change_str": "+0.26%",
       "direction": "up"
     },
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4707.6,
+      "price": 4708.0,
       "change_str": "+1.81%",
       "direction": "up"
     },
     {
+      "label": "OIL",
+      "ticker": "CL=F",
+      "price": 84.95,
+      "change_str": "-2.42%",
+      "direction": "down"
+    },
+    {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 78569.89,
-      "change_str": "+1.05%",
+      "price": 78999.17,
+      "change_str": "+1.60%",
       "direction": "up"
     },
     {
       "label": "VIX",
       "ticker": "^VIX",
-      "price": 15.87,
-      "change_str": "+4.89%",
+      "price": 15.85,
+      "change_str": "+4.76%",
       "direction": "up"
     }
   ],
@@ -101,9 +108,9 @@
     {
       "ticker": "ARWR",
       "timing": "WAIT FOR BREAKOUT",
-      "timing_detail": "A VCP base is formed but price 86.71 is 4.9% below the pivot 90.97. No entry until it clears the pivot.",
+      "timing_detail": "A VCP base is formed but price 86.73 is 4.9% below the pivot 90.97. No entry until it clears the pivot.",
       "trigger_price": 90.97,
-      "last_close": 86.705,
+      "last_close": 86.73,
       "pivot": 90.97,
       "buy_zone_high": 95.5185,
       "projected_risk_pct": 7.9,
@@ -114,9 +121,9 @@
     {
       "ticker": "FRO",
       "timing": "WAIT FOR BREAKOUT",
-      "timing_detail": "A VCP base is formed but price 43.91 is 2.9% below the pivot 45.17. No entry until it clears the pivot.",
+      "timing_detail": "A VCP base is formed but price 44.05 is 2.5% below the pivot 45.17. No entry until it clears the pivot.",
       "trigger_price": 45.17,
-      "last_close": 43.91,
+      "last_close": 44.05,
       "pivot": 45.17,
       "buy_zone_high": 47.4285,
       "projected_risk_pct": 4.63,
@@ -127,9 +134,9 @@
     {
       "ticker": "IMNM",
       "timing": "WAIT FOR BREAKOUT",
-      "timing_detail": "A VCP base is formed but price 28.08 is 7.1% below the pivot 30.06. No entry until it clears the pivot.",
+      "timing_detail": "A VCP base is formed but price 28.01 is 7.3% below the pivot 30.06. No entry until it clears the pivot.",
       "trigger_price": 30.06,
-      "last_close": 28.08,
+      "last_close": 28.01,
       "pivot": 30.06,
       "buy_zone_high": 31.563,
       "projected_risk_pct": 8.1,
@@ -140,9 +147,9 @@
     {
       "ticker": "TGT",
       "timing": "WAIT FOR PULLBACK",
-      "timing_detail": "Price 169.90 is 18.8% above the highest price this pivot is still buyable at (142.98) -- chasing here breaks the 5% buy zone (tops at 150.47) and/or the 8% max-risk stop. Alert on a pullback to 142.98.",
+      "timing_detail": "Price 169.89 is 18.8% above the highest price this pivot is still buyable at (142.98) -- chasing here breaks the 5% buy zone (tops at 150.47) and/or the 8% max-risk stop. Alert on a pullback to 142.98.",
       "trigger_price": 142.9787,
-      "last_close": 169.9,
+      "last_close": 169.89,
       "pivot": 143.3001,
       "buy_zone_high": 150.4651,
       "projected_risk_pct": 8.0,
@@ -152,8 +159,8 @@
     }
   ],
   "logs": [
-    "2026-08-24 20:03:50 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-08-24 21:07:07 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-08-24 20:03:50 UTC",
+  "generated_at": "2026-08-24 21:07:07 UTC",
   "top_signal": null
 }
