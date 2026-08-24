@@ -1,79 +1,159 @@
 {
-  "portfolio_value": 0,
+  "portfolio_value": 99625.66,
   "total_deposited": 100000,
-  "cash": 81282.98,
-  "change_raw": 0,
-  "change": "0.00%",
-  "unrealised_str": "$0.00",
-  "realised_pnl": 0,
-  "realised_str": "$0.00",
-  "closed_trades": 0,
+  "cash": 99625.66,
+  "change_raw": -0.37,
+  "change": "-0.37%",
+  "unrealised_str": "+$0.00",
+  "realised_pnl": -374.34,
+  "realised_str": "-$374.34",
+  "closed_trades": 1,
   "usd_inr_rate": 1.0,
   "positions": [],
-  "closed_trades_list": [],
+  "closed_trades_list": [
+    {
+      "ticker": "AMN",
+      "entry": 34.79,
+      "exit": 34.0942,
+      "shares": 538,
+      "pnl": -374.34,
+      "pnl_str": "-$374.34",
+      "pnl_pct": -2.0,
+      "pnl_pct_str": "-2.00%",
+      "exit_date": "2026-08-24",
+      "exit_reason": "Stop Loss",
+      "winner": false
+    }
+  ],
   "track_record": {
-    "total_trades": 0,
+    "total_trades": 1,
     "winners": 0,
-    "losers": 0,
-    "win_rate": 0,
-    "avg_win": 0,
-    "avg_loss": 0,
-    "profit_factor": 0,
-    "expectancy": 0,
-    "sharpe_proxy": 0,
-    "best": null,
-    "worst": null
+    "losers": 1,
+    "win_rate": 0.0,
+    "avg_win": 0.0,
+    "avg_loss": -2.0,
+    "profit_factor": 0.0,
+    "expectancy": -2.0,
+    "sharpe_proxy": 0.0,
+    "best": {
+      "ticker": "AMN",
+      "pnl_pct": -2.0,
+      "pnl_pct_str": "-2.00%",
+      "exit_reason": "Stop Loss"
+    },
+    "worst": {
+      "ticker": "AMN",
+      "pnl_pct": -2.0,
+      "pnl_pct_str": "-2.00%",
+      "exit_reason": "Stop Loss"
+    }
   },
   "market_snapshot": [
     {
       "label": "SPX",
       "ticker": "^GSPC",
-      "price": 7653.98,
-      "change_str": "-0.27%",
+      "price": 7659.74,
+      "change_str": "-0.19%",
       "direction": "down"
     },
     {
       "label": "NDX",
       "ticker": "^IXIC",
-      "price": 26033.04,
-      "change_str": "-0.56%",
+      "price": 26036.14,
+      "change_str": "-0.55%",
       "direction": "down"
     },
     {
       "label": "DJI",
       "ticker": "^DJI",
-      "price": 53350.68,
-      "change_str": "+0.14%",
+      "price": 53458.86,
+      "change_str": "+0.34%",
       "direction": "up"
     },
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4690.9,
-      "change_str": "+1.44%",
+      "price": 4696.1,
+      "change_str": "+1.56%",
       "direction": "up"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 84.74,
-      "change_str": "-2.66%",
+      "price": 85.27,
+      "change_str": "-2.06%",
       "direction": "down"
     },
     {
-      "label": "BTC",
-      "ticker": "BTC-USD",
-      "price": 78887.48,
-      "change_str": "+1.46%",
+      "label": "VIX",
+      "ticker": "^VIX",
+      "price": 15.78,
+      "change_str": "+4.30%",
       "direction": "up"
     }
   ],
-  "regime": {},
+  "regime": {
+    "risk_state": "RISK_ON",
+    "vol_regime": "LOW_VOL"
+  },
   "signals": [],
-  "watchlist": [],
-  "logs": [
-    "2026-08-24 18:03:27 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+  "watchlist": [
+    {
+      "ticker": "ARWR",
+      "timing": "WAIT FOR BREAKOUT",
+      "timing_detail": "A VCP base is formed but price 86.43 is 5.3% below the pivot 90.97. No entry until it clears the pivot.",
+      "trigger_price": 90.97,
+      "last_close": 86.43,
+      "pivot": 90.97,
+      "buy_zone_high": 95.5185,
+      "projected_risk_pct": 7.9,
+      "rs_rating": 95,
+      "source": "MINERVINI",
+      "actionable_now": false
+    },
+    {
+      "ticker": "IMNM",
+      "timing": "WAIT FOR BREAKOUT",
+      "timing_detail": "A VCP base is formed but price 28.14 is 6.8% below the pivot 30.06. No entry until it clears the pivot.",
+      "trigger_price": 30.06,
+      "last_close": 28.135,
+      "pivot": 30.06,
+      "buy_zone_high": 31.563,
+      "projected_risk_pct": 8.1,
+      "rs_rating": 90,
+      "source": "MINERVINI",
+      "actionable_now": false
+    },
+    {
+      "ticker": "FRO",
+      "timing": "WAIT FOR BREAKOUT",
+      "timing_detail": "A VCP base is formed but price 43.77 is 3.2% below the pivot 45.17. No entry until it clears the pivot.",
+      "trigger_price": 45.17,
+      "last_close": 43.77,
+      "pivot": 45.17,
+      "buy_zone_high": 47.4285,
+      "projected_risk_pct": 4.63,
+      "rs_rating": 89,
+      "source": "MINERVINI",
+      "actionable_now": false
+    },
+    {
+      "ticker": "TGT",
+      "timing": "WAIT FOR PULLBACK",
+      "timing_detail": "Price 168.97 is 18.2% above the highest price this pivot is still buyable at (142.98) -- chasing here breaks the 5% buy zone (tops at 150.47) and/or the 8% max-risk stop. Alert on a pullback to 142.98.",
+      "trigger_price": 142.9787,
+      "last_close": 168.97,
+      "pivot": 143.3001,
+      "buy_zone_high": 150.4651,
+      "projected_risk_pct": 8.0,
+      "rs_rating": 89,
+      "source": "MINERVINI",
+      "actionable_now": false
+    }
   ],
-  "generated_at": "2026-08-24 18:03:27 UTC",
+  "logs": [
+    "2026-08-24 19:19:18 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+  ],
+  "generated_at": "2026-08-24 19:19:18 UTC",
   "top_signal": null
 }
