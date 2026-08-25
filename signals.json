@@ -1,18 +1,39 @@
 [
   {
-    "ticker": "TGT",
-    "type": "BUY_BREAKOUT",
-    "price": 169.88999938964844,
-    "stop_loss": 139.00109016170745,
+    "ticker": "CGON",
+    "type": "BUY_PULLBACK",
+    "price": 78.8550033569336,
+    "stop_loss": 77.27790328979492,
     "timing": "BUY NOW",
-    "trigger_price": 169.89,
-    "reason": "VCP breakout, pivot=143.30",
+    "trigger_price": 78.855,
+    "reason": "Pullback to BOL, META score=3",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
     "sources": [
       "JLAW"
     ],
-    "rs_rating": 89,
+    "rs_rating": 93,
+    "rev_growth_yoy": null,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_detail": "revenue data unavailable",
+    "fundamentals_verified": false,
+    "fundamentals_ok": null
+  },
+  {
+    "ticker": "RVMD",
+    "type": "BUY_PULLBACK",
+    "price": 213.7100067138672,
+    "stop_loss": 209.43580657958984,
+    "timing": "BUY NOW",
+    "trigger_price": 213.71,
+    "reason": "Pullback to BOL, META score=2",
+    "source": "JLAW",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW"
+    ],
+    "rs_rating": 97,
     "rev_growth_yoy": null,
     "annual_rev_growth": null,
     "sales_accelerating": null,
