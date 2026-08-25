@@ -6,11 +6,11 @@
     "source": "MINERVINI",
     "strategy": "Minervini SEPA / VCP",
     "timing": "BUY ON BREAKOUT",
-    "timing_detail": "Coiling 2.0% under the VCP pivot 30.06. Buy the move through 30.06 only if volume expands to >= 1.4x the 50-day average.",
+    "timing_detail": "Coiling 1.7% under the VCP pivot 30.06. Buy the move through 30.06 only if volume expands to >= 1.4x the 50-day average.",
     "trigger_price": 30.06,
     "pivot": 30.06,
     "buy_zone_high": 31.563,
-    "last_close": 29.46,
+    "last_close": 29.565,
     "stop_reference": 27.625,
     "projected_risk_pct": 8.1,
     "rs_rating": 91,
@@ -26,7 +26,36 @@
       "c8_rs_rating_ok": true,
       "rs_rating": 91
     },
-    "reason": "WATCH (BUY ON BREAKOUT) trigger 30.06 -- Coiling 2.0% under the VCP pivot 30.06. Buy the move through 30.06 only if volume expands to >= 1.4x the 50-day average."
+    "reason": "WATCH (BUY ON BREAKOUT) trigger 30.06 -- Coiling 1.7% under the VCP pivot 30.06. Buy the move through 30.06 only if volume expands to >= 1.4x the 50-day average."
+  },
+  {
+    "ticker": "RVMD",
+    "kind": "WATCH",
+    "type": "WATCH",
+    "source": "MINERVINI",
+    "strategy": "Minervini SEPA / VCP",
+    "timing": "WAIT FOR BREAKOUT",
+    "timing_detail": "A VCP base is formed but price 211.01 is 4.4% below the pivot 220.34. No entry until it clears the pivot.",
+    "trigger_price": 220.34,
+    "pivot": 220.34,
+    "buy_zone_high": 231.357,
+    "last_close": 211.01,
+    "stop_reference": 205.39,
+    "projected_risk_pct": 6.78,
+    "rs_rating": 97,
+    "actionable_now": false,
+    "trend_template": {
+      "c1_price_above_150_200": true,
+      "c2_150_above_200": true,
+      "c3_200_uptrending": true,
+      "c4_50_above_150_200": true,
+      "c5_price_above_50": true,
+      "c6_30pct_above_low": true,
+      "c7_within_25pct_high": true,
+      "c8_rs_rating_ok": true,
+      "rs_rating": 97
+    },
+    "reason": "WATCH (WAIT FOR BREAKOUT) trigger 220.34 -- A VCP base is formed but price 211.01 is 4.4% below the pivot 220.34. No entry until it clears the pivot."
   },
   {
     "ticker": "ARWR",
@@ -35,11 +64,11 @@
     "source": "MINERVINI",
     "strategy": "Minervini SEPA / VCP",
     "timing": "WAIT FOR BREAKOUT",
-    "timing_detail": "A VCP base is formed but price 88.59 is 2.7% below the pivot 90.97. No entry until it clears the pivot.",
+    "timing_detail": "A VCP base is formed but price 88.47 is 2.8% below the pivot 90.97. No entry until it clears the pivot.",
     "trigger_price": 90.97,
     "pivot": 90.97,
     "buy_zone_high": 95.5185,
-    "last_close": 88.59,
+    "last_close": 88.47,
     "stop_reference": 83.78,
     "projected_risk_pct": 7.9,
     "rs_rating": 95,
@@ -55,7 +84,7 @@
       "c8_rs_rating_ok": true,
       "rs_rating": 95
     },
-    "reason": "WATCH (WAIT FOR BREAKOUT) trigger 90.97 -- A VCP base is formed but price 88.59 is 2.7% below the pivot 90.97. No entry until it clears the pivot."
+    "reason": "WATCH (WAIT FOR BREAKOUT) trigger 90.97 -- A VCP base is formed but price 88.47 is 2.8% below the pivot 90.97. No entry until it clears the pivot."
   },
   {
     "ticker": "RHI",
@@ -64,11 +93,11 @@
     "source": "MINERVINI",
     "strategy": "Minervini SEPA / VCP",
     "timing": "WAIT FOR BREAKOUT",
-    "timing_detail": "A VCP base is formed but price 44.45 is 5.1% below the pivot 46.70. No entry until it clears the pivot.",
+    "timing_detail": "A VCP base is formed but price 44.47 is 5.0% below the pivot 46.70. No entry until it clears the pivot.",
     "trigger_price": 46.7,
     "pivot": 46.7,
     "buy_zone_high": 49.035,
-    "last_close": 44.45,
+    "last_close": 44.465,
     "stop_reference": 43.76,
     "projected_risk_pct": 6.3,
     "rs_rating": 90,
@@ -84,6 +113,6 @@
       "c8_rs_rating_ok": true,
       "rs_rating": 90
     },
-    "reason": "WATCH (WAIT FOR BREAKOUT) trigger 46.70 -- A VCP base is formed but price 44.45 is 5.1% below the pivot 46.70. No entry until it clears the pivot."
+    "reason": "WATCH (WAIT FOR BREAKOUT) trigger 46.70 -- A VCP base is formed but price 44.47 is 5.0% below the pivot 46.70. No entry until it clears the pivot."
   }
 ]
