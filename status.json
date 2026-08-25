@@ -1,52 +1,28 @@
 {
-  "portfolio_value": 99625.66,
+  "portfolio_value": 0,
   "total_deposited": 100000,
-  "cash": 99625.66,
-  "change_raw": -0.37,
-  "change": "-0.37%",
-  "unrealised_str": "+$0.00",
-  "realised_pnl": -374.34,
-  "realised_str": "-$374.34",
-  "closed_trades": 1,
+  "cash": 94189.18,
+  "change_raw": 0,
+  "change": "0.00%",
+  "unrealised_str": "$0.00",
+  "realised_pnl": 0,
+  "realised_str": "$0.00",
+  "closed_trades": 0,
   "usd_inr_rate": 1.0,
   "positions": [],
-  "closed_trades_list": [
-    {
-      "ticker": "AMN",
-      "entry": 34.79,
-      "exit": 34.0942,
-      "shares": 538,
-      "pnl": -374.34,
-      "pnl_str": "-$374.34",
-      "pnl_pct": -2.0,
-      "pnl_pct_str": "-2.00%",
-      "exit_date": "2026-08-24",
-      "exit_reason": "Stop Loss",
-      "winner": false
-    }
-  ],
+  "closed_trades_list": [],
   "track_record": {
-    "total_trades": 1,
+    "total_trades": 0,
     "winners": 0,
-    "losers": 1,
-    "win_rate": 0.0,
-    "avg_win": 0.0,
-    "avg_loss": -2.0,
-    "profit_factor": 0.0,
-    "expectancy": -2.0,
-    "sharpe_proxy": 0.0,
-    "best": {
-      "ticker": "AMN",
-      "pnl_pct": -2.0,
-      "pnl_pct_str": "-2.00%",
-      "exit_reason": "Stop Loss"
-    },
-    "worst": {
-      "ticker": "AMN",
-      "pnl_pct": -2.0,
-      "pnl_pct_str": "-2.00%",
-      "exit_reason": "Stop Loss"
-    }
+    "losers": 0,
+    "win_rate": 0,
+    "avg_win": 0,
+    "avg_loss": 0,
+    "profit_factor": 0,
+    "expectancy": 0,
+    "sharpe_proxy": 0,
+    "best": null,
+    "worst": null
   },
   "market_snapshot": [
     {
@@ -64,96 +40,40 @@
       "direction": "down"
     },
     {
+      "label": "DJI",
+      "ticker": "^DJI",
+      "price": 53417.16,
+      "change_str": "+0.26%",
+      "direction": "up"
+    },
+    {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4692.3,
-      "change_str": "+1.47%",
+      "price": 4697.2,
+      "change_str": "+1.22%",
       "direction": "up"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 85.33,
-      "change_str": "-1.99%",
+      "price": 84.26,
+      "change_str": "-0.88%",
       "direction": "down"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 80720.11,
-      "change_str": "+3.81%",
-      "direction": "up"
-    },
-    {
-      "label": "VIX",
-      "ticker": "^VIX",
-      "price": 15.85,
-      "change_str": "+4.76%",
+      "price": 80577.29,
+      "change_str": "+2.04%",
       "direction": "up"
     }
   ],
-  "regime": {
-    "risk_state": "RISK_ON",
-    "vol_regime": "LOW_VOL"
-  },
+  "regime": {},
   "signals": [],
-  "watchlist": [
-    {
-      "ticker": "ARWR",
-      "timing": "WAIT FOR BREAKOUT",
-      "timing_detail": "A VCP base is formed but price 86.73 is 4.9% below the pivot 90.97. No entry until it clears the pivot.",
-      "trigger_price": 90.97,
-      "last_close": 86.73,
-      "pivot": 90.97,
-      "buy_zone_high": 95.5185,
-      "projected_risk_pct": 7.9,
-      "rs_rating": 95,
-      "source": "MINERVINI",
-      "actionable_now": false
-    },
-    {
-      "ticker": "FRO",
-      "timing": "WAIT FOR BREAKOUT",
-      "timing_detail": "A VCP base is formed but price 44.05 is 2.5% below the pivot 45.17. No entry until it clears the pivot.",
-      "trigger_price": 45.17,
-      "last_close": 44.05,
-      "pivot": 45.17,
-      "buy_zone_high": 47.4285,
-      "projected_risk_pct": 4.63,
-      "rs_rating": 89,
-      "source": "MINERVINI",
-      "actionable_now": false
-    },
-    {
-      "ticker": "IMNM",
-      "timing": "WAIT FOR BREAKOUT",
-      "timing_detail": "A VCP base is formed but price 28.01 is 7.3% below the pivot 30.06. No entry until it clears the pivot.",
-      "trigger_price": 30.06,
-      "last_close": 28.01,
-      "pivot": 30.06,
-      "buy_zone_high": 31.563,
-      "projected_risk_pct": 8.1,
-      "rs_rating": 89,
-      "source": "MINERVINI",
-      "actionable_now": false
-    },
-    {
-      "ticker": "TGT",
-      "timing": "WAIT FOR PULLBACK",
-      "timing_detail": "Price 169.89 is 18.8% above the highest price this pivot is still buyable at (142.98) -- chasing here breaks the 5% buy zone (tops at 150.47) and/or the 8% max-risk stop. Alert on a pullback to 142.98.",
-      "trigger_price": 142.9787,
-      "last_close": 169.89,
-      "pivot": 143.3001,
-      "buy_zone_high": 150.4651,
-      "projected_risk_pct": 8.0,
-      "rs_rating": 89,
-      "source": "MINERVINI",
-      "actionable_now": false
-    }
-  ],
+  "watchlist": [],
   "logs": [
-    "2026-08-25 03:35:39 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-08-25 07:31:18 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-08-25 03:35:39 UTC",
+  "generated_at": "2026-08-25 07:31:18 UTC",
   "top_signal": null
 }

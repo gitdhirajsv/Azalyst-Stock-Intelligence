@@ -85,34 +85,5 @@
       "rs_rating": 89
     },
     "reason": "WATCH (WAIT FOR BREAKOUT) trigger 30.06 -- A VCP base is formed but price 28.01 is 7.3% below the pivot 30.06. No entry until it clears the pivot."
-  },
-  {
-    "ticker": "TGT",
-    "kind": "WATCH",
-    "type": "WATCH",
-    "source": "MINERVINI",
-    "strategy": "Minervini SEPA / VCP",
-    "timing": "WAIT FOR PULLBACK",
-    "timing_detail": "Price 169.89 is 18.8% above the highest price this pivot is still buyable at (142.98) -- chasing here breaks the 5% buy zone (tops at 150.47) and/or the 8% max-risk stop. Alert on a pullback to 142.98.",
-    "trigger_price": 142.9787,
-    "pivot": 143.3001,
-    "buy_zone_high": 150.4651,
-    "last_close": 169.89,
-    "stop_reference": 131.5404,
-    "projected_risk_pct": 8.0,
-    "rs_rating": 89,
-    "actionable_now": false,
-    "trend_template": {
-      "c1_price_above_150_200": true,
-      "c2_150_above_200": true,
-      "c3_200_uptrending": true,
-      "c4_50_above_150_200": true,
-      "c5_price_above_50": true,
-      "c6_30pct_above_low": true,
-      "c7_within_25pct_high": true,
-      "c8_rs_rating_ok": true,
-      "rs_rating": 89
-    },
-    "reason": "WATCH (WAIT FOR PULLBACK) trigger 142.98 -- Price 169.89 is 18.8% above the highest price this pivot is still buyable at (142.98) -- chasing here breaks the 5% buy zone (tops at 150.47) and/or the 8% max-risk stop. Alert on a pullback to 142.98."
   }
 ]
