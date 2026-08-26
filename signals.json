@@ -2,10 +2,10 @@
   {
     "ticker": "CGON",
     "type": "BUY_PULLBACK",
-    "price": 78.01000213623047,
-    "stop_loss": 76.44980209350585,
+    "price": 78.72000122070312,
+    "stop_loss": 77.14560119628906,
     "timing": "BUY NOW",
-    "trigger_price": 78.01,
+    "trigger_price": 78.72,
     "reason": "Pullback to BOL, META score=3",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
@@ -13,6 +13,27 @@
       "JLAW"
     ],
     "rs_rating": 92,
+    "rev_growth_yoy": null,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_detail": "revenue data unavailable",
+    "fundamentals_verified": false,
+    "fundamentals_ok": null
+  },
+  {
+    "ticker": "RVMD",
+    "type": "BUY_PULLBACK",
+    "price": 216.43499755859375,
+    "stop_loss": 212.10629760742188,
+    "timing": "BUY NOW",
+    "trigger_price": 216.435,
+    "reason": "Pullback to BOL, META score=2",
+    "source": "JLAW",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW"
+    ],
+    "rs_rating": 98,
     "rev_growth_yoy": null,
     "annual_rev_growth": null,
     "sales_accelerating": null,
