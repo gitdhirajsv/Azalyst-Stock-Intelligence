@@ -127,9 +127,9 @@
     "pivot": 46.0893,
     "buy_zone_high": 48.3938,
     "last_close": 44.9,
-    "stop_reference": 43.76,
-    "projected_risk_pct": 5.05,
-    "rs_rating": 90,
+    "stop_reference": 43.75,
+    "projected_risk_pct": 5.08,
+    "rs_rating": 91,
     "actionable_now": false,
     "trend_template": {
       "c1_price_above_150_200": true,
@@ -140,7 +140,7 @@
       "c6_30pct_above_low": true,
       "c7_within_25pct_high": true,
       "c8_rs_rating_ok": true,
-      "rs_rating": 90
+      "rs_rating": 91
     },
     "reason": "WATCH (WAIT FOR BREAKOUT) trigger 46.09 -- A VCP base is formed but price 44.90 is 2.6% below the pivot 46.09. No entry until it clears the pivot."
   }

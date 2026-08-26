@@ -40,47 +40,40 @@
       "direction": "up"
     },
     {
-      "label": "DJI",
-      "ticker": "^DJI",
-      "price": 53577.4,
-      "change_str": "+0.30%",
-      "direction": "up"
-    },
-    {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4707.0,
-      "change_str": "+1.43%",
+      "price": 4689.8,
+      "change_str": "+1.11%",
       "direction": "up"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 80.29,
-      "change_str": "-5.55%",
+      "price": 80.24,
+      "change_str": "-2.57%",
       "direction": "down"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 79028.36,
-      "change_str": "+0.08%",
+      "price": 78891.21,
+      "change_str": "+0.42%",
       "direction": "up"
     },
     {
       "label": "VIX",
       "ticker": "^VIX",
-      "price": 15.45,
-      "change_str": "-2.52%",
-      "direction": "down"
+      "price": 15.66,
+      "change_str": "+1.36%",
+      "direction": "up"
     }
   ],
   "regime": {},
   "signals": [],
   "watchlist": [],
   "logs": [
-    "2026-08-26 03:42:17 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-08-26 07:32:54 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-08-26 03:42:17 UTC",
+  "generated_at": "2026-08-26 07:32:54 UTC",
   "top_signal": null
 }
