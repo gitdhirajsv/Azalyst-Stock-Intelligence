@@ -28,50 +28,50 @@
     {
       "label": "SPX",
       "ticker": "^GSPC",
-      "price": 7674.28,
-      "change_str": "-0.04%",
+      "price": 7675.7,
+      "change_str": "-0.02%",
       "direction": "down"
     },
     {
       "label": "NDX",
       "ticker": "^IXIC",
-      "price": 26107.71,
-      "change_str": "-0.17%",
+      "price": 26130.2,
+      "change_str": "-0.08%",
       "direction": "down"
     },
     {
       "label": "DJI",
       "ticker": "^DJI",
-      "price": 53461.06,
-      "change_str": "-0.22%",
+      "price": 53463.88,
+      "change_str": "-0.21%",
       "direction": "down"
     },
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4656.5,
-      "change_str": "+0.40%",
+      "price": 4643.7,
+      "change_str": "+0.12%",
       "direction": "up"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 82.41,
-      "change_str": "+0.06%",
-      "direction": "up"
+      "price": 81.82,
+      "change_str": "-0.66%",
+      "direction": "down"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 78568.7,
-      "change_str": "+0.00%",
-      "direction": "up"
+      "price": 78327.35,
+      "change_str": "-0.30%",
+      "direction": "down"
     },
     {
       "label": "VIX",
       "ticker": "^VIX",
-      "price": 15.41,
-      "change_str": "-0.26%",
+      "price": 15.21,
+      "change_str": "-1.55%",
       "direction": "down"
     }
   ],
@@ -79,8 +79,8 @@
   "signals": [],
   "watchlist": [],
   "logs": [
-    "2026-08-26 18:17:40 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-08-26 20:34:33 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-08-26 18:17:40 UTC",
+  "generated_at": "2026-08-26 20:34:33 UTC",
   "top_signal": null
 }
