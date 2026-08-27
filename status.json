@@ -89,29 +89,29 @@
     {
       "label": "DJI",
       "ticker": "^DJI",
-      "price": 53463.88,
+      "price": 53463.9,
       "change_str": "-0.21%",
       "direction": "down"
     },
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4677.3,
-      "change_str": "+0.85%",
+      "price": 4691.3,
+      "change_str": "+1.15%",
       "direction": "up"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 81.84,
-      "change_str": "-0.63%",
+      "price": 81.87,
+      "change_str": "-0.59%",
       "direction": "down"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 79012.82,
-      "change_str": "+0.57%",
+      "price": 78841.36,
+      "change_str": "+0.35%",
       "direction": "up"
     },
     {
@@ -131,7 +131,7 @@
       "ticker": "CGON",
       "sector_label": "CGON",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-08-26 23:59:51 UTC",
+      "latest_at": "2026-08-27 03:36:33 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -161,7 +161,7 @@
       "ticker": "WT",
       "sector_label": "WT",
       "headline": "[JLAW] VCP breakout, pivot=23.12",
-      "latest_at": "2026-08-26 23:59:51 UTC",
+      "latest_at": "2026-08-27 03:36:33 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -282,14 +282,14 @@
     }
   ],
   "logs": [
-    "2026-08-26 23:59:50 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-08-27 03:36:32 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-08-26 23:59:50 UTC",
+  "generated_at": "2026-08-27 03:36:32 UTC",
   "top_signal": {
     "ticker": "CGON",
     "sector_label": "CGON",
     "headline": "[JLAW] Pullback to BOL, META score=2",
-    "latest_at": "2026-08-26 23:59:51 UTC",
+    "latest_at": "2026-08-27 03:36:33 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
