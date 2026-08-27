@@ -2,11 +2,11 @@
   {
     "ticker": "CGON",
     "type": "BUY_PULLBACK",
-    "price": 78.41999816894531,
-    "stop_loss": 76.8515982055664,
+    "price": 79.05500030517578,
+    "stop_loss": 77.47390029907227,
     "timing": "BUY NOW",
-    "trigger_price": 78.42,
-    "reason": "Pullback to BOL, META score=2",
+    "trigger_price": 79.055,
+    "reason": "Pullback to BOL, META score=3",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
     "sources": [
@@ -19,26 +19,5 @@
     "fundamentals_detail": "revenue data unavailable",
     "fundamentals_verified": false,
     "fundamentals_ok": null
-  },
-  {
-    "ticker": "WT",
-    "type": "BUY_BREAKOUT",
-    "price": 24.760000228881836,
-    "stop_loss": 22.424878666441074,
-    "timing": "BUY NOW",
-    "trigger_price": 24.76,
-    "reason": "VCP breakout, pivot=23.12",
-    "source": "JLAW",
-    "strategy": "J Law (Stage 2 / VCP / META)",
-    "sources": [
-      "JLAW"
-    ],
-    "rs_rating": 90,
-    "rev_growth_yoy": 0.5730636382202254,
-    "annual_rev_growth": null,
-    "sales_accelerating": null,
-    "fundamentals_detail": "last-Q rev +57.3% YoY, accel=n/a",
-    "fundamentals_verified": true,
-    "fundamentals_ok": true
   }
 ]
