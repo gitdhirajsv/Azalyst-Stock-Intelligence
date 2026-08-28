@@ -96,22 +96,22 @@
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4650.0,
-      "change_str": "+1.13%",
+      "price": 4632.5,
+      "change_str": "+0.49%",
       "direction": "up"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 83.53,
-      "change_str": "+1.58%",
-      "direction": "up"
+      "price": 83.02,
+      "change_str": "-0.61%",
+      "direction": "down"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 80285.96,
-      "change_str": "+1.59%",
+      "price": 79872.91,
+      "change_str": "+1.07%",
       "direction": "up"
     },
     {
@@ -131,7 +131,7 @@
       "ticker": "CGON",
       "sector_label": "CGON",
       "headline": "[JLAW] Pullback to BOL, META score=3",
-      "latest_at": "2026-08-28 00:00:15 UTC",
+      "latest_at": "2026-08-28 06:19:45 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -161,7 +161,7 @@
       "ticker": "RVMD",
       "sector_label": "RVMD",
       "headline": "[JLAW] VCP breakout, pivot=220.34",
-      "latest_at": "2026-08-28 00:00:15 UTC",
+      "latest_at": "2026-08-28 06:19:45 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -282,14 +282,14 @@
     }
   ],
   "logs": [
-    "2026-08-28 00:00:14 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-08-28 06:19:45 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-08-28 00:00:14 UTC",
+  "generated_at": "2026-08-28 06:19:45 UTC",
   "top_signal": {
     "ticker": "CGON",
     "sector_label": "CGON",
     "headline": "[JLAW] Pullback to BOL, META score=3",
-    "latest_at": "2026-08-28 00:00:15 UTC",
+    "latest_at": "2026-08-28 06:19:45 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
