@@ -1,39 +1,18 @@
 [
   {
-    "ticker": "CGON",
+    "ticker": "RHI",
     "type": "BUY_PULLBACK",
-    "price": 79.01000213623047,
-    "stop_loss": 77.42980209350586,
+    "price": 45.435001373291016,
+    "stop_loss": 44.526301345825196,
     "timing": "BUY NOW",
-    "trigger_price": 79.01,
-    "reason": "Pullback to BOL, META score=3",
+    "trigger_price": 45.435,
+    "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
     "sources": [
       "JLAW"
     ],
-    "rs_rating": 92,
-    "rev_growth_yoy": null,
-    "annual_rev_growth": null,
-    "sales_accelerating": null,
-    "fundamentals_detail": "revenue data unavailable",
-    "fundamentals_verified": false,
-    "fundamentals_ok": null
-  },
-  {
-    "ticker": "RVMD",
-    "type": "BUY_BREAKOUT",
-    "price": 221.14999389648438,
-    "stop_loss": 213.7297964477539,
-    "timing": "BUY NOW",
-    "trigger_price": 221.15,
-    "reason": "VCP breakout, pivot=220.34",
-    "source": "JLAW",
-    "strategy": "J Law (Stage 2 / VCP / META)",
-    "sources": [
-      "JLAW"
-    ],
-    "rs_rating": 98,
+    "rs_rating": 90,
     "rev_growth_yoy": null,
     "annual_rev_growth": null,
     "sales_accelerating": null,
