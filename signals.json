@@ -2,10 +2,10 @@
   {
     "ticker": "CMBT",
     "type": "BUY_PULLBACK",
-    "price": 18.2549991607666,
-    "stop_loss": 17.889899177551268,
+    "price": 18.280000686645508,
+    "stop_loss": 15.539400444030761,
     "timing": "BUY NOW",
-    "trigger_price": 18.255,
+    "trigger_price": 18.28,
     "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
@@ -21,34 +21,13 @@
     "fundamentals_ok": null
   },
   {
-    "ticker": "FRO",
-    "type": "BUY_PULLBACK",
-    "price": 43.97999954223633,
-    "stop_loss": 43.100399551391604,
-    "timing": "BUY NOW",
-    "trigger_price": 43.98,
-    "reason": "Pullback to BOL, META score=2",
-    "source": "JLAW",
-    "strategy": "J Law (Stage 2 / VCP / META)",
-    "sources": [
-      "JLAW"
-    ],
-    "rs_rating": 91,
-    "rev_growth_yoy": null,
-    "annual_rev_growth": null,
-    "sales_accelerating": null,
-    "fundamentals_detail": "revenue data unavailable",
-    "fundamentals_verified": false,
-    "fundamentals_ok": null
-  },
-  {
     "ticker": "WT",
     "type": "BUY_PULLBACK",
-    "price": 24.274999618530273,
-    "stop_loss": 23.789499626159667,
+    "price": 24.059999465942383,
+    "stop_loss": 23.578799476623534,
     "timing": "BUY NOW",
-    "trigger_price": 24.275,
-    "reason": "Pullback to BOL, META score=3",
+    "trigger_price": 24.06,
+    "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
     "sources": [
