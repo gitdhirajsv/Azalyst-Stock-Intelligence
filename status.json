@@ -1,28 +1,140 @@
 {
-  "portfolio_value": 0,
+  "portfolio_value": 97490.34,
   "total_deposited": 100000,
-  "cash": 92342.18,
-  "change_raw": 0,
-  "change": "0.00%",
-  "unrealised_str": "$0.00",
-  "realised_pnl": 0,
-  "realised_str": "$0.00",
-  "closed_trades": 0,
+  "cash": 74080.45,
+  "change_raw": -2.51,
+  "change": "-2.51%",
+  "unrealised_str": "-$288.32",
+  "realised_pnl": -2221.35,
+  "realised_str": "-$2221.35",
+  "closed_trades": 6,
   "usd_inr_rate": 1.0,
-  "positions": [],
-  "closed_trades_list": [],
+  "positions": [
+    {
+      "ticker": "TGT",
+      "sector": "Unclassified",
+      "source": "JLAW",
+      "rs_rating": 89,
+      "pnl_pct": -5.3,
+      "pnl_pct_str": "-5.30%",
+      "pnl": -288.32,
+      "pnl_str": "-$288.32",
+      "market_value": 5148.16015625
+    },
+    {
+      "ticker": "CMBT",
+      "sector": "Unclassified",
+      "source": "JLAW",
+      "rs_rating": 89,
+      "pnl_pct": 0.0,
+      "pnl_pct_str": "+0.00%",
+      "pnl": 0.0,
+      "pnl_str": "+$0.00",
+      "market_value": 18261.720685958862
+    }
+  ],
+  "closed_trades_list": [
+    {
+      "ticker": "AMN",
+      "entry": 34.79,
+      "exit": 34.0942,
+      "shares": 538,
+      "pnl": -374.34,
+      "pnl_str": "-$374.34",
+      "pnl_pct": -2.0,
+      "pnl_pct_str": "-2.00%",
+      "exit_date": "2026-08-24",
+      "exit_reason": "Stop Loss",
+      "winner": false
+    },
+    {
+      "ticker": "CGON",
+      "entry": 78.42,
+      "exit": 76.8516,
+      "shares": 237,
+      "pnl": -371.71,
+      "pnl_str": "-$371.71",
+      "pnl_pct": -2.0,
+      "pnl_pct_str": "-2.00%",
+      "exit_date": "2026-08-28",
+      "exit_reason": "Stop Loss",
+      "winner": false
+    },
+    {
+      "ticker": "RHI",
+      "entry": 45.31,
+      "exit": 44.4038,
+      "shares": 409,
+      "pnl": -370.64,
+      "pnl_str": "-$370.64",
+      "pnl_pct": -2.0,
+      "pnl_pct_str": "-2.00%",
+      "exit_date": "2026-08-29",
+      "exit_reason": "Stop Loss",
+      "winner": false
+    },
+    {
+      "ticker": "RHI",
+      "entry": 45.31,
+      "exit": 44.4038,
+      "shares": 408,
+      "pnl": -369.73,
+      "pnl_str": "-$369.73",
+      "pnl_pct": -2.0,
+      "pnl_pct_str": "-2.00%",
+      "exit_date": "2026-08-30",
+      "exit_reason": "Stop Loss",
+      "winner": false
+    },
+    {
+      "ticker": "RHI",
+      "entry": 45.31,
+      "exit": 44.4038,
+      "shares": 406,
+      "pnl": -367.92,
+      "pnl_str": "-$367.92",
+      "pnl_pct": -2.0,
+      "pnl_pct_str": "-2.00%",
+      "exit_date": "2026-08-30",
+      "exit_reason": "Stop Loss",
+      "winner": false
+    },
+    {
+      "ticker": "RHI",
+      "entry": 45.31,
+      "exit": 44.4038,
+      "shares": 405,
+      "pnl": -367.01,
+      "pnl_str": "-$367.01",
+      "pnl_pct": -2.0,
+      "pnl_pct_str": "-2.00%",
+      "exit_date": "2026-08-31",
+      "exit_reason": "Stop Loss",
+      "winner": false
+    }
+  ],
   "track_record": {
-    "total_trades": 0,
+    "total_trades": 6,
     "winners": 0,
-    "losers": 0,
-    "win_rate": 0,
-    "avg_win": 0,
-    "avg_loss": 0,
-    "profit_factor": 0,
-    "expectancy": 0,
-    "sharpe_proxy": 0,
-    "best": null,
-    "worst": null
+    "losers": 6,
+    "win_rate": 0.0,
+    "avg_win": 0.0,
+    "avg_loss": -2.0,
+    "profit_factor": 0.0,
+    "expectancy": -2.0,
+    "sharpe_proxy": 0.0,
+    "best": {
+      "ticker": "AMN",
+      "pnl_pct": -2.0,
+      "pnl_pct_str": "-2.00%",
+      "exit_reason": "Stop Loss"
+    },
+    "worst": {
+      "ticker": "AMN",
+      "pnl_pct": -2.0,
+      "pnl_pct_str": "-2.00%",
+      "exit_reason": "Stop Loss"
+    }
   },
   "market_snapshot": [
     {
@@ -49,38 +161,197 @@
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4499.3,
+      "price": 4499.2,
       "change_str": "+0.47%",
       "direction": "up"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 85.95,
-      "change_str": "+3.06%",
+      "price": 86.39,
+      "change_str": "+3.59%",
       "direction": "up"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 79025.1,
-      "change_str": "+1.00%",
+      "price": 78626.42,
+      "change_str": "+1.02%",
       "direction": "up"
     },
     {
       "label": "VIX",
       "ticker": "^VIX",
-      "price": 14.91,
-      "change_str": "+3.33%",
+      "price": 14.92,
+      "change_str": "+3.40%",
       "direction": "up"
     }
   ],
-  "regime": {},
-  "signals": [],
-  "watchlist": [],
-  "logs": [
-    "2026-08-31 20:23:16 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+  "regime": {
+    "risk_state": "RISK_ON",
+    "vol_regime": "LOW_VOL"
+  },
+  "signals": [
+    {
+      "ticker": "CMBT",
+      "sector_label": "CMBT",
+      "headline": "[JLAW] Pullback to BOL, META score=2",
+      "latest_at": "2026-09-01 00:05:03 UTC",
+      "severity": "MEDIUM",
+      "confidence": 82,
+      "source": "JLAW",
+      "sources": [
+        "JLAW"
+      ],
+      "strategy": "J Law (Stage 2 / VCP / META)",
+      "signal_type": "BUY_PULLBACK",
+      "entry": 18.280000686645508,
+      "stop_loss": 17.9144006729126,
+      "target": null,
+      "pivot": null,
+      "rs_rating": 89,
+      "risk_pct": null,
+      "actionable_now": false,
+      "timing": "BUY NOW",
+      "trigger_price": 18.28,
+      "confluence": false,
+      "rev_growth_yoy": null,
+      "annual_rev_growth": null,
+      "sales_accelerating": null,
+      "fundamentals_verified": false,
+      "fundamentals_ok": null,
+      "fundamentals_detail": "revenue data unavailable"
+    },
+    {
+      "ticker": "WT",
+      "sector_label": "WT",
+      "headline": "[JLAW] Pullback to BOL, META score=2",
+      "latest_at": "2026-09-01 00:05:03 UTC",
+      "severity": "MEDIUM",
+      "confidence": 82,
+      "source": "JLAW",
+      "sources": [
+        "JLAW"
+      ],
+      "strategy": "J Law (Stage 2 / VCP / META)",
+      "signal_type": "BUY_PULLBACK",
+      "entry": 24.059999465942383,
+      "stop_loss": 23.578799476623534,
+      "target": null,
+      "pivot": null,
+      "rs_rating": 90,
+      "risk_pct": null,
+      "actionable_now": false,
+      "timing": "BUY NOW",
+      "trigger_price": 24.06,
+      "confluence": false,
+      "rev_growth_yoy": 0.5730636382202254,
+      "annual_rev_growth": null,
+      "sales_accelerating": null,
+      "fundamentals_verified": true,
+      "fundamentals_ok": true,
+      "fundamentals_detail": "last-Q rev +57.3% YoY, accel=n/a"
+    }
   ],
-  "generated_at": "2026-08-31 20:23:16 UTC",
-  "top_signal": null
+  "watchlist": [
+    {
+      "ticker": "PANW",
+      "timing": "BUY ON BREAKOUT",
+      "timing_detail": "Coiling 1.4% under the VCP pivot 387.33. Buy the move through 387.33 only if volume expands to >= 1.4x the 50-day average.",
+      "trigger_price": 387.33,
+      "last_close": 382.13,
+      "pivot": 387.33,
+      "buy_zone_high": 406.6965,
+      "projected_risk_pct": 8.22,
+      "rs_rating": 94,
+      "source": "MINERVINI",
+      "actionable_now": false
+    },
+    {
+      "ticker": "RHI",
+      "timing": "BUY ON BREAKOUT",
+      "timing_detail": "Coiling 1.7% under the VCP pivot 46.09. Buy the move through 46.09 only if volume expands to >= 1.4x the 50-day average.",
+      "trigger_price": 46.0893,
+      "last_close": 45.34,
+      "pivot": 46.0893,
+      "buy_zone_high": 48.3938,
+      "projected_risk_pct": 5.08,
+      "rs_rating": 91,
+      "source": "MINERVINI",
+      "actionable_now": false
+    },
+    {
+      "ticker": "VLO",
+      "timing": "WAIT FOR PULLBACK",
+      "timing_detail": "Price 358.92 is 13.3% above the highest price this pivot is still buyable at (316.80) -- chasing here breaks the 5% buy zone (tops at 334.96) and/or the 8% max-risk stop. Alert on a pullback to 316.80.",
+      "trigger_price": 316.8043,
+      "last_close": 358.92,
+      "pivot": 319.0072,
+      "buy_zone_high": 334.9575,
+      "projected_risk_pct": 8.0,
+      "rs_rating": 94,
+      "source": "MINERVINI",
+      "actionable_now": false
+    },
+    {
+      "ticker": "CGAU",
+      "timing": "WAIT FOR BREAKOUT",
+      "timing_detail": "A VCP base is formed but price 22.92 is 7.0% below the pivot 24.52. No entry until it clears the pivot.",
+      "trigger_price": 24.52,
+      "last_close": 22.92,
+      "pivot": 24.52,
+      "buy_zone_high": 25.746,
+      "projected_risk_pct": 7.87,
+      "rs_rating": 92,
+      "source": "MINERVINI",
+      "actionable_now": false
+    },
+    {
+      "ticker": "FRO",
+      "timing": "WAIT FOR BREAKOUT",
+      "timing_detail": "A VCP base is formed but price 43.78 is 3.4% below the pivot 45.29. No entry until it clears the pivot.",
+      "trigger_price": 45.29,
+      "last_close": 43.78,
+      "pivot": 45.29,
+      "buy_zone_high": 47.5545,
+      "projected_risk_pct": 4.13,
+      "rs_rating": 91,
+      "source": "MINERVINI",
+      "actionable_now": false
+    }
+  ],
+  "logs": [
+    "2026-09-01 00:05:03 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+  ],
+  "generated_at": "2026-09-01 00:05:03 UTC",
+  "top_signal": {
+    "ticker": "CMBT",
+    "sector_label": "CMBT",
+    "headline": "[JLAW] Pullback to BOL, META score=2",
+    "latest_at": "2026-09-01 00:05:03 UTC",
+    "severity": "MEDIUM",
+    "confidence": 82,
+    "source": "JLAW",
+    "sources": [
+      "JLAW"
+    ],
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "signal_type": "BUY_PULLBACK",
+    "entry": 18.280000686645508,
+    "stop_loss": 17.9144006729126,
+    "target": null,
+    "pivot": null,
+    "rs_rating": 89,
+    "risk_pct": null,
+    "actionable_now": false,
+    "timing": "BUY NOW",
+    "trigger_price": 18.28,
+    "confluence": false,
+    "rev_growth_yoy": null,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_verified": false,
+    "fundamentals_ok": null,
+    "fundamentals_detail": "revenue data unavailable"
+  }
 }
