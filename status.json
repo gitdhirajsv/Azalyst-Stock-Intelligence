@@ -174,22 +174,22 @@
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4375.7,
-      "change_str": "-1.25%",
+      "price": 4374.9,
+      "change_str": "-1.27%",
       "direction": "down"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 90.68,
-      "change_str": "+5.74%",
+      "price": 90.79,
+      "change_str": "+5.87%",
       "direction": "up"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 76981.93,
-      "change_str": "-1.99%",
+      "price": 77463.28,
+      "change_str": "-1.38%",
       "direction": "down"
     },
     {
@@ -209,7 +209,7 @@
       "ticker": "CMBT",
       "sector_label": "CMBT",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-09-01 21:20:03 UTC",
+      "latest_at": "2026-09-01 23:36:23 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -369,14 +369,14 @@
     }
   ],
   "logs": [
-    "2026-09-01 21:20:02 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-09-01 23:36:23 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-09-01 21:20:02 UTC",
+  "generated_at": "2026-09-01 23:36:23 UTC",
   "top_signal": {
     "ticker": "CMBT",
     "sector_label": "CMBT",
     "headline": "[JLAW] Pullback to BOL, META score=2",
-    "latest_at": "2026-09-01 21:20:03 UTC",
+    "latest_at": "2026-09-01 23:36:23 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
