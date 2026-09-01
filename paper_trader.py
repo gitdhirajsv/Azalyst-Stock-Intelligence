@@ -53,9 +53,23 @@ def init_db():
     # Migration: positions predates source/sector/rs_rating tracking. Add the columns
     # if missing so existing DBs (now that they actually persist) don't need a wipe.
     existing_cols = {row[1] for row in c.execute("PRAGMA table_info(positions)").fetchall()}
-    for col, coltype in (("source", "TEXT"), ("sector", "TEXT"), ("rs_rating", "INTEGER")):
+    for col, coltype in (
+        ("source", "TEXT"), ("sector", "TEXT"), ("rs_rating", "INTEGER"),
+        # STK-09 (alpha post-mortem 2026-09-01): the daily bar an entry was
+        # taken against. Needed so the stop engine can skip the entry bar's
+        # own Low (price action that happened BEFORE the fill) and so the
+        # entry loop can refuse to act twice on the same completed bar.
+        ("entry_bar_date", "TEXT"),
+    ):
         if col not in existing_cols:
             c.execute(f"ALTER TABLE positions ADD COLUMN {col} {coltype}")
+
+    # STK-09: same migration for trades — bar_date records which completed
+    # daily bar a trade was decided on (the `date` column is the RUN date,
+    # which with hourly/weekend crons can be days after the bar).
+    trade_cols = {row[1] for row in c.execute("PRAGMA table_info(trades)").fetchall()}
+    if "bar_date" not in trade_cols:
+        c.execute("ALTER TABLE trades ADD COLUMN bar_date TEXT")
 
     conn.commit()
     conn.close()
@@ -127,7 +141,41 @@ def get_equity_snapshots():
     return df
 
 
-def execute_trade(ticker, action, shares, price, date=None, reason="", source=None, sector=None, rs_rating=None, stop_loss=None):
+def last_trade_bar_date(ticker):
+    """Latest bar a trade for `ticker` was decided on, or None if never traded.
+
+    STK-09 remediation (alpha post-mortem 2026-09-01): the only re-entry
+    guard used to be `if ticker in held_tickers` — vacated the instant a
+    stop-out SELL removed the position. With up to 5 entry-eligible cron
+    runs per completed daily bar (plus weekend runs), a still-valid signal
+    on the same stale bar produced a buy -> stop -> rebuy loop: the live
+    book bought and stopped out RHI FOUR times at identical prices over one
+    weekend (Aug 29-31), -2% each time, 66% of all realized losses. The
+    entry loop now refuses to act on a ticker whose latest recorded trade
+    was decided on (or after) the bar currently being evaluated.
+
+    COALESCE falls back to the run `date` for legacy rows with no bar_date:
+    a run date is >= its bar date, so the fallback can only be MORE
+    conservative (block, never allow) — exactly the right failure mode.
+    """
+    conn = _connect()
+    try:
+        c = conn.cursor()
+        c.execute(
+            "SELECT MAX(COALESCE(bar_date, date)) FROM trades WHERE ticker=?",
+            (ticker,),
+        )
+        row = c.fetchone()
+        return row[0] if row else None
+    except sqlite3.OperationalError:
+        # trades table absent (fresh DB before init_db, or a test that stubs
+        # init_db out): no history means nothing to latch on.
+        return None
+    finally:
+        conn.close()
+
+
+def execute_trade(ticker, action, shares, price, date=None, reason="", source=None, sector=None, rs_rating=None, stop_loss=None, bar_date=None):
     if date is None:
         date = datetime.now().strftime("%Y-%m-%d")
     # Do EVERYTHING on a single connection/transaction. The previous version began a
@@ -152,8 +200,8 @@ def execute_trade(ticker, action, shares, price, date=None, reason="", source=No
         else:
             return False, "Invalid action"
 
-        c.execute("INSERT INTO trades (ticker, action, shares, price, date, reason) VALUES (?,?,?,?,?,?)",
-                  (ticker, action, shares, price, date, reason))
+        c.execute("INSERT INTO trades (ticker, action, shares, price, date, reason, bar_date) VALUES (?,?,?,?,?,?,?)",
+                  (ticker, action, shares, price, date, reason, bar_date))
         c.execute("UPDATE cash SET cash=? WHERE id=1", (new_cash,))
 
         # Update positions
@@ -176,9 +224,9 @@ def execute_trade(ticker, action, shares, price, date=None, reason="", source=No
                 )
             else:
                 c.execute(
-                    "INSERT INTO positions (ticker, shares, avg_price, source, sector, rs_rating, stop_loss) "
-                    "VALUES (?,?,?,?,?,?,?)",
-                    (ticker, shares, price, source, sector, rs_rating, stop_loss),
+                    "INSERT INTO positions (ticker, shares, avg_price, source, sector, rs_rating, stop_loss, entry_bar_date) "
+                    "VALUES (?,?,?,?,?,?,?,?)",
+                    (ticker, shares, price, source, sector, rs_rating, stop_loss, bar_date),
                 )
         elif action == 'SELL':
             c.execute("SELECT shares FROM positions WHERE ticker=?", (ticker,))
