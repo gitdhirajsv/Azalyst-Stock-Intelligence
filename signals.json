@@ -2,11 +2,32 @@
   {
     "ticker": "CMBT",
     "type": "BUY_PULLBACK",
-    "price": 18.280000686645508,
-    "stop_loss": 15.539400444030761,
+    "price": 18.270000457763672,
+    "stop_loss": 17.9046004486084,
     "timing": "BUY NOW",
-    "trigger_price": 18.28,
-    "reason": "Pullback to BOL, META score=2",
+    "trigger_price": 18.27,
+    "reason": "Pullback to BOL, META score=3",
+    "source": "JLAW",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW"
+    ],
+    "rs_rating": 89,
+    "rev_growth_yoy": null,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_detail": "revenue data unavailable",
+    "fundamentals_verified": false,
+    "fundamentals_ok": null
+  },
+  {
+    "ticker": "TGT",
+    "type": "BUY_PULLBACK",
+    "price": 163.17999267578125,
+    "stop_loss": 159.91639282226564,
+    "timing": "BUY NOW",
+    "trigger_price": 163.18,
+    "reason": "Pullback to BOL, META score=3",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
     "sources": [
@@ -23,17 +44,17 @@
   {
     "ticker": "WT",
     "type": "BUY_PULLBACK",
-    "price": 24.059999465942383,
-    "stop_loss": 23.578799476623534,
+    "price": 24.40999984741211,
+    "stop_loss": 23.921799850463866,
     "timing": "BUY NOW",
-    "trigger_price": 24.06,
+    "trigger_price": 24.41,
     "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
     "sources": [
       "JLAW"
     ],
-    "rs_rating": 90,
+    "rs_rating": 91,
     "rev_growth_yoy": 0.5730636382202254,
     "annual_rev_growth": null,
     "sales_accelerating": null,
