@@ -161,22 +161,22 @@
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4499.2,
-      "change_str": "+0.47%",
+      "price": 4493.1,
+      "change_str": "+0.33%",
       "direction": "up"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 86.39,
-      "change_str": "+3.59%",
+      "price": 86.54,
+      "change_str": "+3.76%",
       "direction": "up"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 78626.42,
-      "change_str": "+1.02%",
+      "price": 78458.54,
+      "change_str": "+0.81%",
       "direction": "up"
     },
     {
@@ -196,7 +196,7 @@
       "ticker": "CMBT",
       "sector_label": "CMBT",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-09-01 00:05:03 UTC",
+      "latest_at": "2026-09-01 01:28:45 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -226,7 +226,7 @@
       "ticker": "WT",
       "sector_label": "WT",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-09-01 00:05:03 UTC",
+      "latest_at": "2026-09-01 01:28:45 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -321,14 +321,14 @@
     }
   ],
   "logs": [
-    "2026-09-01 00:05:03 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-09-01 01:28:45 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-09-01 00:05:03 UTC",
+  "generated_at": "2026-09-01 01:28:45 UTC",
   "top_signal": {
     "ticker": "CMBT",
     "sector_label": "CMBT",
     "headline": "[JLAW] Pullback to BOL, META score=2",
-    "latest_at": "2026-09-01 00:05:03 UTC",
+    "latest_at": "2026-09-01 01:28:45 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
