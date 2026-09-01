@@ -3,7 +3,7 @@
     "ticker": "CMBT",
     "type": "BUY_PULLBACK",
     "price": 18.280000686645508,
-    "stop_loss": 17.9144006729126,
+    "stop_loss": 15.539400444030761,
     "timing": "BUY NOW",
     "trigger_price": 18.28,
     "reason": "Pullback to BOL, META score=2",
