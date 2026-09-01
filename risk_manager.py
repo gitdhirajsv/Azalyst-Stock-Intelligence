@@ -163,6 +163,16 @@ def check_diversification(combined_positions, sector):
     if len(combined_positions) >= MAX_OPEN_POSITIONS:
         return False, f"max open positions ({MAX_OPEN_POSITIONS}) reached"
     target = _top_level_sector(sector)
+    # STK-10 (alpha post-mortem 2026-09-01): "Unclassified" is the ABSENCE of
+    # sector data, not a sector. fetch_sector uses yf.Ticker().info, which
+    # fails from cloud IPs (GitHub Actions — see fundamentals.py), so in
+    # production EVERY buy came back "Unclassified"; grouping them as one
+    # pseudo-sector with MAX_POSITIONS_PER_SECTOR=2 hard-capped the whole
+    # 8-slot book at 2 positions and left 74% of equity permanently in cash.
+    # Unknown-sector positions are exempt from the per-sector cap; real
+    # concentration remains bounded by MAX_OPEN_POSITIONS and total_risk_ok.
+    if target == "Unclassified":
+        return True, "OK (sector unknown — per-sector cap not applied)"
     sector_count = sum(
         1 for p in combined_positions if _top_level_sector(p.get('sector')) == target
     )
@@ -210,10 +220,27 @@ def evaluate_stop_loss_exits(positions, stock_data):
         avg_price = pos['avg_price']
         stop_loss = pos.get('stop_loss')
 
-        day = stock_data[ticker].iloc[-1]
+        df = stock_data[ticker]
+        day = df.iloc[-1]
         day_low = day['Low']
         day_open = day['Open']
         day_close = day['Close']
+
+        # STK-09 (alpha post-mortem 2026-09-01): never test the stop against
+        # the ENTRY bar's own Low. The fill is that bar's close, so its
+        # intrabar low happened before the position existed — a pullback
+        # entry, whose defining dip often already touched entry*0.98, was
+        # being stopped out on the very next cycle using pre-entry prices
+        # (the trigger of the RHI buy/stop/rebuy loop). From the next bar
+        # onward the check runs unchanged. Only the Low check is skipped;
+        # a genuinely broken close is caught next bar.
+        entry_bar = pos.get('entry_bar_date')
+        try:
+            latest_bar = str(pd.Timestamp(df.index[-1]).date())
+        except Exception:
+            latest_bar = None
+        if entry_bar and latest_bar and str(entry_bar)[:10] >= latest_bar:
+            continue
 
         catastrophe_level = avg_price * CATASTROPHE_BACKSTOP_PCT
         has_valid_stop = pd.notna(stop_loss) and 0 < stop_loss < avg_price
