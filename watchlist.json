@@ -87,6 +87,35 @@
     "reason": "WATCH (WAIT FOR BREAKOUT) trigger 387.33 -- A VCP base is formed but price 362.09 is 7.0% below the pivot 387.33. No entry until it clears the pivot."
   },
   {
+    "ticker": "CRWD",
+    "kind": "WATCH",
+    "type": "WATCH",
+    "source": "MINERVINI",
+    "strategy": "Minervini SEPA / VCP",
+    "timing": "WAIT FOR BREAKOUT",
+    "timing_detail": "A VCP base is formed but price 215.07 is 8.7% below the pivot 233.88. No entry until it clears the pivot.",
+    "trigger_price": 233.88,
+    "pivot": 233.88,
+    "buy_zone_high": 245.574,
+    "last_close": 215.07,
+    "stop_reference": 212.65,
+    "projected_risk_pct": 9.08,
+    "rs_rating": 92,
+    "actionable_now": false,
+    "trend_template": {
+      "c1_price_above_150_200": true,
+      "c2_150_above_200": true,
+      "c3_200_uptrending": true,
+      "c4_50_above_150_200": true,
+      "c5_price_above_50": true,
+      "c6_30pct_above_low": true,
+      "c7_within_25pct_high": true,
+      "c8_rs_rating_ok": true,
+      "rs_rating": 92
+    },
+    "reason": "WATCH (WAIT FOR BREAKOUT) trigger 233.88 -- A VCP base is formed but price 215.07 is 8.7% below the pivot 233.88. No entry until it clears the pivot."
+  },
+  {
     "ticker": "FRO",
     "kind": "WATCH",
     "type": "WATCH",
@@ -114,35 +143,6 @@
       "rs_rating": 92
     },
     "reason": "WATCH (WAIT FOR BREAKOUT) trigger 45.29 -- A VCP base is formed but price 44.32 is 2.2% below the pivot 45.29. No entry until it clears the pivot."
-  },
-  {
-    "ticker": "CRWD",
-    "kind": "WATCH",
-    "type": "WATCH",
-    "source": "MINERVINI",
-    "strategy": "Minervini SEPA / VCP",
-    "timing": "WAIT FOR BREAKOUT",
-    "timing_detail": "A VCP base is formed but price 215.07 is 8.7% below the pivot 233.88. No entry until it clears the pivot.",
-    "trigger_price": 233.88,
-    "pivot": 233.88,
-    "buy_zone_high": 245.574,
-    "last_close": 215.07,
-    "stop_reference": 212.65,
-    "projected_risk_pct": 9.08,
-    "rs_rating": 91,
-    "actionable_now": false,
-    "trend_template": {
-      "c1_price_above_150_200": true,
-      "c2_150_above_200": true,
-      "c3_200_uptrending": true,
-      "c4_50_above_150_200": true,
-      "c5_price_above_50": true,
-      "c6_30pct_above_low": true,
-      "c7_within_25pct_high": true,
-      "c8_rs_rating_ok": true,
-      "rs_rating": 91
-    },
-    "reason": "WATCH (WAIT FOR BREAKOUT) trigger 233.88 -- A VCP base is formed but price 215.07 is 8.7% below the pivot 233.88. No entry until it clears the pivot."
   },
   {
     "ticker": "WT",

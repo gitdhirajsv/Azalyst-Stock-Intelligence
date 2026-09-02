@@ -174,22 +174,22 @@
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4374.9,
-      "change_str": "-1.27%",
+      "price": 4371.9,
+      "change_str": "-1.34%",
       "direction": "down"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 90.79,
-      "change_str": "+5.87%",
+      "price": 90.97,
+      "change_str": "+6.08%",
       "direction": "up"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 77463.28,
-      "change_str": "-1.38%",
+      "price": 77267.41,
+      "change_str": "-1.63%",
       "direction": "down"
     },
     {
@@ -209,7 +209,7 @@
       "ticker": "CMBT",
       "sector_label": "CMBT",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-09-01 23:36:23 UTC",
+      "latest_at": "2026-09-02 00:31:47 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -277,6 +277,19 @@
       "actionable_now": false
     },
     {
+      "ticker": "CRWD",
+      "timing": "WAIT FOR BREAKOUT",
+      "timing_detail": "A VCP base is formed but price 215.07 is 8.7% below the pivot 233.88. No entry until it clears the pivot.",
+      "trigger_price": 233.88,
+      "last_close": 215.07,
+      "pivot": 233.88,
+      "buy_zone_high": 245.574,
+      "projected_risk_pct": 9.08,
+      "rs_rating": 92,
+      "source": "MINERVINI",
+      "actionable_now": false
+    },
+    {
       "ticker": "FRO",
       "timing": "WAIT FOR BREAKOUT",
       "timing_detail": "A VCP base is formed but price 44.32 is 2.2% below the pivot 45.29. No entry until it clears the pivot.",
@@ -286,19 +299,6 @@
       "buy_zone_high": 47.5545,
       "projected_risk_pct": 4.13,
       "rs_rating": 92,
-      "source": "MINERVINI",
-      "actionable_now": false
-    },
-    {
-      "ticker": "CRWD",
-      "timing": "WAIT FOR BREAKOUT",
-      "timing_detail": "A VCP base is formed but price 215.07 is 8.7% below the pivot 233.88. No entry until it clears the pivot.",
-      "trigger_price": 233.88,
-      "last_close": 215.07,
-      "pivot": 233.88,
-      "buy_zone_high": 245.574,
-      "projected_risk_pct": 9.08,
-      "rs_rating": 91,
       "source": "MINERVINI",
       "actionable_now": false
     },
@@ -369,14 +369,14 @@
     }
   ],
   "logs": [
-    "2026-09-01 23:36:23 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-09-02 00:31:47 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-09-01 23:36:23 UTC",
+  "generated_at": "2026-09-02 00:31:47 UTC",
   "top_signal": {
     "ticker": "CMBT",
     "sector_label": "CMBT",
     "headline": "[JLAW] Pullback to BOL, META score=2",
-    "latest_at": "2026-09-01 23:36:23 UTC",
+    "latest_at": "2026-09-02 00:31:47 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
