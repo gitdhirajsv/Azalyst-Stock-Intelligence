@@ -3,7 +3,7 @@
     "ticker": "CMBT",
     "type": "BUY_PULLBACK",
     "price": 18.270000457763672,
-    "stop_loss": 15.539400444030761,
+    "stop_loss": 17.9046004486084,
     "timing": "BUY NOW",
     "trigger_price": 18.27,
     "reason": "Pullback to BOL, META score=2",
@@ -13,6 +13,69 @@
       "JLAW"
     ],
     "rs_rating": 90,
+    "rev_growth_yoy": null,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_detail": "revenue data unavailable",
+    "fundamentals_verified": false,
+    "fundamentals_ok": null
+  },
+  {
+    "ticker": "FRO",
+    "type": "BUY_PULLBACK",
+    "price": 44.31999969482422,
+    "stop_loss": 43.433599700927736,
+    "timing": "BUY NOW",
+    "trigger_price": 44.32,
+    "reason": "Pullback to BOL, META score=2",
+    "source": "JLAW",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW"
+    ],
+    "rs_rating": 92,
+    "rev_growth_yoy": null,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_detail": "revenue data unavailable",
+    "fundamentals_verified": false,
+    "fundamentals_ok": null
+  },
+  {
+    "ticker": "HP",
+    "type": "BUY_BREAKOUT",
+    "price": 46.209999084472656,
+    "stop_loss": 43.65,
+    "timing": "BUY NOW",
+    "trigger_price": 46.21,
+    "reason": "VCP breakout, pivot=45.00",
+    "source": "JLAW",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW"
+    ],
+    "rs_rating": 90,
+    "rev_growth_yoy": null,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_detail": "revenue data unavailable",
+    "fundamentals_verified": false,
+    "fundamentals_ok": null
+  },
+  {
+    "ticker": "TGT",
+    "type": "BUY_PULLBACK",
+    "price": 163.75,
+    "stop_loss": 160.475,
+    "timing": "BUY NOW",
+    "trigger_price": 163.75,
+    "reason": "Pullback to BOL, META score=2",
+    "source": "JLAW",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW"
+    ],
+    "rs_rating": 89,
     "rev_growth_yoy": null,
     "annual_rev_growth": null,
     "sales_accelerating": null,
