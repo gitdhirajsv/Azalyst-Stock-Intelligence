@@ -1,10 +1,10 @@
 {
-  "portfolio_value": 97549.96,
+  "portfolio_value": 97326.15,
   "total_deposited": 100000,
   "cash": 63672.21,
-  "change_raw": -2.45,
-  "change": "-2.45%",
-  "unrealised_str": "+$198.18",
+  "change_raw": -2.67,
+  "change": "-2.67%",
+  "unrealised_str": "-$25.62",
   "realised_pnl": -2648.23,
   "realised_str": "-$2648.23",
   "closed_trades": 8,
@@ -15,33 +15,33 @@
       "sector": "Unclassified",
       "source": "JLAW",
       "rs_rating": 89,
-      "pnl_pct": -3.24,
-      "pnl_pct_str": "-3.24%",
-      "pnl": -175.94,
-      "pnl_str": "-$175.94",
-      "market_value": 5260.5439453125
+      "pnl_pct": -3.46,
+      "pnl_pct_str": "-3.46%",
+      "pnl": -188.16,
+      "pnl_str": "-$188.16",
+      "market_value": 5248.31982421875
     },
     {
       "ticker": "CMBT",
       "sector": "Unclassified",
       "source": "JLAW",
       "rs_rating": 89,
-      "pnl_pct": 2.95,
-      "pnl_pct_str": "+2.95%",
-      "pnl": 539.36,
-      "pnl_str": "+$539.36",
-      "market_value": 18801.080612182617
+      "pnl_pct": 2.3,
+      "pnl_pct_str": "+2.30%",
+      "pnl": 419.58,
+      "pnl_str": "+$419.58",
+      "market_value": 18681.300762176514
     },
     {
       "ticker": "HP",
       "sector": "Energy / Oil & Gas Drilling",
       "source": "JLAW",
       "rs_rating": 90,
-      "pnl_pct": -1.66,
-      "pnl_pct_str": "-1.66%",
-      "pnl": -165.24,
-      "pnl_str": "-$165.24",
-      "market_value": 9816.119934082031
+      "pnl_pct": -2.58,
+      "pnl_pct_str": "-2.58%",
+      "pnl": -257.04,
+      "pnl_str": "-$257.04",
+      "market_value": 9724.320098876953
     }
   ],
   "closed_trades_list": [
@@ -177,50 +177,50 @@
     {
       "label": "SPX",
       "ticker": "^GSPC",
-      "price": 7754.05,
-      "change_str": "+1.14%",
+      "price": 7747.71,
+      "change_str": "+1.06%",
       "direction": "up"
     },
     {
       "label": "NDX",
       "ticker": "^IXIC",
-      "price": 26624.23,
-      "change_str": "+1.55%",
+      "price": 26584.06,
+      "change_str": "+1.40%",
       "direction": "up"
     },
     {
       "label": "DJI",
       "ticker": "^DJI",
-      "price": 53703.08,
-      "change_str": "+1.21%",
+      "price": 53686.11,
+      "change_str": "+1.18%",
       "direction": "up"
     },
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4535.9,
-      "change_str": "+3.88%",
+      "price": 4520.3,
+      "change_str": "+3.53%",
       "direction": "up"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 91.51,
-      "change_str": "+0.55%",
+      "price": 91.67,
+      "change_str": "+0.73%",
       "direction": "up"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 81125.48,
-      "change_str": "+4.95%",
+      "price": 81567.6,
+      "change_str": "+5.52%",
       "direction": "up"
     },
     {
       "label": "VIX",
       "ticker": "^VIX",
-      "price": 14.51,
-      "change_str": "-4.54%",
+      "price": 14.32,
+      "change_str": "-5.79%",
       "direction": "down"
     }
   ],
@@ -233,9 +233,9 @@
     {
       "ticker": "VLO",
       "timing": "WAIT FOR PULLBACK",
-      "timing_detail": "Price 371.11 is 17.1% above the highest price this pivot is still buyable at (316.80) -- chasing here breaks the 5% buy zone (tops at 334.96) and/or the 8% max-risk stop. Alert on a pullback to 316.80.",
+      "timing_detail": "Price 370.69 is 17.0% above the highest price this pivot is still buyable at (316.80) -- chasing here breaks the 5% buy zone (tops at 334.96) and/or the 8% max-risk stop. Alert on a pullback to 316.80.",
       "trigger_price": 316.8043,
-      "last_close": 371.115,
+      "last_close": 370.69,
       "pivot": 319.0072,
       "buy_zone_high": 334.9575,
       "projected_risk_pct": 8.0,
@@ -246,9 +246,9 @@
     {
       "ticker": "FRO",
       "timing": "WAIT FOR PULLBACK",
-      "timing_detail": "Price 45.32 is 1.3% above the highest price this pivot is still buyable at (44.74) -- chasing here breaks the 5% buy zone (tops at 47.43) and/or the 8% max-risk stop. Alert on a pullback to 44.74.",
+      "timing_detail": "Price 45.42 is 1.5% above the highest price this pivot is still buyable at (44.74) -- chasing here breaks the 5% buy zone (tops at 47.43) and/or the 8% max-risk stop. Alert on a pullback to 44.74.",
       "trigger_price": 44.7391,
-      "last_close": 45.32,
+      "last_close": 45.42,
       "pivot": 45.17,
       "buy_zone_high": 47.4285,
       "projected_risk_pct": 8.0,
@@ -257,11 +257,24 @@
       "actionable_now": false
     },
     {
+      "ticker": "WT",
+      "timing": "WAIT FOR BREAKOUT",
+      "timing_detail": "A VCP base is formed but price 24.87 is 4.1% below the pivot 25.89. No entry until it clears the pivot.",
+      "trigger_price": 25.89,
+      "last_close": 24.87,
+      "pivot": 25.89,
+      "buy_zone_high": 27.1845,
+      "projected_risk_pct": 9.39,
+      "rs_rating": 91,
+      "source": "MINERVINI",
+      "actionable_now": false
+    },
+    {
       "ticker": "CMBT",
       "timing": "WAIT FOR PULLBACK",
-      "timing_detail": "Price 18.80 is 16.6% above the highest price this pivot is still buyable at (16.12) -- chasing here breaks the 5% buy zone (tops at 16.82) and/or the 8% max-risk stop. Alert on a pullback to 16.12.",
+      "timing_detail": "Price 18.70 is 16.0% above the highest price this pivot is still buyable at (16.12) -- chasing here breaks the 5% buy zone (tops at 16.82) and/or the 8% max-risk stop. Alert on a pullback to 16.12.",
       "trigger_price": 16.1196,
-      "last_close": 18.8,
+      "last_close": 18.7,
       "pivot": 16.02,
       "buy_zone_high": 16.821,
       "projected_risk_pct": 8.0,
@@ -272,59 +285,33 @@
     {
       "ticker": "PTEN",
       "timing": "WAIT FOR BREAKOUT",
-      "timing_detail": "A VCP base is formed but price 12.56 is 6.0% below the pivot 13.31. No entry until it clears the pivot.",
+      "timing_detail": "A VCP base is formed but price 12.55 is 6.1% below the pivot 13.31. No entry until it clears the pivot.",
       "trigger_price": 13.31,
-      "last_close": 12.555,
+      "last_close": 12.55,
       "pivot": 13.31,
       "buy_zone_high": 13.9755,
-      "projected_risk_pct": 5.82,
+      "projected_risk_pct": 6.27,
       "rs_rating": 90,
       "source": "MINERVINI",
       "actionable_now": false
     },
     {
-      "ticker": "WT",
-      "timing": "WAIT FOR BREAKOUT",
-      "timing_detail": "A VCP base is formed but price 24.43 is 4.5% below the pivot 25.53. No entry until it clears the pivot.",
-      "trigger_price": 25.53,
-      "last_close": 24.43,
-      "pivot": 25.53,
-      "buy_zone_high": 26.8065,
-      "projected_risk_pct": 8.11,
-      "rs_rating": 90,
-      "source": "MINERVINI",
-      "actionable_now": false
-    },
-    {
-      "ticker": "SLDE",
+      "ticker": "SSRM",
       "timing": "WAIT FOR PULLBACK",
-      "timing_detail": "Price 24.73 is 1.3% above the highest price this pivot is still buyable at (24.42) -- chasing here breaks the 5% buy zone (tops at 24.94) and/or the 8% max-risk stop. Alert on a pullback to 24.42.",
-      "trigger_price": 24.4185,
-      "last_close": 24.73,
-      "pivot": 23.75,
-      "buy_zone_high": 24.9375,
+      "timing_detail": "Price 38.89 is 0.2% above the highest price this pivot is still buyable at (38.79) -- chasing here breaks the 5% buy zone (tops at 41.40) and/or the 8% max-risk stop. Alert on a pullback to 38.79.",
+      "trigger_price": 38.7935,
+      "last_close": 38.89,
+      "pivot": 39.43,
+      "buy_zone_high": 41.4015,
       "projected_risk_pct": 8.0,
-      "rs_rating": 89,
-      "source": "MINERVINI",
-      "actionable_now": false
-    },
-    {
-      "ticker": "TGT",
-      "timing": "WAIT FOR BREAKOUT",
-      "timing_detail": "A VCP base is formed but price 164.55 is 3.8% below the pivot 170.75. No entry until it clears the pivot.",
-      "trigger_price": 170.75,
-      "last_close": 164.55,
-      "pivot": 170.75,
-      "buy_zone_high": 179.2875,
-      "projected_risk_pct": 6.19,
       "rs_rating": 89,
       "source": "MINERVINI",
       "actionable_now": false
     }
   ],
   "logs": [
-    "2026-09-03 18:02:46 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-09-03 21:21:36 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-09-03 18:02:46 UTC",
+  "generated_at": "2026-09-03 21:21:36 UTC",
   "top_signal": null
 }
