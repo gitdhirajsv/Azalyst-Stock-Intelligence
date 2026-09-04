@@ -6,14 +6,14 @@
     "source": "MINERVINI",
     "strategy": "Minervini SEPA / VCP",
     "timing": "BUY ON BREAKOUT",
-    "timing_detail": "Coiling 0.9% under the VCP pivot 375.11. Buy the move through 375.11 only if volume expands to >= 1.4x the 50-day average.",
+    "timing_detail": "Coiling 1.2% under the VCP pivot 375.11. Buy the move through 375.11 only if volume expands to >= 1.4x the 50-day average.",
     "trigger_price": 375.11,
     "pivot": 375.11,
     "buy_zone_high": 393.8655,
-    "last_close": 371.8925,
+    "last_close": 370.72,
     "stop_reference": 360.3101,
     "projected_risk_pct": 3.95,
-    "rs_rating": 95,
+    "rs_rating": 94,
     "actionable_now": false,
     "trend_template": {
       "c1_price_above_150_200": true,
@@ -24,25 +24,25 @@
       "c6_30pct_above_low": true,
       "c7_within_25pct_high": true,
       "c8_rs_rating_ok": true,
-      "rs_rating": 95
+      "rs_rating": 94
     },
-    "reason": "WATCH (BUY ON BREAKOUT) trigger 375.11 -- Coiling 0.9% under the VCP pivot 375.11. Buy the move through 375.11 only if volume expands to >= 1.4x the 50-day average."
+    "reason": "WATCH (BUY ON BREAKOUT) trigger 375.11 -- Coiling 1.2% under the VCP pivot 375.11. Buy the move through 375.11 only if volume expands to >= 1.4x the 50-day average."
   },
   {
-    "ticker": "CMBT",
+    "ticker": "SLDE",
     "kind": "WATCH",
     "type": "WATCH",
     "source": "MINERVINI",
     "strategy": "Minervini SEPA / VCP",
-    "timing": "WAIT FOR PULLBACK",
-    "timing_detail": "Price 19.37 is 20.2% above the highest price this pivot is still buyable at (16.12) -- chasing here breaks the 5% buy zone (tops at 16.82) and/or the 8% max-risk stop. Alert on a pullback to 16.12.",
-    "trigger_price": 16.1196,
-    "pivot": 16.02,
-    "buy_zone_high": 16.821,
-    "last_close": 19.3691,
-    "stop_reference": 14.83,
-    "projected_risk_pct": 8.0,
-    "rs_rating": 92,
+    "timing": "BUY ON BREAKOUT",
+    "timing_detail": "Coiling 1.7% under the VCP pivot 25.09. Buy the move through 25.09 only if volume expands to >= 1.4x the 50-day average.",
+    "trigger_price": 25.09,
+    "pivot": 25.09,
+    "buy_zone_high": 26.3445,
+    "last_close": 24.67,
+    "stop_reference": 24.1,
+    "projected_risk_pct": 3.95,
+    "rs_rating": 89,
     "actionable_now": false,
     "trend_template": {
       "c1_price_above_150_200": true,
@@ -53,9 +53,9 @@
       "c6_30pct_above_low": true,
       "c7_within_25pct_high": true,
       "c8_rs_rating_ok": true,
-      "rs_rating": 92
+      "rs_rating": 89
     },
-    "reason": "WATCH (WAIT FOR PULLBACK) trigger 16.12 -- Price 19.37 is 20.2% above the highest price this pivot is still buyable at (16.12) -- chasing here breaks the 5% buy zone (tops at 16.82) and/or the 8% max-risk stop. Alert on a pullback to 16.12."
+    "reason": "WATCH (BUY ON BREAKOUT) trigger 25.09 -- Coiling 1.7% under the VCP pivot 25.09. Buy the move through 25.09 only if volume expands to >= 1.4x the 50-day average."
   },
   {
     "ticker": "FRO",
@@ -64,14 +64,14 @@
     "source": "MINERVINI",
     "strategy": "Minervini SEPA / VCP",
     "timing": "WAIT FOR PULLBACK",
-    "timing_detail": "Price 45.95 is 2.7% above the highest price this pivot is still buyable at (44.74) -- chasing here breaks the 5% buy zone (tops at 47.43) and/or the 8% max-risk stop. Alert on a pullback to 44.74.",
+    "timing_detail": "Price 46.12 is 3.1% above the highest price this pivot is still buyable at (44.74) -- chasing here breaks the 5% buy zone (tops at 47.43) and/or the 8% max-risk stop. Alert on a pullback to 44.74.",
     "trigger_price": 44.7391,
     "pivot": 45.17,
     "buy_zone_high": 47.4285,
-    "last_close": 45.95,
+    "last_close": 46.12,
     "stop_reference": 41.16,
     "projected_risk_pct": 8.0,
-    "rs_rating": 92,
+    "rs_rating": 93,
     "actionable_now": false,
     "trend_template": {
       "c1_price_above_150_200": true,
@@ -82,9 +82,38 @@
       "c6_30pct_above_low": true,
       "c7_within_25pct_high": true,
       "c8_rs_rating_ok": true,
-      "rs_rating": 92
+      "rs_rating": 93
     },
-    "reason": "WATCH (WAIT FOR PULLBACK) trigger 44.74 -- Price 45.95 is 2.7% above the highest price this pivot is still buyable at (44.74) -- chasing here breaks the 5% buy zone (tops at 47.43) and/or the 8% max-risk stop. Alert on a pullback to 44.74."
+    "reason": "WATCH (WAIT FOR PULLBACK) trigger 44.74 -- Price 46.12 is 3.1% above the highest price this pivot is still buyable at (44.74) -- chasing here breaks the 5% buy zone (tops at 47.43) and/or the 8% max-risk stop. Alert on a pullback to 44.74."
+  },
+  {
+    "ticker": "PARR",
+    "kind": "WATCH",
+    "type": "WATCH",
+    "source": "MINERVINI",
+    "strategy": "Minervini SEPA / VCP",
+    "timing": "WAIT FOR BREAKOUT",
+    "timing_detail": "A VCP base is formed but price 81.32 is 2.8% below the pivot 83.56. No entry until it clears the pivot.",
+    "trigger_price": 83.56,
+    "pivot": 83.56,
+    "buy_zone_high": 87.738,
+    "last_close": 81.32,
+    "stop_reference": 78.3233,
+    "projected_risk_pct": 6.27,
+    "rs_rating": 93,
+    "actionable_now": false,
+    "trend_template": {
+      "c1_price_above_150_200": true,
+      "c2_150_above_200": true,
+      "c3_200_uptrending": true,
+      "c4_50_above_150_200": true,
+      "c5_price_above_50": true,
+      "c6_30pct_above_low": true,
+      "c7_within_25pct_high": true,
+      "c8_rs_rating_ok": true,
+      "rs_rating": 93
+    },
+    "reason": "WATCH (WAIT FOR BREAKOUT) trigger 83.56 -- A VCP base is formed but price 81.32 is 2.8% below the pivot 83.56. No entry until it clears the pivot."
   },
   {
     "ticker": "WT",
@@ -93,11 +122,11 @@
     "source": "MINERVINI",
     "strategy": "Minervini SEPA / VCP",
     "timing": "WAIT FOR BREAKOUT",
-    "timing_detail": "A VCP base is formed but price 24.85 is 4.3% below the pivot 25.91. No entry until it clears the pivot.",
+    "timing_detail": "A VCP base is formed but price 24.89 is 4.1% below the pivot 25.91. No entry until it clears the pivot.",
     "trigger_price": 25.91,
     "pivot": 25.91,
     "buy_zone_high": 27.2055,
-    "last_close": 24.85,
+    "last_close": 24.89,
     "stop_reference": 23.87,
     "projected_risk_pct": 7.87,
     "rs_rating": 92,
@@ -113,7 +142,36 @@
       "c8_rs_rating_ok": true,
       "rs_rating": 92
     },
-    "reason": "WATCH (WAIT FOR BREAKOUT) trigger 25.91 -- A VCP base is formed but price 24.85 is 4.3% below the pivot 25.91. No entry until it clears the pivot."
+    "reason": "WATCH (WAIT FOR BREAKOUT) trigger 25.91 -- A VCP base is formed but price 24.89 is 4.1% below the pivot 25.91. No entry until it clears the pivot."
+  },
+  {
+    "ticker": "PTEN",
+    "kind": "WATCH",
+    "type": "WATCH",
+    "source": "MINERVINI",
+    "strategy": "Minervini SEPA / VCP",
+    "timing": "WAIT FOR BREAKOUT",
+    "timing_detail": "A VCP base is formed but price 12.42 is 7.2% below the pivot 13.31. No entry until it clears the pivot.",
+    "trigger_price": 13.31,
+    "pivot": 13.31,
+    "buy_zone_high": 13.9755,
+    "last_close": 12.42,
+    "stop_reference": 12.225,
+    "projected_risk_pct": 8.15,
+    "rs_rating": 89,
+    "actionable_now": false,
+    "trend_template": {
+      "c1_price_above_150_200": true,
+      "c2_150_above_200": true,
+      "c3_200_uptrending": true,
+      "c4_50_above_150_200": true,
+      "c5_price_above_50": true,
+      "c6_30pct_above_low": true,
+      "c7_within_25pct_high": true,
+      "c8_rs_rating_ok": true,
+      "rs_rating": 89
+    },
+    "reason": "WATCH (WAIT FOR BREAKOUT) trigger 13.31 -- A VCP base is formed but price 12.42 is 7.2% below the pivot 13.31. No entry until it clears the pivot."
   },
   {
     "ticker": "TGT",
@@ -122,11 +180,11 @@
     "source": "MINERVINI",
     "strategy": "Minervini SEPA / VCP",
     "timing": "WAIT FOR BREAKOUT",
-    "timing_detail": "A VCP base is formed but price 164.54 is 3.8% below the pivot 170.75. No entry until it clears the pivot.",
+    "timing_detail": "A VCP base is formed but price 164.44 is 3.8% below the pivot 170.75. No entry until it clears the pivot.",
     "trigger_price": 170.75,
     "pivot": 170.75,
     "buy_zone_high": 179.2875,
-    "last_close": 164.54,
+    "last_close": 164.44,
     "stop_reference": 160.18,
     "projected_risk_pct": 6.19,
     "rs_rating": 89,
@@ -142,6 +200,6 @@
       "c8_rs_rating_ok": true,
       "rs_rating": 89
     },
-    "reason": "WATCH (WAIT FOR BREAKOUT) trigger 170.75 -- A VCP base is formed but price 164.54 is 3.8% below the pivot 170.75. No entry until it clears the pivot."
+    "reason": "WATCH (WAIT FOR BREAKOUT) trigger 170.75 -- A VCP base is formed but price 164.44 is 3.8% below the pivot 170.75. No entry until it clears the pivot."
   }
 ]
