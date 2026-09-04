@@ -198,22 +198,22 @@
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4519.8,
-      "change_str": "+3.52%",
+      "price": 4526.8,
+      "change_str": "+3.68%",
       "direction": "up"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 91.86,
-      "change_str": "+0.93%",
+      "price": 91.63,
+      "change_str": "+0.68%",
       "direction": "up"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 81237.46,
-      "change_str": "+5.09%",
+      "price": 81315.0,
+      "change_str": "+5.19%",
       "direction": "up"
     },
     {
@@ -225,93 +225,14 @@
     }
   ],
   "regime": {
-    "risk_state": "RISK_ON",
-    "vol_regime": "LOW_VOL"
+    "risk_state": "RISK_OFF",
+    "vol_regime": "HIGH_VOL"
   },
   "signals": [],
-  "watchlist": [
-    {
-      "ticker": "VLO",
-      "timing": "WAIT FOR PULLBACK",
-      "timing_detail": "Price 370.69 is 17.0% above the highest price this pivot is still buyable at (316.80) -- chasing here breaks the 5% buy zone (tops at 334.96) and/or the 8% max-risk stop. Alert on a pullback to 316.80.",
-      "trigger_price": 316.8043,
-      "last_close": 370.69,
-      "pivot": 319.0072,
-      "buy_zone_high": 334.9575,
-      "projected_risk_pct": 8.0,
-      "rs_rating": 94,
-      "source": "MINERVINI",
-      "actionable_now": false
-    },
-    {
-      "ticker": "FRO",
-      "timing": "WAIT FOR PULLBACK",
-      "timing_detail": "Price 45.42 is 1.5% above the highest price this pivot is still buyable at (44.74) -- chasing here breaks the 5% buy zone (tops at 47.43) and/or the 8% max-risk stop. Alert on a pullback to 44.74.",
-      "trigger_price": 44.7391,
-      "last_close": 45.42,
-      "pivot": 45.17,
-      "buy_zone_high": 47.4285,
-      "projected_risk_pct": 8.0,
-      "rs_rating": 92,
-      "source": "MINERVINI",
-      "actionable_now": false
-    },
-    {
-      "ticker": "WT",
-      "timing": "WAIT FOR BREAKOUT",
-      "timing_detail": "A VCP base is formed but price 24.87 is 4.1% below the pivot 25.89. No entry until it clears the pivot.",
-      "trigger_price": 25.89,
-      "last_close": 24.87,
-      "pivot": 25.89,
-      "buy_zone_high": 27.1845,
-      "projected_risk_pct": 9.39,
-      "rs_rating": 91,
-      "source": "MINERVINI",
-      "actionable_now": false
-    },
-    {
-      "ticker": "CMBT",
-      "timing": "WAIT FOR PULLBACK",
-      "timing_detail": "Price 18.70 is 16.0% above the highest price this pivot is still buyable at (16.12) -- chasing here breaks the 5% buy zone (tops at 16.82) and/or the 8% max-risk stop. Alert on a pullback to 16.12.",
-      "trigger_price": 16.1196,
-      "last_close": 18.7,
-      "pivot": 16.02,
-      "buy_zone_high": 16.821,
-      "projected_risk_pct": 8.0,
-      "rs_rating": 90,
-      "source": "MINERVINI",
-      "actionable_now": false
-    },
-    {
-      "ticker": "PTEN",
-      "timing": "WAIT FOR BREAKOUT",
-      "timing_detail": "A VCP base is formed but price 12.55 is 6.1% below the pivot 13.31. No entry until it clears the pivot.",
-      "trigger_price": 13.31,
-      "last_close": 12.55,
-      "pivot": 13.31,
-      "buy_zone_high": 13.9755,
-      "projected_risk_pct": 6.27,
-      "rs_rating": 90,
-      "source": "MINERVINI",
-      "actionable_now": false
-    },
-    {
-      "ticker": "SSRM",
-      "timing": "WAIT FOR PULLBACK",
-      "timing_detail": "Price 38.89 is 0.2% above the highest price this pivot is still buyable at (38.79) -- chasing here breaks the 5% buy zone (tops at 41.40) and/or the 8% max-risk stop. Alert on a pullback to 38.79.",
-      "trigger_price": 38.7935,
-      "last_close": 38.89,
-      "pivot": 39.43,
-      "buy_zone_high": 41.4015,
-      "projected_risk_pct": 8.0,
-      "rs_rating": 89,
-      "source": "MINERVINI",
-      "actionable_now": false
-    }
-  ],
+  "watchlist": [],
   "logs": [
-    "2026-09-03 23:30:15 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-09-04 00:25:44 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-09-03 23:30:15 UTC",
+  "generated_at": "2026-09-04 00:25:44 UTC",
   "top_signal": null
 }
