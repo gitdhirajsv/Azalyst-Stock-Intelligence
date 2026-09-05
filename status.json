@@ -212,8 +212,8 @@
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 79630.77,
-      "change_str": "-2.02%",
+      "price": 79675.4,
+      "change_str": "-1.96%",
       "direction": "down"
     },
     {
@@ -225,166 +225,14 @@
     }
   ],
   "regime": {
-    "risk_state": "RISK_ON",
-    "vol_regime": "LOW_VOL"
+    "risk_state": "RISK_OFF",
+    "vol_regime": "HIGH_VOL"
   },
-  "signals": [
-    {
-      "ticker": "CMBT",
-      "sector_label": "CMBT",
-      "headline": "[JLAW] VCP breakout, pivot=16.02",
-      "latest_at": "2026-09-04 23:14:01 UTC",
-      "severity": "MEDIUM",
-      "confidence": 82,
-      "source": "JLAW",
-      "sources": [
-        "JLAW"
-      ],
-      "strategy": "J Law (Stage 2 / VCP / META)",
-      "signal_type": "BUY_BREAKOUT",
-      "entry": 19.489999771118164,
-      "stop_loss": 15.539400444030761,
-      "target": null,
-      "pivot": null,
-      "rs_rating": 92,
-      "risk_pct": null,
-      "actionable_now": false,
-      "timing": "BUY NOW",
-      "trigger_price": 19.49,
-      "confluence": false,
-      "rev_growth_yoy": null,
-      "annual_rev_growth": null,
-      "sales_accelerating": null,
-      "fundamentals_verified": false,
-      "fundamentals_ok": null,
-      "fundamentals_detail": "revenue data unavailable"
-    }
-  ],
-  "watchlist": [
-    {
-      "ticker": "VLO",
-      "timing": "BUY ON BREAKOUT",
-      "timing_detail": "Coiling 1.2% under the VCP pivot 375.11. Buy the move through 375.11 only if volume expands to >= 1.4x the 50-day average.",
-      "trigger_price": 375.11,
-      "last_close": 370.72,
-      "pivot": 375.11,
-      "buy_zone_high": 393.8655,
-      "projected_risk_pct": 3.95,
-      "rs_rating": 94,
-      "source": "MINERVINI",
-      "actionable_now": false
-    },
-    {
-      "ticker": "SLDE",
-      "timing": "BUY ON BREAKOUT",
-      "timing_detail": "Coiling 1.7% under the VCP pivot 25.09. Buy the move through 25.09 only if volume expands to >= 1.4x the 50-day average.",
-      "trigger_price": 25.09,
-      "last_close": 24.67,
-      "pivot": 25.09,
-      "buy_zone_high": 26.3445,
-      "projected_risk_pct": 3.95,
-      "rs_rating": 89,
-      "source": "MINERVINI",
-      "actionable_now": false
-    },
-    {
-      "ticker": "FRO",
-      "timing": "WAIT FOR PULLBACK",
-      "timing_detail": "Price 46.12 is 3.1% above the highest price this pivot is still buyable at (44.74) -- chasing here breaks the 5% buy zone (tops at 47.43) and/or the 8% max-risk stop. Alert on a pullback to 44.74.",
-      "trigger_price": 44.7391,
-      "last_close": 46.12,
-      "pivot": 45.17,
-      "buy_zone_high": 47.4285,
-      "projected_risk_pct": 8.0,
-      "rs_rating": 93,
-      "source": "MINERVINI",
-      "actionable_now": false
-    },
-    {
-      "ticker": "PARR",
-      "timing": "WAIT FOR BREAKOUT",
-      "timing_detail": "A VCP base is formed but price 81.32 is 2.8% below the pivot 83.56. No entry until it clears the pivot.",
-      "trigger_price": 83.56,
-      "last_close": 81.32,
-      "pivot": 83.56,
-      "buy_zone_high": 87.738,
-      "projected_risk_pct": 6.27,
-      "rs_rating": 93,
-      "source": "MINERVINI",
-      "actionable_now": false
-    },
-    {
-      "ticker": "WT",
-      "timing": "WAIT FOR BREAKOUT",
-      "timing_detail": "A VCP base is formed but price 24.89 is 4.1% below the pivot 25.91. No entry until it clears the pivot.",
-      "trigger_price": 25.91,
-      "last_close": 24.89,
-      "pivot": 25.91,
-      "buy_zone_high": 27.2055,
-      "projected_risk_pct": 7.87,
-      "rs_rating": 92,
-      "source": "MINERVINI",
-      "actionable_now": false
-    },
-    {
-      "ticker": "PTEN",
-      "timing": "WAIT FOR BREAKOUT",
-      "timing_detail": "A VCP base is formed but price 12.42 is 7.2% below the pivot 13.31. No entry until it clears the pivot.",
-      "trigger_price": 13.31,
-      "last_close": 12.42,
-      "pivot": 13.31,
-      "buy_zone_high": 13.9755,
-      "projected_risk_pct": 8.15,
-      "rs_rating": 89,
-      "source": "MINERVINI",
-      "actionable_now": false
-    },
-    {
-      "ticker": "TGT",
-      "timing": "WAIT FOR BREAKOUT",
-      "timing_detail": "A VCP base is formed but price 164.44 is 3.8% below the pivot 170.75. No entry until it clears the pivot.",
-      "trigger_price": 170.75,
-      "last_close": 164.44,
-      "pivot": 170.75,
-      "buy_zone_high": 179.2875,
-      "projected_risk_pct": 6.19,
-      "rs_rating": 89,
-      "source": "MINERVINI",
-      "actionable_now": false
-    }
-  ],
+  "signals": [],
+  "watchlist": [],
   "logs": [
-    "2026-09-04 23:14:01 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-09-05 00:27:27 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-09-04 23:14:01 UTC",
-  "top_signal": {
-    "ticker": "CMBT",
-    "sector_label": "CMBT",
-    "headline": "[JLAW] VCP breakout, pivot=16.02",
-    "latest_at": "2026-09-04 23:14:01 UTC",
-    "severity": "MEDIUM",
-    "confidence": 82,
-    "source": "JLAW",
-    "sources": [
-      "JLAW"
-    ],
-    "strategy": "J Law (Stage 2 / VCP / META)",
-    "signal_type": "BUY_BREAKOUT",
-    "entry": 19.489999771118164,
-    "stop_loss": 15.539400444030761,
-    "target": null,
-    "pivot": null,
-    "rs_rating": 92,
-    "risk_pct": null,
-    "actionable_now": false,
-    "timing": "BUY NOW",
-    "trigger_price": 19.49,
-    "confluence": false,
-    "rev_growth_yoy": null,
-    "annual_rev_growth": null,
-    "sales_accelerating": null,
-    "fundamentals_verified": false,
-    "fundamentals_ok": null,
-    "fundamentals_detail": "revenue data unavailable"
-  }
+  "generated_at": "2026-09-05 00:27:27 UTC",
+  "top_signal": null
 }
