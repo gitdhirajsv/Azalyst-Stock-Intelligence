@@ -212,9 +212,9 @@
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 79621.33,
-      "change_str": "-0.06%",
-      "direction": "down"
+      "price": 79709.31,
+      "change_str": "+0.05%",
+      "direction": "up"
     },
     {
       "label": "VIX",
@@ -233,7 +233,7 @@
       "ticker": "CMBT",
       "sector_label": "CMBT",
       "headline": "[JLAW] VCP breakout, pivot=16.02",
-      "latest_at": "2026-09-05 11:01:18 UTC",
+      "latest_at": "2026-09-05 15:33:38 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -354,14 +354,14 @@
     }
   ],
   "logs": [
-    "2026-09-05 11:01:18 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-09-05 15:33:38 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-09-05 11:01:18 UTC",
+  "generated_at": "2026-09-05 15:33:38 UTC",
   "top_signal": {
     "ticker": "CMBT",
     "sector_label": "CMBT",
     "headline": "[JLAW] VCP breakout, pivot=16.02",
-    "latest_at": "2026-09-05 11:01:18 UTC",
+    "latest_at": "2026-09-05 15:33:38 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
