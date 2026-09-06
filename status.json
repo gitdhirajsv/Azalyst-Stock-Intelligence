@@ -198,8 +198,8 @@
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4429.8,
-      "change_str": "-1.38%",
+      "price": 4476.6,
+      "change_str": "-0.34%",
       "direction": "down"
     },
     {
@@ -212,8 +212,8 @@
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 79775.77,
-      "change_str": "+0.13%",
+      "price": 79867.69,
+      "change_str": "+0.25%",
       "direction": "up"
     },
     {
@@ -233,7 +233,7 @@
       "ticker": "CMBT",
       "sector_label": "CMBT",
       "headline": "[JLAW] VCP breakout, pivot=16.02",
-      "latest_at": "2026-09-05 20:42:16 UTC",
+      "latest_at": "2026-09-06 05:06:18 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -354,14 +354,14 @@
     }
   ],
   "logs": [
-    "2026-09-05 20:42:15 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-09-06 05:06:18 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-09-05 20:42:15 UTC",
+  "generated_at": "2026-09-06 05:06:18 UTC",
   "top_signal": {
     "ticker": "CMBT",
     "sector_label": "CMBT",
     "headline": "[JLAW] VCP breakout, pivot=16.02",
-    "latest_at": "2026-09-05 20:42:16 UTC",
+    "latest_at": "2026-09-06 05:06:18 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
