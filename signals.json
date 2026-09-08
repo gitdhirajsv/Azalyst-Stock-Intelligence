@@ -1,18 +1,18 @@
 [
   {
-    "ticker": "CMBT",
-    "type": "BUY_BREAKOUT",
-    "price": 19.489999771118164,
-    "stop_loss": 15.539400444030761,
+    "ticker": "PTEN",
+    "type": "BUY_PULLBACK",
+    "price": 12.755000114440918,
+    "stop_loss": 12.4999001121521,
     "timing": "BUY NOW",
-    "trigger_price": 19.49,
-    "reason": "VCP breakout, pivot=16.02",
+    "trigger_price": 12.755,
+    "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
     "sources": [
       "JLAW"
     ],
-    "rs_rating": 92,
+    "rs_rating": 90,
     "rev_growth_yoy": null,
     "annual_rev_growth": null,
     "sales_accelerating": null,
