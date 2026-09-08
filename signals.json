@@ -1,11 +1,32 @@
 [
   {
+    "ticker": "CNC",
+    "type": "BUY_PULLBACK",
+    "price": 65.61000061035156,
+    "stop_loss": 64.29780059814453,
+    "timing": "BUY NOW",
+    "trigger_price": 65.61,
+    "reason": "Pullback to BOL, META score=2",
+    "source": "JLAW",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW"
+    ],
+    "rs_rating": 89,
+    "rev_growth_yoy": 0.09923679783349071,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_detail": "last-Q rev +9.9% YoY, accel=n/a",
+    "fundamentals_verified": true,
+    "fundamentals_ok": true
+  },
+  {
     "ticker": "PTEN",
     "type": "BUY_PULLBACK",
-    "price": 12.755000114440918,
-    "stop_loss": 12.4999001121521,
+    "price": 12.779999732971191,
+    "stop_loss": 12.524399738311768,
     "timing": "BUY NOW",
-    "trigger_price": 12.755,
+    "trigger_price": 12.78,
     "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
