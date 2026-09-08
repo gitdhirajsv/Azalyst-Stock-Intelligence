@@ -200,22 +200,22 @@
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4400.0,
-      "change_str": "-0.67%",
+      "price": 4399.5,
+      "change_str": "-0.68%",
       "direction": "down"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 94.25,
-      "change_str": "+3.03%",
+      "price": 94.34,
+      "change_str": "+3.13%",
       "direction": "up"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 78543.29,
-      "change_str": "-0.72%",
+      "price": 78447.72,
+      "change_str": "-0.84%",
       "direction": "down"
     },
     {
@@ -235,7 +235,7 @@
       "ticker": "CMBT",
       "sector_label": "CMBT",
       "headline": "[JLAW] VCP breakout, pivot=16.02",
-      "latest_at": "2026-09-08 21:29:45 UTC",
+      "latest_at": "2026-09-08 23:37:07 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -263,6 +263,19 @@
     }
   ],
   "watchlist": [
+    {
+      "ticker": "IGR",
+      "timing": "WAIT FOR PULLBACK",
+      "timing_detail": "Price 13.41 is 177.4% above the highest price this pivot is still buyable at (4.83) -- chasing here breaks the 5% buy zone (tops at 4.83) and/or the 8% max-risk stop. Alert on a pullback to 4.83.",
+      "trigger_price": 4.8343,
+      "last_close": 13.41,
+      "pivot": 4.6041,
+      "buy_zone_high": 4.8343,
+      "projected_risk_pct": 7.57,
+      "rs_rating": 99,
+      "source": "MINERVINI",
+      "actionable_now": false
+    },
     {
       "ticker": "VLO",
       "timing": "WAIT FOR PULLBACK",
@@ -330,14 +343,14 @@
     }
   ],
   "logs": [
-    "2026-09-08 21:29:45 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-09-08 23:37:06 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-09-08 21:29:45 UTC",
+  "generated_at": "2026-09-08 23:37:06 UTC",
   "top_signal": {
     "ticker": "CMBT",
     "sector_label": "CMBT",
     "headline": "[JLAW] VCP breakout, pivot=16.02",
-    "latest_at": "2026-09-08 21:29:45 UTC",
+    "latest_at": "2026-09-08 23:37:07 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",

@@ -1,5 +1,34 @@
 [
   {
+    "ticker": "IGR",
+    "kind": "WATCH",
+    "type": "WATCH",
+    "source": "MINERVINI",
+    "strategy": "Minervini SEPA / VCP",
+    "timing": "WAIT FOR PULLBACK",
+    "timing_detail": "Price 13.41 is 177.4% above the highest price this pivot is still buyable at (4.83) -- chasing here breaks the 5% buy zone (tops at 4.83) and/or the 8% max-risk stop. Alert on a pullback to 4.83.",
+    "trigger_price": 4.8343,
+    "pivot": 4.6041,
+    "buy_zone_high": 4.8343,
+    "last_close": 13.41,
+    "stop_reference": 4.4682,
+    "projected_risk_pct": 7.57,
+    "rs_rating": 99,
+    "actionable_now": false,
+    "trend_template": {
+      "c1_price_above_150_200": true,
+      "c2_150_above_200": true,
+      "c3_200_uptrending": true,
+      "c4_50_above_150_200": true,
+      "c5_price_above_50": true,
+      "c6_30pct_above_low": true,
+      "c7_within_25pct_high": true,
+      "c8_rs_rating_ok": true,
+      "rs_rating": 99
+    },
+    "reason": "WATCH (WAIT FOR PULLBACK) trigger 4.83 -- Price 13.41 is 177.4% above the highest price this pivot is still buyable at (4.83) -- chasing here breaks the 5% buy zone (tops at 4.83) and/or the 8% max-risk stop. Alert on a pullback to 4.83."
+  },
+  {
     "ticker": "VLO",
     "kind": "WATCH",
     "type": "WATCH",
