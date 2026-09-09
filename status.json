@@ -211,22 +211,22 @@
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4447.2,
-      "change_str": "+1.21%",
+      "price": 4440.8,
+      "change_str": "+1.07%",
       "direction": "up"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 96.68,
-      "change_str": "+3.92%",
+      "price": 97.15,
+      "change_str": "+4.43%",
       "direction": "up"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 78251.93,
-      "change_str": "-0.24%",
+      "price": 78224.81,
+      "change_str": "-0.27%",
       "direction": "down"
     },
     {
@@ -246,7 +246,7 @@
       "ticker": "CVE",
       "sector_label": "CVE",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-09-09 21:09:12 UTC",
+      "latest_at": "2026-09-09 23:35:15 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -380,14 +380,14 @@
     }
   ],
   "logs": [
-    "2026-09-09 21:09:12 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-09-09 23:35:14 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-09-09 21:09:12 UTC",
+  "generated_at": "2026-09-09 23:35:14 UTC",
   "top_signal": {
     "ticker": "CVE",
     "sector_label": "CVE",
     "headline": "[JLAW] Pullback to BOL, META score=2",
-    "latest_at": "2026-09-09 21:09:12 UTC",
+    "latest_at": "2026-09-09 23:35:15 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
