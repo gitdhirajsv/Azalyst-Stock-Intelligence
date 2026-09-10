@@ -19,5 +19,47 @@
     "fundamentals_detail": "revenue data unavailable",
     "fundamentals_verified": false,
     "fundamentals_ok": null
+  },
+  {
+    "ticker": "CVE",
+    "type": "BUY_PULLBACK",
+    "price": 33.45500183105469,
+    "stop_loss": 32.398001480102536,
+    "timing": "BUY NOW",
+    "trigger_price": 33.455,
+    "reason": "Pullback to BOL, META score=3",
+    "source": "JLAW",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW"
+    ],
+    "rs_rating": 89,
+    "rev_growth_yoy": null,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_detail": "revenue data unavailable",
+    "fundamentals_verified": false,
+    "fundamentals_ok": null
+  },
+  {
+    "ticker": "HUM",
+    "type": "BUY_PULLBACK",
+    "price": 400.9599914550781,
+    "stop_loss": 392.94079162597654,
+    "timing": "BUY NOW",
+    "trigger_price": 400.96,
+    "reason": "Pullback to BOL, META score=2",
+    "source": "JLAW",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW"
+    ],
+    "rs_rating": 90,
+    "rev_growth_yoy": null,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_detail": "revenue data unavailable",
+    "fundamentals_verified": false,
+    "fundamentals_ok": null
   }
 ]
