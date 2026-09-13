@@ -222,8 +222,8 @@
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4366.2,
-      "change_str": "+0.04%",
+      "price": 4408.9,
+      "change_str": "+1.02%",
       "direction": "up"
     },
     {
@@ -236,9 +236,9 @@
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 77142.24,
-      "change_str": "-0.04%",
-      "direction": "down"
+      "price": 77247.71,
+      "change_str": "+0.10%",
+      "direction": "up"
     },
     {
       "label": "VIX",
@@ -257,7 +257,7 @@
       "ticker": "FRO",
       "sector_label": "FRO",
       "headline": "[JLAW] VCP breakout, pivot=45.17",
-      "latest_at": "2026-09-12 20:57:11 UTC",
+      "latest_at": "2026-09-13 05:21:24 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -404,14 +404,14 @@
     }
   ],
   "logs": [
-    "2026-09-12 20:57:10 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-09-13 05:21:23 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-09-12 20:57:10 UTC",
+  "generated_at": "2026-09-13 05:21:23 UTC",
   "top_signal": {
     "ticker": "FRO",
     "sector_label": "FRO",
     "headline": "[JLAW] VCP breakout, pivot=45.17",
-    "latest_at": "2026-09-12 20:57:11 UTC",
+    "latest_at": "2026-09-13 05:21:24 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
