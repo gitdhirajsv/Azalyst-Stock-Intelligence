@@ -1,0 +1,440 @@
+{
+  "portfolio_value": 97528.31,
+  "total_deposited": 100000,
+  "cash": 44570.65,
+  "change_raw": -2.47,
+  "change": "-2.47%",
+  "unrealised_str": "+$729.50",
+  "realised_pnl": -3201.19,
+  "realised_str": "-$3201.19",
+  "closed_trades": 9,
+  "usd_inr_rate": 1.0,
+  "positions": [
+    {
+      "ticker": "TGT",
+      "sector": "Unclassified",
+      "source": "JLAW",
+      "rs_rating": 89,
+      "pnl_pct": -8.28,
+      "pnl_pct_str": "-8.28%",
+      "pnl": -449.92,
+      "pnl_str": "-$449.92",
+      "market_value": 4986.56005859375
+    },
+    {
+      "ticker": "CMBT",
+      "sector": "Unclassified",
+      "source": "JLAW",
+      "rs_rating": 89,
+      "pnl_pct": 6.56,
+      "pnl_pct_str": "+6.56%",
+      "pnl": 1198.8,
+      "pnl_str": "+$1198.80",
+      "market_value": 19460.51954269409
+    },
+    {
+      "ticker": "CVE",
+      "sector": "Energy / Oil & Gas Integrated",
+      "source": "JLAW",
+      "rs_rating": 89,
+      "pnl_pct": -1.05,
+      "pnl_pct_str": "-1.05%",
+      "pnl": -191.1,
+      "pnl_str": "-$191.10",
+      "market_value": 18078.060333251953
+    },
+    {
+      "ticker": "FRO",
+      "sector": "Energy / Oil & Gas Midstream",
+      "source": "JLAW",
+      "rs_rating": 94,
+      "pnl_pct": 1.67,
+      "pnl_pct_str": "+1.67%",
+      "pnl": 171.72,
+      "pnl_str": "+$171.72",
+      "market_value": 10432.519805908203
+    }
+  ],
+  "closed_trades_list": [
+    {
+      "ticker": "AMN",
+      "entry": 34.79,
+      "exit": 34.0942,
+      "shares": 538,
+      "pnl": -374.34,
+      "pnl_str": "-$374.34",
+      "pnl_pct": -2.0,
+      "pnl_pct_str": "-2.00%",
+      "exit_date": "2026-08-24",
+      "exit_reason": "Stop Loss",
+      "winner": false
+    },
+    {
+      "ticker": "CGON",
+      "entry": 78.42,
+      "exit": 76.8516,
+      "shares": 237,
+      "pnl": -371.71,
+      "pnl_str": "-$371.71",
+      "pnl_pct": -2.0,
+      "pnl_pct_str": "-2.00%",
+      "exit_date": "2026-08-28",
+      "exit_reason": "Stop Loss",
+      "winner": false
+    },
+    {
+      "ticker": "FRO",
+      "entry": 44.32,
+      "exit": 44.17,
+      "shares": 411,
+      "pnl": -61.65,
+      "pnl_str": "-$61.65",
+      "pnl_pct": -0.34,
+      "pnl_pct_str": "-0.34%",
+      "exit_date": "2026-09-02",
+      "exit_reason": "Trailing Stop",
+      "winner": false
+    },
+    {
+      "ticker": "HP",
+      "entry": 46.21,
+      "exit": 43.65,
+      "shares": 216,
+      "pnl": -552.96,
+      "pnl_str": "-$552.96",
+      "pnl_pct": -5.54,
+      "pnl_pct_str": "-5.54%",
+      "exit_date": "2026-09-08",
+      "exit_reason": "Stop Loss",
+      "winner": false
+    },
+    {
+      "ticker": "RHI",
+      "entry": 45.31,
+      "exit": 44.4038,
+      "shares": 409,
+      "pnl": -370.64,
+      "pnl_str": "-$370.64",
+      "pnl_pct": -2.0,
+      "pnl_pct_str": "-2.00%",
+      "exit_date": "2026-08-29",
+      "exit_reason": "Stop Loss",
+      "winner": false
+    },
+    {
+      "ticker": "RHI",
+      "entry": 45.31,
+      "exit": 44.4038,
+      "shares": 408,
+      "pnl": -369.73,
+      "pnl_str": "-$369.73",
+      "pnl_pct": -2.0,
+      "pnl_pct_str": "-2.00%",
+      "exit_date": "2026-08-30",
+      "exit_reason": "Stop Loss",
+      "winner": false
+    },
+    {
+      "ticker": "RHI",
+      "entry": 45.31,
+      "exit": 44.4038,
+      "shares": 406,
+      "pnl": -367.92,
+      "pnl_str": "-$367.92",
+      "pnl_pct": -2.0,
+      "pnl_pct_str": "-2.00%",
+      "exit_date": "2026-08-30",
+      "exit_reason": "Stop Loss",
+      "winner": false
+    },
+    {
+      "ticker": "RHI",
+      "entry": 45.31,
+      "exit": 44.4038,
+      "shares": 405,
+      "pnl": -367.01,
+      "pnl_str": "-$367.01",
+      "pnl_pct": -2.0,
+      "pnl_pct_str": "-2.00%",
+      "exit_date": "2026-08-31",
+      "exit_reason": "Stop Loss",
+      "winner": false
+    },
+    {
+      "ticker": "WT",
+      "entry": 24.06,
+      "exit": 23.5788,
+      "shares": 759,
+      "pnl": -365.23,
+      "pnl_str": "-$365.23",
+      "pnl_pct": -2.0,
+      "pnl_pct_str": "-2.00%",
+      "exit_date": "2026-09-01",
+      "exit_reason": "Stop Loss",
+      "winner": false
+    }
+  ],
+  "track_record": {
+    "total_trades": 9,
+    "winners": 0,
+    "losers": 9,
+    "win_rate": 0.0,
+    "avg_win": 0.0,
+    "avg_loss": -2.21,
+    "profit_factor": 0.0,
+    "expectancy": -2.21,
+    "sharpe_proxy": -1.72,
+    "best": {
+      "ticker": "FRO",
+      "pnl_pct": -0.34,
+      "pnl_pct_str": "-0.34%",
+      "exit_reason": "Trailing Stop"
+    },
+    "worst": {
+      "ticker": "HP",
+      "pnl_pct": -5.54,
+      "pnl_pct_str": "-5.54%",
+      "exit_reason": "Stop Loss"
+    }
+  },
+  "market_snapshot": [
+    {
+      "label": "SPX",
+      "ticker": "^GSPC",
+      "price": 7656.98,
+      "change_str": "+0.86%",
+      "direction": "up"
+    },
+    {
+      "label": "NDX",
+      "ticker": "^IXIC",
+      "price": 26333.04,
+      "change_str": "+0.96%",
+      "direction": "up"
+    },
+    {
+      "label": "DJI",
+      "ticker": "^DJI",
+      "price": 52573.29,
+      "change_str": "+0.98%",
+      "direction": "up"
+    },
+    {
+      "label": "GOLD",
+      "ticker": "GC=F",
+      "price": 4408.9,
+      "change_str": "+1.02%",
+      "direction": "up"
+    },
+    {
+      "label": "OIL",
+      "ticker": "CL=F",
+      "price": 100.05,
+      "change_str": "-2.37%",
+      "direction": "down"
+    },
+    {
+      "label": "BTC",
+      "ticker": "BTC-USD",
+      "price": 77247.71,
+      "change_str": "+0.10%",
+      "direction": "up"
+    },
+    {
+      "label": "VIX",
+      "ticker": "^VIX",
+      "price": 15.84,
+      "change_str": "-11.21%",
+      "direction": "down"
+    }
+  ],
+  "regime": {
+    "risk_state": "RISK_ON",
+    "vol_regime": "LOW_VOL"
+  },
+  "signals": [
+    {
+      "ticker": "FRO",
+      "sector_label": "FRO",
+      "headline": "[JLAW] VCP breakout, pivot=45.17",
+      "latest_at": "2026-09-13 05:21:24 UTC",
+      "severity": "MEDIUM",
+      "confidence": 82,
+      "source": "JLAW",
+      "sources": [
+        "JLAW"
+      ],
+      "strategy": "J Law (Stage 2 / VCP / META)",
+      "signal_type": "BUY_BREAKOUT",
+      "entry": 49.209999084472656,
+      "stop_loss": 43.81489822387695,
+      "target": null,
+      "pivot": null,
+      "rs_rating": 94,
+      "risk_pct": null,
+      "actionable_now": false,
+      "timing": "BUY NOW",
+      "trigger_price": 49.21,
+      "confluence": false,
+      "rev_growth_yoy": null,
+      "annual_rev_growth": null,
+      "sales_accelerating": null,
+      "fundamentals_verified": false,
+      "fundamentals_ok": null,
+      "fundamentals_detail": "revenue data unavailable"
+    }
+  ],
+  "watchlist": [
+    {
+      "ticker": "SSL",
+      "timing": "BUY ON BREAKOUT",
+      "timing_detail": "Coiling 1.5% under the VCP pivot 14.81. Buy the move through 14.81 only if volume expands to >= 1.4x the 50-day average.",
+      "trigger_price": 14.81,
+      "last_close": 14.59,
+      "pivot": 14.81,
+      "buy_zone_high": 15.5505,
+      "projected_risk_pct": 3.38,
+      "rs_rating": 91,
+      "source": "MINERVINI",
+      "actionable_now": false
+    },
+    {
+      "ticker": "EQNR",
+      "timing": "BUY ON BREAKOUT",
+      "timing_detail": "Coiling 1.7% under the VCP pivot 45.55. Buy the move through 45.55 only if volume expands to >= 1.4x the 50-day average.",
+      "trigger_price": 45.55,
+      "last_close": 44.8,
+      "pivot": 45.55,
+      "buy_zone_high": 47.8275,
+      "projected_risk_pct": 2.85,
+      "rs_rating": 90,
+      "source": "MINERVINI",
+      "actionable_now": false
+    },
+    {
+      "ticker": "SLDE",
+      "timing": "BUY ON BREAKOUT",
+      "timing_detail": "Coiling 1.0% under the VCP pivot 25.09. Buy the move through 25.09 only if volume expands to >= 1.4x the 50-day average.",
+      "trigger_price": 25.09,
+      "last_close": 24.84,
+      "pivot": 25.09,
+      "buy_zone_high": 26.3445,
+      "projected_risk_pct": 3.95,
+      "rs_rating": 89,
+      "source": "MINERVINI",
+      "actionable_now": false
+    },
+    {
+      "ticker": "AMD",
+      "timing": "WAIT FOR BREAKOUT",
+      "timing_detail": "A VCP base is formed but price 516.13 is 2.1% below the pivot 526.79. No entry until it clears the pivot.",
+      "trigger_price": 526.79,
+      "last_close": 516.13,
+      "pivot": 526.79,
+      "buy_zone_high": 553.1295,
+      "projected_risk_pct": 4.83,
+      "rs_rating": 96,
+      "source": "MINERVINI",
+      "actionable_now": false
+    },
+    {
+      "ticker": "CMBT",
+      "timing": "WAIT FOR BREAKOUT",
+      "timing_detail": "A VCP base is formed but price 19.48 is 2.2% below the pivot 19.91. No entry until it clears the pivot.",
+      "trigger_price": 19.905,
+      "last_close": 19.48,
+      "pivot": 19.905,
+      "buy_zone_high": 20.9003,
+      "projected_risk_pct": 4.25,
+      "rs_rating": 93,
+      "source": "MINERVINI",
+      "actionable_now": false
+    },
+    {
+      "ticker": "CGAU",
+      "timing": "WAIT FOR BREAKOUT",
+      "timing_detail": "A VCP base is formed but price 22.63 is 4.9% below the pivot 23.75. No entry until it clears the pivot.",
+      "trigger_price": 23.75,
+      "last_close": 22.63,
+      "pivot": 23.75,
+      "buy_zone_high": 24.9375,
+      "projected_risk_pct": 5.56,
+      "rs_rating": 92,
+      "source": "MINERVINI",
+      "actionable_now": false
+    },
+    {
+      "ticker": "WT",
+      "timing": "WAIT FOR BREAKOUT",
+      "timing_detail": "A VCP base is formed but price 23.93 is 8.3% below the pivot 25.91. No entry until it clears the pivot.",
+      "trigger_price": 25.91,
+      "last_close": 23.93,
+      "pivot": 25.91,
+      "buy_zone_high": 27.2055,
+      "projected_risk_pct": 9.11,
+      "rs_rating": 91,
+      "source": "MINERVINI",
+      "actionable_now": false
+    },
+    {
+      "ticker": "HUM",
+      "timing": "WAIT FOR BREAKOUT",
+      "timing_detail": "A VCP base is formed but price 409.80 is 2.5% below the pivot 419.97. No entry until it clears the pivot.",
+      "trigger_price": 419.97,
+      "last_close": 409.8,
+      "pivot": 419.97,
+      "buy_zone_high": 440.9685,
+      "projected_risk_pct": 7.89,
+      "rs_rating": 90,
+      "source": "MINERVINI",
+      "actionable_now": false
+    },
+    {
+      "ticker": "CVE",
+      "timing": "WAIT FOR BREAKOUT",
+      "timing_detail": "A VCP base is formed but price 33.11 is 3.2% below the pivot 34.16. No entry until it clears the pivot.",
+      "trigger_price": 34.16,
+      "last_close": 33.11,
+      "pivot": 34.16,
+      "buy_zone_high": 35.868,
+      "projected_risk_pct": 4.8,
+      "rs_rating": 89,
+      "source": "MINERVINI",
+      "actionable_now": false
+    }
+  ],
+  "logs": [
+    "2026-09-13 05:21:23 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+  ],
+  "generated_at": "2026-09-13 05:21:23 UTC",
+  "top_signal": {
+    "ticker": "FRO",
+    "sector_label": "FRO",
+    "headline": "[JLAW] VCP breakout, pivot=45.17",
+    "latest_at": "2026-09-13 05:21:24 UTC",
+    "severity": "MEDIUM",
+    "confidence": 82,
+    "source": "JLAW",
+    "sources": [
+      "JLAW"
+    ],
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "signal_type": "BUY_BREAKOUT",
+    "entry": 49.209999084472656,
+    "stop_loss": 43.81489822387695,
+    "target": null,
+    "pivot": null,
+    "rs_rating": 94,
+    "risk_pct": null,
+    "actionable_now": false,
+    "timing": "BUY NOW",
+    "trigger_price": 49.21,
+    "confluence": false,
+    "rev_growth_yoy": null,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_verified": false,
+    "fundamentals_ok": null,
+    "fundamentals_detail": "revenue data unavailable"
+  }
+}
