@@ -232,6 +232,35 @@
     "reason": "WATCH (WAIT FOR BREAKOUT) trigger 419.97 -- A VCP base is formed but price 409.80 is 2.5% below the pivot 419.97. No entry until it clears the pivot."
   },
   {
+    "ticker": "APA",
+    "kind": "WATCH",
+    "type": "WATCH",
+    "source": "MINERVINI",
+    "strategy": "Minervini SEPA / VCP",
+    "timing": "WAIT FOR BREAKOUT",
+    "timing_detail": "A VCP base is formed but price 44.73 is 3.1% below the pivot 46.10. No entry until it clears the pivot.",
+    "trigger_price": 46.1,
+    "pivot": 46.1,
+    "buy_zone_high": 48.405,
+    "last_close": 44.73,
+    "stop_reference": 43.94,
+    "projected_risk_pct": 4.69,
+    "rs_rating": 89,
+    "actionable_now": false,
+    "trend_template": {
+      "c1_price_above_150_200": true,
+      "c2_150_above_200": true,
+      "c3_200_uptrending": true,
+      "c4_50_above_150_200": true,
+      "c5_price_above_50": true,
+      "c6_30pct_above_low": true,
+      "c7_within_25pct_high": true,
+      "c8_rs_rating_ok": true,
+      "rs_rating": 89
+    },
+    "reason": "WATCH (WAIT FOR BREAKOUT) trigger 46.10 -- A VCP base is formed but price 44.73 is 3.1% below the pivot 46.10. No entry until it clears the pivot."
+  },
+  {
     "ticker": "CVE",
     "kind": "WATCH",
     "type": "WATCH",
