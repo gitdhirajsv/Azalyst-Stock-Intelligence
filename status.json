@@ -1,0 +1,276 @@
+{
+  "portfolio_value": 98509.29,
+  "total_deposited": 100000,
+  "cash": 44570.65,
+  "change_raw": -1.49,
+  "change": "-1.49%",
+  "unrealised_str": "+$1710.48",
+  "realised_pnl": -3201.19,
+  "realised_str": "-$3201.19",
+  "closed_trades": 9,
+  "usd_inr_rate": 1.0,
+  "positions": [
+    {
+      "ticker": "TGT",
+      "sector": "Unclassified",
+      "source": "JLAW",
+      "rs_rating": 89,
+      "pnl_pct": -9.12,
+      "pnl_pct_str": "-9.12%",
+      "pnl": -495.68,
+      "pnl_str": "-$495.68",
+      "market_value": 4940.7998046875
+    },
+    {
+      "ticker": "CMBT",
+      "sector": "Unclassified",
+      "source": "JLAW",
+      "rs_rating": 89,
+      "pnl_pct": 7.0,
+      "pnl_pct_str": "+7.00%",
+      "pnl": 1278.72,
+      "pnl_str": "+$1278.72",
+      "market_value": 19540.43946647644
+    },
+    {
+      "ticker": "CVE",
+      "sector": "Energy / Oil & Gas Integrated",
+      "source": "JLAW",
+      "rs_rating": 89,
+      "pnl_pct": 1.37,
+      "pnl_pct_str": "+1.37%",
+      "pnl": 251.16,
+      "pnl_str": "+$251.16",
+      "market_value": 18520.31900024414
+    },
+    {
+      "ticker": "FRO",
+      "sector": "Energy / Oil & Gas Midstream",
+      "source": "JLAW",
+      "rs_rating": 94,
+      "pnl_pct": 6.59,
+      "pnl_pct_str": "+6.59%",
+      "pnl": 676.28,
+      "pnl_str": "+$676.28",
+      "market_value": 10937.080032348633
+    }
+  ],
+  "closed_trades_list": [
+    {
+      "ticker": "AMN",
+      "entry": 34.79,
+      "exit": 34.0942,
+      "shares": 538,
+      "pnl": -374.34,
+      "pnl_str": "-$374.34",
+      "pnl_pct": -2.0,
+      "pnl_pct_str": "-2.00%",
+      "exit_date": "2026-08-24",
+      "exit_reason": "Stop Loss",
+      "winner": false
+    },
+    {
+      "ticker": "CGON",
+      "entry": 78.42,
+      "exit": 76.8516,
+      "shares": 237,
+      "pnl": -371.71,
+      "pnl_str": "-$371.71",
+      "pnl_pct": -2.0,
+      "pnl_pct_str": "-2.00%",
+      "exit_date": "2026-08-28",
+      "exit_reason": "Stop Loss",
+      "winner": false
+    },
+    {
+      "ticker": "FRO",
+      "entry": 44.32,
+      "exit": 44.17,
+      "shares": 411,
+      "pnl": -61.65,
+      "pnl_str": "-$61.65",
+      "pnl_pct": -0.34,
+      "pnl_pct_str": "-0.34%",
+      "exit_date": "2026-09-02",
+      "exit_reason": "Trailing Stop",
+      "winner": false
+    },
+    {
+      "ticker": "HP",
+      "entry": 46.21,
+      "exit": 43.65,
+      "shares": 216,
+      "pnl": -552.96,
+      "pnl_str": "-$552.96",
+      "pnl_pct": -5.54,
+      "pnl_pct_str": "-5.54%",
+      "exit_date": "2026-09-08",
+      "exit_reason": "Stop Loss",
+      "winner": false
+    },
+    {
+      "ticker": "RHI",
+      "entry": 45.31,
+      "exit": 44.4038,
+      "shares": 409,
+      "pnl": -370.64,
+      "pnl_str": "-$370.64",
+      "pnl_pct": -2.0,
+      "pnl_pct_str": "-2.00%",
+      "exit_date": "2026-08-29",
+      "exit_reason": "Stop Loss",
+      "winner": false
+    },
+    {
+      "ticker": "RHI",
+      "entry": 45.31,
+      "exit": 44.4038,
+      "shares": 408,
+      "pnl": -369.73,
+      "pnl_str": "-$369.73",
+      "pnl_pct": -2.0,
+      "pnl_pct_str": "-2.00%",
+      "exit_date": "2026-08-30",
+      "exit_reason": "Stop Loss",
+      "winner": false
+    },
+    {
+      "ticker": "RHI",
+      "entry": 45.31,
+      "exit": 44.4038,
+      "shares": 406,
+      "pnl": -367.92,
+      "pnl_str": "-$367.92",
+      "pnl_pct": -2.0,
+      "pnl_pct_str": "-2.00%",
+      "exit_date": "2026-08-30",
+      "exit_reason": "Stop Loss",
+      "winner": false
+    },
+    {
+      "ticker": "RHI",
+      "entry": 45.31,
+      "exit": 44.4038,
+      "shares": 405,
+      "pnl": -367.01,
+      "pnl_str": "-$367.01",
+      "pnl_pct": -2.0,
+      "pnl_pct_str": "-2.00%",
+      "exit_date": "2026-08-31",
+      "exit_reason": "Stop Loss",
+      "winner": false
+    },
+    {
+      "ticker": "WT",
+      "entry": 24.06,
+      "exit": 23.5788,
+      "shares": 759,
+      "pnl": -365.23,
+      "pnl_str": "-$365.23",
+      "pnl_pct": -2.0,
+      "pnl_pct_str": "-2.00%",
+      "exit_date": "2026-09-01",
+      "exit_reason": "Stop Loss",
+      "winner": false
+    }
+  ],
+  "track_record": {
+    "total_trades": 9,
+    "winners": 0,
+    "losers": 9,
+    "win_rate": 0.0,
+    "avg_win": 0.0,
+    "avg_loss": -2.21,
+    "profit_factor": 0.0,
+    "expectancy": -2.21,
+    "sharpe_proxy": -1.72,
+    "best": {
+      "ticker": "FRO",
+      "pnl_pct": -0.34,
+      "pnl_pct_str": "-0.34%",
+      "exit_reason": "Trailing Stop"
+    },
+    "worst": {
+      "ticker": "HP",
+      "pnl_pct": -5.54,
+      "pnl_pct_str": "-5.54%",
+      "exit_reason": "Stop Loss"
+    }
+  },
+  "market_snapshot": [
+    {
+      "label": "SPX",
+      "ticker": "^GSPC",
+      "price": 7585.73,
+      "change_str": "-0.45%",
+      "direction": "down"
+    },
+    {
+      "label": "NDX",
+      "ticker": "^IXIC",
+      "price": 25981.57,
+      "change_str": "-0.78%",
+      "direction": "down"
+    },
+    {
+      "label": "DJI",
+      "ticker": "^DJI",
+      "price": 52093.11,
+      "change_str": "-0.63%",
+      "direction": "down"
+    },
+    {
+      "label": "GOLD",
+      "ticker": "GC=F",
+      "price": 4320.4,
+      "change_str": "-0.72%",
+      "direction": "down"
+    },
+    {
+      "label": "OIL",
+      "ticker": "CL=F",
+      "price": 104.94,
+      "change_str": "+3.50%",
+      "direction": "up"
+    },
+    {
+      "label": "BTC",
+      "ticker": "BTC-USD",
+      "price": 75743.93,
+      "change_str": "-3.10%",
+      "direction": "down"
+    },
+    {
+      "label": "VIX",
+      "ticker": "^VIX",
+      "price": 17.2,
+      "change_str": "+0.58%",
+      "direction": "up"
+    }
+  ],
+  "regime": {
+    "risk_state": "RISK_OFF",
+    "vol_regime": "HIGH_VOL"
+  },
+  "signals": [],
+  "watchlist": [
+    {
+      "ticker": "IGR",
+      "timing": "WAIT FOR BREAKOUT",
+      "timing_detail": "A VCP base is formed but price 12.36 is 7.7% below the pivot 13.31. No entry until it clears the pivot.",
+      "trigger_price": 13.31,
+      "last_close": 12.36,
+      "pivot": 13.31,
+      "buy_zone_high": 13.9755,
+      "projected_risk_pct": 8.09,
+      "rs_rating": 99,
+      "source": "MINERVINI",
+      "actionable_now": false
+    }
+  ],
+  "logs": [
+    "2026-09-16 00:47:59 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+  ],
+  "generated_at": "2026-09-16 00:47:59 UTC",
+  "top_signal": null
+}
