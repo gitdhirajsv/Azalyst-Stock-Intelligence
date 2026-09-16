@@ -1,12 +1,33 @@
 [
   {
+    "ticker": "AMN",
+    "type": "BUY_PULLBACK",
+    "price": 35.040000915527344,
+    "stop_loss": 34.3392008972168,
+    "timing": "BUY NOW",
+    "trigger_price": 35.04,
+    "reason": "Pullback to BOL, META score=2",
+    "source": "JLAW",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW"
+    ],
+    "rs_rating": 92,
+    "rev_growth_yoy": null,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_detail": "revenue data unavailable",
+    "fundamentals_verified": false,
+    "fundamentals_ok": null
+  },
+  {
     "ticker": "CMBT",
     "type": "BUY_PULLBACK",
-    "price": 19.559999465942383,
-    "stop_loss": 19.168799476623533,
+    "price": 19.8799991607666,
+    "stop_loss": 19.307850666046143,
     "timing": "BUY NOW",
-    "trigger_price": 19.56,
-    "reason": "Pullback to BOL, META score=2",
+    "trigger_price": 19.88,
+    "reason": "Pullback to BOL, META score=3",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
     "sources": [
@@ -21,19 +42,82 @@
     "fundamentals_ok": null
   },
   {
-    "ticker": "FRO",
-    "type": "BUY_BREAKOUT",
-    "price": 51.59000015258789,
-    "stop_loss": 43.81489822387695,
+    "ticker": "CNC",
+    "type": "BUY_PULLBACK",
+    "price": 67.47000122070312,
+    "stop_loss": 66.12060119628906,
     "timing": "BUY NOW",
-    "trigger_price": 51.59,
-    "reason": "VCP breakout, pivot=45.17",
+    "trigger_price": 67.47,
+    "reason": "Pullback to BOL, META score=2",
+    "source": "JLAW",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW"
+    ],
+    "rs_rating": 90,
+    "rev_growth_yoy": 0.09923679783349071,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_detail": "last-Q rev +9.9% YoY, accel=n/a",
+    "fundamentals_verified": true,
+    "fundamentals_ok": true
+  },
+  {
+    "ticker": "CRWD",
+    "type": "BUY_PULLBACK",
+    "price": 242.86000061035156,
+    "stop_loss": 236.66059585571287,
+    "timing": "BUY NOW",
+    "trigger_price": 242.86,
+    "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
     "sources": [
       "JLAW"
     ],
     "rs_rating": 95,
+    "rev_growth_yoy": null,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_detail": "revenue data unavailable",
+    "fundamentals_verified": false,
+    "fundamentals_ok": null
+  },
+  {
+    "ticker": "PARR",
+    "type": "BUY_PULLBACK",
+    "price": 82.5425033569336,
+    "stop_loss": 80.89165328979492,
+    "timing": "BUY NOW",
+    "trigger_price": 82.5425,
+    "reason": "Pullback to BOL, META score=3",
+    "source": "JLAW",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW"
+    ],
+    "rs_rating": 94,
+    "rev_growth_yoy": null,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_detail": "revenue data unavailable",
+    "fundamentals_verified": false,
+    "fundamentals_ok": null
+  },
+  {
+    "ticker": "SM",
+    "type": "BUY_PULLBACK",
+    "price": 38.36000061035156,
+    "stop_loss": 37.59280059814453,
+    "timing": "BUY NOW",
+    "trigger_price": 38.36,
+    "reason": "Pullback to BOL, META score=3",
+    "source": "JLAW",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW"
+    ],
+    "rs_rating": 89,
     "rev_growth_yoy": null,
     "annual_rev_growth": null,
     "sales_accelerating": null,
