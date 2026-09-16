@@ -233,22 +233,22 @@
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4302.5,
-      "change_str": "-0.70%",
+      "price": 4308.5,
+      "change_str": "-0.56%",
       "direction": "down"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 102.02,
-      "change_str": "-3.60%",
+      "price": 101.73,
+      "change_str": "-3.87%",
       "direction": "down"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 76001.94,
-      "change_str": "+0.52%",
+      "price": 76179.95,
+      "change_str": "+0.75%",
       "direction": "up"
     },
     {
@@ -268,7 +268,7 @@
       "ticker": "CMBT",
       "sector_label": "CMBT",
       "headline": "[JLAW] Pullback to BOL, META score=3",
-      "latest_at": "2026-09-16 21:36:56 UTC",
+      "latest_at": "2026-09-16 23:50:50 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -298,7 +298,7 @@
       "ticker": "NEOG",
       "sector_label": "NEOG",
       "headline": "[JLAW] VCP breakout, pivot=12.26",
-      "latest_at": "2026-09-16 21:36:56 UTC",
+      "latest_at": "2026-09-16 23:50:50 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -328,7 +328,7 @@
       "ticker": "SLDE",
       "sector_label": "SLDE",
       "headline": "[JLAW+MINERVINI] VCP breakout, pivot=25.09 | +MINERVINI confluence (RS 90)",
-      "latest_at": "2026-09-16 21:36:56 UTC",
+      "latest_at": "2026-09-16 23:50:50 UTC",
       "severity": "HIGH",
       "confidence": 95,
       "source": "JLAW+MINERVINI",
@@ -359,7 +359,7 @@
       "ticker": "SM",
       "sector_label": "SM",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-09-16 21:36:56 UTC",
+      "latest_at": "2026-09-16 23:50:50 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -532,14 +532,14 @@
     }
   ],
   "logs": [
-    "2026-09-16 21:36:56 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-09-16 23:50:49 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-09-16 21:36:56 UTC",
+  "generated_at": "2026-09-16 23:50:49 UTC",
   "top_signal": {
     "ticker": "CMBT",
     "sector_label": "CMBT",
     "headline": "[JLAW] Pullback to BOL, META score=3",
-    "latest_at": "2026-09-16 21:36:56 UTC",
+    "latest_at": "2026-09-16 23:50:50 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
