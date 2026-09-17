@@ -1,1 +1,100 @@
-[]
+[
+  {
+    "ticker": "CMBT",
+    "type": "BUY_PULLBACK",
+    "price": 19.65999984741211,
+    "stop_loss": 19.266799850463865,
+    "timing": "BUY NOW",
+    "trigger_price": 19.66,
+    "reason": "Pullback to BOL, META score=3",
+    "source": "JLAW",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW"
+    ],
+    "rs_rating": 93,
+    "rev_growth_yoy": null,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_detail": "revenue data unavailable",
+    "fundamentals_verified": false,
+    "fundamentals_ok": null
+  },
+  {
+    "ticker": "NEOG",
+    "type": "BUY_BREAKOUT",
+    "price": 12.550000190734863,
+    "stop_loss": 11.892200222015381,
+    "timing": "BUY NOW",
+    "trigger_price": 12.55,
+    "reason": "VCP breakout, pivot=12.26",
+    "source": "JLAW",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW"
+    ],
+    "rs_rating": 93,
+    "rev_growth_yoy": null,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_detail": "revenue data unavailable",
+    "fundamentals_verified": false,
+    "fundamentals_ok": null
+  },
+  {
+    "ticker": "SLDE",
+    "type": "BUY_BREAKOUT",
+    "price": 25.67,
+    "stop_loss": 24.1,
+    "timing": "BUY NOW",
+    "trigger_price": 25.67,
+    "reason": "VCP breakout, pivot=25.09 | +MINERVINI confluence (RS 90)",
+    "source": "JLAW+MINERVINI",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW",
+      "MINERVINI"
+    ],
+    "confluence": true,
+    "rs_rating": 90,
+    "pivot": 25.09,
+    "target": 30.38,
+    "buy_zone_high": 26.3445,
+    "risk_pct": 6.12,
+    "actionable_now": true,
+    "minervini": {
+      "pivot": 25.09,
+      "stop_loss": 24.1,
+      "target": 30.38,
+      "buy_zone_high": 26.3445,
+      "risk_pct": 6.12
+    },
+    "rev_growth_yoy": 0.47861869139587254,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_detail": "last-Q rev +47.9% YoY, accel=n/a",
+    "fundamentals_verified": true,
+    "fundamentals_ok": true
+  },
+  {
+    "ticker": "SM",
+    "type": "BUY_PULLBACK",
+    "price": 38.15999984741211,
+    "stop_loss": 37.396799850463864,
+    "timing": "BUY NOW",
+    "trigger_price": 38.16,
+    "reason": "Pullback to BOL, META score=2",
+    "source": "JLAW",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW"
+    ],
+    "rs_rating": 89,
+    "rev_growth_yoy": null,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_detail": "revenue data unavailable",
+    "fundamentals_verified": false,
+    "fundamentals_ok": null
+  }
+]
