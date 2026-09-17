@@ -2,11 +2,11 @@
   {
     "ticker": "AMN",
     "type": "BUY_PULLBACK",
-    "price": 34.400001525878906,
-    "stop_loss": 33.71200149536133,
+    "price": 34.38249969482422,
+    "stop_loss": 33.69484970092773,
     "timing": "BUY NOW",
-    "trigger_price": 34.4,
-    "reason": "Pullback to BOL, META score=3",
+    "trigger_price": 34.3825,
+    "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
     "sources": [
@@ -21,33 +21,12 @@
     "fundamentals_ok": null
   },
   {
-    "ticker": "CNC",
-    "type": "BUY_PULLBACK",
-    "price": 66.9000015258789,
-    "stop_loss": 65.56200149536133,
-    "timing": "BUY NOW",
-    "trigger_price": 66.9,
-    "reason": "Pullback to BOL, META score=2",
-    "source": "JLAW",
-    "strategy": "J Law (Stage 2 / VCP / META)",
-    "sources": [
-      "JLAW"
-    ],
-    "rs_rating": 90,
-    "rev_growth_yoy": 0.09923679783349071,
-    "annual_rev_growth": null,
-    "sales_accelerating": null,
-    "fundamentals_detail": "last-Q rev +9.9% YoY, accel=n/a",
-    "fundamentals_verified": true,
-    "fundamentals_ok": true
-  },
-  {
     "ticker": "PARR",
     "type": "BUY_PULLBACK",
-    "price": 85.37999725341797,
-    "stop_loss": 83.6723973083496,
+    "price": 86.50499725341797,
+    "stop_loss": 84.36090118408202,
     "timing": "BUY NOW",
-    "trigger_price": 85.38,
+    "trigger_price": 86.505,
     "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
@@ -61,26 +40,5 @@
     "fundamentals_detail": "revenue data unavailable",
     "fundamentals_verified": false,
     "fundamentals_ok": null
-  },
-  {
-    "ticker": "SLDE",
-    "type": "BUY_PULLBACK",
-    "price": 25.18000030517578,
-    "stop_loss": 24.676400299072267,
-    "timing": "BUY NOW",
-    "trigger_price": 25.18,
-    "reason": "Pullback to BOL, META score=2",
-    "source": "JLAW",
-    "strategy": "J Law (Stage 2 / VCP / META)",
-    "sources": [
-      "JLAW"
-    ],
-    "rs_rating": 90,
-    "rev_growth_yoy": 0.47861869139587254,
-    "annual_rev_growth": null,
-    "sales_accelerating": null,
-    "fundamentals_detail": "last-Q rev +47.9% YoY, accel=n/a",
-    "fundamentals_verified": true,
-    "fundamentals_ok": true
   }
 ]
