@@ -2,10 +2,10 @@
   {
     "ticker": "AMN",
     "type": "BUY_PULLBACK",
-    "price": 34.0,
-    "stop_loss": 33.32,
+    "price": 34.255001068115234,
+    "stop_loss": 33.56990104675293,
     "timing": "BUY NOW",
-    "trigger_price": 34.0,
+    "trigger_price": 34.255,
     "reason": "Pullback to BOL, META score=3",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
@@ -21,13 +21,34 @@
     "fundamentals_ok": null
   },
   {
+    "ticker": "CMBT",
+    "type": "BUY_PULLBACK",
+    "price": 20.149999618530273,
+    "stop_loss": 19.746999626159667,
+    "timing": "BUY NOW",
+    "trigger_price": 20.15,
+    "reason": "Pullback to BOL, META score=2",
+    "source": "JLAW",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW"
+    ],
+    "rs_rating": 94,
+    "rev_growth_yoy": null,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_detail": "revenue data unavailable",
+    "fundamentals_verified": false,
+    "fundamentals_ok": null
+  },
+  {
     "ticker": "CNC",
     "type": "BUY_PULLBACK",
-    "price": 66.16999816894531,
-    "stop_loss": 64.84659820556641,
+    "price": 65.83000183105469,
+    "stop_loss": 64.51340179443359,
     "timing": "BUY NOW",
-    "trigger_price": 66.17,
-    "reason": "Pullback to BOL, META score=3",
+    "trigger_price": 65.83,
+    "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
     "sources": [
@@ -40,47 +61,5 @@
     "fundamentals_detail": "last-Q rev +9.9% YoY, accel=n/a",
     "fundamentals_verified": true,
     "fundamentals_ok": true
-  },
-  {
-    "ticker": "NEOG",
-    "type": "BUY_PULLBACK",
-    "price": 12.899999618530273,
-    "stop_loss": 12.61,
-    "timing": "BUY NOW",
-    "trigger_price": 12.9,
-    "reason": "Pullback to BOL, META score=2",
-    "source": "JLAW",
-    "strategy": "J Law (Stage 2 / VCP / META)",
-    "sources": [
-      "JLAW"
-    ],
-    "rs_rating": 93,
-    "rev_growth_yoy": null,
-    "annual_rev_growth": null,
-    "sales_accelerating": null,
-    "fundamentals_detail": "revenue data unavailable",
-    "fundamentals_verified": false,
-    "fundamentals_ok": null
-  },
-  {
-    "ticker": "PANW",
-    "type": "BUY_PULLBACK",
-    "price": 358.6499938964844,
-    "stop_loss": 351.4769940185547,
-    "timing": "BUY NOW",
-    "trigger_price": 358.65,
-    "reason": "Pullback to BOL, META score=2",
-    "source": "JLAW",
-    "strategy": "J Law (Stage 2 / VCP / META)",
-    "sources": [
-      "JLAW"
-    ],
-    "rs_rating": 92,
-    "rev_growth_yoy": null,
-    "annual_rev_growth": null,
-    "sales_accelerating": null,
-    "fundamentals_detail": "revenue data unavailable",
-    "fundamentals_verified": false,
-    "fundamentals_ok": null
   }
 ]
