@@ -249,8 +249,8 @@
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 81000.0,
-      "change_str": "+6.02%",
+      "price": 81218.7,
+      "change_str": "+0.39%",
       "direction": "up"
     },
     {
@@ -270,7 +270,7 @@
       "ticker": "AMN",
       "sector_label": "AMN",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-09-19 04:59:36 UTC",
+      "latest_at": "2026-09-19 11:31:34 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -300,7 +300,7 @@
       "ticker": "NEOG",
       "sector_label": "NEOG",
       "headline": "[JLAW] VCP breakout, pivot=12.26",
-      "latest_at": "2026-09-19 04:59:36 UTC",
+      "latest_at": "2026-09-19 11:31:34 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -473,14 +473,14 @@
     }
   ],
   "logs": [
-    "2026-09-19 04:59:35 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-09-19 11:31:34 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-09-19 04:59:35 UTC",
+  "generated_at": "2026-09-19 11:31:34 UTC",
   "top_signal": {
     "ticker": "AMN",
     "sector_label": "AMN",
     "headline": "[JLAW] Pullback to BOL, META score=2",
-    "latest_at": "2026-09-19 04:59:36 UTC",
+    "latest_at": "2026-09-19 11:31:34 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
