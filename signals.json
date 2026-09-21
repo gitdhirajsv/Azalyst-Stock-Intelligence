@@ -2,17 +2,17 @@
   {
     "ticker": "AMN",
     "type": "BUY_PULLBACK",
-    "price": 34.2599983215332,
-    "stop_loss": 33.57479835510254,
+    "price": 34.08000183105469,
+    "stop_loss": 33.398401794433596,
     "timing": "BUY NOW",
-    "trigger_price": 34.26,
-    "reason": "Pullback to BOL, META score=2",
+    "trigger_price": 34.08,
+    "reason": "Pullback to BOL, META score=3",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
     "sources": [
       "JLAW"
     ],
-    "rs_rating": 91,
+    "rs_rating": 90,
     "rev_growth_yoy": null,
     "annual_rev_growth": null,
     "sales_accelerating": null,
@@ -21,13 +21,13 @@
     "fundamentals_ok": null
   },
   {
-    "ticker": "NEOG",
-    "type": "BUY_BREAKOUT",
-    "price": 13.0,
-    "stop_loss": 11.892200222015381,
+    "ticker": "CMBT",
+    "type": "BUY_PULLBACK",
+    "price": 19.719999313354492,
+    "stop_loss": 19.325599327087403,
     "timing": "BUY NOW",
-    "trigger_price": 13.0,
-    "reason": "VCP breakout, pivot=12.26",
+    "trigger_price": 19.72,
+    "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
     "sources": [
@@ -40,5 +40,26 @@
     "fundamentals_detail": "revenue data unavailable",
     "fundamentals_verified": false,
     "fundamentals_ok": null
+  },
+  {
+    "ticker": "XMTR",
+    "type": "BUY_PULLBACK",
+    "price": 99.25499725341797,
+    "stop_loss": 96.93210029602051,
+    "timing": "BUY NOW",
+    "trigger_price": 99.255,
+    "reason": "Pullback to BOL, META score=2",
+    "source": "JLAW",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW"
+    ],
+    "rs_rating": 91,
+    "rev_growth_yoy": 0.4105458728859961,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_detail": "last-Q rev +41.1% YoY, accel=n/a",
+    "fundamentals_verified": true,
+    "fundamentals_ok": true
   }
 ]
