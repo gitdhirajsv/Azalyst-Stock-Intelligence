@@ -1,10 +1,10 @@
 {
-  "portfolio_value": 97966.44,
+  "portfolio_value": 97889.47,
   "total_deposited": 100000,
   "cash": 43744.83,
-  "change_raw": -2.03,
-  "change": "-2.03%",
-  "unrealised_str": "+$1839.21",
+  "change_raw": -2.11,
+  "change": "-2.11%",
+  "unrealised_str": "+$1762.24",
   "realised_pnl": -3872.77,
   "realised_str": "-$3872.77",
   "closed_trades": 10,
@@ -15,44 +15,44 @@
       "sector": "Unclassified",
       "source": "JLAW",
       "rs_rating": 89,
-      "pnl_pct": -7.34,
-      "pnl_pct_str": "-7.34%",
-      "pnl": -399.04,
-      "pnl_str": "-$399.04",
-      "market_value": 5037.43994140625
+      "pnl_pct": -8.02,
+      "pnl_pct_str": "-8.02%",
+      "pnl": -436.16,
+      "pnl_str": "-$436.16",
+      "market_value": 5000.31982421875
     },
     {
       "ticker": "CMBT",
       "sector": "Unclassified",
       "source": "JLAW",
       "rs_rating": 89,
-      "pnl_pct": 4.65,
-      "pnl_pct_str": "+4.65%",
-      "pnl": 849.15,
-      "pnl_str": "+$849.15",
-      "market_value": 19110.869161605835
+      "pnl_pct": 4.81,
+      "pnl_pct_str": "+4.81%",
+      "pnl": 879.12,
+      "pnl_str": "+$879.12",
+      "market_value": 19140.839847564697
     },
     {
       "ticker": "FRO",
       "sector": "Energy / Oil & Gas Midstream",
       "source": "JLAW",
       "rs_rating": 94,
-      "pnl_pct": -2.13,
-      "pnl_pct_str": "-2.13%",
-      "pnl": -218.36,
-      "pnl_str": "-$218.36",
-      "market_value": 10042.43977355957
+      "pnl_pct": -1.74,
+      "pnl_pct_str": "-1.74%",
+      "pnl": -178.08,
+      "pnl_str": "-$178.08",
+      "market_value": 10082.720291137695
     },
     {
       "ticker": "NEOG",
       "sector": "Healthcare / Medical Devices",
       "source": "JLAW",
       "rs_rating": 93,
-      "pnl_pct": 8.73,
-      "pnl_pct_str": "+8.73%",
-      "pnl": 1607.46,
-      "pnl_str": "+$1607.46",
-      "market_value": 20030.86067199707
+      "pnl_pct": 8.13,
+      "pnl_pct_str": "+8.13%",
+      "pnl": 1497.36,
+      "pnl_str": "+$1497.36",
+      "market_value": 19920.759552001953
     }
   ],
   "closed_trades_list": [
@@ -214,50 +214,50 @@
     {
       "label": "SPX",
       "ticker": "^GSPC",
-      "price": 7710.8,
-      "change_str": "-0.69%",
+      "price": 7706.03,
+      "change_str": "-0.76%",
       "direction": "down"
     },
     {
       "label": "NDX",
       "ticker": "^IXIC",
-      "price": 26944.54,
-      "change_str": "-0.65%",
+      "price": 26936.04,
+      "change_str": "-0.69%",
       "direction": "down"
     },
     {
       "label": "DJI",
       "ticker": "^DJI",
-      "price": 51557.86,
-      "change_str": "-0.94%",
+      "price": 51511.59,
+      "change_str": "-1.03%",
       "direction": "down"
     },
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4324.1,
-      "change_str": "-1.20%",
+      "price": 4322.7,
+      "change_str": "-1.23%",
       "direction": "down"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 91.99,
-      "change_str": "-2.75%",
+      "price": 92.71,
+      "change_str": "-1.99%",
       "direction": "down"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 84140.72,
-      "change_str": "-2.36%",
+      "price": 84497.7,
+      "change_str": "-1.94%",
       "direction": "down"
     },
     {
       "label": "VIX",
       "ticker": "^VIX",
-      "price": 14.94,
-      "change_str": "+0.47%",
+      "price": 15.18,
+      "change_str": "+2.08%",
       "direction": "up"
     }
   ],
@@ -265,53 +265,71 @@
     "risk_state": "RISK_ON",
     "vol_regime": "LOW_VOL"
   },
-  "signals": [],
+  "signals": [
+    {
+      "ticker": "NEOG",
+      "sector_label": "NEOG",
+      "headline": "[JLAW] VCP breakout, pivot=12.26",
+      "latest_at": "2026-09-23 21:46:32 UTC",
+      "severity": "MEDIUM",
+      "confidence": 82,
+      "source": "JLAW",
+      "sources": [
+        "JLAW"
+      ],
+      "strategy": "J Law (Stage 2 / VCP / META)",
+      "signal_type": "BUY_BREAKOUT",
+      "entry": 13.569999694824219,
+      "stop_loss": 11.892200222015381,
+      "target": null,
+      "pivot": null,
+      "rs_rating": 93,
+      "risk_pct": null,
+      "actionable_now": false,
+      "timing": "BUY NOW",
+      "trigger_price": 13.57,
+      "confluence": false,
+      "rev_growth_yoy": null,
+      "annual_rev_growth": null,
+      "sales_accelerating": null,
+      "fundamentals_verified": false,
+      "fundamentals_ok": null,
+      "fundamentals_detail": "revenue data unavailable"
+    }
+  ],
   "watchlist": [
     {
       "ticker": "OGN",
       "timing": "BUY ON BREAKOUT",
       "timing_detail": "Coiling 0.2% under the VCP pivot 13.76. Buy the move through 13.76 only if volume expands to >= 1.4x the 50-day average.",
       "trigger_price": 13.76,
-      "last_close": 13.735,
+      "last_close": 13.73,
       "pivot": 13.76,
       "buy_zone_high": 14.448,
       "projected_risk_pct": 0.65,
-      "rs_rating": 89,
+      "rs_rating": 90,
       "source": "MINERVINI",
       "actionable_now": false
     },
     {
       "ticker": "CVI",
       "timing": "WAIT FOR BREAKOUT",
-      "timing_detail": "A VCP base is formed but price 51.17 is 7.9% below the pivot 55.19. No entry until it clears the pivot.",
+      "timing_detail": "A VCP base is formed but price 51.80 is 6.5% below the pivot 55.19. No entry until it clears the pivot.",
       "trigger_price": 55.19,
-      "last_close": 51.17,
+      "last_close": 51.8,
       "pivot": 55.19,
       "buy_zone_high": 57.9495,
       "projected_risk_pct": 9.08,
-      "rs_rating": 93,
-      "source": "MINERVINI",
-      "actionable_now": false
-    },
-    {
-      "ticker": "NEOG",
-      "timing": "WAIT FOR PULLBACK",
-      "timing_detail": "Price 13.65 is 10.4% above the highest price this pivot is still buyable at (12.36) -- chasing here breaks the 5% buy zone (tops at 12.87) and/or the 8% max-risk stop. Alert on a pullback to 12.36.",
-      "trigger_price": 12.3587,
-      "last_close": 13.645,
-      "pivot": 12.26,
-      "buy_zone_high": 12.873,
-      "projected_risk_pct": 8.0,
-      "rs_rating": 93,
+      "rs_rating": 94,
       "source": "MINERVINI",
       "actionable_now": false
     },
     {
       "ticker": "CGAU",
       "timing": "WAIT FOR BREAKOUT",
-      "timing_detail": "A VCP base is formed but price 22.68 is 4.9% below the pivot 23.80. No entry until it clears the pivot.",
+      "timing_detail": "A VCP base is formed but price 22.61 is 5.3% below the pivot 23.80. No entry until it clears the pivot.",
       "trigger_price": 23.8,
-      "last_close": 22.68,
+      "last_close": 22.61,
       "pivot": 23.8,
       "buy_zone_high": 24.99,
       "projected_risk_pct": 5.8,
@@ -322,9 +340,9 @@
     {
       "ticker": "CMBT",
       "timing": "WAIT FOR BREAKOUT",
-      "timing_detail": "A VCP base is formed but price 19.11 is 8.9% below the pivot 20.82. No entry until it clears the pivot.",
+      "timing_detail": "A VCP base is formed but price 19.16 is 8.7% below the pivot 20.82. No entry until it clears the pivot.",
       "trigger_price": 20.82,
-      "last_close": 19.11,
+      "last_close": 19.16,
       "pivot": 20.82,
       "buy_zone_high": 21.861,
       "projected_risk_pct": 8.93,
@@ -333,11 +351,24 @@
       "actionable_now": false
     },
     {
+      "ticker": "FROG",
+      "timing": "WAIT FOR BREAKOUT",
+      "timing_detail": "A VCP base is formed but price 92.33 is 4.9% below the pivot 96.81. No entry until it clears the pivot.",
+      "trigger_price": 96.81,
+      "last_close": 92.33,
+      "pivot": 96.81,
+      "buy_zone_high": 101.6505,
+      "projected_risk_pct": 8.56,
+      "rs_rating": 90,
+      "source": "MINERVINI",
+      "actionable_now": false
+    },
+    {
       "ticker": "PAYC",
       "timing": "WAIT FOR BREAKOUT",
-      "timing_detail": "A VCP base is formed but price 222.24 is 4.2% below the pivot 231.49. No entry until it clears the pivot.",
+      "timing_detail": "A VCP base is formed but price 221.68 is 4.4% below the pivot 231.49. No entry until it clears the pivot.",
       "trigger_price": 231.49,
-      "last_close": 222.245,
+      "last_close": 221.68,
       "pivot": 231.49,
       "buy_zone_high": 243.0645,
       "projected_risk_pct": 5.43,
@@ -348,33 +379,49 @@
     {
       "ticker": "EQNR",
       "timing": "WAIT FOR BREAKOUT",
-      "timing_detail": "A VCP base is formed but price 42.81 is 7.1% below the pivot 45.84. No entry until it clears the pivot.",
+      "timing_detail": "A VCP base is formed but price 42.90 is 6.9% below the pivot 45.84. No entry until it clears the pivot.",
       "trigger_price": 45.84,
-      "last_close": 42.815,
+      "last_close": 42.9,
       "pivot": 45.84,
       "buy_zone_high": 48.132,
       "projected_risk_pct": 8.07,
       "rs_rating": 89,
       "source": "MINERVINI",
       "actionable_now": false
-    },
-    {
-      "ticker": "FROG",
-      "timing": "WAIT FOR BREAKOUT",
-      "timing_detail": "A VCP base is formed but price 90.42 is 7.1% below the pivot 96.81. No entry until it clears the pivot.",
-      "trigger_price": 96.81,
-      "last_close": 90.42,
-      "pivot": 96.81,
-      "buy_zone_high": 101.6505,
-      "projected_risk_pct": 8.56,
-      "rs_rating": 89,
-      "source": "MINERVINI",
-      "actionable_now": false
     }
   ],
   "logs": [
-    "2026-09-23 18:35:10 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-09-23 21:46:32 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-09-23 18:35:10 UTC",
-  "top_signal": null
+  "generated_at": "2026-09-23 21:46:32 UTC",
+  "top_signal": {
+    "ticker": "NEOG",
+    "sector_label": "NEOG",
+    "headline": "[JLAW] VCP breakout, pivot=12.26",
+    "latest_at": "2026-09-23 21:46:32 UTC",
+    "severity": "MEDIUM",
+    "confidence": 82,
+    "source": "JLAW",
+    "sources": [
+      "JLAW"
+    ],
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "signal_type": "BUY_BREAKOUT",
+    "entry": 13.569999694824219,
+    "stop_loss": 11.892200222015381,
+    "target": null,
+    "pivot": null,
+    "rs_rating": 93,
+    "risk_pct": null,
+    "actionable_now": false,
+    "timing": "BUY NOW",
+    "trigger_price": 13.57,
+    "confluence": false,
+    "rev_growth_yoy": null,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_verified": false,
+    "fundamentals_ok": null,
+    "fundamentals_detail": "revenue data unavailable"
+  }
 }
