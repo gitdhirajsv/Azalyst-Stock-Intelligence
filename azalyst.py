@@ -1,4 +1,5 @@
 import os
+import pandas as pd
 from datetime import datetime, timezone
 from config import *
 from universe import get_universe
@@ -10,7 +11,10 @@ from signal_generator import generate_entry_signals, generate_watch_signals
 from minervini import compute_rs_ratings
 from fundamentals import apply_fundamental_filter
 from risk_manager import RiskManager, evaluate_stop_loss_exits, check_diversification
-from paper_trader import init_db, get_cash, get_positions, execute_trade, record_equity_snapshot
+from paper_trader import (
+    init_db, get_cash, get_positions, execute_trade, record_equity_snapshot,
+    last_trade_bar_date,
+)
 from performance import generate_performance_report
 from signal_history import HISTORY_PATH, append_observations
 
@@ -31,9 +35,25 @@ US_MARKET_ACTIVE_UTC_HOURS = range(13, 21)
 
 
 def _entries_allowed(now=None):
-    """True only when it's safe to treat the latest daily bar as complete."""
+    """True only when it's safe to treat the latest daily bar as complete.
+
+    STK-09 addition (alpha post-mortem 2026-09-01): weekend runs are also
+    excluded. On Sat/Sun the "latest bar" is Friday's, which the Friday
+    after-hours runs already evaluated; weekend entry passes added nothing
+    but extra chances to re-fire the same stale signal (the RHI weekend
+    rebuy loop). The per-bar trade latch below is the hard guard — this is
+    belt-and-suspenders that also saves pointless weekend scans.
+    """
     now = now or datetime.now(timezone.utc)
-    return now.hour not in US_MARKET_ACTIVE_UTC_HOURS
+    return now.weekday() < 5 and now.hour not in US_MARKET_ACTIVE_UTC_HOURS
+
+
+def _latest_bar_date(df):
+    """ISO date of a ticker's most recent completed daily bar, or None."""
+    try:
+        return str(pd.Timestamp(df.index[-1]).date())
+    except Exception:
+        return None
 
 
 def run_pipeline():
@@ -153,7 +173,8 @@ def run_pipeline():
     # (STK-02 remediation, forensic audit 2026-07-28) for why this replaced
     # the old hardcoded "Dummy exit rule" checked against Close only.
     for ticker, shares, fill_price, reason in evaluate_stop_loss_exits(positions, stock_data):
-        execute_trade(ticker, 'SELL', shares, fill_price, reason=reason)
+        exit_bar = _latest_bar_date(stock_data[ticker]) if ticker in stock_data else None
+        execute_trade(ticker, 'SELL', shares, fill_price, reason=reason, bar_date=exit_bar)
         print(f"SELL ({reason}) {shares} {ticker} @ {fill_price}")
     
     # Execute Entries
@@ -190,6 +211,22 @@ def run_pipeline():
                 if ticker in held_tickers:
                     continue
 
+                # STK-09 per-bar trade latch (alpha post-mortem 2026-09-01):
+                # `ticker in held_tickers` alone vacates the moment a stop-out
+                # SELL removes the position, so the same still-valid signal on
+                # the same completed bar produced a buy->stop->rebuy loop (RHI
+                # was bought and stopped out 4x at identical prices over one
+                # weekend, -2% each = 66% of all realized losses). One action
+                # per ticker per completed bar: if the ticker's latest recorded
+                # trade was decided on (or after) the bar we're looking at now,
+                # skip it — a NEW bar must print before it's tradeable again.
+                bar_date = _latest_bar_date(stock_data.get(ticker)) if ticker in stock_data else None
+                last_bar = last_trade_bar_date(ticker)
+                if bar_date and last_bar and str(last_bar)[:10] >= bar_date:
+                    print(f"[latch] {ticker} skipped - already traded on bar {last_bar} "
+                          f"(current bar {bar_date})")
+                    continue
+
                 allowed, shares, reason = rm.check_entry(price, sig['stop_loss'])
                 if not allowed:
                     continue
@@ -213,7 +250,7 @@ def run_pipeline():
                 success, msg = execute_trade(
                     ticker, 'BUY', shares, price, reason=sig['reason'],
                     source=source_label, sector=sector, rs_rating=sig.get('rs_rating'),
-                    stop_loss=sig['stop_loss'],
+                    stop_loss=sig['stop_loss'], bar_date=bar_date,
                 )
                 if success:
                     print(f"BUY {shares} {ticker} @ {price} ({sig['reason']})")

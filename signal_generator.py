@@ -6,28 +6,44 @@ from minervini import (
 from config import MAX_WATCH_ENTRIES
 
 
-def _jlaw_stop(pivot, entry):
-    """Stop for a J Law entry: 3% below the pivot, but never above (or too
-    close to) the actual entry price.
+# Maximum structural risk on any J Law entry (Minervini's 8% rule — the same
+# cap minervini_signal already enforces). A signal whose volatility-correct
+# stop would sit deeper than this is rejected, not clamped: clamping would
+# recreate the too-tight-stop problem this function exists to fix.
+JLAW_MAX_RISK_PCT = 0.08
+# Stop must clear at least this many ATRs of room below entry.
+JLAW_ATR_STOP_MULT = 2.0
+
+
+def _jlaw_stop(pivot, entry, atr=None):
+    """Stop for a J Law entry: below the pivot AND outside daily noise.
 
     STK-05 remediation (forensic audit 2026-07-28): the pullback branch
     used a fixed `pivot * 0.97` regardless of how far the M.E.T.A. pullback
-    price had actually moved from the pivot. detect_meta_pullback only
-    requires 2 of 4 "edges" (BOL-zone proximity is just one of them), so a
-    pullback can qualify via MA support + volume contraction alone while
-    sitting well below the pivot -- detect_vcp allows contractions up to
-    10% below pivot. When that happens, pivot*0.97 (3% below pivot) sits
-    ABOVE the entry price: a long position sized off a stop that's already
-    been breached before the trade is even opened. This was live: a signal
-    for AMN priced entry at 33.45 with stop_loss 34.66 (pivot*0.97, 3.6%
-    ABOVE entry). Taking the tighter-normally / safer-when-degenerate of
-    "3% below pivot" and "2% below actual entry" fixes both cases: when
-    entry is near the pivot (the intended case), pivot*0.97 is naturally
-    the lower (and wins); when entry has drifted well below the pivot, the
-    2%-below-entry level is the lower one and wins, keeping the stop
-    correctly beneath the price actually being paid.
+    price had actually moved from the pivot, which could place the stop
+    ABOVE the entry (live AMN signal: entry 33.45, stop 34.66). Taking the
+    lower of "3% below pivot" and "2% below entry" fixed the inversion.
+
+    STK-08 remediation (alpha post-mortem 2026-09-01): that fix hard-wired
+    an at-most-2%-below-entry stop with no relation to the stock's actual
+    volatility. Every closed trade in the live book exited at exactly
+    -2.00% "Stop Loss" (0 winners / 6 losers): a 2% stop on stocks with
+    2-4% daily ranges is inside ordinary noise and has near-certain touch
+    probability within days, while the strategy's profit paths (3R target,
+    20% gain) need moves it never survives long enough to see. ATR was
+    computed in data_loader for exactly this purpose and never used
+    anywhere. The stop now also clears JLAW_ATR_STOP_MULT x ATR of room
+    below entry; if the volatility-correct stop would exceed
+    JLAW_MAX_RISK_PCT of entry, the signal is rejected (return None) --
+    the name is too volatile to trade with an acceptable stop, same as
+    minervini_signal's own 8% structural-risk rejection.
     """
-    return min(pivot * 0.97, entry * 0.98)
+    stop = min(pivot * 0.97, entry * 0.98)
+    if atr is not None and atr == atr and atr > 0:  # atr==atr filters NaN
+        stop = min(stop, entry - JLAW_ATR_STOP_MULT * atr)
+    if stop <= 0 or (entry - stop) / entry > JLAW_MAX_RISK_PCT:
+        return None
+    return stop
 
 
 def _jlaw_signal(ticker, df):
@@ -39,10 +55,18 @@ def _jlaw_signal(ticker, df):
     vcp = detect_vcp(df)
     if vcp is None:
         return None
+    atr = df.iloc[-1].get('ATR') if 'ATR' in df.columns else None
     if vcp['breakout_now']:
-        stop = _jlaw_stop(vcp['pivot'], vcp['close'])
-        if stop >= vcp['close']:
-            return None  # defensive: never emit an inverted/non-positive-risk stop
+        # STK-08 buy-zone gate (alpha post-mortem 2026-09-01): the breakout
+        # branch had no extension check, unlike the Minervini path's
+        # pivot*1.05 buy zone (minervini.py). Live consequence: TGT bought
+        # 18.5% above its pivot with an 18.2% stop — the classic extended
+        # chase this strategy is supposed to forbid. Same 5% zone here.
+        if vcp['close'] > vcp['pivot'] * 1.05:
+            return None
+        stop = _jlaw_stop(vcp['pivot'], vcp['close'], atr=atr)
+        if stop is None or stop >= vcp['close']:
+            return None  # rejected: inverted stop or risk beyond JLAW_MAX_RISK_PCT
         return {
             'ticker': ticker,
             'type': 'BUY_BREAKOUT',
@@ -54,9 +78,9 @@ def _jlaw_signal(ticker, df):
         }
     meta = detect_meta_pullback(df, vcp['pivot'])
     if meta['is_meta']:
-        stop = _jlaw_stop(vcp['pivot'], vcp['close'])
-        if stop >= vcp['close']:
-            return None  # defensive: never emit an inverted/non-positive-risk stop
+        stop = _jlaw_stop(vcp['pivot'], vcp['close'], atr=atr)
+        if stop is None or stop >= vcp['close']:
+            return None  # rejected: inverted stop or risk beyond JLAW_MAX_RISK_PCT
         return {
             'ticker': ticker,
             'type': 'BUY_PULLBACK',

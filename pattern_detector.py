@@ -102,7 +102,14 @@ def detect_meta_pullback(df, pivot, lookback=30):
         if abs(close - pred) / close <= 0.03:
             edges += 1
 
+    # STK-08 (alpha post-mortem 2026-09-01): threshold raised 2 -> 3. Two of
+    # the four edges (within 2% of a 10/20/50 MA; volume under half the
+    # 50-day average) are trivially common on any quiet drift, so a 2-edge
+    # bar is not a pullback setup — it's noise near a moving average. Five
+    # of the six losing live trades (0% win rate) entered on
+    # "Pullback to BOL, META score=2". Requiring 3 of 4 edges means the
+    # entry must also sit at the breakout level or on trendline support.
     return {
         'meta_score': edges,
-        'is_meta': edges >= 2
+        'is_meta': edges >= 3
     }
