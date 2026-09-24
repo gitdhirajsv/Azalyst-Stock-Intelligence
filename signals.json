@@ -1,18 +1,60 @@
 [
   {
-    "ticker": "NEOG",
-    "type": "BUY_BREAKOUT",
-    "price": 13.569999694824219,
-    "stop_loss": 11.892200222015381,
+    "ticker": "CVI",
+    "type": "BUY_PULLBACK",
+    "price": 51.939998626708984,
+    "stop_loss": 50.901198654174806,
     "timing": "BUY NOW",
-    "trigger_price": 13.57,
-    "reason": "VCP breakout, pivot=12.26",
+    "trigger_price": 51.94,
+    "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
     "sources": [
       "JLAW"
     ],
-    "rs_rating": 93,
+    "rs_rating": 94,
+    "rev_growth_yoy": null,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_detail": "revenue data unavailable",
+    "fundamentals_verified": false,
+    "fundamentals_ok": null
+  },
+  {
+    "ticker": "NET",
+    "type": "BUY_PULLBACK",
+    "price": 359.7200012207031,
+    "stop_loss": 352.5256011962891,
+    "timing": "BUY NOW",
+    "trigger_price": 359.72,
+    "reason": "Pullback to BOL, META score=2",
+    "source": "JLAW",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW"
+    ],
+    "rs_rating": 92,
+    "rev_growth_yoy": 0.3586555953747297,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_detail": "last-Q rev +35.9% YoY, accel=n/a",
+    "fundamentals_verified": true,
+    "fundamentals_ok": true
+  },
+  {
+    "ticker": "RNG",
+    "type": "BUY_PULLBACK",
+    "price": 80.627197265625,
+    "stop_loss": 79.0146533203125,
+    "timing": "BUY NOW",
+    "trigger_price": 80.6272,
+    "reason": "Pullback to BOL, META score=2",
+    "source": "JLAW",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW"
+    ],
+    "rs_rating": 98,
     "rev_growth_yoy": null,
     "annual_rev_growth": null,
     "sales_accelerating": null,
