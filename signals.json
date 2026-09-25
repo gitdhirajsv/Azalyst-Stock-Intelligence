@@ -1,18 +1,18 @@
 [
   {
-    "ticker": "AMN",
+    "ticker": "CRWD",
     "type": "BUY_PULLBACK",
-    "price": 34.52000045776367,
-    "stop_loss": 33.829600448608396,
+    "price": 252.1300048828125,
+    "stop_loss": 247.08740478515625,
     "timing": "BUY NOW",
-    "trigger_price": 34.52,
-    "reason": "Pullback to BOL, META score=3",
+    "trigger_price": 252.13,
+    "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
     "sources": [
       "JLAW"
     ],
-    "rs_rating": 91,
+    "rs_rating": 96,
     "rev_growth_yoy": null,
     "annual_rev_growth": null,
     "sales_accelerating": null,
@@ -23,10 +23,10 @@
   {
     "ticker": "PANW",
     "type": "BUY_PULLBACK",
-    "price": 377.56689453125,
-    "stop_loss": 370.015556640625,
+    "price": 374.739990234375,
+    "stop_loss": 367.2451904296875,
     "timing": "BUY NOW",
-    "trigger_price": 377.5669,
+    "trigger_price": 374.74,
     "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
@@ -34,27 +34,6 @@
       "JLAW"
     ],
     "rs_rating": 94,
-    "rev_growth_yoy": null,
-    "annual_rev_growth": null,
-    "sales_accelerating": null,
-    "fundamentals_detail": "revenue data unavailable",
-    "fundamentals_verified": false,
-    "fundamentals_ok": null
-  },
-  {
-    "ticker": "RNG",
-    "type": "BUY_PULLBACK",
-    "price": 77.25,
-    "stop_loss": 75.705,
-    "timing": "BUY NOW",
-    "trigger_price": 77.25,
-    "reason": "Pullback to BOL, META score=2",
-    "source": "JLAW",
-    "strategy": "J Law (Stage 2 / VCP / META)",
-    "sources": [
-      "JLAW"
-    ],
-    "rs_rating": 97,
     "rev_growth_yoy": null,
     "annual_rev_growth": null,
     "sales_accelerating": null,
