@@ -260,8 +260,8 @@
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 84154.79,
-      "change_str": "+0.14%",
+      "price": 84136.82,
+      "change_str": "+0.12%",
       "direction": "up"
     },
     {
@@ -281,7 +281,7 @@
       "ticker": "CRWD",
       "sector_label": "CRWD",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-09-26 11:49:57 UTC",
+      "latest_at": "2026-09-26 16:42:36 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -311,7 +311,7 @@
       "ticker": "PANW",
       "sector_label": "PANW",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-09-26 11:49:57 UTC",
+      "latest_at": "2026-09-26 16:42:36 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -458,14 +458,14 @@
     }
   ],
   "logs": [
-    "2026-09-26 11:49:57 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-09-26 16:42:35 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-09-26 11:49:57 UTC",
+  "generated_at": "2026-09-26 16:42:35 UTC",
   "top_signal": {
     "ticker": "CRWD",
     "sector_label": "CRWD",
     "headline": "[JLAW] Pullback to BOL, META score=2",
-    "latest_at": "2026-09-26 11:49:57 UTC",
+    "latest_at": "2026-09-26 16:42:36 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
