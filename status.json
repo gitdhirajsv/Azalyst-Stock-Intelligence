@@ -246,30 +246,30 @@
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4321.2,
-      "change_str": "+0.54%",
-      "direction": "up"
+      "price": 4179.3,
+      "change_str": "-3.28%",
+      "direction": "down"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 92.41,
-      "change_str": "-2.33%",
-      "direction": "down"
+      "price": 95.21,
+      "change_str": "+3.03%",
+      "direction": "up"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 84498.83,
-      "change_str": "+0.11%",
-      "direction": "up"
+      "price": 82751.34,
+      "change_str": "-2.02%",
+      "direction": "down"
     },
     {
       "label": "VIX",
       "ticker": "^VIX",
-      "price": 14.87,
-      "change_str": "-5.11%",
-      "direction": "down"
+      "price": 16.23,
+      "change_str": "+9.15%",
+      "direction": "up"
     }
   ],
   "regime": {
@@ -281,7 +281,7 @@
       "ticker": "CRWD",
       "sector_label": "CRWD",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-09-27 21:38:31 UTC",
+      "latest_at": "2026-09-28 09:03:44 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -311,7 +311,7 @@
       "ticker": "PANW",
       "sector_label": "PANW",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-09-27 21:38:31 UTC",
+      "latest_at": "2026-09-28 09:03:44 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -458,14 +458,14 @@
     }
   ],
   "logs": [
-    "2026-09-27 21:38:30 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-09-28 09:03:44 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-09-27 21:38:30 UTC",
+  "generated_at": "2026-09-28 09:03:44 UTC",
   "top_signal": {
     "ticker": "CRWD",
     "sector_label": "CRWD",
     "headline": "[JLAW] Pullback to BOL, META score=2",
-    "latest_at": "2026-09-27 21:38:31 UTC",
+    "latest_at": "2026-09-28 09:03:44 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
