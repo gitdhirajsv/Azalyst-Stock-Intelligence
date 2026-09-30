@@ -1,7 +1,7 @@
 {
   "portfolio_value": 96073.07,
   "total_deposited": 100000,
-  "cash": 43075.46,
+  "cash": 25076.21,
   "change_raw": -3.93,
   "change": "-3.93%",
   "unrealised_str": "+$615.21",
@@ -53,6 +53,17 @@
       "pnl": 264.24,
       "pnl_str": "+$264.24",
       "market_value": 18687.63932800293
+    },
+    {
+      "ticker": "AMN",
+      "sector": "Healthcare / Medical Care Facilities",
+      "source": "JLAW",
+      "rs_rating": 92,
+      "pnl_pct": 0.0,
+      "pnl_pct_str": "+0.00%",
+      "pnl": 0.0,
+      "pnl_str": "+$0.00",
+      "market_value": 17999.25039291382
     }
   ],
   "closed_trades_list": [
@@ -274,29 +285,29 @@
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4202.2,
-      "change_str": "+0.81%",
+      "price": 4230.4,
+      "change_str": "+1.21%",
       "direction": "up"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 89.72,
-      "change_str": "-3.11%",
-      "direction": "down"
+      "price": 89.45,
+      "change_str": "+0.08%",
+      "direction": "up"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 83310.96,
-      "change_str": "-0.23%",
+      "price": 83035.0,
+      "change_str": "-0.70%",
       "direction": "down"
     },
     {
       "label": "VIX",
       "ticker": "^VIX",
-      "price": 16.04,
-      "change_str": "-0.19%",
+      "price": 15.94,
+      "change_str": "-0.62%",
       "direction": "down"
     }
   ],
@@ -309,7 +320,7 @@
       "ticker": "AMN",
       "sector_label": "AMN",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-09-30 01:32:28 UTC",
+      "latest_at": "2026-09-30 08:57:58 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -339,7 +350,7 @@
       "ticker": "NET",
       "sector_label": "NET",
       "headline": "[JLAW] Pullback to BOL, META score=2",
-      "latest_at": "2026-09-30 01:32:28 UTC",
+      "latest_at": "2026-09-30 08:57:58 UTC",
       "severity": "MEDIUM",
       "confidence": 82,
       "source": "JLAW",
@@ -473,14 +484,14 @@
     }
   ],
   "logs": [
-    "2026-09-30 01:32:28 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-09-30 08:57:58 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-09-30 01:32:28 UTC",
+  "generated_at": "2026-09-30 08:57:58 UTC",
   "top_signal": {
     "ticker": "AMN",
     "sector_label": "AMN",
     "headline": "[JLAW] Pullback to BOL, META score=2",
-    "latest_at": "2026-09-30 01:32:28 UTC",
+    "latest_at": "2026-09-30 08:57:58 UTC",
     "severity": "MEDIUM",
     "confidence": 82,
     "source": "JLAW",
