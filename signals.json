@@ -1,18 +1,60 @@
 [
   {
+    "ticker": "AMD",
+    "type": "BUY_PULLBACK",
+    "price": 601.8952026367188,
+    "stop_loss": 589.8572985839844,
+    "timing": "BUY NOW",
+    "trigger_price": 601.8952,
+    "reason": "Pullback to BOL, META score=3",
+    "source": "JLAW",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW"
+    ],
+    "rs_rating": 98,
+    "rev_growth_yoy": null,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_detail": "revenue data unavailable",
+    "fundamentals_verified": false,
+    "fundamentals_ok": null
+  },
+  {
     "ticker": "AMN",
     "type": "BUY_PULLBACK",
-    "price": 34.95000076293945,
-    "stop_loss": 34.25100074768066,
+    "price": 35.63999938964844,
+    "stop_loss": 34.49320133209228,
     "timing": "BUY NOW",
-    "trigger_price": 34.95,
+    "trigger_price": 35.64,
     "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
     "sources": [
       "JLAW"
     ],
-    "rs_rating": 92,
+    "rs_rating": 91,
+    "rev_growth_yoy": null,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_detail": "revenue data unavailable",
+    "fundamentals_verified": false,
+    "fundamentals_ok": null
+  },
+  {
+    "ticker": "DDOG",
+    "type": "BUY_PULLBACK",
+    "price": 276.0199890136719,
+    "stop_loss": 270.4995892333984,
+    "timing": "BUY NOW",
+    "trigger_price": 276.02,
+    "reason": "Pullback to BOL, META score=2",
+    "source": "JLAW",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW"
+    ],
+    "rs_rating": 93,
     "rev_growth_yoy": null,
     "annual_rev_growth": null,
     "sales_accelerating": null,
@@ -23,11 +65,11 @@
   {
     "ticker": "NET",
     "type": "BUY_PULLBACK",
-    "price": 352.260009765625,
-    "stop_loss": 345.21480957031247,
+    "price": 352.1700134277344,
+    "stop_loss": 345.12661315917967,
     "timing": "BUY NOW",
-    "trigger_price": 352.26,
-    "reason": "Pullback to BOL, META score=2",
+    "trigger_price": 352.17,
+    "reason": "Pullback to BOL, META score=3",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
     "sources": [
@@ -38,6 +80,27 @@
     "annual_rev_growth": null,
     "sales_accelerating": null,
     "fundamentals_detail": "last-Q rev +35.9% YoY, accel=n/a",
+    "fundamentals_verified": true,
+    "fundamentals_ok": true
+  },
+  {
+    "ticker": "WT",
+    "type": "BUY_PULLBACK",
+    "price": 24.6299991607666,
+    "stop_loss": 24.114200592041016,
+    "timing": "BUY NOW",
+    "trigger_price": 24.63,
+    "reason": "Pullback to BOL, META score=2",
+    "source": "JLAW",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW"
+    ],
+    "rs_rating": 92,
+    "rev_growth_yoy": 0.5730636382202254,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_detail": "last-Q rev +57.3% YoY, accel=n/a",
     "fundamentals_verified": true,
     "fundamentals_ok": true
   }
