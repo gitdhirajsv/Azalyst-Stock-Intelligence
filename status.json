@@ -1,7 +1,7 @@
 {
   "portfolio_value": 96710.05,
   "total_deposited": 100000,
-  "cash": 25076.21,
+  "cash": 7335.17,
   "change_raw": -3.29,
   "change": "-3.29%",
   "unrealised_str": "+$1252.19",
@@ -64,6 +64,17 @@
       "pnl": 473.8,
       "pnl_str": "+$473.80",
       "market_value": 18473.049449920654
+    },
+    {
+      "ticker": "AMD",
+      "sector": "Technology / Semiconductors",
+      "source": "JLAW",
+      "rs_rating": 98,
+      "pnl_pct": 0.0,
+      "pnl_pct_str": "+0.00%",
+      "pnl": 0.0,
+      "pnl_str": "+$0.00",
+      "market_value": 17741.040283203125
     }
   ],
   "closed_trades_list": [
@@ -285,29 +296,29 @@
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4193.1,
-      "change_str": "+0.32%",
+      "price": 4190.5,
+      "change_str": "+0.09%",
       "direction": "up"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 90.14,
-      "change_str": "+0.85%",
+      "price": 92.64,
+      "change_str": "+2.46%",
       "direction": "up"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 83486.98,
-      "change_str": "-0.16%",
-      "direction": "down"
+      "price": 83722.2,
+      "change_str": "+0.20%",
+      "direction": "up"
     },
     {
       "label": "VIX",
       "ticker": "^VIX",
-      "price": 16.34,
-      "change_str": "+1.87%",
+      "price": 16.69,
+      "change_str": "+2.14%",
       "direction": "up"
     }
   ],
@@ -315,11 +326,211 @@
     "risk_state": "RISK_ON",
     "vol_regime": "LOW_VOL"
   },
-  "signals": [],
-  "watchlist": [],
-  "logs": [
-    "2026-10-01 01:32:33 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+  "signals": [
+    {
+      "ticker": "AMD",
+      "sector_label": "AMD",
+      "headline": "[JLAW] Pullback to BOL, META score=2",
+      "latest_at": "2026-10-01 09:22:54 UTC",
+      "severity": "MEDIUM",
+      "confidence": 82,
+      "source": "JLAW",
+      "sources": [
+        "JLAW"
+      ],
+      "strategy": "J Law (Stage 2 / VCP / META)",
+      "signal_type": "BUY_PULLBACK",
+      "entry": 611.760009765625,
+      "stop_loss": 599.5248095703125,
+      "target": null,
+      "pivot": null,
+      "rs_rating": 98,
+      "risk_pct": null,
+      "actionable_now": false,
+      "timing": "BUY NOW",
+      "trigger_price": 611.76,
+      "confluence": false,
+      "rev_growth_yoy": null,
+      "annual_rev_growth": null,
+      "sales_accelerating": null,
+      "fundamentals_verified": false,
+      "fundamentals_ok": null,
+      "fundamentals_detail": "revenue data unavailable"
+    },
+    {
+      "ticker": "AMN",
+      "sector_label": "AMN",
+      "headline": "[JLAW+MINERVINI] VCP breakout, pivot=35.56 | +MINERVINI confluence (RS 92)",
+      "latest_at": "2026-10-01 09:22:54 UTC",
+      "severity": "HIGH",
+      "confidence": 95,
+      "source": "JLAW+MINERVINI",
+      "sources": [
+        "JLAW",
+        "MINERVINI"
+      ],
+      "strategy": "J Law (Stage 2 / VCP / META)",
+      "signal_type": "BUY_BREAKOUT",
+      "entry": 35.87,
+      "stop_loss": 33.41,
+      "target": 43.25,
+      "pivot": 35.56,
+      "rs_rating": 92,
+      "risk_pct": 6.86,
+      "actionable_now": true,
+      "timing": "BUY NOW",
+      "trigger_price": 35.87,
+      "confluence": true,
+      "rev_growth_yoy": null,
+      "annual_rev_growth": null,
+      "sales_accelerating": null,
+      "fundamentals_verified": false,
+      "fundamentals_ok": null,
+      "fundamentals_detail": "revenue data unavailable"
+    },
+    {
+      "ticker": "NET",
+      "sector_label": "NET",
+      "headline": "[JLAW] Pullback to BOL, META score=2",
+      "latest_at": "2026-10-01 09:22:54 UTC",
+      "severity": "MEDIUM",
+      "confidence": 82,
+      "source": "JLAW",
+      "sources": [
+        "JLAW"
+      ],
+      "strategy": "J Law (Stage 2 / VCP / META)",
+      "signal_type": "BUY_PULLBACK",
+      "entry": 347.2799987792969,
+      "stop_loss": 340.33439880371094,
+      "target": null,
+      "pivot": null,
+      "rs_rating": 91,
+      "risk_pct": null,
+      "actionable_now": false,
+      "timing": "BUY NOW",
+      "trigger_price": 347.28,
+      "confluence": false,
+      "rev_growth_yoy": 0.3586555953747297,
+      "annual_rev_growth": null,
+      "sales_accelerating": null,
+      "fundamentals_verified": true,
+      "fundamentals_ok": true,
+      "fundamentals_detail": "last-Q rev +35.9% YoY, accel=n/a"
+    }
   ],
-  "generated_at": "2026-10-01 01:32:33 UTC",
-  "top_signal": null
+  "watchlist": [
+    {
+      "ticker": "OGN",
+      "timing": "BUY ON BREAKOUT",
+      "timing_detail": "Coiling 0.4% under the VCP pivot 13.76. Buy the move through 13.76 only if volume expands to >= 1.4x the 50-day average.",
+      "trigger_price": 13.76,
+      "last_close": 13.7,
+      "pivot": 13.76,
+      "buy_zone_high": 14.448,
+      "projected_risk_pct": 0.65,
+      "rs_rating": 89,
+      "source": "MINERVINI",
+      "actionable_now": false
+    },
+    {
+      "ticker": "CORT",
+      "timing": "WAIT FOR BREAKOUT",
+      "timing_detail": "A VCP base is formed but price 115.23 is 4.6% below the pivot 120.51. No entry until it clears the pivot.",
+      "trigger_price": 120.51,
+      "last_close": 115.23,
+      "pivot": 120.51,
+      "buy_zone_high": 126.5355,
+      "projected_risk_pct": 6.1,
+      "rs_rating": 93,
+      "source": "MINERVINI",
+      "actionable_now": false
+    },
+    {
+      "ticker": "DDOG",
+      "timing": "WAIT FOR BREAKOUT",
+      "timing_detail": "A VCP base is formed but price 273.85 is 2.5% below the pivot 280.70. No entry until it clears the pivot.",
+      "trigger_price": 280.7,
+      "last_close": 273.85,
+      "pivot": 280.7,
+      "buy_zone_high": 294.735,
+      "projected_risk_pct": 8.98,
+      "rs_rating": 93,
+      "source": "MINERVINI",
+      "actionable_now": false
+    },
+    {
+      "ticker": "SSL",
+      "timing": "WAIT FOR BREAKOUT",
+      "timing_detail": "A VCP base is formed but price 13.82 is 5.3% below the pivot 14.55. No entry until it clears the pivot.",
+      "trigger_price": 14.55,
+      "last_close": 13.82,
+      "pivot": 14.55,
+      "buy_zone_high": 15.2775,
+      "projected_risk_pct": 5.91,
+      "rs_rating": 93,
+      "source": "MINERVINI",
+      "actionable_now": false
+    },
+    {
+      "ticker": "WT",
+      "timing": "WAIT FOR BREAKOUT",
+      "timing_detail": "A VCP base is formed but price 24.29 is 2.3% below the pivot 24.86. No entry until it clears the pivot.",
+      "trigger_price": 24.86,
+      "last_close": 24.29,
+      "pivot": 24.86,
+      "buy_zone_high": 26.103,
+      "projected_risk_pct": 4.55,
+      "rs_rating": 92,
+      "source": "MINERVINI",
+      "actionable_now": false
+    },
+    {
+      "ticker": "PAYC",
+      "timing": "WAIT FOR BREAKOUT",
+      "timing_detail": "A VCP base is formed but price 217.65 is 7.0% below the pivot 232.86. No entry until it clears the pivot.",
+      "trigger_price": 232.86,
+      "last_close": 217.65,
+      "pivot": 232.86,
+      "buy_zone_high": 244.503,
+      "projected_risk_pct": 8.79,
+      "rs_rating": 89,
+      "source": "MINERVINI",
+      "actionable_now": false
+    }
+  ],
+  "logs": [
+    "2026-10-01 09:22:54 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+  ],
+  "generated_at": "2026-10-01 09:22:54 UTC",
+  "top_signal": {
+    "ticker": "AMD",
+    "sector_label": "AMD",
+    "headline": "[JLAW] Pullback to BOL, META score=2",
+    "latest_at": "2026-10-01 09:22:54 UTC",
+    "severity": "MEDIUM",
+    "confidence": 82,
+    "source": "JLAW",
+    "sources": [
+      "JLAW"
+    ],
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "signal_type": "BUY_PULLBACK",
+    "entry": 611.760009765625,
+    "stop_loss": 599.5248095703125,
+    "target": null,
+    "pivot": null,
+    "rs_rating": 98,
+    "risk_pct": null,
+    "actionable_now": false,
+    "timing": "BUY NOW",
+    "trigger_price": 611.76,
+    "confluence": false,
+    "rev_growth_yoy": null,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_verified": false,
+    "fundamentals_ok": null,
+    "fundamentals_detail": "revenue data unavailable"
+  }
 }

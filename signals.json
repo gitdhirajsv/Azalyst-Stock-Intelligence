@@ -1,1 +1,79 @@
-[]
+[
+  {
+    "ticker": "AMD",
+    "type": "BUY_PULLBACK",
+    "price": 611.760009765625,
+    "stop_loss": 599.5248095703125,
+    "timing": "BUY NOW",
+    "trigger_price": 611.76,
+    "reason": "Pullback to BOL, META score=2",
+    "source": "JLAW",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW"
+    ],
+    "rs_rating": 98,
+    "rev_growth_yoy": null,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_detail": "revenue data unavailable",
+    "fundamentals_verified": false,
+    "fundamentals_ok": null
+  },
+  {
+    "ticker": "AMN",
+    "type": "BUY_BREAKOUT",
+    "price": 35.87,
+    "stop_loss": 33.41,
+    "timing": "BUY NOW",
+    "trigger_price": 35.87,
+    "reason": "VCP breakout, pivot=35.56 | +MINERVINI confluence (RS 92)",
+    "source": "JLAW+MINERVINI",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW",
+      "MINERVINI"
+    ],
+    "confluence": true,
+    "rs_rating": 92,
+    "pivot": 35.56,
+    "target": 43.25,
+    "buy_zone_high": 37.338,
+    "risk_pct": 6.86,
+    "actionable_now": true,
+    "minervini": {
+      "pivot": 35.56,
+      "stop_loss": 33.41,
+      "target": 43.25,
+      "buy_zone_high": 37.338,
+      "risk_pct": 6.86
+    },
+    "rev_growth_yoy": null,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_detail": "revenue data unavailable",
+    "fundamentals_verified": false,
+    "fundamentals_ok": null
+  },
+  {
+    "ticker": "NET",
+    "type": "BUY_PULLBACK",
+    "price": 347.2799987792969,
+    "stop_loss": 340.33439880371094,
+    "timing": "BUY NOW",
+    "trigger_price": 347.28,
+    "reason": "Pullback to BOL, META score=2",
+    "source": "JLAW",
+    "strategy": "J Law (Stage 2 / VCP / META)",
+    "sources": [
+      "JLAW"
+    ],
+    "rs_rating": 91,
+    "rev_growth_yoy": 0.3586555953747297,
+    "annual_rev_growth": null,
+    "sales_accelerating": null,
+    "fundamentals_detail": "last-Q rev +35.9% YoY, accel=n/a",
+    "fundamentals_verified": true,
+    "fundamentals_ok": true
+  }
+]
