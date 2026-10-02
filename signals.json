@@ -2,10 +2,10 @@
   {
     "ticker": "AMD",
     "type": "BUY_PULLBACK",
-    "price": 615.5505981445312,
-    "stop_loss": 603.2395861816406,
+    "price": 615.72998046875,
+    "stop_loss": 603.415380859375,
     "timing": "BUY NOW",
-    "trigger_price": 615.5506,
+    "trigger_price": 615.73,
     "reason": "Pullback to BOL, META score=2",
     "source": "JLAW",
     "strategy": "J Law (Stage 2 / VCP / META)",
@@ -19,26 +19,5 @@
     "fundamentals_detail": "revenue data unavailable",
     "fundamentals_verified": false,
     "fundamentals_ok": null
-  },
-  {
-    "ticker": "NET",
-    "type": "BUY_PULLBACK",
-    "price": 351.82000732421875,
-    "stop_loss": 344.7836071777344,
-    "timing": "BUY NOW",
-    "trigger_price": 351.82,
-    "reason": "Pullback to BOL, META score=2",
-    "source": "JLAW",
-    "strategy": "J Law (Stage 2 / VCP / META)",
-    "sources": [
-      "JLAW"
-    ],
-    "rs_rating": 91,
-    "rev_growth_yoy": 0.3586555953747297,
-    "annual_rev_growth": null,
-    "sales_accelerating": null,
-    "fundamentals_detail": "last-Q rev +35.9% YoY, accel=n/a",
-    "fundamentals_verified": true,
-    "fundamentals_ok": true
   }
 ]
