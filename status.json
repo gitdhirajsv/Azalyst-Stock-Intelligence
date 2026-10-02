@@ -1,10 +1,10 @@
 {
-  "portfolio_value": 98237.72,
+  "portfolio_value": 98422.24,
   "total_deposited": 100000,
   "cash": 7335.17,
-  "change_raw": -1.76,
-  "change": "-1.76%",
-  "unrealised_str": "+$2779.85",
+  "change_raw": -1.58,
+  "change": "-1.58%",
+  "unrealised_str": "+$2964.38",
   "realised_pnl": -4542.14,
   "realised_str": "-$4542.14",
   "closed_trades": 13,
@@ -15,66 +15,66 @@
       "sector": "Unclassified",
       "source": "JLAW",
       "rs_rating": 89,
-      "pnl_pct": -8.85,
-      "pnl_pct_str": "-8.85%",
-      "pnl": -481.28,
-      "pnl_str": "-$481.28",
-      "market_value": 4955.2001953125
+      "pnl_pct": -8.18,
+      "pnl_pct_str": "-8.18%",
+      "pnl": -444.48,
+      "pnl_str": "-$444.48",
+      "market_value": 4992.0
     },
     {
       "ticker": "CMBT",
       "sector": "Unclassified",
       "source": "JLAW",
       "rs_rating": 89,
-      "pnl_pct": 7.39,
-      "pnl_pct_str": "+7.39%",
-      "pnl": 1348.65,
-      "pnl_str": "+$1348.65",
-      "market_value": 19610.369161605835
+      "pnl_pct": 8.59,
+      "pnl_pct_str": "+8.59%",
+      "pnl": 1568.43,
+      "pnl_str": "+$1568.43",
+      "market_value": 19830.150381088257
     },
     {
       "ticker": "FRO",
       "sector": "Energy / Oil & Gas Midstream",
       "source": "JLAW",
       "rs_rating": 94,
-      "pnl_pct": 7.22,
-      "pnl_pct_str": "+7.22%",
-      "pnl": 740.94,
-      "pnl_str": "+$740.94",
-      "market_value": 11001.740097045898
+      "pnl_pct": 8.97,
+      "pnl_pct_str": "+8.97%",
+      "pnl": 920.08,
+      "pnl_str": "+$920.08",
+      "market_value": 11180.880355834961
     },
     {
       "ticker": "NEOG",
       "sector": "Healthcare / Medical Devices",
       "source": "JLAW",
       "rs_rating": 93,
-      "pnl_pct": -2.23,
-      "pnl_pct_str": "-2.23%",
-      "pnl": -411.04,
-      "pnl_str": "-$411.04",
-      "market_value": 18012.36067199707
+      "pnl_pct": -3.19,
+      "pnl_pct_str": "-3.19%",
+      "pnl": -587.2,
+      "pnl_str": "-$587.20",
+      "market_value": 17836.19944000244
     },
     {
       "ticker": "AMN",
       "sector": "Healthcare / Medical Care Facilities",
       "source": "JLAW",
       "rs_rating": 92,
-      "pnl_pct": 5.19,
-      "pnl_pct_str": "+5.19%",
-      "pnl": 934.72,
-      "pnl_str": "+$934.72",
-      "market_value": 18933.974685668945
+      "pnl_pct": 4.81,
+      "pnl_pct_str": "+4.81%",
+      "pnl": 865.2,
+      "pnl_str": "+$865.20",
+      "market_value": 18864.450550079346
     },
     {
       "ticker": "AMD",
       "sector": "Technology / Semiconductors",
       "source": "JLAW",
       "rs_rating": 98,
-      "pnl_pct": 3.65,
-      "pnl_pct_str": "+3.65%",
-      "pnl": 647.86,
-      "pnl_str": "+$647.86",
-      "market_value": 18388.899291992188
+      "pnl_pct": 3.62,
+      "pnl_pct_str": "+3.62%",
+      "pnl": 642.35,
+      "pnl_str": "+$642.35",
+      "market_value": 18383.389221191406
     }
   ],
   "closed_trades_list": [
@@ -275,50 +275,50 @@
     {
       "label": "SPX",
       "ticker": "^GSPC",
-      "price": 7722.85,
-      "change_str": "+0.74%",
+      "price": 7722.72,
+      "change_str": "+0.73%",
       "direction": "up"
     },
     {
       "label": "NDX",
       "ticker": "^IXIC",
-      "price": 27179.52,
-      "change_str": "+1.15%",
+      "price": 27190.86,
+      "change_str": "+1.19%",
       "direction": "up"
     },
     {
       "label": "DJI",
       "ticker": "^DJI",
-      "price": 51163.26,
-      "change_str": "+0.46%",
+      "price": 51176.96,
+      "change_str": "+0.49%",
       "direction": "up"
     },
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4176.6,
-      "change_str": "-0.61%",
+      "price": 4172.1,
+      "change_str": "-0.72%",
       "direction": "down"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 91.1,
-      "change_str": "-1.91%",
+      "price": 91.26,
+      "change_str": "-1.73%",
       "direction": "down"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 84155.01,
-      "change_str": "-0.82%",
+      "price": 84473.16,
+      "change_str": "-0.45%",
       "direction": "down"
     },
     {
       "label": "VIX",
       "ticker": "^VIX",
-      "price": 15.51,
-      "change_str": "-5.37%",
+      "price": 15.31,
+      "change_str": "-6.59%",
       "direction": "down"
     }
   ],
@@ -331,9 +331,9 @@
     {
       "ticker": "IRDM",
       "timing": "BUY ON BREAKOUT",
-      "timing_detail": "Price 48.84 is through the pivot 48.07 and still inside the buy zone, but the breakout is unconfirmed -- it needs >= 1.4x the 50-day average volume. Buy only on a volume-confirmed close.",
+      "timing_detail": "Price 48.96 is through the pivot 48.07 and still inside the buy zone, but the breakout is unconfirmed -- it needs >= 1.4x the 50-day average volume. Buy only on a volume-confirmed close.",
       "trigger_price": 48.0733,
-      "last_close": 48.84,
+      "last_close": 48.96,
       "pivot": 48.0733,
       "buy_zone_high": 50.477,
       "projected_risk_pct": 4.71,
@@ -344,9 +344,9 @@
     {
       "ticker": "OGN",
       "timing": "BUY ON BREAKOUT",
-      "timing_detail": "Coiling 0.2% under the VCP pivot 13.76. Buy the move through 13.76 only if volume expands to >= 1.4x the 50-day average.",
+      "timing_detail": "Coiling 0.3% under the VCP pivot 13.76. Buy the move through 13.76 only if volume expands to >= 1.4x the 50-day average.",
       "trigger_price": 13.76,
-      "last_close": 13.7363,
+      "last_close": 13.72,
       "pivot": 13.76,
       "buy_zone_high": 14.448,
       "projected_risk_pct": 0.44,
@@ -357,9 +357,9 @@
     {
       "ticker": "CORT",
       "timing": "WAIT FOR BREAKOUT",
-      "timing_detail": "A VCP base is formed but price 116.48 is 3.5% below the pivot 120.51. No entry until it clears the pivot.",
+      "timing_detail": "A VCP base is formed but price 116.23 is 3.7% below the pivot 120.51. No entry until it clears the pivot.",
       "trigger_price": 120.51,
-      "last_close": 116.48,
+      "last_close": 116.23,
       "pivot": 120.51,
       "buy_zone_high": 126.5355,
       "projected_risk_pct": 7.11,
@@ -370,9 +370,9 @@
     {
       "ticker": "AMN",
       "timing": "WAIT FOR PULLBACK",
-      "timing_detail": "Price 36.78 is 1.3% above the highest price this pivot is still buyable at (36.32) -- chasing here breaks the 5% buy zone (tops at 37.34) and/or the 8% max-risk stop. Alert on a pullback to 36.32.",
+      "timing_detail": "Price 36.63 is 0.9% above the highest price this pivot is still buyable at (36.32) -- chasing here breaks the 5% buy zone (tops at 37.34) and/or the 8% max-risk stop. Alert on a pullback to 36.32.",
       "trigger_price": 36.3152,
-      "last_close": 36.775,
+      "last_close": 36.63,
       "pivot": 35.56,
       "buy_zone_high": 37.338,
       "projected_risk_pct": 8.0,
@@ -383,9 +383,9 @@
     {
       "ticker": "SSL",
       "timing": "WAIT FOR BREAKOUT",
-      "timing_detail": "A VCP base is formed but price 13.93 is 4.5% below the pivot 14.55. No entry until it clears the pivot.",
+      "timing_detail": "A VCP base is formed but price 13.94 is 4.4% below the pivot 14.55. No entry until it clears the pivot.",
       "trigger_price": 14.55,
-      "last_close": 13.925,
+      "last_close": 13.94,
       "pivot": 14.55,
       "buy_zone_high": 15.2775,
       "projected_risk_pct": 5.98,
@@ -396,33 +396,20 @@
     {
       "ticker": "NET",
       "timing": "WAIT FOR BREAKOUT",
-      "timing_detail": "A VCP base is formed but price 348.19 is 5.5% below the pivot 367.43. No entry until it clears the pivot.",
+      "timing_detail": "A VCP base is formed but price 349.07 is 5.3% below the pivot 367.43. No entry until it clears the pivot.",
       "trigger_price": 367.43,
-      "last_close": 348.19,
+      "last_close": 349.07,
       "pivot": 367.43,
       "buy_zone_high": 385.8015,
       "projected_risk_pct": 7.83,
-      "rs_rating": 89,
-      "source": "MINERVINI",
-      "actionable_now": false
-    },
-    {
-      "ticker": "PAYC",
-      "timing": "WAIT FOR BREAKOUT",
-      "timing_detail": "A VCP base is formed but price 221.17 is 3.6% below the pivot 229.04. No entry until it clears the pivot.",
-      "trigger_price": 229.035,
-      "last_close": 221.17,
-      "pivot": 229.035,
-      "buy_zone_high": 240.4868,
-      "projected_risk_pct": 3.61,
-      "rs_rating": 89,
+      "rs_rating": 90,
       "source": "MINERVINI",
       "actionable_now": false
     }
   ],
   "logs": [
-    "2026-10-02 19:31:08 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-10-02 23:14:26 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-10-02 19:31:08 UTC",
+  "generated_at": "2026-10-02 23:14:26 UTC",
   "top_signal": null
 }
