@@ -296,22 +296,22 @@
     {
       "label": "GOLD",
       "ticker": "GC=F",
-      "price": 4172.1,
-      "change_str": "-0.72%",
+      "price": 4162.3,
+      "change_str": "-0.95%",
       "direction": "down"
     },
     {
       "label": "OIL",
       "ticker": "CL=F",
-      "price": 91.26,
-      "change_str": "-1.73%",
+      "price": 91.11,
+      "change_str": "-1.90%",
       "direction": "down"
     },
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 84605.24,
-      "change_str": "-0.29%",
+      "price": 84615.99,
+      "change_str": "-0.28%",
       "direction": "down"
     },
     {
@@ -323,14 +323,93 @@
     }
   ],
   "regime": {
-    "risk_state": "RISK_OFF",
-    "vol_regime": "HIGH_VOL"
+    "risk_state": "RISK_ON",
+    "vol_regime": "LOW_VOL"
   },
   "signals": [],
-  "watchlist": [],
-  "logs": [
-    "2026-10-03 01:24:46 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+  "watchlist": [
+    {
+      "ticker": "IRDM",
+      "timing": "BUY ON BREAKOUT",
+      "timing_detail": "Price 48.96 is through the pivot 48.07 and still inside the buy zone, but the breakout is unconfirmed -- it needs >= 1.4x the 50-day average volume. Buy only on a volume-confirmed close.",
+      "trigger_price": 48.0733,
+      "last_close": 48.96,
+      "pivot": 48.0733,
+      "buy_zone_high": 50.477,
+      "projected_risk_pct": 4.71,
+      "rs_rating": 94,
+      "source": "MINERVINI",
+      "actionable_now": false
+    },
+    {
+      "ticker": "OGN",
+      "timing": "BUY ON BREAKOUT",
+      "timing_detail": "Coiling 0.3% under the VCP pivot 13.76. Buy the move through 13.76 only if volume expands to >= 1.4x the 50-day average.",
+      "trigger_price": 13.76,
+      "last_close": 13.72,
+      "pivot": 13.76,
+      "buy_zone_high": 14.448,
+      "projected_risk_pct": 0.44,
+      "rs_rating": 89,
+      "source": "MINERVINI",
+      "actionable_now": false
+    },
+    {
+      "ticker": "CORT",
+      "timing": "WAIT FOR BREAKOUT",
+      "timing_detail": "A VCP base is formed but price 116.23 is 3.7% below the pivot 120.51. No entry until it clears the pivot.",
+      "trigger_price": 120.51,
+      "last_close": 116.23,
+      "pivot": 120.51,
+      "buy_zone_high": 126.5355,
+      "projected_risk_pct": 7.11,
+      "rs_rating": 96,
+      "source": "MINERVINI",
+      "actionable_now": false
+    },
+    {
+      "ticker": "AMN",
+      "timing": "WAIT FOR PULLBACK",
+      "timing_detail": "Price 36.63 is 0.9% above the highest price this pivot is still buyable at (36.32) -- chasing here breaks the 5% buy zone (tops at 37.34) and/or the 8% max-risk stop. Alert on a pullback to 36.32.",
+      "trigger_price": 36.3152,
+      "last_close": 36.63,
+      "pivot": 35.56,
+      "buy_zone_high": 37.338,
+      "projected_risk_pct": 8.0,
+      "rs_rating": 93,
+      "source": "MINERVINI",
+      "actionable_now": false
+    },
+    {
+      "ticker": "SSL",
+      "timing": "WAIT FOR BREAKOUT",
+      "timing_detail": "A VCP base is formed but price 13.94 is 4.4% below the pivot 14.55. No entry until it clears the pivot.",
+      "trigger_price": 14.55,
+      "last_close": 13.94,
+      "pivot": 14.55,
+      "buy_zone_high": 15.2775,
+      "projected_risk_pct": 5.98,
+      "rs_rating": 92,
+      "source": "MINERVINI",
+      "actionable_now": false
+    },
+    {
+      "ticker": "NET",
+      "timing": "WAIT FOR BREAKOUT",
+      "timing_detail": "A VCP base is formed but price 349.07 is 5.3% below the pivot 367.43. No entry until it clears the pivot.",
+      "trigger_price": 367.43,
+      "last_close": 349.07,
+      "pivot": 367.43,
+      "buy_zone_high": 385.8015,
+      "projected_risk_pct": 7.83,
+      "rs_rating": 90,
+      "source": "MINERVINI",
+      "actionable_now": false
+    }
   ],
-  "generated_at": "2026-10-03 01:24:46 UTC",
+  "logs": [
+    "2026-10-03 05:44:54 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+  ],
+  "generated_at": "2026-10-03 05:44:54 UTC",
   "top_signal": null
 }
