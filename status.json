@@ -310,9 +310,9 @@
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 84615.99,
-      "change_str": "-0.28%",
-      "direction": "down"
+      "price": 84678.49,
+      "change_str": "+0.21%",
+      "direction": "up"
     },
     {
       "label": "VIX",
@@ -408,8 +408,8 @@
     }
   ],
   "logs": [
-    "2026-10-03 05:44:54 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-10-03 12:02:36 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-10-03 05:44:54 UTC",
+  "generated_at": "2026-10-03 12:02:36 UTC",
   "top_signal": null
 }
