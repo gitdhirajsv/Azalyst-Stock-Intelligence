@@ -310,8 +310,8 @@
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 84828.47,
-      "change_str": "+0.39%",
+      "price": 84731.7,
+      "change_str": "+0.28%",
       "direction": "up"
     },
     {
@@ -421,8 +421,8 @@
     }
   ],
   "logs": [
-    "2026-10-03 16:46:54 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-10-03 21:47:52 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-10-03 16:46:54 UTC",
+  "generated_at": "2026-10-03 21:47:52 UTC",
   "top_signal": null
 }
