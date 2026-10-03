@@ -310,8 +310,8 @@
     {
       "label": "BTC",
       "ticker": "BTC-USD",
-      "price": 84678.49,
-      "change_str": "+0.21%",
+      "price": 84828.47,
+      "change_str": "+0.39%",
       "direction": "up"
     },
     {
@@ -350,6 +350,19 @@
       "pivot": 13.76,
       "buy_zone_high": 14.448,
       "projected_risk_pct": 0.44,
+      "rs_rating": 89,
+      "source": "MINERVINI",
+      "actionable_now": false
+    },
+    {
+      "ticker": "PBR",
+      "timing": "BUY ON BREAKOUT",
+      "timing_detail": "Coiling 1.6% under the VCP pivot 21.99. Buy the move through 21.99 only if volume expands to >= 1.4x the 50-day average.",
+      "trigger_price": 21.99,
+      "last_close": 21.65,
+      "pivot": 21.99,
+      "buy_zone_high": 23.0895,
+      "projected_risk_pct": 8.14,
       "rs_rating": 89,
       "source": "MINERVINI",
       "actionable_now": false
@@ -408,8 +421,8 @@
     }
   ],
   "logs": [
-    "2026-10-03 12:02:36 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
+    "2026-10-03 16:46:54 UTC [INFO] AZALYST STOCK INTELLIGENCE - status.json generated"
   ],
-  "generated_at": "2026-10-03 12:02:36 UTC",
+  "generated_at": "2026-10-03 16:46:54 UTC",
   "top_signal": null
 }

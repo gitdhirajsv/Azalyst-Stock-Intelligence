@@ -58,6 +58,35 @@
     "reason": "WATCH (BUY ON BREAKOUT) trigger 13.76 -- Coiling 0.3% under the VCP pivot 13.76. Buy the move through 13.76 only if volume expands to >= 1.4x the 50-day average."
   },
   {
+    "ticker": "PBR",
+    "kind": "WATCH",
+    "type": "WATCH",
+    "source": "MINERVINI",
+    "strategy": "Minervini SEPA / VCP",
+    "timing": "BUY ON BREAKOUT",
+    "timing_detail": "Coiling 1.6% under the VCP pivot 21.99. Buy the move through 21.99 only if volume expands to >= 1.4x the 50-day average.",
+    "trigger_price": 21.99,
+    "pivot": 21.99,
+    "buy_zone_high": 23.0895,
+    "last_close": 21.65,
+    "stop_reference": 20.2,
+    "projected_risk_pct": 8.14,
+    "rs_rating": 89,
+    "actionable_now": false,
+    "trend_template": {
+      "c1_price_above_150_200": true,
+      "c2_150_above_200": true,
+      "c3_200_uptrending": true,
+      "c4_50_above_150_200": true,
+      "c5_price_above_50": true,
+      "c6_30pct_above_low": true,
+      "c7_within_25pct_high": true,
+      "c8_rs_rating_ok": true,
+      "rs_rating": 89
+    },
+    "reason": "WATCH (BUY ON BREAKOUT) trigger 21.99 -- Coiling 1.6% under the VCP pivot 21.99. Buy the move through 21.99 only if volume expands to >= 1.4x the 50-day average."
+  },
+  {
     "ticker": "CORT",
     "kind": "WATCH",
     "type": "WATCH",
